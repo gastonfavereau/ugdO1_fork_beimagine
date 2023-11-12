@@ -1,0 +1,65 @@
+/* video background */
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  /* page content */
+  
+  body {
+    font-family: Trebuchet MS;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 6rem;
+    margin-top: 30vh; 
+  }
+  
+  h2 { font-size: 3rem; }
+  
+  @media (max-width: 750px) {
+      /* #background-video { display: none; } */
+      /* body {
+        background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+        background-size: cover;
+      } */
+      h1 {
+        font-size: 3rem;
+        margin-top: 30vh; 
+      }
+      
+      h2 { font-size: 1.4rem; }
+  }
+  
+  main {
+    background-color: white;
+    font-size: 2rem;
+    margin-top: 50vh;
+    padding: 10px;
+    position: relative;
+    color: "#005FAF";
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }

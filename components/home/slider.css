@@ -1,0 +1,57 @@
+.image-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+
+  }
+  
+  .slider-images {
+    display: flex;
+    overflow: hidden;
+    gap:1rem;
+  }
+  
+  .slider-image {
+    width: 100%;
+    transition: transform 0.5s;
+  }
+  
+  .slider-image.active {
+    transform: translateX(0);
+  }
+  
+  .slider-buttons {
+    margin-top: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+
+  .image-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 300px; /* Adjust the height as needed */
+  }
+  
+  .image-row {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  img {
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

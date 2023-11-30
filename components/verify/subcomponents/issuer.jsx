@@ -2,13 +2,17 @@ import style from "../certificate.module.css";
 
 const Issuer = ({ usecert }) => {
   return (
-    <div className={style.detailContainer}>
+    <div style={{
+      backgroundColor: "#1C3564",
+      borderRadius: "10px",
+      boxShadow: "0 8px 8px 0 rgba(0,0,0,0.2)",
+    }} className={style.detailContainer}>
       <div
         style={{
-          position: "absolute",
-          top: "-1rem",
+          // position: "absolute",
+          // top: "1rem",
           left: "var(--padding-main)",
-          color: "var(--primary-50)",
+          color: "white",
           fontSize: "1.5rem",
           fontWeight: "700",
         }}
@@ -19,42 +23,51 @@ const Issuer = ({ usecert }) => {
         style={{
           fontSize: "1.5rem",
           fontWeight: "700",
+          color: "white",
         }}
       >
         {usecert.certDetails && usecert.certDetails.issuer.name}
       </div>
       <div
         style={{
-          color: "var(--primary-50)",
+          color: "white",
         }}
       >
-        Address:
+        <b>Address:</b>
       </div>
-      <div>{usecert.certDetails && usecert.certDetails.issuer.address}</div>
+      <div  style={{
+          color:"white",
+        }}>{usecert.certDetails && usecert.certDetails.issuer.address}</div>
       <div
         style={{
-          color: "var(--primary-50)",
+          color:"white",
         }}
       >
-        Country:
+       <b>Country:</b> 
       </div>
-      <div>{usecert.certDetails && usecert.certDetails.issuer.country}</div>
+      <div  style={{
+          color:"white",
+        }}>{usecert.certDetails && usecert.certDetails.issuer.country}</div>
       <div
         style={{
-          color: "var(--primary-50)",
+          color: "white",
         }}
       >
-        Website:
+        <b>Website:</b>
       </div>
-      <div>{usecert.certDetails && usecert.certDetails.issuer.website}</div>
+      <div  style={{
+          color:"white",
+        }}>{usecert.certDetails && usecert.certDetails.issuer.website}</div>
       <div
         style={{
-          color: "var(--primary-50)",
+          color: "white",
         }}
       >
-        Description:
+        <b>Description:</b>
       </div>
-      <div>{usecert.certDetails && usecert.certDetails.issuer.description}</div>
+      <div  style={{
+          color:"white",
+        }}>{usecert.certDetails && usecert.certDetails.issuer.description}</div>
     </div>
   );
 };

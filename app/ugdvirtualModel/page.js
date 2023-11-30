@@ -1,8 +1,9 @@
-import UGDVirtualModel from "@/components/UniversityInfo/uGDVirtualModel";
+// import UGDModelPage from "@/components/UniversityInfo/ugdmodel";
+import UGDModel from "@/components/UniversityInfo/ugdmodelpage";
 
 const Page = () =>{
     return(
-        <UGDVirtualModel />
+        <UGDModel />
     )
 }
 

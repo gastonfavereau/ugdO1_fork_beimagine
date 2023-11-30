@@ -10,12 +10,19 @@ const UGDVirtualModel = () => {
       {/* <video id="background-video" autoPlay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
         <source src="aboutus.mp4" type="video/mp4" />
       </video> */}
-      <img id="background-video" src={"/whoweare.jpg"} alt="Background Image" />
+      <img id="background-video" src={"/pexels-julia-m-cameron-4145153 (1).jpg"} alt="Background Image" />
 
-      <h1>UGD Virtual Mode</h1>
+      <h1>Nuestro Modelo de Educación Virtual</h1>
       <h2>Unlocking Knowledge, Empowering Futures</h2>
 
       <main>
+        <div style={{
+          width:"100%",
+          height:"100vh",
+          backgroundColor:"white"
+        }}>
+
+        </div>
         
       </main>
     </div>

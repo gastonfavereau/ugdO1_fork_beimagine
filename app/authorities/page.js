@@ -1,8 +1,9 @@
-import Authorities from "@/components/UniversityInfo/authorities";
+// import Authorities from "@/components/UniversityInfo/authorities";
+import AuthoritiesPage from "@/components/UniversityInfo/authoritiespage";
 
 const Page = () =>{
     return(
-        <Authorities />
+        <AuthoritiesPage />
     )
 }
 

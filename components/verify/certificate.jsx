@@ -1,3 +1,4 @@
+
 import PrimaryDetails from "./subcomponents/primaryDetails";
 import Issuer from "./subcomponents/issuer";
 import Receiver from "./subcomponents/receiver";
@@ -7,6 +8,7 @@ import style from "./certificate.module.css";
 import usecertificate from "./usecertificate";
 import Image from "next/image";
 
+
 const Certificate = async ({ params }) => {
   const usecert = await usecertificate(params);
 
@@ -15,6 +17,7 @@ const Certificate = async ({ params }) => {
       <div
         style={{
           width: "100%",
+          height: "100vh",
           minHeight: "var(--min-height-screen)",
           display: "flex",
           flexDirection: "column",
@@ -22,14 +25,31 @@ const Certificate = async ({ params }) => {
           justifyContent: "center",
           gap: "var(--padding-main)",
           wordWrap: "break-word",
+          backgroundImage:"url(/cool-background.png)"
         }}
       >
+        <div
+          style={{
+            width: "400px",
+            height: "500px",
+            backgroundColor: "white",
+            borderRadius: "10px",
+            boxShadow: "0 8px 8px 0 rgba(0,0,0,0.2)",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            gap: "var(--padding-main)",
+            wordWrap: "break-word",
+          }}
+        >
         <Image
-          src={`/icons/unverified.svg`}
+          src={`/unverified.svg`}
           height={250}
           width={250}
           alt={"Unverified"}
         />
+  
 
         <div
           style={{
@@ -39,6 +59,7 @@ const Certificate = async ({ params }) => {
           }}
         >
           Unverified
+        </div>
         </div>
       </div>
     );
@@ -52,7 +73,9 @@ const Certificate = async ({ params }) => {
         flexDirection: "column",
         gap: "var(--padding-large)",
         wordWrap: "break-word",
+        backgroundImage:"url(/cool-background.png)"
       }}
+      className={style.certificateMain}
     >
       <PrimaryDetails usecert={usecert} />
 
@@ -61,7 +84,7 @@ const Certificate = async ({ params }) => {
         <Receiver usecert={usecert} />
       </div>
       <CertImage usecert={usecert} />
-      <Advertisment />
+      {/* <Advertisment /> */}
     </div>
   );
 };

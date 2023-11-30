@@ -1,30 +1,31 @@
 import { useState } from "react";
-// import API from "../subcomponents/scripts/apiCall";
+import Draganddrop from "./subcomponents/draganddrop/draganddrop";
+import API from "../scripts/apiCall";
 
 const Verifyfile = ({ setcid, setIsLoading }) => {
-  // const api = API();
-  // const [fileURL, setFileURL] = useState(null);
+  const api = API();
+  const [fileURL, setFileURL] = useState(null);
 
-  // const showImage = (e) => {
-  //   const reader = new FileReader();
-  //   reader.addEventListener("load", () => {
-  //     setFileURL(reader.result);
-  //   });
-  //   reader.readAsDataURL(e);
-  // };
+  const showImage = (e) => {
+    const reader = new FileReader();
+    reader.addEventListener("load", () => {
+      setFileURL(reader.result);
+    });
+    reader.readAsDataURL(e);
+  };
 
-  // const generateCID = async (file) => {
-  //   setIsLoading(true);
-  //   const formData = new FormData();
-  //   formData.append("image", file);
-  //   await api
-  //     .localCrud("POST", "certificate/getCID", formData, true)
-  //     .then((res) => {
-  //       setcid(res.cid);
-  //     })
-  //     .catch((err) => console.log(err));
-  //   setIsLoading(false);
-  // };
+  const generateCID = async (file) => {
+    setIsLoading(true);
+    const formData = new FormData();
+    formData.append("image", file);
+    await api
+      .localCrud("POST", "certificate/getCID", formData, true)
+      .then((res) => {
+        setcid(res.cid);
+      })
+      .catch((err) => console.log(err));
+    setIsLoading(false);
+  };
 
   return (
     <div
@@ -34,13 +35,13 @@ const Verifyfile = ({ setcid, setIsLoading }) => {
         padding: "var(--padding-main)",
       }}
     >
-      {/* <Draganddrop
+      <Draganddrop
         submitFile={(e) => {
           showImage(e);
           generateCID(e);
         }}
         file={fileURL}
-      /> */}
+      />
     </div>
   );
 };

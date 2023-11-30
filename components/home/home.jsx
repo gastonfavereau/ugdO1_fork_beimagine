@@ -21,8 +21,8 @@ const HomePage = () => {
   ];
   return (
     <div>
-      <video id="background-video" autoPlay loop muted poster="/poster.png">
-        <source src="video.mp4" type="video/mp4" />
+      <video id="background-video" autoPlay loop muted poster="/UGDVposter.png">
+        <source src="UGDvideo.mp4" type="video/mp4" />
       </video>
 
       <h1>Welcome to the Virtual University.</h1>

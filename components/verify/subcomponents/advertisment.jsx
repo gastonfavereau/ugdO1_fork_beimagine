@@ -1,5 +1,5 @@
 import style from "../certificate.module.css";
-import LinkButton from "@/components/subcomponents/button/link";
+
 
 const Advertisment = () => {
   return (
@@ -33,7 +33,17 @@ const Advertisment = () => {
         verifying their validity using blockchain technology
       </div>
       <div style={{ width: "fit-content" }}>
-        <LinkButton variant="primary" text="Try For Free" href="/trial" />
+        {/* <LinkButton variant="primary" text="Try For Free" href="/trial" /> */}
+        <button style={{
+          alignContent:"center",
+          width:"100px",
+          height:"50px",
+          backgroundColor:"#005FAF",
+          color:"white",
+          padding:"5px",
+          borderRadius:"5px"
+        }}
+        >Try For Free</button>
       </div>
     </div>
   );

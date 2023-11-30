@@ -1,7 +1,7 @@
-import AboutUs from "@/components/UniversityInfo/aboutUs";
+import About from "@/components/UniversityInfo/about";
 
 const Page = () => {
-    return <AboutUs />;
+    return <About />;
 };
 
 export default Page;

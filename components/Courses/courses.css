@@ -58,7 +58,7 @@
     padding: 20px;
   } */
   .maindivcourses{
-    padding: 100px;
+    /* padding: 100px; */
   }
   .subdivcourses{
     width:80%;
@@ -71,6 +71,13 @@
 .sidecontentdiv{
   width: 30%;
 }
+
+
+
+
+
+
+
   @media screen and (max-width: 1000px) {
     .subdivcourses {
       width: 100%;

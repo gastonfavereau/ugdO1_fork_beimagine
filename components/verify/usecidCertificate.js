@@ -1,4 +1,4 @@
-import ServerAPI from "../subcomponents/scripts/serversideapicall";
+import ServerAPI from "../scripts/serversideapicall";
 
 const useCIDcertificate = async (params) => {
   const api = ServerAPI();

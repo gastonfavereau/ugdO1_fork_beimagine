@@ -1,4 +1,4 @@
-import ServerAPI from "../subcomponents/scripts/serversideapicall";
+import ServerAPI from "../scripts/serversideapicall";
 
 const usecertificate = async (params) => {
   const api = ServerAPI();
@@ -9,6 +9,7 @@ const usecertificate = async (params) => {
     await api
       .crud("GET", `certificate/${params.certId}`)
       .then(async (res) => {
+        // console.log(res);
         returnData.certDetails = res;
         if (res.nft) {
           await api.crud("GET", `nft/${res.nft}`).then((nftres) => {

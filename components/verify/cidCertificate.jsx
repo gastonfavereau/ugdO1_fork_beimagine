@@ -52,7 +52,9 @@ const CIDCertificate = async ({ params }) => {
         flexDirection: "column",
         gap: "var(--padding-large)",
         wordWrap: "break-word",
+        backgroundImage:"url(/cool-background.png)"
       }}
+      className={style.certificateMain}
     >
       <PrimaryDetails usecert={usecert} />
 

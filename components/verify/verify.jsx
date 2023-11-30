@@ -51,21 +51,23 @@ const Verify = () => {
           alignContent:"center",
           backgroundColor:"white",
           padding:"1rem",
-          paddingTop:"7rem"
+          paddingTop:"7rem",
+          backgroundImage:"url(/cool-background.png)"
         }}
       >
         <div style={{
                    
                     width:"100%",
                     maxWidth:"600px",
-                    height:"400px",
-                    backgroundColor:"white",
+                    height:"auto",
+                    backgroundColor:"#1C3564",
                     boxShadow:" 0 8px 8px 0 rgba(0,0,0,0.2)",
                     borderRadius:"5px",
                     display:"flex",
                     flexDirection:"column",
                     padding:"20px",
-                    position:"relative"
+                    position:"relative",
+                    color:"white",
                     
                 }}>
                   <p style={{
@@ -81,6 +83,7 @@ const Verify = () => {
                     borderRadius:"5px",
                     marginTop:"20px",
                     marginBottom:"20px",
+                    color:"#1C3564",
                   }}
                   onChange={(e)=>{
                     setCertId(e.target.value)
@@ -95,23 +98,17 @@ const Verify = () => {
                     borderRadius:"5px",
                     marginTop:"20px",
                     marginBottom:"20px",
+                    color:"#1C3564",
                   }}
                   onChange={(e)=>{
                     setcid(e.target.value)
                   }}
                   />
-                  </div>
-
-                 
-
-                  <div style={{
-                     position: "absolute",
-                    left:"40%",
-                    top:"80%",
-                  }}>
                   <button style={{
-                    alignContent:"center",
-                    width:"100px",
+                    alignItems:"center",
+                    // alignContent:"center",
+                    marginLeft:"33%",
+                    width:"150px",
                     height:"50px",
                     backgroundColor:"#005FAF",
                     color:"white",
@@ -119,39 +116,34 @@ const Verify = () => {
                     borderRadius:"5px"
                   }}
                   onClick={handleSubmit}
-                  >Submit</button>
-                  </div>
+                  >Verify</button>
+
                   <h3 style={{
 
-                    marginTop:"20px",
-                    textAlign:"center",
-                    color:"red"
+                  marginTop:"20px",
+                  textAlign:"center",
+                  color:"red"
                   }}>{status}</h3>
-         </div> 
-          {/* <div style={{
-            display:"flex",
-            flexDirection:"column",
-            justifyContent:"center",
-            alignItems:"center",
-          }}>
-            <Image
-              src={`/unverified.svg`}
-              height={250}
-              width={250}
-              alt={"Unverified"}
-            />
-            <div
-              style={{
-                color: "var(--primary-50)",
-                fontSize: "3rem",
-                fontWeight: "700",
-              }}
-            >
-              Unverified
-            </div>
-       
-       
-        </div> */}
+                  
+                  </div>
+
+
+                <div
+                      style={{
+                        textAlign: "center",
+                      }}
+                    >
+                      Upload file to verify
+                    </div>
+                    <Verifyfile
+                      setIsLoading={setIsLoading}
+                      setcid={(e) => {
+                        setCertId(0);
+                        setcid(e);
+                      }}
+                    />
+                  </div> 
+          
         
       </div>
   );

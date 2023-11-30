@@ -1,0 +1,356 @@
+/* video background */
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  /* page content */
+  
+  body {
+    font-family: Trebuchet MS;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-top: 30vh; 
+  }
+  
+  h2 { font-size: 1.5rem; }
+/*   
+  @media (max-width: 750px) {
+      #background-video { display: none; }
+      body {
+        background: url("https://assets.codepen.io/6093409/river.jpg") no-repeat;
+        background-size: cover;
+      }
+  } */
+  
+  main {
+    background-color: white;
+    font-size: 2rem;
+    margin-top: 50vh;
+    padding: 10px;
+    position: relative;
+    color: "#005FAF";
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+
+
+/* Student */
+
+.StudentSecondDiv{
+  margin-top: 5rem;
+  width: 100%;
+  height: 500px;
+  padding: 2rem;
+}
+.StudentSecondDivSubDiv{
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+
+/* Teacher */
+.teacherMain{
+  width:100%;
+  display:flex;
+  background-color: #E4F9FF;
+
+}
+.teacherContent{
+  width: 50%;
+  height: 100vh;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+
+}
+.teacherImage{
+  width: 50%;
+  height: 100vh;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #C9ECF5;
+}
+.teacherMainColor{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #1C3564;
+}
+
+
+/* partnership */
+.partnershipImageCardWhite{
+  width: 40%;
+  height: 200px;
+  display: flex;
+  align-content: center;
+}
+.partnershipContentCardWhite{
+  width: 60%;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0px 8px 8px 8px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+}
+.partnershipContentCardColor{
+  width: 60%;
+  height: 200px;
+  background-color: #1C3564;
+  box-shadow: 0px 8px 8px 8px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.partnershipContainer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: white;
+}
+.partnershipImageDiv{
+  width: 50%;
+  height: 50%;
+  position: relative;
+}
+.partnershipContainerColor{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.partnershipCardHeading{
+  color: #1C3564;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+}
+.partnershipCardHeadingWhite{
+  color: white;
+  font-family: Poppins;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+}
+.partnershipCardPara{
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #6B6C6C;
+}
+.partnershipCardParaWhite{
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: white;
+}
+
+/* Scholarship  */
+
+.scholarShipCard{
+  width:50%;
+}
+.scholarShipCardRight{
+  margin-left:50%;
+}
+
+.authorityFontheading{
+
+  z-index: 1;
+  color: white;
+  position: absolute;
+  top: -7%;
+  left: 39%;
+  font-size: 3rem;
+
+
+}
+
+#background-image{
+  filter: brightness(70%);
+  /* z-index: -1;
+  position: fixed; */
+}
+
+
+.studentDiv{
+  margin-top: 4rem;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  gap: 1rem;
+}
+.studentDivCard{
+  width: 30%;
+  height: 700px;
+  background-color: #F4F6F8;
+  padding: 2rem;
+}
+.studentMaindiv{
+  padding: 5rem;
+  background-color: white;
+}
+.teacherDivCard{
+  width: 25%;
+  height: 700px;
+  background-color: #F4F6F8;
+  padding: 2rem;
+}
+
+
+
+/* media query */
+
+@media (max-width: 1000px) {
+  .StudentSecondDiv{
+    height: auto;
+  }
+  .StudentSecondDivSubDiv{
+    flex-wrap: wrap;
+  }
+
+  .teacherMain{
+    flex-direction: column-reverse;
+  }
+  .teacherContent{
+    width: 100%;
+    height: auto;
+  }
+  .teacherImage{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0.5rem;
+  }
+  .teacherMainColor .teacherImage{
+    display: none;
+  }
+  .partnershipImageCardWhite{
+    width: 100%;
+    padding: 2rem;
+  }
+  .partnershipContentCardWhite{
+    width: 100%;
+  }
+  .partnershipContentCardColor{
+    width: 100%;
+  }
+  .partnershipContainer{
+    flex-direction: column;
+  }
+  .partnershipImageDiv{
+    width: 100%;
+    height: auto;
+  }
+  .partnershipContainerColor{
+    flex-direction: column;
+  }
+  .partnershipCardHeading{
+    font-size: 1rem;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 0rem;
+  }
+  .partnershipCardHeadingWhite{
+    font-size: 1rem;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 0rem;
+  }
+  .partnershipCardPara{
+    margin-top: 0rem;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  .partnershipCardParaWhite{
+    margin-top: 0rem;
+    text-align: center;
+    font-size: 0.7rem;
+    color: white;
+  }
+  .scholarShipCard{
+    width:100%;
+  }
+  .scholarShipCardRight{
+    margin-left:0%;
+  }
+  .authorityFontheading{
+
+    z-index: 1;
+    color: white;
+    position: absolute;
+    top: -5%;
+    left: 6%;
+    font-size: 2rem;
+
+
+}
+.studentMaindiv{
+  padding: 0rem;
+
+}
+.studentDiv{
+  height: auto;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+}
+.studentDivCard{
+  width: 100%;
+}
+.teacherDivCard{
+  width: 100%;
+  
+}
+
+  
+}

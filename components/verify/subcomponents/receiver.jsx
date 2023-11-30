@@ -2,7 +2,11 @@ import style from "../certificate.module.css";
 
 const Receiver = ({ usecert }) => {
   return (
-    <div className={style.detailContainer}>
+    <div style={{
+      backgroundColor: "white",
+      borderRadius: "10px",
+      boxShadow: "0 8px 8px 0 rgba(0,0,0,0.2)",
+    }}className={style.detailContainer}>
       <div
         style={{
           position: "absolute",
@@ -24,7 +28,7 @@ const Receiver = ({ usecert }) => {
                 color: "var(--primary-50)",
               }}
             >
-              {variable.variable_name}:
+              <b>{variable.variable_name}:</b>
             </div>
             <div>{variable.value}</div>
           </div>
@@ -34,7 +38,7 @@ const Receiver = ({ usecert }) => {
           color: "var(--primary-50)",
         }}
       >
-        Email:
+        <b>Email:</b>
       </div>
       <div>{usecert.certDetails && usecert.certDetails.email}</div>
       <div
@@ -44,7 +48,7 @@ const Receiver = ({ usecert }) => {
           wordBreak: "break-all",
         }}
       >
-        Wallet:
+        <b>Wallet:</b>
       </div>
       <div>{usecert.certDetails && usecert.certDetails.wallet}</div>
     </div>

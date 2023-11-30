@@ -54,7 +54,7 @@ const Footer = () =>{
                         fontWeight: "400",
                         lineHeight: "normal",
                         padding:"10px"
-                    }}>About Us</div>
+                    }}>Sobre nosotro</div>
                     <div style={{
                         color: "#FFF",
                         fontFamily:" Open Sans",
@@ -255,8 +255,30 @@ const FooterBgImage = () =>{
             className="footerimagesubdiv"
              >
                 <div>
-                <   Image src={"/Frame19.svg"} height={400} width={400} />
-                    <h3>Unlocking Knowledge, Empowering Futures</h3>
+                {/* <   Image src={"/Frame19.svg"} height={400} width={400} /> */}
+                    <p style={{
+                         marginTop:"3rem",
+                        //  textAlign:"center",
+                         color:"white",
+                         fontFamily: "Poppins",
+                         fontSize: "2.5rem",
+                         fontStyle: "normal",
+                         fontWeight: "500",
+                         lineHeight: "38px",
+                    }}>Tu objetivo es nuestro objetivo</p>
+                    <p style={{
+                         marginTop:"1rem",
+                        //  textAlign:"center",
+                         color:"white",
+                         fontFamily: "Inter",
+                         fontSize: "1.1rem",
+                         fontStyle: "normal",
+                        //  fontWeight: "500",
+                         lineHeight: "38px",
+                    }}>Nuestra finalidad es que obtengas el título que buscas, y ponemos todos las herramientas y equipos de apoyo a  tal fin.  Desde el grupo de Educación a Distancias de UGD Virtual, los docentes y tutores, hasta el equipo administrativo, estará atento a tus necesidades y dispuesto a brindarte orientación personal.
+ 
+                    Tendrás asignado un tutor con el que te contactarás en cualquier momento, y que tiene por misión orientarte y ayudarte a resolver lo que te preocupe, realizando las gestiones que resulten necesarias.
+                    </p>
                 </div>
             </div>
             <div className="footerimagesubdivempty">

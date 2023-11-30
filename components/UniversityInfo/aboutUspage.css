@@ -1,0 +1,882 @@
+/* video background */
+#background-video2 {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: brightness(60%);
+
+  }
+
+  #background-imgugd {
+    margin-top: 4rem;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: brightness(50%);
+   
+  }
+  
+  /* page content */
+  
+  body {
+    font-family: Trebuchet MS;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 6rem;
+    margin-top: 30vh; 
+  }
+  
+  h2 { font-size: 3rem; }
+  
+  @media (max-width: 750px) {
+      /* #background-video { display: none; }
+      body {
+        background: url("/whoweare.jpg") no-repeat;
+        background-size: cover;
+      } */
+  }
+  #background-image{
+    filter: brightness(70%);
+
+  }
+  
+  main {
+    background-color: white;
+    font-size: 2rem;
+    margin-top: 50vh;
+    padding: 10px;
+    position: relative;
+    color: "#005FAF";
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .numbers {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .number {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .number .counter {
+    font-weight: bold;
+    /* font-style: italic; */
+    font-size: 1em;
+    margin: 6px 0;
+    color: #192655;
+  }
+
+
+  .number span {
+    font-size: 0.7rem;
+    display: block;
+    color: #192655;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background-color: white;
+    width: 300px;
+    height: "auto";
+    margin: 2rem;
+  }
+  .card img{
+    /* blackandwhite */
+    filter: grayscale(100%);
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+    text-align: center;
+  }
+/* 
+  .mainCounter{
+    width:100%;
+    height:300px;
+    background-color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+  } */
+
+  /* .submainCounter{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    gap:1rem;
+    flex-wrap: wrap;
+  } */
+  .counterDiv{
+    width:200px;
+    height:120px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    /* border-radius:10px; */
+    /* box-shadow:0 8px 8px 0 rgba(0,0,0,0.2); */
+  }
+
+  .aboutus{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+  }
+
+
+  .aboutuscontainerfirst{
+    width: 100%;
+    display: flex;
+    background-color: #1C3564;
+    
+  }
+
+ 
+  .aboutusContent{
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+
+  
+
+
+ 
+  .aboutusImage{
+    width: 50%;
+  }
+
+  .aboutuscontainersecond{
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* align-content: center; */
+  }
+  .aboutuscontainersecond2{
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+  }
+
+  .aboutuscontainersecond2 .counterCard{
+
+    width: 16.5%;
+    height: 120px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-right: 1px solid grey;
+  }
+  .aboutuscontainersecond2 .counterCard2{
+
+    width: 16.5%;
+    height: 120px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+
+
+  .aboutuscontainersecond .modelheading{
+    text-align: center;
+    color: #1C3564;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+  }
+
+  .aboutuscontainersecondContainer{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutuscontainersecondCard{
+
+    width: 20%;
+    height: 120px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-right: 1px solid grey;
+
+}
+.aboutuscontainersecondCard2{
+
+    width: 20%;
+    height: 120px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+  .aboutuscontainerthird{
+    width: 100%;
+    height: 600px;
+    display: flex;  
+    flex-direction: row-reverse;
+    background-color: #1C3564;
+  }
+
+  .aboutuscontainerfourth{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #E4F9FF; */
+    padding: 2rem;
+    /* border: 2px solid #1C3564; */
+  }
+  .aboutuscontainerfourthsubdiv{
+    margin-top: 2rem;
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid #1C3564; */
+    display:flex;
+  }
+  .aboutuscontainerfourthsubdiv2{
+    height: 100%;
+    width: 50%;
+    border: 0.5px solid grey;
+    border-right: 0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    padding: 2rem;
+    
+
+  }
+
+  .aboutuscontainerfifth{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #5092B3;
+    padding: 2rem;
+  }
+
+  .aboutuscontainersix{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #E4F9FF;
+    padding: 2rem;
+    font-size: 1rem;
+  }
+
+
+
+
+  /* aboutuspage */
+
+
+
+  .aboutUSPageMain{
+    width:100%;
+    display:flex;
+  }
+
+  .aboutUSPageContent{
+    width:50%;
+    height:90vh;
+    padding:2rem;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    align-content:center;
+  }
+
+
+  .aboutUSPageImage{
+    padding: 2rem;
+    width:50%;
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+  }
+  .aboutUSPageMainCounter{
+    margin-top:4rem;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+  }
+  .aboutUSPageCounterDiv{
+    width:100%;
+    height:300px;
+    background-color:#1C3564;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+  }
+
+  .aboutUSPageCounterSubDiv{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    gap:1rem;
+  }
+  .aboutUSPageCounterDivCounter{
+    width:200px;
+    height:120px;
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 8px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .aboutUSPageSecondDiv{
+    width:100%;
+    display:flex;
+    height:90vh;
+  }
+  .aboutUSPageSecondDivImage{
+    width:40%;
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center
+  }
+  .aboutUSPageSecondDivContent{
+    width:60%;
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+  }
+
+  .aboutUSPageheadingFontSize{
+    color: #1C3564;
+    font-family: Poppins;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+  }
+
+  /* UGDModelPage */
+
+  .UGDModelPageMain{
+    width:100%;
+    height:80vh;
+    display:flex;
+    padding:20px
+  }
+
+  .UGDModelPageContent{
+    width:60%;
+    height:80vh;
+    padding:2rem;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    align-content:center;
+  }
+  .UGDModelPageImage{
+    width:40%;
+    height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+  }
+
+  .UGDModelPageSecondDiv{
+    width:100%;
+    background-color:#1C3564;
+    padding:2rem;
+  }
+  .UGDModelPageSecondDivSubDiv{
+    margin-top:4rem;
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    gap:1rem;
+  }
+  .UGDModelPageThirdDiv{
+    margin-top:5rem;
+    width:100%;
+    height:auto;
+  }
+  .UGDModelPageThirdDivSubDiv{
+    margin-top:3rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    gap: 1rem;
+    padding: 2rem;
+  }
+  .UGDModelPageFourthDiv{
+    width:100%;
+    background-color:#1C3564;
+    height:100vh;
+  }
+  .UGDModelPageFourthDivRoundedLineLeft2{
+    margin-top:1rem;
+    width:50%;
+    height:50px;
+    background-color:white;
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%)
+  }
+
+  .UGDModelPageFourthDivContainer2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .UGDModelPageFourthDivContentCard{
+    /* margin-top: 1rem; */
+    width: 300px;
+    height: 250px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+    
+  }
+  .UGDModelPageFourthDivRoundedLineRight2{
+  position: absolute;
+  margin-top: 21%;
+  right: 0;
+  width: 50%;
+  background-color: white;
+  height: 50px;
+  clip-path: polygon(100% 0%, 0% 0%, 10% 100%, 100% 100%)
+
+  }
+
+  .UGDModelPageFourthDivRoundedLineRight2 p{
+    font-size: 2rem;
+  }
+  .UGDModelPageFourthDivRoundedLineLeft2 p{
+    font-size: 2rem;
+  }
+  .UGDModelPageFourthDivContainer2{
+    margin-top: 5rem;
+    padding: 2rem;
+    width: 100%;
+    height:50%;
+    
+  }
+
+
+/* font style */
+
+.headingFontSize2{
+  text-align: center;
+  color: white;
+  font-family: Poppins;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+.paraFontSize2{
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.UGDModelPageFourthDivRoundedLineLeft p{
+    text-align: center;
+    color: #1C3564;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+}
+.UGDModelPageFourthDivRoundedLineRight p{
+  text-align: center;
+  color: #1C3564;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+.UGDModelPageFourthDivContentCard .heading{
+  margin-top: 0.5rem; 
+  text-align: center;
+  color: #1C3564;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 38px;
+}
+
+.UGDModelPageFourthDivContentCard .para{
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #6B6C6C;
+}
+
+
+.authorityFontheading{
+
+    z-index: 1;
+    color: white;
+    position: absolute;
+    top: -7%;
+    left: 45%;
+    font-size: 3rem;
+
+
+}
+
+
+
+
+    
+  @media (max-width: 1000px) {
+    #background-video { display: none; }
+    body {
+      background: url("/whoweare.jpg") no-repeat;
+      background-size: cover;
+    }
+    .mainCounter{
+      /* flex-direction:column; */
+      height: auto;
+    }
+    .submainCounter{
+      flex-wrap: wrap;
+      padding: 3rem;
+    }
+    .aboutUSPageMain{
+      flex-direction:column-reverse;
+    }
+    .aboutUSPageContent{
+      width:100%;
+      height: auto;
+    }
+    .aboutUSPageImage{
+      width:100%;
+      height:400px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      align-content:center;
+      padding: 0.5rem;
+    }
+    .aboutUSPageMainCounter{
+      display: none;
+      flex-wrap: wrap;
+    }
+    .aboutUSPageCounterDiv{
+      height: auto;
+    }
+    .aboutUSPageCounterSubDiv{
+      flex-wrap: wrap;
+      padding: 1rem;
+    }
+    .aboutUSPageCounterDivCounter{
+      width:180px;
+      height:120px;
+    }
+    .aboutUSPageSecondDiv{
+      flex-direction: column;
+      height:90vh;
+    }
+    .aboutUSPageSecondDivImage{
+      width:100%;
+      
+    }
+    .aboutUSPageSecondDivContent{
+      width: 100%;
+      padding: 2rem;
+    }
+    .UGDModelPageMain{
+      display:flex;
+      flex-direction: column-reverse;
+      height: auto;
+    }
+  
+    .UGDModelPageContent{
+      width:100%;
+      height: "auto";
+    }
+    .UGDModelPageImage{
+      width:100%;
+      height: "400px";
+    }
+    .UGDModelPageSecondDiv{
+
+    }
+    .UGDModelPageSecondDivSubDiv{
+      margin-top:2rem;
+      width:100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:1rem;
+    }
+    .UGDModelPageThirdDiv{
+      margin-top:1rem;
+      width:100%;
+      height:1500px;
+      padding: 4rem;
+    }
+    .UGDModelPageThirdDivSubDiv{
+      margin-top:3rem;
+      display:flex;
+      /* flex-direction: column; */
+      flex-wrap: wrap;
+      justify-content:space-around;
+      gap: 1rem;
+      padding: 0rem;
+    }
+    .aboutUSPageheadingFontSize{
+      font-size: 2rem;
+    }
+    .UGDModelPageFourthDivRoundedLineLeft p{
+      font-size: 1rem;
+    }
+    .UGDModelPageFourthDivRoundedLineRight p{
+      font-size: 1rem;
+    }
+    .UGDModelPageFourthDivContentCard .heading{
+      margin: 0rem; 
+      font-size: 1.3rem;
+    }
+    .UGDModelPageFourthDivContentCard .para{
+      margin-top: 0.1rem;
+      font-size: 0.8rem;
+    }
+    .UGDModelPageFourthDivContainer{
+      padding: 0.5rem;
+    }
+    .UGDModelPageFourthDivContainer2{
+      padding: 0.5rem;
+    }
+    .aboutus{
+      flex-direction: column;
+    }
+    .aboutusContent{
+      width: 100%;
+    }
+    .aboutuscontainerfirst{
+        flex-direction: column;
+        height: auto;
+    }
+    .aboutuscontainersecond{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .aboutuscontainerthird{
+        flex-direction: column;
+        height: auto;
+    }
+    .aboutusContent{width: 100%;}
+    .aboutusImage{width: 100%;}
+    .authorityFontheading{
+
+        z-index: 1;
+        color: white;
+        position: absolute;
+        top: -2%;
+        left: 30%;
+        font-size: 2rem;
+    
+    
+    }
+    .aboutuscontainersecond2{
+        flex-direction: column;
+        height: auto;
+    }
+    .aboutuscontainersecond2 .counterCard{
+        width: 100%;
+        border: 0px;
+        border-bottom: 0.5px solid #6B6C6C;
+    }
+    .aboutuscontainersecond2 .counterCard2{
+        width: 100%;
+        border: 0px;
+        
+    }
+    .aboutuscontainersecond{
+        height: auto;
+    }
+    .aboutuscontainersecondContainer{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutuscontainersecondCard{
+
+        width: 100%;
+        height: 120px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border: 0px;
+        border-bottom: 1px solid grey;
+    
+
+    }
+    .aboutuscontainersecondCard2{
+
+        width: 100%;
+        height: 120px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border: 0px;
+        
+    
+        
+    }
+    .UGDModelPageFourthDivRoundedLineRight2{
+        position: absolute;
+        margin-top: 100%;
+        right: 0;
+        width: 50%;
+        background-color: white;
+        height: 50px;
+        clip-path: polygon(100% 0%, 0% 0%, 10% 100%, 100% 100%)
+      
+    }
+    .UGDModelPageFourthDivRoundedLineRight2 p{
+        font-size: 1rem;
+      }
+      .UGDModelPageFourthDivRoundedLineLeft2 p{
+        font-size: 1rem;
+      }
+    .aboutuscontainerfifth{
+        padding: 0rem;
+        padding-top: 2rem;
+    }
+    .aboutuscontainerfourth{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        
+      }
+    .aboutuscontainerfourthsubdiv{
+        
+       flex-direction: column;
+      }
+      .aboutuscontainerfourthsubdiv2{
+        height: 100%;
+        width: 100%;
+        border: 0.5px solid grey;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        align-content:center;
+        padding: 2rem;
+        
+    
+      }
+      .aboutuscontainersix{
+        height: "100%";
+        padding: 0rem;
+      }
+
+  
+   
+
+}
+
+@keyframes growUp {
+    from {
+      transform: scaleY(1);
+    }
+    to {
+      transform: scaleY(0);
+    }
+  }
+
+

@@ -258,6 +258,14 @@ line-height: normal;
 }
 
 
+.customDiv {
+  overflow: scroll;
+  height: 15rem;
+}
+
+
+
+
 
 @media screen and (max-width: 800px) {
   .navbar1 {

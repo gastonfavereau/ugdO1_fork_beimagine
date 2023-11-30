@@ -1,6 +1,6 @@
 import style from "../certificate.module.css";
 import Image from "next/image";
-import LinkButton from "@/components/subcomponents/button/link";
+
 
 const CertImage = ({ usecert }) => {
   const imagesrc = usecert.certDetails
@@ -16,14 +16,15 @@ const CertImage = ({ usecert }) => {
         flexDirection: "column",
         alignItems: "center",
         gap: "var(--padding-main)",
+        backgroundColor: "#1C3564",
       }}
     >
       <div
         style={{
-          position: "absolute",
-          top: "-1rem",
+          // position: "absolute",
+          // top: "-1rem",
           left: "var(--padding-main)",
-          color: "var(--primary-50)",
+          color: "white",
           fontSize: "1.5rem",
           fontWeight: "700",
         }}
@@ -46,13 +47,23 @@ const CertImage = ({ usecert }) => {
         />
       </div>
       <div style={{ width: "fit-content" }}>
-        <LinkButton
+        {/* <LinkButton
           href={imagesrc}
           target="_blank"
           text="Download"
           variant={"primary"}
           endIcon={"download"}
-        />
+        /> */}
+        <button style={{
+          alignContent:"center",
+          width:"100px",
+          height:"50px",
+          backgroundColor:"#005FAF",
+          color:"white",
+          padding:"5px",
+          borderRadius:"5px"
+        }}
+        >Download</button>
       </div>
     </div>
   );

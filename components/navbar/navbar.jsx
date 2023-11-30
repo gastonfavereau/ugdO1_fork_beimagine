@@ -7,7 +7,7 @@ import { useSpring, animated } from "react-spring";
 import "./navbar.css"
 import Accordian from "./accordian";
 const navigation = [
-  { name: 'Home', href: '/', current: true },
+  { name: 'Hogar', href: '/', current: true },
   { name: 'Verify', href: '#', current: false },
 ]
 
@@ -105,7 +105,7 @@ export default function Navbar() {
       position: "relative"
     }}>
        
-          <Link style={linkStyle} href={"/"} > Home </Link>
+          <Link style={linkStyle} href={"/"} > Hogar </Link>
         
 
 
@@ -113,15 +113,15 @@ export default function Navbar() {
           <div className="dropdown1">
             <button className="dropbtn1" style={{
           color: pathname !== "/" ? "#1C3564":(isScroll ? "#1C3564" : "white")
-        }}>University info ▼</button>
+        }}>información universitaria ▼</button>
               <div className="dropdown-content1">
                 <div className="column" style={{
                   width:"100%",
                   height:"auto"
                 }}>
-                  <Link href={"/aboutus"}>Who we are</Link>
-                  <Link href={"/authorities"}>Authorities</Link>
-                  <Link href={"/ugdvirtualModel"}>UGD Virtual Mode</Link>
+                  <Link href={"/aboutus"}>Quienes somos</Link>
+                  <Link href={"/authorities"}>Autoridades</Link>
+                  <Link href={"/ugdvirtualModel"}>Modelo Virtual UGD </Link>
                   <Link href={"equivalencies"}>Equivalencies</Link>
                 </div>
               </div>
@@ -132,18 +132,18 @@ export default function Navbar() {
           <div className="dropdown1">
             <button className="dropbtn1" style={{
               color:pathname !== "/" ? "#1C3564":(isScroll ? "#1C3564" : "white")
-            }}>Academic Community ▼</button>
+            }}>Comunidad académica ▼</button>
               <div className="dropdown-content1">
                 <div className="column" style={{
                   width:"100%",
                   height:"auto",
                   minWidth: "180px",
                 }}>
-                  <a>Student</a>
-                  <a>Teachers</a>
-                  <a>International Partnerships</a>
-                  <a>Scholarships and Benefits</a>
-                  <a>Miami Scholarship</a>
+                  <Link href={"/student"}>Nuestros destinatarios</Link>
+                  <Link href={"/teacher"}>Nuestros Docentes</Link>
+                  <Link href={"/partnership"}>Amplia red de vínculos internacionales</Link>
+                  <Link href={'/scholarshipsAndbenefits'}>Scholarships and Benefits</Link>
+                  <Link href={'/miami'}>Miami Scholarship</Link>
                 </div>
               </div>
           </div>
@@ -159,7 +159,7 @@ export default function Navbar() {
           padding:"0px",
           backgroundColor:"transparent",
           color:pathname !== "/" ? "#1C3564":(isScroll ? "#1C3564" : "white")
-        }}>Courses ▼
+        }}>Cursos ▼
         </button>
         <div class="dropdown-content">
           <div className="row">
@@ -291,21 +291,25 @@ export default function Navbar() {
               onClick={()=>{
                 setToggle(!isToggled)
               }} 
-              >Home</Link>
+              >Hogar</Link>
               <Accordian 
-              heading={"University info"}
-              text={["Who we are","Authorities","UGD Virtual Mode","Equivalencies"]}
+              heading={"información universitaria"}
+              text={"University Info"}
               index={"1"}
               key={1}
+              setToggle={setToggle}
+              isToggled={isToggled}
               />
               <Accordian 
-              heading={"Academic Community"}
-              text={["Student","Teachers","International Partnerships","Scholarships and Benefits","Miami Scholarship"]}
+              heading={"Comunidad académica"}
+              text={"Academic Community"}
               index={"1"}
               key={1}
+              setToggle={setToggle}
+              isToggled={isToggled}
               />
               <Accordian 
-              heading={"Courses"}
+              heading={"Cursos"}
               text={"Courses"}
               // text={["Tecnicatura en Desarrollo de Software","Programador Java Full Stack","Gestion de Recursos Tecnológicos","Maestría","Licenciatura en Gestión Educativa","Lic en Marketing","Lic en Administración","Especialización en gestión de TICs","Doctorado","Ciclo de Profesorado Universitario"]}
               index={"1"}

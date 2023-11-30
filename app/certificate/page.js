@@ -1,7 +1,7 @@
 import Certificate from "@/components/verify/certificate";
 
-const Page = () => {
-  return <Certificate />;
+const Page = ({ params }) => {
+  return <Certificate params={ params } />;
 };
 
 export default Page;

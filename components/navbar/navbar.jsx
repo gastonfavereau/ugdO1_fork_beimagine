@@ -105,7 +105,7 @@ export default function Navbar() {
       position: "relative"
     }}>
        
-          <Link style={linkStyle} href={"/"} > Hogar </Link>
+          <Link style={linkStyle} href={"/"} > Home </Link>
         
 
 
@@ -164,7 +164,7 @@ export default function Navbar() {
         <div class="dropdown-content">
           <div className="row">
             <div className="column">
-              <h3>Computing</h3>
+              {/* <h3>Computing</h3> */}
               <Link href={`/courses/software`}>Tecnicatura en Desarrollo de Software</Link>
               <Link href={`/courses/java`}>Programador Java Full Stack</Link>
               <Link href={`/courses/recursos`}>Gestion de Recursos Tecnológicos</Link>
@@ -291,7 +291,7 @@ export default function Navbar() {
               onClick={()=>{
                 setToggle(!isToggled)
               }} 
-              >Hogar</Link>
+              >Home</Link>
               <Accordian 
               heading={"información universitaria"}
               text={"University Info"}

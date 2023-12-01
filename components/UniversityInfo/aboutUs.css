@@ -523,7 +523,7 @@
     }
     .UGDModelPageFourthDivContentCard .heading{
       margin: 0rem; 
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
     .UGDModelPageFourthDivContentCard .para{
       margin-top: 0.1rem;
@@ -540,6 +540,16 @@
     }
     .aboutusContent{
       width: 100%;
+    }
+    h1 {
+      font-size: 4rem;
+      margin-top: 30vh; 
+    }
+    
+    h2 { font-size: 2rem; }
+
+    .UGDModelPageFourthDivContentCard{
+      height: 320px;
     }
 
   

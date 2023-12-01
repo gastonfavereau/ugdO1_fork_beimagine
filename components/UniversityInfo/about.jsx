@@ -53,7 +53,7 @@ const About = () => {
                 </video>
                 </div>
             </div>
-            <div className='aboutuscontainersecond2'>
+            <div data-aos="fade-up" className='aboutuscontainersecond2'>
                     
                     <div className="counterCard">
                         <Counter number={25} title="años formando profesionales" />

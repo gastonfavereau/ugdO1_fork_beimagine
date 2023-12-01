@@ -542,6 +542,16 @@
     height:50%;
     
   }
+  .UGDModelPageFourthDivRoundedLineRight2Container{
+    margin-top: 5rem;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding:0.5rem;
+    gap:0.5rem
+  }
+  
 
 
 /* font style */
@@ -608,6 +618,11 @@
     left: 45%;
     font-size: 3rem;
 
+
+}
+.authorityMaindiv{
+  padding: 50px;
+  background-color: white;
 
 }
 
@@ -715,6 +730,9 @@
     .aboutUSPageheadingFontSize{
       font-size: 2rem;
     }
+    .UGDModelPageFourthDivContentCard{
+      height: 500px;
+    }
     .UGDModelPageFourthDivRoundedLineLeft p{
       font-size: 1rem;
     }
@@ -723,13 +741,14 @@
     }
     .UGDModelPageFourthDivContentCard .heading{
       margin: 0rem; 
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
     .UGDModelPageFourthDivContentCard .para{
       margin-top: 0.1rem;
       font-size: 0.8rem;
     }
     .UGDModelPageFourthDivContainer{
+      margin-top: 10px;
       padding: 0.5rem;
     }
     .UGDModelPageFourthDivContainer2{
@@ -761,7 +780,7 @@
         color: white;
         position: absolute;
         top: -2%;
-        left: 30%;
+        left: 22%;
         font-size: 2rem;
     
     
@@ -817,9 +836,8 @@
         
     }
     .UGDModelPageFourthDivRoundedLineRight2{
-        position: absolute;
-        margin-top: 100%;
-        right: 0;
+        /* position: absolute; */
+        margin-top: 500px;
         width: 50%;
         background-color: white;
         height: 50px;
@@ -835,6 +853,7 @@
     .aboutuscontainerfifth{
         padding: 0rem;
         padding-top: 2rem;
+        height: 1000px;
     }
     .aboutuscontainerfourth{
         width: 100%;
@@ -863,6 +882,18 @@
       .aboutuscontainersix{
         height: "100%";
         padding: 0rem;
+      }
+      .authorityMaindiv{
+        padding: 5px;
+      }
+      .UGDModelPageFourthDivRoundedLineRight2Container{
+        margin-top: 7rem;
+        /* width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        padding:0.5rem;
+        gap:0.5rem */
       }
 
   

@@ -39,11 +39,11 @@ const Accordian = ({ heading, text, index,setToggle,isToggled }) => {
 			href: "/partnership",
 		},
 		{
-			name:"BECAS Y BENEFICIOS",
+			name:"Becas y Beneficios",
 			href: "/scholarshipsAndbenefits",
 		},
 		{
-			name:"BECA LATINA",
+			name:"Beca Latina",
 			href: "/miami",
 		}
 	]

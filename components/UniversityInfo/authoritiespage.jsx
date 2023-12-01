@@ -151,10 +151,7 @@ const AuthoritiesPage = () => {
         </h1>
       </div>
 
-      <div style={{
-        padding:"50px",
-        backgroundColor:"white",
-      }}>
+      <div className="authorityMaindiv" >
         <p  data-aos="fade-up" style={{
             
             marginTop:"1rem",

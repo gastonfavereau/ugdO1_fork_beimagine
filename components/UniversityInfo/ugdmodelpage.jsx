@@ -174,15 +174,7 @@ const UGDModel = () => {
                         lineHeight: "38px",
                     }}>Durante la cursada</p>
                 </div>
-                <div style={{
-                    marginTop:"5rem",
-                    width:"100%",
-                    height:"50%",
-                    display:"flex",
-                    justifyContent:"space-around",
-                    padding:"0.5rem",
-                    gap:"0.5rem",
-                }}>
+                <div className="UGDModelPageFourthDivRoundedLineRight2Container" >
                 <div  data-aos="fade-up" className='UGDModelPageFourthDivContentCard'>
                         <div>
                     

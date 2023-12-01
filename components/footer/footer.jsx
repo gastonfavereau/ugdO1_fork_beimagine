@@ -171,7 +171,7 @@ const Footer = () =>{
                     justifyContent:"space-between",
                     alignContent:"center"
                 }}>
-                        <div style={{
+                        {/* <div style={{
                             color: "#FFF",
                             fontFamily:" Open Sans",
                             fontSize: "1rem",
@@ -179,7 +179,7 @@ const Footer = () =>{
                             fontWeight: "600",
                             lineHeight: "normal",
                             padding:"10px"
-                        }}> Cursos</div>
+                        }}> Cursos</div> */}
                         <div style={{
                             color: "#FFF",
                             fontFamily:" Open Sans",

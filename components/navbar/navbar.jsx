@@ -184,7 +184,7 @@ export default function Navbar() {
           </div>
         </div>
       </div> 
-      <Link style={linkStyle} href={"/verify"} > Verify </Link>
+      <Link style={linkStyle} href={"/verify"} > Verificar </Link>
         
     </div>
     
@@ -328,7 +328,7 @@ export default function Navbar() {
               onClick={()=>{
                 setToggle(!isToggled)
               }} 
-              >Verify</Link>
+              >Verificar</Link>
           </div>
       
       </div>

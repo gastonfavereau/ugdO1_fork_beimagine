@@ -22,7 +22,7 @@ const Footer = () =>{
                         fontStyle: "normal",
                         fontWeight: "700",
                         lineHeight: "normal",
-                    }}>Follow US</div>
+                    }}>Síganos</div>
                     <Image src={"/instagram.svg"} width={35} height={35} />
                     <Image src={"/twitter.svg"} width={35} height={35} />
                     <Image src={"/linkedin.svg"} width={35} height={35} />
@@ -63,7 +63,7 @@ const Footer = () =>{
                         fontWeight: "400",
                         lineHeight: "normal",
                         padding:"10px"
-                    }}>Privacy Policy</div>
+                    }}>política de privacidad</div>
                     <div style={{
                         color: "#FFF",
                         fontFamily:" Open Sans",
@@ -72,7 +72,7 @@ const Footer = () =>{
                         fontWeight: "400",
                         lineHeight: "normal",
                         padding:"10px"
-                    }}>Terms and Conditions</div>
+                    }}>Términos y condiciones</div>
                 </div>
 
                
@@ -87,7 +87,7 @@ const Footer = () =>{
                
             }}>
 
-                <div style={{
+                {/* <div style={{
                     position:"absolute",
                     // marginLeft:"4%"
                     right:"0",
@@ -121,12 +121,12 @@ const Footer = () =>{
                     Subscribe
                 </button>
                 </div>
-                </div>
+                </div> */}
 
             </div>
         </div>
         <div className="footerMobile" >
-            <div>  
+            {/* <div>  
                 <h3 style={{
                     fontSize:"1.4rem"
                 }}>Subscribe to our newsletter</h3>
@@ -162,7 +162,7 @@ const Footer = () =>{
                 </button>
                 </div>
                 </div>
-            </div>
+            </div> */}
             <div>
             <div style={{
                     marginTop:"2rem",
@@ -179,7 +179,7 @@ const Footer = () =>{
                             fontWeight: "600",
                             lineHeight: "normal",
                             padding:"10px"
-                        }}> Courses</div>
+                        }}> Cursos</div>
                         <div style={{
                             color: "#FFF",
                             fontFamily:" Open Sans",
@@ -188,7 +188,7 @@ const Footer = () =>{
                             fontWeight: "400",
                             lineHeight: "normal",
                             padding:"10px"
-                        }}>About Us</div>
+                        }}>Sobre nosotras</div>
                         <div style={{
                             color: "#FFF",
                             fontFamily:" Open Sans",
@@ -197,7 +197,7 @@ const Footer = () =>{
                             fontWeight: "400",
                             lineHeight: "normal",
                             padding:"10px"
-                        }}>Privacy Policy</div>
+                        }}>política de privacidad</div>
                         <div style={{
                             color: "#FFF",
                             fontFamily:" Open Sans",
@@ -206,7 +206,7 @@ const Footer = () =>{
                             fontWeight: "400",
                             lineHeight: "normal",
                             padding:"10px"
-                        }}>Terms and Conditions</div>
+                        }}>Términos y condiciones</div>
                 </div>
                
                     <div className="socialdiv" style={{
@@ -221,7 +221,7 @@ const Footer = () =>{
                             fontStyle: "normal",
                             fontWeight: "700",
                             lineHeight: "normal",
-                        }}>Follow US</div>
+                        }}>Síganos</div>
                         <Image src={"/instagram.svg"} width={35} height={35} />
                         <Image src={"/twitter.svg"} width={35} height={35} />
                         <Image src={"/linkedin.svg"} width={35} height={35} />
@@ -256,26 +256,8 @@ const FooterBgImage = () =>{
              >
                 <div>
                 {/* <   Image src={"/Frame19.svg"} height={400} width={400} /> */}
-                    <p style={{
-                         marginTop:"3rem",
-                        //  textAlign:"center",
-                         color:"white",
-                         fontFamily: "Poppins",
-                         fontSize: "2.5rem",
-                         fontStyle: "normal",
-                         fontWeight: "500",
-                         lineHeight: "38px",
-                    }}>Tu objetivo es nuestro objetivo</p>
-                    <p style={{
-                         marginTop:"1rem",
-                        //  textAlign:"center",
-                         color:"white",
-                         fontFamily: "Inter",
-                         fontSize: "1.1rem",
-                         fontStyle: "normal",
-                        //  fontWeight: "500",
-                         lineHeight: "38px",
-                    }}>Nuestra finalidad es que obtengas el título que buscas, y ponemos todos las herramientas y equipos de apoyo a  tal fin.  Desde el grupo de Educación a Distancias de UGD Virtual, los docentes y tutores, hasta el equipo administrativo, estará atento a tus necesidades y dispuesto a brindarte orientación personal.
+                    <p className="bgfooterheading">Tu objetivo es nuestro objetivo</p>
+                    <p className="bgfooterpara">Nuestra finalidad es que obtengas el título que buscas, y ponemos todos las herramientas y equipos de apoyo a  tal fin.  Desde el grupo de Educación a Distancias de UGD Virtual, los docentes y tutores, hasta el equipo administrativo, estará atento a tus necesidades y dispuesto a brindarte orientación personal.
  
                     Tendrás asignado un tutor con el que te contactarás en cualquier momento, y que tiene por misión orientarte y ayudarte a resolver lo que te preocupe, realizando las gestiones que resulten necesarias.
                     </p>

@@ -6,7 +6,7 @@
 .footerMobile{
     display: none;
     width: 100vw;
-    height: 350px;
+    height: 250px;
     background-color: #1C3564;
     padding: 2rem;
     color: white;
@@ -37,6 +37,28 @@
     justify-content:"center";
     display: inline;
 }
+.bgfooterheading{
+ 
+
+        margin-top: 3rem;
+        color: white;
+        font-family: Poppins;
+        font-size: 2.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 38px;
+     
+}
+.bgfooterpara{
+
+     margin-top: 1rem;
+     color: white;
+     font-family: Inter;
+     font-size: 1.1rem;
+     font-style: normal;
+   
+}
+
 @media screen and (max-width: 800px) {
     .footerdiv {
       height: 400px;
@@ -72,6 +94,27 @@
         align-content:"center";
         justify-content:"center";
         display: none;
+    }
+    .bgfooterheading{
+ 
+
+        margin-top: 3rem;
+        color: white;
+        font-family: Poppins;
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 38px;
+     
+    }
+    .bgfooterpara{
+
+        margin-top: 1rem;
+        color: white;
+        font-family: Inter;
+        font-size: 1rem;
+        font-style: normal;
+    
     }
    
   }

@@ -342,7 +342,7 @@ const Course = ({params}) => {
                                         color:"white",
                                         padding:"5px",
                                         borderRadius:"5px"
-                                    }}>Me quiero inscribir</button>
+                                    }}>Consultar</button>
                                 </Link>
                                 {/* </a> */}
                             </div>

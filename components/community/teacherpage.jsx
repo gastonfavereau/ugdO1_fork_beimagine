@@ -187,7 +187,7 @@ const TeacherPage = () => {
                         height:"400px",
                         width:"100%",
                         objectFit:"cover",
-                    }} alt='Mountains' src='/studentimg3.webp' width={100} height={100} />
+                    }} alt='Mountains' src='/pexels-anna-shvets-4226256.jpg' width={100} height={100} />
 
             </div>
 

@@ -19,7 +19,7 @@ const UGDModel = () => {
 
   return (
     <div>
-      <img id="background-imgugd" src={"/whoweare.jpg"} alt="Background Image" />
+      <img id="background-imgugd" src={"/student-class-looking-course.jpg"} alt="Background Image" />
 
       <h1 style={{
         fontSize:"4rem",

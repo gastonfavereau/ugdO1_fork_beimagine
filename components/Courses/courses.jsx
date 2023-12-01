@@ -322,7 +322,7 @@ const Course = ({params}) => {
                                 marginTop:"20px",
                                 textAlign:"center"
                             }}>
-                                <a href="/Programador_Java_Full Stack.pdf" download="Programador_Java_Full Stack.pdf">
+                                <a href={course.pdf} download="file.pdf">
                                     <button style={{
                                         width:"200px",
                                         height:"50px",
@@ -330,7 +330,7 @@ const Course = ({params}) => {
                                         color:"white",
                                         padding:"5px",
                                         borderRadius:"5px"
-                                    }}>Consultas</button>
+                                    }}>Descarga el plan de estudios</button>
                                 </a>
                                 {/* <a href="/Programador_Java_Full Stack.pdf" download="Programador_Java_Full Stack.pdf"> */}
                                 <Link href={"/form"}>

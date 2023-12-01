@@ -21,6 +21,117 @@ const AuthoritiesPage = () => {
 		});
 	}, []);
 
+  const authority =[
+  {
+    desc:"Rector",
+    name:"Ing. Luis E. Lichowski",
+    img:"Rector Ing. Luis E. Lichowski.jpg"
+  },
+  {
+    desc:"Vicerector",
+    name:"Dr. Alfredo Poenitz",
+    img:"Vicerector Dr. Alfredo Poenitz.jpg"
+  },
+  {
+    desc:"Secretaria Académica",
+    name:"Lic. María Laura Carré",
+    img:"Secretaria Académica Lic. María Laura Carré.jpg"
+  },
+  {
+    desc:"Secretaría de Extensión Universitaria",
+    name:"Lic. Irina Flecha",
+    img:"Secretaría de Extensión Universitaria Lic. Irina Flecha.jpg"
+
+  },
+  {
+    desc:"Secretario de Tecnología e Innovación Educativa",
+    name:"Ing. Roberto Suenaga",
+    img:"Secretario de Tecnología e Innovación Educativa Ing. Roberto Suenaga.jpg"
+
+  },
+  {
+    desc:"Secretario de Investigación y Desarrollo",
+    name:"Ing. Juan Pablo Cinto",
+    img:"Secretario de Investigación y Desarrollo Ing. Juan Pablo Cinto.png"
+
+  },
+  {
+    desc:"Delegada rectoral Centro Académico Buenos Aires",
+    name:"Mgter. Gabriela Lichowski",
+    img:"Delegada rectoral Centro Académico Buenos Aires Mgter. Gabriela Lichowski.jpg"
+    
+  },
+  {
+
+    desc:"Delegado rectoral Centro Académico Oberá",
+    name:"C.P. Benigno Romero",
+    img:"Delegado rectoral Centro Académico Oberá C.P. Benigno Romero.jpg"
+
+  },
+  {
+    desc:"Delegado rectoral Centro Académico Eldorado",
+    name: "Ing. Ricardo López" ,
+    img:"Delegado rectoral Centro Académico Eldorado Ing. Ricardo López.jpg"
+  },
+  {
+    desc:"Delegada rectoral Centro Académico Resistencia",
+    name:"Prof. Vanesa Soledad Piccoli"
+  },
+  {
+    desc:"Decana Departamento de Ciencias de la Salud",
+    name:"Lic. Vanessa Zacarías",
+    img:"Decana Departamento de Ciencias de la Salud Lic. Vanessa Zacarías.jpg"
+  },
+  {
+    desc:"Decano Departamento de Ingeniería y Ciencias de la Producción",
+    name:"Dr. Ing. Diego Godoy",
+    img:"Decano Departamento de Ingeniería y Ciencias de la Producción Dr. Ing. Diego Godoy.jpg"
+  },
+  {
+    desc:"Decana Departamento de Ciencias Jurídica y Sociales",
+    name:"Mgter. Viviana Teresita Vallaro",
+    img:"Decana Departamento de Ciencias Jurídica y Sociales Mgter. Viviana Teresita Vallaro.jpg"
+  },
+  {
+    desc:"Decano Departamento de Arquitectura, Diseño y Comunicación",
+    name:"Arq. Walter Ramos",
+    img:"Decano Departamento de Arquitectura, Diseño y Comunicación Arq. Walter Ramos.jpg"
+
+  },
+  {
+    desc:"Decano Instituto Universitario de Seguridad de la Provincia de Misiones",
+    name:"Dr. Ariel Marinoni",
+    img:"Decano Instituto Universitario de Seguridad de la Provincia de Misiones Dr. Ariel Marinoni.jpg"
+  },
+  {
+    desc:"Directora Económica-Financiera",
+    name: "Lic. Tania Lichowski",
+    img:"Directora Económica-Financiera Lic. Tania Lichowski.jpg"
+  },
+  {
+    desc:"Directora Pedagógica del Sistema Institucional de Educación a Distancia",
+    name:"Mgtr. Valeria Iglesias",
+    img:"Directora Pedagógica del Sistema Institucional de Educación a Distancia Mgtr. Valeria Iglesias.jpg"
+  },
+  {
+
+    desc:"Director del Instituto Universitario de Corretaje Inmobiliario Latinoamericano",
+    name:"Arq. C.I. Javier Grandinetti",
+    img:"Director del Instituto Universitario de Corretaje Inmobiliario Latinoamericano Arq. C.I. Javier Grandinetti.png"
+  },
+  {
+    desc:"Director de Formación y Perfeccionamiento Docente",
+    name:"Prof. Jorge Cornejo",
+    img:"Director de Formación y Perfeccionamiento Docente Prof. Jorge Cornejo.jpg"
+  },
+  {
+    desc:"Director Oficina de Relaciones Internacionales",
+    name:"Abg. Eduardo Luis Benítez",
+    img:"Director Oficina de Relaciones Internacionales Abg. Eduardo Luis Benítez.png"
+  }
+
+  ]
+
   return (
     <div>
       <div style={{
@@ -77,7 +188,24 @@ const AuthoritiesPage = () => {
         alignContent:"center"
 
     }}>
-        <div  data-aos="fade-up" class="card">
+
+        {
+          authority.map((person) =>{
+            return(
+                <div  data-aos="fade-up" class="card">
+                  <img src={person.img} alt="Avatar" style={{
+                    width:"100%"
+                  }}/>
+                  <div class="container">
+                    <h4><b>{person.desc}</b></h4> 
+                    <p>{person.name}</p>
+                    {/* <p>info@ugd.com</p>  */}
+                  </div>
+                </div>
+            )
+          })
+        }
+        {/* <div  data-aos="fade-up" class="card">
           <img src="/Image place holder.webp" alt="Avatar" style={{
             width:"100%"
           }}/>
@@ -86,8 +214,8 @@ const AuthoritiesPage = () => {
             <p>Ing. Luis E. Lichowski</p>
             <p>info@ugd.com</p> 
           </div>
-        </div>
-        <div  data-aos="fade-up" class="card">
+        </div> */}
+        {/* <div  data-aos="fade-up" class="card">
           <img src="/Image place holder.webp" alt="Avatar" style={{
             width:"100%"
           }}/>
@@ -96,8 +224,8 @@ const AuthoritiesPage = () => {
             <p>Ing. Luis E. Lichowski</p>
             <p>info@ugd.com</p> 
           </div>
-        </div>
-        <div  data-aos="fade-up" class="card">
+        </div> */}
+        {/* <div  data-aos="fade-up" class="card">
           <img src="/Image place holder.webp" alt="Avatar" style={{
             width:"100%"
           }}/>
@@ -106,8 +234,8 @@ const AuthoritiesPage = () => {
             <p>Ing. Luis E. Lichowski</p>
             <p>info@ugd.com</p> 
           </div>
-        </div>
-        <div  data-aos="fade-up" class="card">
+        </div> */}
+        {/* <div  data-aos="fade-up" class="card">
           <img src="/Image place holder.webp" alt="Avatar" style={{
             width:"100%"
           }}/>
@@ -116,8 +244,8 @@ const AuthoritiesPage = () => {
             <p>Ing. Luis E. Lichowski</p>
             <p>info@ugd.com</p> 
           </div>
-        </div>
-        <div  data-aos="fade-up" class="card">
+        </div> */}
+        {/* <div  data-aos="fade-up" class="card">
           <img src="/Image place holder.webp" alt="Avatar" style={{
             width:"100%"
           }}/>
@@ -126,8 +254,8 @@ const AuthoritiesPage = () => {
             <p>Ing. Luis E. Lichowski</p>
             <p>info@ugd.com</p> 
           </div>
-        </div>
-        <div  data-aos="fade-up" class="card">
+        </div> */}
+        {/* <div  data-aos="fade-up" class="card">
           <img src="/Image place holder.webp" alt="Avatar" style={{
             width:"100%"
           }}/>
@@ -136,8 +264,8 @@ const AuthoritiesPage = () => {
             <p>Ing. Luis E. Lichowski</p>
             <p>info@ugd.com</p> 
           </div>
-        </div>
-        <div  data-aos="fade-up" class="card">
+        </div> */}
+        {/* <div  data-aos="fade-up" class="card">
           <img src="/Image place holder.webp" alt="Avatar" style={{
             width:"100%"
           }}/>
@@ -146,7 +274,7 @@ const AuthoritiesPage = () => {
             <p>Ing. Luis E. Lichowski</p>
             <p>info@ugd.com</p> 
           </div>
-        </div>
+        </div> */}
     </div>
         
       </div>

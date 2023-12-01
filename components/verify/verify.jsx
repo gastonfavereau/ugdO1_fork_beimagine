@@ -16,7 +16,7 @@ const Verify = () => {
   const verifyDataForm = [
     {
       type: "number",
-      label: "Certificate Id",
+      label: "Ingrese la identificación del certificado",
       required: false,
       value: certId,
       setValue: (e) => {
@@ -109,9 +109,9 @@ const Verify = () => {
                     textAlign:"center",
                     fontSize:"3rem",
                     fontWeight:"500"
-                  }}>Verify</p>
+                  }}>Verificar</p>
                   <div>
-                  <input type="text" placeholder="Enter Certificate Id" style={{
+                  <input type="text" placeholder="Ingrese la identificación del certificado" style={{
                     width:"100%",
                     height:"50px",
                     padding:"10px",
@@ -126,7 +126,7 @@ const Verify = () => {
                   }}
                   />
                   <p style={{textAlign:"center"}}>or</p>
-                  <input type="text" placeholder="Enter CID" style={{
+                  <input type="text" placeholder="Ingrese el CID" style={{
                     width:"100%",
                     height:"50px",
                     padding:"10px",
@@ -152,7 +152,7 @@ const Verify = () => {
                     borderRadius:"5px"
                   }}
                   onClick={handleSubmit}
-                  >Verify</button>
+                  >Verificar</button>
 
                   <h3 style={{
 
@@ -164,20 +164,20 @@ const Verify = () => {
                   </div>
 
 
-                <div
+                {/* <div
                       style={{
                         textAlign: "center",
                       }}
                     >
                       Upload file to verify
-                    </div>
-                    <Verifyfile
+                    </div> */}
+                    {/* <Verifyfile
                       setIsLoading={setIsLoading}
                       setcid={(e) => {
                         setCertId(0);
                         setcid(e);
                       }}
-                    />
+                    /> */}
                   </div> 
           
         

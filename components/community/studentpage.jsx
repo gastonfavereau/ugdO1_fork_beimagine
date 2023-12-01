@@ -33,7 +33,7 @@ const StudentPage = () => {
           objectFit:"cover",
           objectPosition:"center",
           
-        }} src={"/studentbgimage.webp"} alt="Background Image" />
+        }} src={"/entrepreneurs-meeting-office.jpg"} alt="Background Image" />
         <h1 data-aos="fade-up" className="authorityFontheading">
             Nuestros destinatarios
         </h1>
@@ -137,7 +137,7 @@ const StudentPage = () => {
                         fontStyle: "normal",
                         fontWeight: "500",
                         lineHeight: "38px",
-                    }}>Quienes hayan iniciado estudios superiores:</p>
+                    }}>Quienes hayan iniciado estudios superiores</p>
 
                     <p style={{
                         marginTop:"1rem",

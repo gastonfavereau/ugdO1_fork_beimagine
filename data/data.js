@@ -5,6 +5,7 @@ const data =[
     path:"software",
     image:"/course5.jpg",  
     duration:"3 años",
+    pdf:"/pdf/Tecnicatura en Desarrollo de Software.pdf",
     syllabus:[
         {   id:1,
             subtopic:[
@@ -128,6 +129,7 @@ const data =[
    
     },
     {   course:"Programador Java Full Stack",
+        pdf:"/pdf/Programador Java Full Stack (2).pdf",
         bgimage:"/bgcourse4.jpg",
         path:"java" ,
         image:"/course4.jpg", 
@@ -217,6 +219,7 @@ const data =[
         ]
     },
     {   course:"LICENCIATURA EN MARKETING",
+        pdf:"/pdf/Licenciatura en Marketing.pdf",
         bgimage:"/bgcourse9.jpg",
         path:"marketing",
         image:"/course9.jpg",
@@ -320,6 +323,7 @@ const data =[
 
     },
     {   course:"MAESTRÍA EN GESTIÓN Y EVALUACIÓN DE LA EDUCACIÓN SUPERIOR	",
+        pdf:"/pdf/Maestría en Gestión y Evaluación de la Educación Superior.pdf",
         bgimage:"/bgcourse11.jpg",
         path:"maestria",
         image:"/course11.jpg",
@@ -416,6 +420,7 @@ const data =[
         ]
     },
     {   course:"Licenciatura en Gestión Educativa",
+        pdf:"/pdf/Licenciatura en Gestión Educativa.pdf",
         bgimage:"/bgcourse10.jpg",
         path:"educativa",
         image:"/course10.jpg",
@@ -512,6 +517,7 @@ const data =[
 
     },
     {   course:"Licenciatura en Gestión de Recursos Tecnológicos",
+        pdf:"/pdf/Ciclo de Licenciatura en Gestión de Recursos Tecnológicos.pdf",
     subtitle:"Ciclo de complementación ",
     bgimage:"/bgcourse3.jpg",
     path:"recursos",
@@ -629,6 +635,7 @@ const data =[
     }
     },
     {   course:"DOCTORADO EN DESARROLLO SUSTENTABLE E INTEGRACIÓN",
+    pdf:"/pdf/Doctorado en Desarrollo Sustentable e Integración.pdf",
     bgimage:"/bgcourse6.jpg",
     path:"doctorado",
     image:"/course6.jpg",
@@ -728,6 +735,7 @@ const data =[
 
     },
     {   course:"Ciclo de CICLO DE PROFESORADO UNIVERSITARIO PARA PROFESIONALES",
+        pdf:"/pdf/Ciclo de Profesorado Universitario para Profesionales.pdf",
         bgimage:"/bgcourse2.jpg",
         path:"profesionales",
         image:"/course2.jpg",
@@ -821,6 +829,7 @@ const data =[
     },
     {   course:"LICENCIATURA EN ADMINISTRACIÓN",
         bgimage:"/bgcourse8.jpg",
+        pdf:"/pdf/Licenciatura en Administración COMPLETO.pdf",
         path:"administracion",
         image:"/course8.jpg",
         duration:"9 meses",
@@ -926,7 +935,8 @@ const data =[
 
 
     },
-    {course:"Especialización en Gestión de Tecnologías de la Información y Comunicación",
+    {   course:"Especialización en Gestión de Tecnologías de la Información y Comunicación",
+        pdf:"/pdf/Especialización en Gestión de Tecnologías.pdf",
         bgimage:"/bgcourse7.jpg",
         path:"tecnologias",
         image:"/course7.jpg",

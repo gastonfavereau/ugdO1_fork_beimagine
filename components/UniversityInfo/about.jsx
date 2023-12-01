@@ -23,10 +23,10 @@ const About = () => {
 
   return (
     <div>
-      <img id="background-video2" src={"/aboutPage.webp"} alt="Background Image" />
+      <img id="background-video2" src={"/wide-angle-shot-schonbrunn-palace-vienna-austria-with-cloudy-blue-sky.jpg"} alt="Background Image" />
 
       <h1 data-aos="fade-up">Quienes somos</h1>
-      <h2 data-aos="fade-up">Unlocking Knowledge, Empowering Futures</h2>
+      <h2 data-aos="fade-up">Tu objetivo es nuestro objetivo</h2>
 
       <main>
       <div  style={{

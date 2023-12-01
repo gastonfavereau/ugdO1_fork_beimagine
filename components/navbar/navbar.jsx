@@ -142,8 +142,8 @@ export default function Navbar() {
                   <Link href={"/student"}>Nuestros destinatarios</Link>
                   <Link href={"/teacher"}>Nuestros Docentes</Link>
                   <Link href={"/partnership"}>Amplia red de vínculos internacionales</Link>
-                  <Link href={'/scholarshipsAndbenefits'}>BECAS Y BENEFICIOS</Link>
-                  <Link href={'/miami'}>BECA LATINA</Link>
+                  <Link href={'/scholarshipsAndbenefits'}>Becas y Beneficios</Link>
+                  <Link href={'/miami'}>Beca Latina</Link>
                 </div>
               </div>
           </div>
@@ -159,7 +159,7 @@ export default function Navbar() {
           padding:"0px",
           backgroundColor:"transparent",
           color:pathname !== "/" ? "#1C3564":(isScroll ? "#1C3564" : "white")
-        }}>Cursos ▼
+        }}>Carreras ▼
         </button>
         <div class="dropdown-content">
           <div className="row">
@@ -309,7 +309,7 @@ export default function Navbar() {
               isToggled={isToggled}
               />
               <Accordian 
-              heading={"Cursos"}
+              heading={"Carreras"}
               text={"Courses"}
               // text={["Tecnicatura en Desarrollo de Software","Programador Java Full Stack","Gestion de Recursos Tecnológicos","Maestría","Licenciatura en Gestión Educativa","Lic en Marketing","Lic en Administración","Especialización en gestión de TICs","Doctorado","Ciclo de Profesorado Universitario"]}
               index={"1"}

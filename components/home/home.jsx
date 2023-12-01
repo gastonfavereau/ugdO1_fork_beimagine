@@ -25,7 +25,7 @@ const HomePage = () => {
         <source src="UGDvideo.mp4" type="video/mp4" />
       </video>
 
-      <h1>Bienvenida a la universidad virtual.</h1>
+      <h1>Bienvenido a la universidad virtual.</h1>
       <h2>Liberando conocimientos, potenciando futuros</h2>
 
       <main>

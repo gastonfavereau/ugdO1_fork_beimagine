@@ -84,8 +84,9 @@
       flex-direction: column-reverse;
     }
     .maindivcourses{
-      padding: 1rem;
-      padding-top: 100px;
+      /* padding: 1rem;
+      padding-top: 100px; */
+      
     }
     .contentdiv{
       width: 100%;

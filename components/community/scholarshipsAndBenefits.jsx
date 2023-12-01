@@ -46,16 +46,15 @@ const ScholarshipsAndBenefits = () =>{
             
 
         </div>
-        <div  className="teacherImage">
+        <div style={{
+            padding:"0rem"
+        }} className="teacherImage">
             <div data-aos="fade-up" style={{width: '100%', height: '100%', position: 'relative', }}>
             <Image
                 alt='Mountains'
                 src='/teamwork-meeting-with-business-people.jpg'
                 layout='fill'
-                objectFit='contain'
-                style={{
-                    borderRadius:"10px",
-                }}
+                objectFit='cover'
             />
             </div>
 

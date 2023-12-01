@@ -47,16 +47,49 @@ const Verify = () => {
         style={{
           width:"100%",
           display:"flex",
+          flexDirection:"column",
           justifyContent:"center",
           alignContent:"center",
+          alignItems:"center",
           backgroundColor:"white",
-          padding:"1rem",
-          paddingTop:"7rem",
+          // padding:"1rem",
+          // paddingTop:"7rem",
           backgroundImage:"url(/cool-background.png)"
         }}
       >
+         <div style={{
+                position: "relative",
+                width: "100%",
+                height: "50vh",
+                overflow: "hidden", // Ensure content doesn't overflow
+                display: "flex",
+                alignItems: "center",  // Center vertically
+                alignContent: "center",  // Center vertically
+                justifyContent: "center",  // Center horizontally
+            }}>
+                <img id="background-image" style={{
+                    position: "absolute",
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    objectPosition: "center",
+                    filter: "brightness(70%)",
+                }} src={"/standard-quality-control-concept-m.jpg"} alt="Background Image" />
+
+                {/* <h1 data-aos="fade-up" className="coursetheading" style={{
+                    zIndex: 1, // Ensure the heading is above the image
+                    color: "white", // Set text color to be visible against the background
+                    // Add any other styles you need for the heading
+                    fontSize:"3rem",
+                    fontWeight:"500",
+
+                }}>
+                  Consulta por carreras
+                </h1> */}
+            </div>
+
         <div style={{
-                   
+                    marginTop:"-10rem",
                     width:"100%",
                     maxWidth:"600px",
                     height:"auto",
@@ -68,11 +101,14 @@ const Verify = () => {
                     padding:"20px",
                     position:"relative",
                     color:"white",
+                    marginBottom:"4rem"
                     
                 }}>
                   <p style={{
+                    marginTop:"-4rem",
                     textAlign:"center",
-                    fontSize:"1.5rem"
+                    fontSize:"3rem",
+                    fontWeight:"500"
                   }}>Verify</p>
                   <div>
                   <input type="text" placeholder="Enter Certificate Id" style={{

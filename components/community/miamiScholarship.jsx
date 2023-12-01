@@ -1,7 +1,17 @@
+"use client";
 import Image from "next/image";
 import "./community.css";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 const MiamiScholarship = () =>{
+
+    useEffect(() => {
+		AOS.init({
+			offset: 150,
+			duration: 800,
+		});
+	}, []);
     
     return(
         <div style={{
@@ -15,7 +25,7 @@ const MiamiScholarship = () =>{
         <div className="teacherMain">
         <div className="teacherContent">
             {/* <Image src={"/unsplash_-uHVRvDr7pg.png"} width={1200} height={700}  /> */}
-            <div >
+            <div data-aos="fade-up">
             <p style={{
             // textAlign:"center",
             color:"#1C3564",
@@ -62,7 +72,7 @@ const MiamiScholarship = () =>{
                     color:"white",
                     padding:"5px",
                     borderRadius:"5px"
-                }}>Send US</button>
+                }}>Envíanos</button>
             
           
             </div>
@@ -70,16 +80,15 @@ const MiamiScholarship = () =>{
             
 
         </div>
-        <div className="teacherImage">
-            <div style={{width: '80%', height: '80%', position: 'relative', }}>
+        <div style={{
+            padding:"0rem"
+        }} className="teacherImage">
+            <div data-aos="fade-up" style={{width: '100%', height: '100%', position: 'relative', }}>
             <Image
                 alt='Mountains'
-                src='/pexels-pavel-danilyuk-7944238.jpg'
+                src='/BecaLatina_UGDimg.jpg'
                 layout='fill'
                 objectFit='contain'
-                style={{
-                    borderRadius:"10px",
-                }}
             />
             </div>
 

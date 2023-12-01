@@ -1,9 +1,17 @@
 // SalesforceForm.js
 'use client'
-import { useState } from 'react';
-import "./form.css"
+import { useEffect, useState } from 'react';
+import "./form.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const SalesforceForm = () => {
+  useEffect(() => {
+		AOS.init({
+			offset: 150,
+			duration: 800,
+		});
+	}, []);
     const [formSubmitted, setFormSubmitted] = useState(false);
 
     const handleSubmit = async (event) => {
@@ -85,7 +93,7 @@ const SalesforceForm = () => {
         
     
         {!formSubmitted ? (
-        <div style={{
+        <div data-aos="fade-up" style={{
                    
             width:"100%",
             maxWidth:"600px",

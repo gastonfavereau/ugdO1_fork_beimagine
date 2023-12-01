@@ -326,7 +326,7 @@ const UGDModel = () => {
                 </div>
 
             </div>
-            <div className="aboutuscontainersix">
+            <div data-aos="fade-up" className="aboutuscontainersix">
             
 
                 <FAQ />

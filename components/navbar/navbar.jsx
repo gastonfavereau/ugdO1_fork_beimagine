@@ -142,8 +142,8 @@ export default function Navbar() {
                   <Link href={"/student"}>Nuestros destinatarios</Link>
                   <Link href={"/teacher"}>Nuestros Docentes</Link>
                   <Link href={"/partnership"}>Amplia red de vínculos internacionales</Link>
-                  <Link href={'/scholarshipsAndbenefits'}>Scholarships and Benefits</Link>
-                  <Link href={'/miami'}>Miami Scholarship</Link>
+                  <Link href={'/scholarshipsAndbenefits'}>BECAS Y BENEFICIOS</Link>
+                  <Link href={'/miami'}>BECA LATINA</Link>
                 </div>
               </div>
           </div>

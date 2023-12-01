@@ -13,15 +13,17 @@
     
 }
 .footersubdiv{
-    width:50%;
+    width:100%;
     display:flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: space-around;
 }
 .socialdiv{
     display:flex;
     width:50%;
     justify-content: space-around;
+    align-items: center;
+    align-content: center;
 }
 .footerimagesubdiv{
     width:50%;

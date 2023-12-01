@@ -16,6 +16,7 @@ const Footer = () =>{
             >
                 <div className="socialdiv" >
                     <div style={{
+                        
                         color: "#FFF",
                         fontFamily:" Open Sans",
                         fontSize: "1.4em",
@@ -34,7 +35,8 @@ const Footer = () =>{
                     width:"100%",
                     // border:"1px solid white",
                     justifyContent:"space-around",
-                    alignContent:"center"
+                    alignContent:"center",
+                    alignItems:"center"
                 }}>
                     <Image src={"/Frame19.svg"} width={250} height={250} />
                     <div style={{
@@ -78,18 +80,15 @@ const Footer = () =>{
                
 
             </div>
-            <div style={{
+            {/* <div style={{
                 width:"50%",
-                // border:"5px solid white",
                 color:"white",
                 padding:"30px",
-                // position:"relative"
                
             }}>
 
-                {/* <div style={{
+                <div style={{
                     position:"absolute",
-                    // marginLeft:"4%"
                     right:"0",
                     paddingRight:"50px"
                 }}>
@@ -121,9 +120,9 @@ const Footer = () =>{
                     Subscribe
                 </button>
                 </div>
-                </div> */}
+                </div>
 
-            </div>
+            </div> */}
         </div>
         <div className="footerMobile" >
             {/* <div>  

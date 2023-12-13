@@ -74,7 +74,7 @@ const Verify = () => {
                     objectFit: "cover",
                     objectPosition: "center",
                     filter: "brightness(70%)",
-                }} src={"/verifybgimage2.png"} alt="Background Image" />
+                }} src={"/blockchain.png"} alt="Background Image" />
 
                 <h1 data-aos="fade-up"  style={{
                     zIndex: 1, // Ensure the heading is above the image

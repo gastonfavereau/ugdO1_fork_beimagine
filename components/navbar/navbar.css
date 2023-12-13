@@ -151,7 +151,7 @@ nav {
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
-  width: 33.33%;
+  width: 25%;
   padding: 10px;
   background-color: #ffffff;
   height: 280px;
@@ -267,7 +267,7 @@ line-height: normal;
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1300px) {
   .navbar1 {
     display: none;
   }

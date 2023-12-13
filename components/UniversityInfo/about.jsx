@@ -5,6 +5,7 @@ import Counter from './counter';
 import { React, useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Image from "next/image";
 
 
 const About = () => {
@@ -23,7 +24,7 @@ const About = () => {
 
   return (
     <div>
-      <img id="background-video2" src={"/wide-angle-shot-schonbrunn-palace-vienna-austria-with-cloudy-blue-sky.jpg"} alt="Background Image" />
+      <img id="background-video2" src={"/Quienes Somos Picture.jpg"} alt="Background Image" />
 
       <h1 data-aos="fade-up">Quienes somos</h1>
       <h2 data-aos="fade-up">Tu objetivo es nuestro objetivo</h2>
@@ -59,7 +60,7 @@ const About = () => {
                         <Counter number={25} title="años formando profesionales" />
                     </div>
                     <div className="counterCard">
-                        <Counter number={3800} title="egresados" />
+                        <Counter number={4115} title="egresados" />
                     </div>
                     <div className="counterCard">
                         <Counter number={14} title="carreras y ciclos de grado " />
@@ -85,6 +86,9 @@ const About = () => {
                     <p className='paraFontSize2'>La UGD se somete a las evaluaciones externas de la Comisión Nacional de Evaluación y Acreditación Universitaria (CONEAU), que analiza todas sus funciones, y atiende las recomendaciones para el mejoramiento permanente de la calidad. Evaluaciones externas integrales periódicas Acreditación de carreras de grado de interés público y de posgrado
                     
                     </p>
+                    <Image  style={{
+                        marginTop:"2rem",
+                    }} src={"/aboutIcon.png"} width={500} height={500}  />
                 </div>
                 <div className='aboutusImage'>
                     <div style={{

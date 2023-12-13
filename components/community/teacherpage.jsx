@@ -94,7 +94,7 @@ const TeacherPage = () => {
                     height:"400px",
                     width:"100%",
                     objectFit:"cover",
-                }} alt='Mountains' src='/studenimg1.webp' width={100} height={100} />
+                }} alt='Mountains' src='/academicImage.png' width={100} height={100} />
 
             </div>
             <div data-aos="fade-up" className="teacherDivCard">
@@ -125,7 +125,7 @@ const TeacherPage = () => {
                         height:"400px",
                         width:"100%",
                         objectFit:"cover",
-                    }} alt='Mountains' src='/studentimg2.webp' width={100} height={100} />
+                    }} alt='Mountains' src='/Professionals.png' width={100} height={100} />
 
             </div>
             <div data-aos="fade-up" className="teacherDivCard">
@@ -156,7 +156,7 @@ const TeacherPage = () => {
                         height:"400px",
                         width:"100%",
                         objectFit:"cover",
-                    }} alt='Mountains' src='/studentimg3.webp' width={100} height={100} />
+                    }} alt='Mountains' src='/teacherImage.png' width={100} height={100} />
 
             </div>
             <div data-aos="fade-up" className="teacherDivCard">

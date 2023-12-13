@@ -74,22 +74,23 @@ const Verify = () => {
                     objectFit: "cover",
                     objectPosition: "center",
                     filter: "brightness(70%)",
-                }} src={"/standard-quality-control-concept-m.jpg"} alt="Background Image" />
+                }} src={"/verifybgimage2.png"} alt="Background Image" />
 
-                {/* <h1 data-aos="fade-up" className="coursetheading" style={{
+                <h1 data-aos="fade-up"  style={{
                     zIndex: 1, // Ensure the heading is above the image
                     color: "white", // Set text color to be visible against the background
                     // Add any other styles you need for the heading
-                    fontSize:"3rem",
+                    fontSize:"1.5rem",
                     fontWeight:"500",
 
                 }}>
-                  Consulta por carreras
-                </h1> */}
+                  Aquí se pueden verificar los títulos de UGD 
+                  que en adelante se verifican mediante un código único.
+                </h1>
             </div>
 
         <div style={{
-                    marginTop:"-10rem",
+                    marginTop:"-5rem",
                     width:"100%",
                     maxWidth:"600px",
                     height:"auto",
@@ -109,7 +110,7 @@ const Verify = () => {
                     textAlign:"center",
                     fontSize:"3rem",
                     fontWeight:"500"
-                  }}>Verificar</p>
+                  }}>Verificar Títulos</p>
                   <div>
                   <input type="text" placeholder="Ingrese la identificación del certificado" style={{
                     width:"100%",

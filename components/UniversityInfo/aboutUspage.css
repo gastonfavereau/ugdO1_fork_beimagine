@@ -239,11 +239,9 @@
   .aboutuscontainersecond .modelheading{
     text-align: center;
     color: #1C3564;
-    font-family: Poppins;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 500;
-    line-height: 38px;
+    font-weight: 400;
   }
 
   .aboutuscontainersecondContainer{
@@ -262,6 +260,7 @@
     justify-content: center;
     text-align: center;
     border-right: 1px solid grey;
+    padding: 1rem;
 
 }
 .aboutuscontainersecondCard2{
@@ -273,6 +272,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding: 1rem;
 
 }
 
@@ -491,10 +491,10 @@
   }
   .UGDModelPageFourthDivRoundedLineLeft2{
     margin-top:1rem;
-    width:50%;
+    width:100%;
     height:50px;
     background-color:white;
-    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%)
+    /* clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%) */
   }
 
   .UGDModelPageFourthDivContainer2{
@@ -626,6 +626,35 @@
 
 }
 
+.porqueMainDiv{
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding: 2rem;
+
+}
+.porqueRow{
+  width: 100%;
+  height: "auto";
+  min-height: 300px;
+  border: 0.3px solid #797979;
+  display: flex;
+}
+.porqueImage{
+  width: 30%;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.porqueContent{
+  width: 70%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 
 
@@ -894,6 +923,18 @@
         justify-content: space-around;
         padding:0.5rem;
         gap:0.5rem */
+      }
+      .porqueRow{
+        flex-direction: column;
+      }
+      .porqueImage{
+        width: 100%;
+        padding: 5rem;
+        /* height: 300px; */
+      }
+      .porqueContent{
+        width: 100%;
+        /* height: 300px; */
       }
 
   

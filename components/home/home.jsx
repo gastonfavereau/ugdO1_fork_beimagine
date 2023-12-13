@@ -25,8 +25,8 @@ const HomePage = () => {
         <source src="UGDvideo.mp4" type="video/mp4" />
       </video>
 
-      <h1>Bienvenido a la universidad virtual.</h1>
-      <h2>Liberando conocimientos, potenciando futuros</h2>
+      <h1 >Bienvenidos a UGD Virtual</h1>
+      {/* <h2>Liberando conocimientos, potenciando futuros</h2> */}
 
       <main>
         {/* <Courses /> */}
@@ -43,7 +43,7 @@ const HomePage = () => {
           fontStyle: "normal",
           fontWeight: "500",
           lineHeight: "38px",
-        }}>Courses </p>
+        }}>Carreras de UGD Virtual <br /> Educación que se adapta a vos </p>
         <ImageSlider images={images} />
         {/* <div style={{
           marginTop:"50px",

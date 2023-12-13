@@ -13,7 +13,7 @@ import 'aos/dist/aos.css';
 const Course = ({params}) => {
     useEffect(() => {
 		AOS.init({
-			offset: 150,
+			offset: 50,
 			duration: 800,
 		});
 	}, []);
@@ -32,30 +32,32 @@ const Course = ({params}) => {
             justifyContent:"center",
             alignItems:"center",
             flexDirection:"column",
-            // backgroundImage:"url(/cool-background.png)"
+            backgroundImage:"url(/cool-background.png)"
 
         }}
         className="maindivcourses"
         >
         <div style={{
+                marginTop: "5rem",
                 position: "relative",
                 width: "100%",
-                height: "50vh",
+                height: "auto",
                 overflow: "hidden", // Ensure content doesn't overflow
                 display: "flex",
                 alignItems: "center",  // Center vertically
                 justifyContent: "center",  // Center horizontally
             }}>
-                <img id="background-image" style={{
+                {/* <img id="background-image" style={{
                     position: "absolute",
-                    width: "100%",
+                    width: "80%",
                     height: "100%",
-                    objectFit: "cover",
+                    // objectFit: "cover",
                     objectPosition: "center",
-                    filter: "brightness(70%)",
-                }} src={"/pexels-pixabay-159711.jpg"} alt="Background Image" />
+                }} src={course.bgimage} alt="Background Image" /> */}
+                <Image src={course.bgimage} height={1200} width={1200} />
+               
 
-                <h1 data-aos="fade-up" className="coursetheading" style={{
+                {/* <h1 data-aos="fade-up" className="coursetheading" style={{
                     zIndex: 1, // Ensure the heading is above the image
                     color: "white", // Set text color to be visible against the background
                     // Add any other styles you need for the heading
@@ -64,7 +66,7 @@ const Course = ({params}) => {
 
                 }}>
                     {course.course}
-                </h1>
+                </h1> */}
             </div>
 
             {/* <div style={{
@@ -232,7 +234,7 @@ const Course = ({params}) => {
                     display:"flex",
                     flexDirection:"column",
                 }}>
-                    <Image src={course.bgimage} height={1200} width={1200} />
+                    {/* <Image src={course.bgimage} height={1200} width={1200} /> */}
                     <div style={{
                         padding:"2em",
                     }}>
@@ -342,7 +344,7 @@ const Course = ({params}) => {
                                         color:"white",
                                         padding:"5px",
                                         borderRadius:"5px"
-                                    }}>Consultar</button>
+                                    }}>Quiero más información</button>
                                 </Link>
                                 {/* </a> */}
                             </div>

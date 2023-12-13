@@ -107,11 +107,11 @@ const data =[
     alcances:{
         title:"Una vez concluidos sus estudios el egresado es competente en:",
         list:[
-            "Ejercer la docencia en la disciplina de su incumbencia, en el nivel secundario, así como en la educación superior no universitaria y universitaria.Análisis, diseño y programación de soluciones informáticas aplicando las mejores prácticas.",
-            "Participación de equipos de investigación y desarrollo. ",
-            "Desarrollo de aplicaciones integrales en diferentes tipos de equipamientos y tecnología. ",
-            "Creación de bases de datos, entornos web y aplicaciones móviles sincronizada. ",
-            "Identificación de problemas en entornos de desarrollo de software."
+            "<span>•</span> Ejercer la docencia en la disciplina de su incumbencia, en el nivel secundario, así como en la educación superior no universitaria y universitaria.Análisis, diseño y programación de soluciones informáticas aplicando las mejores prácticas.",
+            "<span>•</span> Participación de equipos de investigación y desarrollo. ",
+            "<span>•</span> Desarrollo de aplicaciones integrales en diferentes tipos de equipamientos y tecnología. ",
+            "<span>•</span> Creación de bases de datos, entornos web y aplicaciones móviles sincronizada. ",
+            "<span>•</span> Identificación de problemas en entornos de desarrollo de software."
 
         ]
     },
@@ -119,9 +119,9 @@ const data =[
         text:"El Técnico en Desarrollo de Software es un profesional capacitado que aplica su ingenio y conocimientos para afrontar con solvencia el diseño, desarrollo y administración de todo el ciclo de vida del software y los sistemas informáticos. ",
         subtext:"Esto le permite: ",
         list:[
-            "Participar en equipos integrados por especialistas de distintos campos del conocimiento. ",
-            "Diseñar y administrar todo el ciclo de vida del software. ",
-            "Operar y mantener sistemas informáticos y soluciones de software. "
+            "<span>•</span> Participar en equipos integrados por especialistas de distintos campos del conocimiento. ",
+            "<span>•</span> Diseñar y administrar todo el ciclo de vida del software. ",
+            "<span>•</span> Operar y mantener sistemas informáticos y soluciones de software. "
         ]
     }
 
@@ -204,18 +204,18 @@ const data =[
         alcances:{
             title:"El graduado será un profesional competente para:",
             list:[
-                "En esta carrera te desarrollarás como Full Stack Developer, aprendiendo a crear un sitio web sumergiéndote en las mejores prácticas del diseño y programación con Javascript, incorporando interactividad y dinamismo a tus proyectos. ",
-                "Aprenderás a desarrollar aplicaciones modernas programando del lado del servidor con técnicas asincrónicas y a trabajar con bases de datos dominando la gestión en forma eficiente y con capacidad de escalabilidad.",
-                "Serás capaz de diseñar complejas aplicaciones robustas y escalables, dominando técnicas de comunicación, procesos distribuidos, gestión de grandes volúmenes de datos y despliegue a distintas plataformas web.  ",
-                "Adquirirás una visión integral del desarrollo de un proyecto digital, con dominio de Front-End, Back-End y estructura Web con soluciones interactivas. Aprenderá a crear sitios con las mejores herramientas para optimizarlos al máximo.",
-                "Sabrás dimensionar y cotizar servicios y presentar propuestas de desarrollo. "
+                "<span>•</span> En esta carrera te desarrollarás como Full Stack Developer, aprendiendo a crear un sitio web sumergiéndote en las mejores prácticas del diseño y programación con Javascript, incorporando interactividad y dinamismo a tus proyectos. ",
+                "<span>•</span> Aprenderás a desarrollar aplicaciones modernas programando del lado del servidor con técnicas asincrónicas y a trabajar con bases de datos dominando la gestión en forma eficiente y con capacidad de escalabilidad.",
+                "<span>•</span> Serás capaz de diseñar complejas aplicaciones robustas y escalables, dominando técnicas de comunicación, procesos distribuidos, gestión de grandes volúmenes de datos y despliegue a distintas plataformas web.  ",
+                "<span>•</span> Adquirirás una visión integral del desarrollo de un proyecto digital, con dominio de Front-End, Back-End y estructura Web con soluciones interactivas. Aprenderá a crear sitios con las mejores herramientas para optimizarlos al máximo.",
+                "<span>•</span> Sabrás dimensionar y cotizar servicios y presentar propuestas de desarrollo. "
 
             ]
         },
         podra:[
-            "Empresas públicas, privadas o mixtas de desarrollo de software.",
-            "Áreas de desarrollo de distintos tipos de organizaciones.",
-            "Como trabajador independiente en desarrollo de aplicaciones de software.",
+            "<span>•</span> Empresas públicas, privadas o mixtas de desarrollo de software.",
+            "<span>•</span> Áreas de desarrollo de distintos tipos de organizaciones.",
+            "<span>•</span> Como trabajador independiente en desarrollo de aplicaciones de software.",
         ]
     },
     {   course:"LICENCIATURA EN MARKETING",
@@ -304,19 +304,19 @@ const data =[
         alcances:{
             title:"El graduado será un profesional competente para:",
             list:[
-                "Conducir el diseño y concreción de negocios, participando activamente en grupos interdisciplinarios para definiciones de modelos de negocios y planes estratégicos en organizaciones de diversas naturalezas.",
-                "Participar en el proceso de diseño, desarrollo y discontinuación de productos y servicios, tanto para el mercado nacional como internacional.",
-                "Asesorar, planificar, organizar, dirigir, supervisar, evaluar y auditar procesos de comunicación y posicionamiento en todo tipo de organizaciones.",
-                "Realizar estudios de viabilidad comercial e investigaciones de mercados en lo concerniente al posicionamiento de marca, imagen institucional, satisfacción de clientes, procesos de compras y consumo, proyecciones de demanda, competencia, tendencias y entornos políticos, sociales, económicos y tecnológicos.",
-                "Dirigir las academias formativas en Universidades públicas y/o privadas, integrar el cuerpo docente y participar de la elaboración de planes y programas de estudio."
+                "<span>•</span> Conducir el diseño y concreción de negocios, participando activamente en grupos interdisciplinarios para definiciones de modelos de negocios y planes estratégicos en organizaciones de diversas naturalezas.",
+                "<span>•</span> Participar en el proceso de diseño, desarrollo y discontinuación de productos y servicios, tanto para el mercado nacional como internacional.",
+                "<span>•</span> Asesorar, planificar, organizar, dirigir, supervisar, evaluar y auditar procesos de comunicación y posicionamiento en todo tipo de organizaciones.",
+                "<span>•</span> Realizar estudios de viabilidad comercial e investigaciones de mercados en lo concerniente al posicionamiento de marca, imagen institucional, satisfacción de clientes, procesos de compras y consumo, proyecciones de demanda, competencia, tendencias y entornos políticos, sociales, económicos y tecnológicos.",
+                "<span>•</span> Dirigir las academias formativas en Universidades públicas y/o privadas, integrar el cuerpo docente y participar de la elaboración de planes y programas de estudio."
 
             ]
         },
         podra:[
-            "Todo tipo de empresas tanto del sector privado como público",
-            "Agencias de publicidad.",
-            "Consultorías de investigación de mercado.",
-            "Trabajar de forma independiente."
+            "<span>•</span> Todo tipo de empresas tanto del sector privado como público",
+            "<span>•</span> Agencias de publicidad.",
+            "<span>•</span> Consultorías de investigación de mercado.",
+            "<span>•</span> Trabajar de forma independiente."
         ]
 
         
@@ -405,18 +405,18 @@ const data =[
         alcances:{
             title:"El graduado será un profesional competente para",
             list:[
-                "Utilizar herramientas teórico-metodológicas para contribuir a la conducción, asesoramiento, supervisión, gestión y evaluación de los diferentes ámbitos de la gestión de la educación superior.",
-                "Diseñar, gestionar y evaluar el desarrollo de programas y proyectos académicos en el campo de gestión de la educación superior.",
-                "Conducir, supervisar, gestionar y evaluar instituciones de la educación superior y programas en un marco de mejoramiento de la calidad y eficiente utilización de los recursos.",
-                "Desarrollar aspectos conceptuales y metodológicos sobre modelos y estrategias de evaluación institucional en el marco de la transformación de la educación superior y el mejoramiento de la calidad.",
-                "Profundizar el conocimiento y la aplicación de aspectos conceptuales, metodológicos e instrumentales y su inserción en el ámbito de la gestión de la educación superior."
+                "<span>•</span> Utilizar herramientas teórico-metodológicas para contribuir a la conducción, asesoramiento, supervisión, gestión y evaluación de los diferentes ámbitos de la gestión de la educación superior.",
+                "<span>•</span> Diseñar, gestionar y evaluar el desarrollo de programas y proyectos académicos en el campo de gestión de la educación superior.",
+                "<span>•</span> Conducir, supervisar, gestionar y evaluar instituciones de la educación superior y programas en un marco de mejoramiento de la calidad y eficiente utilización de los recursos.",
+                "<span>•</span> Desarrollar aspectos conceptuales y metodológicos sobre modelos y estrategias de evaluación institucional en el marco de la transformación de la educación superior y el mejoramiento de la calidad.",
+                "<span>•</span> Profundizar el conocimiento y la aplicación de aspectos conceptuales, metodológicos e instrumentales y su inserción en el ámbito de la gestión de la educación superior."
 
             ]
         },
         podra:[
-            "Universidades públicas o privadas.",
-            "Instituciones de Educación Superior no universitarios.",
-            "Organismos de gestión, evaluación, acreditación o supervisión de instituciones y sus ofertas académicas.",
+            "<span>•</span> Universidades públicas o privadas.",
+            "<span>•</span> Instituciones de Educación Superior no universitarios.",
+            "<span>•</span> Organismos de gestión, evaluación, acreditación o supervisión de instituciones y sus ofertas académicas.",
         ]
     },
     {   course:"Licenciatura en Gestión Educativa",
@@ -494,25 +494,25 @@ const data =[
         alcances:{
             title:"El graduado será un profesional competente para:",
             list:[
-                "Planificar, diseñar, implementar y evaluar políticas, planes, programas y proyectos educativos en las instituciones en las que se desempeñen, como conductores y/o asesores técnicos.",
-                "Conducir procesos de mejora en las instituciones educativas, respondiendo a los distintos niveles y modalidades del Sistema Educativo Nacional.",
-                "Desarrollar propuestas curriculares tanto para la educación formal, presencial y a distancia.",
-                "Gestionar y organizar servicios educativos de distintos niveles y modalidades, implementando las tecnologías de la información y la comunicación.",
-                "Coordinar equipos de trabajo en instituciones, que promuevan una mejora continua en la calidad educativa.",
-                "Diseñar programas de formación y actualización docente, para mejorar el desempeño de equipos de trabajo.",
-                "Orientar y asesorar en relación a normativa educativa, vinculada a la actividad profesional.",
-                "Ofrecer asesoramiento pedagógico y organizativo a instituciones educativas y comunitarias.",
-                "Evaluar planes, programas y proyectos de acción vinculados a la gestión educativa de las instituciones. ",
-                "Detectar y resolver problemas de la gestión administrativa y pedagógica de las instituciones, diseñando y coordinando estrategias para su posible resolución.",
-                "Planificar y diseñar actividades de extensión y de integración destinadas a la comunidad en el que la institución educativa se encuentre inserta."
+                "<span>•</span> Planificar, diseñar, implementar y evaluar políticas, planes, programas y proyectos educativos en las instituciones en las que se desempeñen, como conductores y/o asesores técnicos.",
+                "<span>•</span> Conducir procesos de mejora en las instituciones educativas, respondiendo a los distintos niveles y modalidades del Sistema Educativo Nacional.",
+                "<span>•</span> Desarrollar propuestas curriculares tanto para la educación formal, presencial y a distancia.",
+                "<span>•</span> Gestionar y organizar servicios educativos de distintos niveles y modalidades, implementando las tecnologías de la información y la comunicación.",
+                "<span>•</span> Coordinar equipos de trabajo en instituciones, que promuevan una mejora continua en la calidad educativa.",
+                "<span>•</span> Diseñar programas de formación y actualización docente, para mejorar el desempeño de equipos de trabajo.",
+                "<span>•</span> Orientar y asesorar en relación a normativa educativa, vinculada a la actividad profesional.",
+                "<span>•</span> Ofrecer asesoramiento pedagógico y organizativo a instituciones educativas y comunitarias.",
+                "<span>•</span> Evaluar planes, programas y proyectos de acción vinculados a la gestión educativa de las instituciones. ",
+                "<span>•</span> Detectar y resolver problemas de la gestión administrativa y pedagógica de las instituciones, diseñando y coordinando estrategias para su posible resolución.",
+                "<span>•</span> Planificar y diseñar actividades de extensión y de integración destinadas a la comunidad en el que la institución educativa se encuentre inserta."
 
             ]
         },
         podra:[
-            "Instituciones de educación media o superior no universitaria, públicas o privadas.",
-            "Universidades o institutos universitarios, públicos o privados.",
-            "Instituciones de investigación educativa o formación profesional, en modalidades presenciales o virtuales, o en administración académica.",
-            "Asesorías como profesional independiente: En formación , tutorías, o administración académica. "
+            "<span>•</span> Instituciones de educación media o superior no universitaria, públicas o privadas.",
+            "<span>•</span> Universidades o institutos universitarios, públicos o privados.",
+            "<span>•</span> Instituciones de investigación educativa o formación profesional, en modalidades presenciales o virtuales, o en administración académica.",
+            "<span>•</span> Asesorías como profesional independiente: En formación , tutorías, o administración académica. "
         ]
 
     },
@@ -617,20 +617,20 @@ const data =[
     alcances:{
         title:"Esta propuesta está destinada a quienes haya cursado una carrera de nivel superior o universitario (Tecnicatura, Analista, Associate Degree) en Programación, Sistemas, Desarrollo de Software, Informática o Computación, y que aspiren a profundizar sus conocimientos incorporando el dominio de nuevas tecnologías y obtener una titulación de grado Universitario. ",
         list:[
-            "Participar en la planificación, dirección ejecución y evaluación de proyectos de relevamiento, análisis, diseño, desarrollo, implementación, verificación, validación y puesta a punto de sistemas de información, asegurando su mantenimiento y actualización para todo tipo de personas, físicas o jurídicas.",
-            "Participar en la especificación, diseño, desarrollo implementación y mantenimiento de los componentes de seguridad de información embebidos en los sistemas físicos y en los sistemas de software de aplicación.",
-            "Proponer y evaluar soluciones tecnológicas destinadas al procesamiento de información.",
-            "Definir e implementar políticas de control, monitoreo y respaldo para la infraestructura de redes y servicios de datos en una organización.",
-            "Determinar los procesos y roles de las áreas de tecnologías de información y los planes estratégicos de la organización."
+            "<span>•</span> Participar en la planificación, dirección ejecución y evaluación de proyectos de relevamiento, análisis, diseño, desarrollo, implementación, verificación, validación y puesta a punto de sistemas de información, asegurando su mantenimiento y actualización para todo tipo de personas, físicas o jurídicas.",
+            "<span>•</span> Participar en la especificación, diseño, desarrollo implementación y mantenimiento de los componentes de seguridad de información embebidos en los sistemas físicos y en los sistemas de software de aplicación.",
+            "<span>•</span> Proponer y evaluar soluciones tecnológicas destinadas al procesamiento de información.",
+            "<span>•</span> Definir e implementar políticas de control, monitoreo y respaldo para la infraestructura de redes y servicios de datos en una organización.",
+            "<span>•</span> Determinar los procesos y roles de las áreas de tecnologías de información y los planes estratégicos de la organización."
 
         ]
     },
     ambitos:{
         text:"El Licenciado en Gestión de Recursos Tecnológico es un profesional con habilidades técnicas y de resolución de problemas aplicables en diferentes industrias y servicios especializados, que puede desempeñarse en:",
         list:[
-            "Empresas proveedoras de soluciones de hardware y software. ",
-            "Instituciones que utilicen sistemas de computación en cualquiera de los sectores: gobierno, industrial, manufacturero, bancario, social, salud o telecomunicaciones, entre otros. ",
-            "Ámbitos profesionales particulares, como prestador independiente de servicios especializados. "
+            "<span>•</span> Empresas proveedoras de soluciones de hardware y software. ",
+            "<span>•</span> Instituciones que utilicen sistemas de computación en cualquiera de los sectores: gobierno, industrial, manufacturero, bancario, social, salud o telecomunicaciones, entre otros. ",
+            "<span>•</span> Ámbitos profesionales particulares, como prestador independiente de servicios especializados. "
         ]
     }
     },
@@ -716,21 +716,21 @@ const data =[
     alcances:{
         title:"El graduado será un profesional competente para:",
         list:[
-            "Dirigir grupos de trabajo multidisciplinarios en actividades orientadas hacia el desarrollo sustentable y la integración, propiciando la creación de redes de trabajo.",
-            "Realizar investigaciones innovadoras e independientes en materia de desarrollo sustentable en el marco local, regional y/o internacional.",
-            "Promover u organizar ONG’s para fomentar la integración en diferentes campos, desde el cultural al comercial, pasando por el manejo de recursos naturales compartidos y la migración.",
-            "Planificar, desarrollar y dirigir programas y proyectos de intervención, desde una óptica multidisciplinaria, bajo el enfoque del desarrollo sustentable.",
-            "Asesorar a instituciones públicas y/o privadas en la elaboración y seguimiento de programas y proyectos de sustentabilidad."
+            "<span>•</span> Dirigir grupos de trabajo multidisciplinarios en actividades orientadas hacia el desarrollo sustentable y la integración, propiciando la creación de redes de trabajo.",
+            "<span>•</span> Realizar investigaciones innovadoras e independientes en materia de desarrollo sustentable en el marco local, regional y/o internacional.",
+            "<span>•</span> Promover u organizar ONG’s para fomentar la integración en diferentes campos, desde el cultural al comercial, pasando por el manejo de recursos naturales compartidos y la migración.",
+            "<span>•</span> Planificar, desarrollar y dirigir programas y proyectos de intervención, desde una óptica multidisciplinaria, bajo el enfoque del desarrollo sustentable.",
+            "<span>•</span> Asesorar a instituciones públicas y/o privadas en la elaboración y seguimiento de programas y proyectos de sustentabilidad."
 
         ]
     },
     podra:[
-        "Universidades públicas o privadas.",
-        "Centros o instituciones de investigación científica. ",
-        "Organizaciones no gubernamentales (ONGs) que se ocupen del desarrollo sostenible o los problemas globales o regionales. ",
-        "Gobiernos locales o nacionales. ",
-        "Empresas interesadas en el desarrollo sostenible, la responsabilidad social o las prácticas amigables con el planeta. ",
-        "Espacios diversos de trabajo interdisciplinario."
+        "<span>•</span> Universidades públicas o privadas.",
+        "<span>•</span> Centros o instituciones de investigación científica. ",
+        "<span>•</span> Organizaciones no gubernamentales (ONGs) que se ocupen del desarrollo sostenible o los problemas globales o regionales. ",
+        "<span>•</span> Gobiernos locales o nacionales. ",
+        "<span>•</span> Empresas interesadas en el desarrollo sostenible, la responsabilidad social o las prácticas amigables con el planeta. ",
+        "<span>•</span> Espacios diversos de trabajo interdisciplinario."
     ]
 
     },
@@ -812,19 +812,19 @@ const data =[
         alcances:{
             title:"El graduado será un profesional competente para:            ",
             list:[
-                "Ejercer la docencia en la disciplina de su incumbencia, en el nivel secundario, así como en la educación superior no universitaria y universitaria.",
-                "Participar en la elaboración, implementación y evaluación de proyectos educativos de distinta naturaleza y alcance en el marco de su ámbito de injerencia.                ",
-                "Planificar, conducir, evaluar y participar en propuestas pedagógicas para el nivel secundario y educación superior no universitaria y universitaria, dentro del área correspondiente a su disciplina.",
-                "Diseñar, implementar y utilizar la investigación como herramienta para la mejora de la práctica educativa.",
-                "Ejercer la práctica profesional docente desde una perspectiva crítica-democrática y comprometida con el contexto sociocultural en el que se deba actuar."
+                "<span>•</span> Ejercer la docencia en la disciplina de su incumbencia, en el nivel secundario, así como en la educación superior no universitaria y universitaria.",
+                "<span>•</span> Participar en la elaboración, implementación y evaluación de proyectos educativos de distinta naturaleza y alcance en el marco de su ámbito de injerencia.                ",
+                "<span>•</span> Planificar, conducir, evaluar y participar en propuestas pedagógicas para el nivel secundario y educación superior no universitaria y universitaria, dentro del área correspondiente a su disciplina.",
+                "<span>•</span> Diseñar, implementar y utilizar la investigación como herramienta para la mejora de la práctica educativa.",
+                "<span>•</span> Ejercer la práctica profesional docente desde una perspectiva crítica-democrática y comprometida con el contexto sociocultural en el que se deba actuar."
 
             ]
         },
         podra:[
-            "Instituciones de educación media o superior no universitaria, públicas o privadas.            ",
-            "Universidades o institutos universitarios, públicos o privados.Universidades o institutos universitarios, públicos o privados.",
-            "Instituciones de investigación educativa o formación profesional, en modalidades presenciales o virtuales, o en administración académica.            ",
-            "Asesorías como profesional independiente: En formación , tutorías, o administración académica. "
+            "<span>•</span> Instituciones de educación media o superior no universitaria, públicas o privadas.            ",
+            "<span>•</span> Universidades o institutos universitarios, públicos o privados.Universidades o institutos universitarios, públicos o privados.",
+            "<span>•</span> Instituciones de investigación educativa o formación profesional, en modalidades presenciales o virtuales, o en administración académica.            ",
+            "<span>•</span> Asesorías como profesional independiente: En formación , tutorías, o administración académica. "
         ]
     },
     {   course:"LICENCIATURA EN ADMINISTRACIÓN",
@@ -911,19 +911,19 @@ const data =[
         alcances:{
             title:"El graduado será un profesional competente para:",
             list:[
-                "Ejercer la docencia en la disciplina de su incumbencia, en el nivel secundario, así como en la educación superior no universitaria y universitaria.",
-                "Participar en la elaboración, implementación y evaluación de proyectos educativos de distinta naturaleza y alcance en el marco de su ámbito de injerencia.",
-                "Planificar, conducir, evaluar y participar en propuestas pedagógicas para el nivel secundario y educación superior no universitaria y universitaria, dentro del área correspondiente a su disciplina.",
-                "Diseñar, implementar y utilizar la investigación como herramienta para la mejora de la práctica educativa.",
-                "Ejercer la práctica profesional docente desde una perspectiva crítica-democrática y comprometida con el contexto sociocultural en el que se deba actuar."
+                "<span>•</span> Ejercer la docencia en la disciplina de su incumbencia, en el nivel secundario, así como en la educación superior no universitaria y universitaria.",
+                "<span>•</span> Participar en la elaboración, implementación y evaluación de proyectos educativos de distinta naturaleza y alcance en el marco de su ámbito de injerencia.",
+                "<span>•</span> Planificar, conducir, evaluar y participar en propuestas pedagógicas para el nivel secundario y educación superior no universitaria y universitaria, dentro del área correspondiente a su disciplina.",
+                "<span>•</span> Diseñar, implementar y utilizar la investigación como herramienta para la mejora de la práctica educativa.",
+                "<span>•</span> Ejercer la práctica profesional docente desde una perspectiva crítica-democrática y comprometida con el contexto sociocultural en el que se deba actuar."
 
             ]
         },
         podra:[
-            "Instituciones de educación media o superior no universitaria, públicas o privadas.",
-            "Universidades o institutos universitarios, públicos o privados.",
-            "Instituciones de investigación educativa o formación profesional, en modalidades presenciales o virtuales, o en administración académica.",
-            "Asesorías como profesional independiente: En formación , tutorías, o administración académica. "
+            "<span>•</span> Instituciones de educación media o superior no universitaria, públicas o privadas.",
+            "<span>•</span> Universidades o institutos universitarios, públicos o privados.",
+            "<span>•</span> Instituciones de investigación educativa o formación profesional, en modalidades presenciales o virtuales, o en administración académica.",
+            "<span>•</span> Asesorías como profesional independiente: En formación , tutorías, o administración académica. "
         ]
 
 

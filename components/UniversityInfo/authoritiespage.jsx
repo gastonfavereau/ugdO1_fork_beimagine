@@ -162,7 +162,8 @@ const AuthoritiesPage = () => {
           fontStyle: "normal",
           fontWeight: "500",
           lineHeight: "38px",
-        }}>Autoridades </p>
+        }}>Consejo Superior
+        </p>
         <p  data-aos="fade-up" style={{
           marginTop:"2rem",
           textAlign:"center",
@@ -173,7 +174,7 @@ const AuthoritiesPage = () => {
           fontWeight: "300",
           lineHeight: "21px",
         }}>
-            Al frente de la Universidad Gastón Dachary (UGD) se encuentra el Rector, un líder visionario encargado de dirigir la universidad hacia la excelencia en educación, investigación y compromiso comunitario. El Rector desempeña un papel fundamental en la formación de la dirección estratégica de la universidad y en fomentar un entorno propicio para la innovación y el crecimiento académico.
+           La Universidad Gastón Dachary (UGD) es dirigida por su Consejo Superior, que determina las políticas y estrategias institucionales y brega por el mejoramiento constante de la calidad de los servicios educativos brindados, buscando fomentar un entorno propicio para la innovación y el crecimiento académico.
         </p>
     <div style={{
         padding:"2rem",

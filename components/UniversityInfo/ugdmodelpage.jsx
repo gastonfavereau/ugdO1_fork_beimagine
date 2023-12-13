@@ -164,7 +164,7 @@ const UGDModel = () => {
                     </div>
 
                 </div>
-                <div className="UGDModelPageFourthDivRoundedLineRight2">
+                <div className="UGDModelPageFourthDivRoundedLineLeft2">
                     <p data-aos="fade-up" style={{
                         textAlign: "center",
                         color: "#1C3564",
@@ -174,7 +174,7 @@ const UGDModel = () => {
                         lineHeight: "38px",
                     }}>Durante la cursada</p>
                 </div>
-                <div className="UGDModelPageFourthDivRoundedLineRight2Container" >
+                <div className="UGDModelPageFourthDivContainer" >
                 <div  data-aos="fade-up" className='UGDModelPageFourthDivContentCard'>
                         <div>
                     

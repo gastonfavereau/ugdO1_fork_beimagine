@@ -106,6 +106,7 @@ export default function Navbar() {
     }}>
        
           <Link style={linkStyle} href={"/"} > Home </Link>
+      
         
 
 
@@ -113,7 +114,7 @@ export default function Navbar() {
           <div className="dropdown1">
             <button className="dropbtn1" style={{
           color: pathname !== "/" ? "#1C3564":(isScroll ? "#1C3564" : "white")
-        }}>información universitaria ▼</button>
+        }}>Nuestra Universidad ▼</button>
               <div className="dropdown-content1">
                 <div className="column" style={{
                   width:"100%",
@@ -121,8 +122,25 @@ export default function Navbar() {
                 }}>
                   <Link href={"/aboutus"}>Quienes somos</Link>
                   <Link href={"/authorities"}>Autoridades</Link>
-                  <Link href={"/ugdvirtualModel"}>Modelo Virtual UGD </Link>
+                  {/* <Link href={"/ugdvirtualModel"}>Modelo Virtual UGD </Link> */}
                   <Link href={"equivalencies"}>Equivalencies</Link>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <div className="navbutton" >
+          <div className="dropdown1">
+            <button className="dropbtn1" style={{
+          color: pathname !== "/" ? "#1C3564":(isScroll ? "#1C3564" : "white")
+          }}>Modelo UGD Virtual ▼</button>
+              <div className="dropdown-content1">
+                <div className="column" style={{
+                  width:"100%",
+                  height:"auto"
+                }}>
+                  <Link href={"/ugdvirtualModel"}>Nuestro modelo de Educación Virtua</Link>
+                  <Link href={"/por-que"}>¿Por qué UGD Virtual?</Link>
                 </div>
               </div>
           </div>
@@ -164,27 +182,57 @@ export default function Navbar() {
         <div class="dropdown-content">
           <div className="row">
             <div className="column">
-              {/* <h3>Computing</h3> */}
+              <h3>TECNOLOGÍAS</h3>
               <Link href={`/courses/software`}>Tecnicatura en Desarrollo de Software</Link>
               <Link href={`/courses/java`}>Programador Java Full Stack</Link>
-              <Link href={`/courses/recursos`}>Gestion de Recursos Tecnológicos</Link>
+              <Link href={`/courses/recursos`}>Ciclo Lic. Gestión de Rec. Tecnológicos</Link>
+              <Link href={"/courses/tecnologias"}>Especialización en Tics</Link>
             </div>
             <div className="column">
-              {/* <h3>Miami</h3> */}
-              <Link href={"/courses/maestria"}>Maestría </Link>
-              <Link href={"/courses/educativa"}>Licenciatura en Gestión Educativa</Link>
-              <Link href={"/courses/marketing"}>Lic en Marketing</Link>
-              <Link href={"/courses/administracion"}>Lic en Administración</Link>
-              <Link href={"/courses/tecnologias"}>Especialización en gestión de TICs</Link>
+              <h3>EDUCACIÓN</h3>
+              <Link href={"/courses/profesionales"}>Ciclo Prof. Univ. p/profesionales</Link>
+              <Link href={"/courses/educativa"}>Ciclo Lic. Gestión Educativa</Link>
+              <Link href={"/courses/maestria"}>Maestría en GyE de la Ed. Superior </Link>
             </div>
             <div className="column">
-              <Link href={"/courses/doctorado"}>Doctorado</Link>
-              <Link href={"/courses/profesionales"}>Ciclo de Profesorado Universitario</Link>
+              <h3>EMPRESARIALES</h3>
+              <Link href={"/courses/marketing"}>Lic. en Marketing</Link>
+              <Link href={"/courses/administracion"}>Lic. en Administración</Link>
+          
+            </div>
+            <div className="column">
+              <h3>DOCTORADO</h3>
+              <Link href={"/courses/doctorado"}>Doc. en Desarrollo e Integración</Link>
             </div>
           </div>
         </div>
       </div> 
-      <Link style={linkStyle} href={"/verify"} > Verificar </Link>
+
+      
+      {/* <Link style={linkStyle} href={"/verify"} > Títulos </Link> */}
+      <div className="navbutton" >
+          <div className="dropdown1" >
+            <button className="dropbtn1" style={{
+              color:pathname !== "/" ? "#1C3564":(isScroll ? "#1C3564" : "white")
+            }}>Títulos ▼</button>
+              <div className="dropdown-content1" style={{
+                backgroundColor:"white",
+              }}>
+                <div className="column" style={{
+                  width:"100%",
+                  height:"auto",
+                  maxWidth: "100px",
+                  // paddingRight: "5rem",
+
+                }}>
+                  <Link style={{
+                    fontSize:"0.7rem",
+                  }} href={"/revalidaciones"}>Títulos UGD y revalidaciones</Link>
+                  <Link href={"/verify"}>Verificar títulos</Link>
+                </div>
+              </div>
+          </div>
+        </div>
         
     </div>
     
@@ -230,6 +278,44 @@ export default function Navbar() {
         </div>
       </div> 
     </div> */}
+       {/* <div className="dropdown"style={{
+          padding:"0px",
+          backgroundColor:"transparent",
+        }}>
+        <button class="dropbtn" style={{
+          padding:"0px",
+          backgroundColor:"transparent",
+          color:pathname !== "/" ? "#1C3564":(isScroll ? "#1C3564" : "white")
+        }}>Carreras ▼
+        </button>
+        <div class="dropdown-content">
+          <div className="row">
+            <div className="column">
+              <h3>TECNOLOGÍAS</h3>
+              <Link href={`/courses/software`}>Tecnicatura en Desarrollo de Software</Link>
+              <Link href={`/courses/java`}>Programador Java Full Stack</Link>
+              <Link href={`/courses/recursos`}>Ciclo Lic. Gestión de Rec. Tecnológicos</Link>
+              <Link href={"/courses/tecnologias"}>Especialización en Tics</Link>
+            </div>
+            <div className="column">
+              <h3>EDUCACIÓN</h3>
+              <Link href={"/courses/profesionales"}>Ciclo Prof. Univ. p/profesionales</Link>
+              <Link href={"/courses/educativa"}>Ciclo Lic. Gestión Educativa</Link>
+              <Link href={"/courses/maestria"}>Maestría en GyE de la Ed. Superior </Link>
+            </div>
+            <div className="column">
+              <h3>EMPRESARIALES</h3>
+              <Link href={"/courses/marketing"}>Lic. en Marketing</Link>
+              <Link href={"/courses/administracion"}>Lic. en Administración</Link>
+          
+            </div>
+            <div className="column">
+              <h3>DOCTORADO</h3>
+              <Link href={"/courses/doctorado"}>Doc. en Desarrollo e Integración</Link>
+            </div>
+          </div>
+        </div>
+      </div>  */}
     </div>
 
    </div>
@@ -293,8 +379,16 @@ export default function Navbar() {
               }} 
               >Home</Link>
               <Accordian 
-              heading={"información universitaria"}
+              heading={"Nuestra Universidad"}
               text={"University Info"}
+              index={"1"}
+              key={1}
+              setToggle={setToggle}
+              isToggled={isToggled}
+              />
+              <Accordian 
+              heading={"Modelo UGD Virtual"}
+              text={"virtualModel"}
               index={"1"}
               key={1}
               setToggle={setToggle}
@@ -317,7 +411,16 @@ export default function Navbar() {
               isToggled={isToggled}
               key={1}
               />
-              <Link href={"/verify"} style={{
+               <Accordian 
+              heading={"Títulos"}
+              text={"titulos"}
+              // text={["Tecnicatura en Desarrollo de Software","Programador Java Full Stack","Gestion de Recursos Tecnológicos","Maestría","Licenciatura en Gestión Educativa","Lic en Marketing","Lic en Administración","Especialización en gestión de TICs","Doctorado","Ciclo de Profesorado Universitario"]}
+              index={"1"}
+              setToggle={setToggle}
+              isToggled={isToggled}
+              key={1}
+              />
+              {/* <Link href={"/verify"} style={{
                 	padding: "1.5rem 2rem",
                   borderBottom: "2px solid  var(--primary-90)",
                   display: "flex",
@@ -328,7 +431,7 @@ export default function Navbar() {
               onClick={()=>{
                 setToggle(!isToggled)
               }} 
-              >Verificar</Link>
+              >Títulos</Link> */}
           </div>
       
       </div>

@@ -23,23 +23,23 @@ const Footer = () =>{
                         fontStyle: "normal",
                         fontWeight: "700",
                         lineHeight: "normal",
-                    }}>Síganos</div>
+                    }}>Seguinos</div>
                     <Image src={"/instagram.svg"} width={35} height={35} />
-                    <Image src={"/twitter.svg"} width={35} height={35} />
+                    <Image src={"/fbicons.png"} width={35} height={35} />
                     <Image src={"/linkedin.svg"} width={35} height={35} />
-                    <Image src={"/youtube.svg"} width={35} height={35} />
+                    <Image src={"/whatsappicons.png"} width={35} height={35} />
                 </div>
 
                 <div style={{
                     display:"flex",
                     width:"100%",
                     // border:"1px solid white",
-                    justifyContent:"space-around",
-                    alignContent:"center",
-                    alignItems:"center"
+                    // justifyContent:"space-around",
+                    // alignContent:"center",
+                    // alignItems:"center"
                 }}>
                     <Image src={"/Frame19.svg"} width={250} height={250} />
-                    <div style={{
+                    {/* <div style={{
                         color: "#FFF",
                         fontFamily:" Open Sans",
                         fontSize: "1rem",
@@ -74,7 +74,7 @@ const Footer = () =>{
                         fontWeight: "400",
                         lineHeight: "normal",
                         padding:"10px"
-                    }}>Términos y condiciones</div>
+                    }}>Términos y condiciones</div> */}
                 </div>
 
                
@@ -163,22 +163,13 @@ const Footer = () =>{
                 </div>
             </div> */}
             <div>
-            <div style={{
+            {/* <div style={{
                     marginTop:"2rem",
                     display:"flex",
                     width:"100%",
                     justifyContent:"space-between",
                     alignContent:"center"
                 }}>
-                        {/* <div style={{
-                            color: "#FFF",
-                            fontFamily:" Open Sans",
-                            fontSize: "1rem",
-                            fontStyle: "normal",
-                            fontWeight: "600",
-                            lineHeight: "normal",
-                            padding:"10px"
-                        }}> Cursos</div> */}
                         <div style={{
                             color: "#FFF",
                             fontFamily:" Open Sans",
@@ -206,7 +197,7 @@ const Footer = () =>{
                             lineHeight: "normal",
                             padding:"10px"
                         }}>Términos y condiciones</div>
-                </div>
+                </div> */}
                
                     <div className="socialdiv" style={{
                         marginTop:"1.2rem",
@@ -222,9 +213,9 @@ const Footer = () =>{
                             lineHeight: "normal",
                         }}>Síganos</div>
                         <Image src={"/instagram.svg"} width={35} height={35} />
-                        <Image src={"/twitter.svg"} width={35} height={35} />
+                        <Image src={"/fbicons.png"} width={35} height={35} />
                         <Image src={"/linkedin.svg"} width={35} height={35} />
-                        <Image src={"/youtube.svg"} width={35} height={35} />
+                        <Image src={"/whatsappicons.png"} width={38} height={38} />
                     
                 </div>
             </div>
@@ -238,7 +229,7 @@ export default Footer;
 const FooterBgImage = () =>{
     return(
         <div style={{
-            backgroundImage: 'url("/Career1.png")',
+            backgroundImage: 'url("/ugd-bg-image.png")',
             backgroundSize: 'cover', // You can adjust these properties as needed
             backgroundRepeat: 'no-repeat',
             width:"100%",
@@ -255,7 +246,7 @@ const FooterBgImage = () =>{
              >
                 <div>
                 {/* <   Image src={"/Frame19.svg"} height={400} width={400} /> */}
-                    <p className="bgfooterheading">Tu objetivo es nuestro objetivo</p>
+                    <p className="bgfooterheading">UGD Virtual: Educación que se adapta a vos</p>
                     <p className="bgfooterpara">Nuestra finalidad es que obtengas el título que buscas, y ponemos todos las herramientas y equipos de apoyo a  tal fin.  Desde el grupo de Educación a Distancias de UGD Virtual, los docentes y tutores, hasta el equipo administrativo, estará atento a tus necesidades y dispuesto a brindarte orientación personal.
  
                     Tendrás asignado un tutor con el que te contactarás en cualquier momento, y que tiene por misión orientarte y ayudarte a resolver lo que te preocupe, realizando las gestiones que resulten necesarias.

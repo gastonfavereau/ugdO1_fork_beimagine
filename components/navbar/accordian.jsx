@@ -16,10 +16,6 @@ const Accordian = ({ heading, text, index,setToggle,isToggled }) => {
 			href: "/authorities",
 		},
 		{
-			name:"Modelo Virtual UGD",
-			href: "/ugdvirtualModel",
-		},
-		{
 			name:"Equivalencies",
 			href: "/equivalencies",
 		}
@@ -45,6 +41,28 @@ const Accordian = ({ heading, text, index,setToggle,isToggled }) => {
 		{
 			name:"Beca Latina",
 			href: "/miami",
+		}
+	]
+
+	const virtualModel = [
+		{
+			name:"Nuestro modelo de Educación Virtual",
+			href: "/ugdvirtualModel",
+		},
+		{
+			name:"¿Por qué UGD Virtual?",
+			href: "/por-que",
+		}
+	]
+
+	const titulos = [
+		{
+			name:"Títulos UGD y revalidaciones",
+			href: "/revalidaciones",
+		},
+		{
+			name:"Verificar títulos",
+			href: "/verify",
 		}
 	]
 
@@ -168,7 +186,53 @@ const Accordian = ({ heading, text, index,setToggle,isToggled }) => {
 					})
 				}
 				{
-					text !== "Courses" && text !== "University Info" && text !== "Academic Community" &&
+
+					text == "virtualModel" &&
+					virtualModel.map((link)=>{
+						return(
+							<div
+							style={{
+								padding: isActive ? "1.5rem 2rem" : "0em 2rem",
+								backgroundColor: "#e8e8e8",
+								maxHeight: isActive ? "15em" : "0em",
+								fontSize: "0.875rem",
+								lineHeight: "2",
+								overflow: "hidden",
+								transition: "all 0.3s",
+							}}>
+							<Link onClick={()=>{
+							setToggle(!isToggled)
+						
+						}} href={link.href}>{link.name}</Link>
+							</div>
+						)
+					})
+				}
+				{
+					text == "titulos" &&
+					titulos.map((link)=>{
+						return(
+							<div
+							style={{
+								padding: isActive ? "1.5rem 2rem" : "0em 2rem",
+								backgroundColor: "#e8e8e8",
+								height:"auto",
+								maxHeight: isActive ? "15em" : "0em",
+								fontSize: "0.875rem",
+								lineHeight: "2",
+								overflow: "hidden",
+								transition: "all 0.3s",
+							}}>
+							<Link onClick={()=>{
+							setToggle(!isToggled)
+						
+						}} href={link.href}>{link.name}</Link>
+							</div>
+						)
+					})
+				}
+				{
+					text !== "Courses" && text !== "University Info" && text !== "Academic Community" && text !== "virtualModel" && text !== "titulos" &&
 					text.map((link)=>{
 						return(
 							<div

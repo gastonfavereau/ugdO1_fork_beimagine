@@ -274,7 +274,7 @@ const SalesforceForm = () => {
             <option value="a0aHp00000AH7dsIAD">Test sede</option>
         </select><br />
 
-        <input className='button' type="submit" name="Enviar consulta" />
+        <input className='button' type="submit" name="submit" value="Enviar consulta" />
 
         </form>
         </div>

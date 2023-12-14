@@ -20,7 +20,7 @@ const HomePage = () => {
     '/course11.jpg',
   ];
   return (
-    <div>
+    <div className='home'>
       <video id="background-video" autoPlay loop muted poster="/UGDVposter.png">
         <source src="UGDvideo.mp4" type="video/mp4" />
       </video>
@@ -29,7 +29,6 @@ const HomePage = () => {
       {/* <h2>Liberando conocimientos, potenciando futuros</h2> */}
 
       <main>
-        {/* <Courses /> */}
         <div style={{
           padding:"50px",
           paddingBottom:"100px",
@@ -45,19 +44,7 @@ const HomePage = () => {
           lineHeight: "38px",
         }}>Carreras de UGD Virtual <br /> Educación que se adapta a vos </p>
         <ImageSlider images={images} />
-        {/* <div style={{
-          marginTop:"50px",
-          display:"flex",
-          justifyContent:"space-around"
-        }}>
-          <Image src={"/course.jpg"} width={200} height={200}  />
-          <Image src={"/course.jpg"} width={200} height={200}  />
-          <Image src={"/course.jpg"} width={200} height={200}  />
-          <Image src={"/course.jpg"} width={200} height={200}  />
-          <Image src={"/course.jpg"} width={200} height={200}  />
-          <Image src={"/course.jpg"} width={200} height={200}  />
-          <Image src={"/course.jpg"} width={200} height={200}  />
-        </div> */}
+     
         </div>
       </main>
       {/* <Footer /> */}

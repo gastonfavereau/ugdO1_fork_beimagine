@@ -49,7 +49,6 @@ export default function Navbar() {
     display:"flex",
     color:pathname !== "/" ? "#1C3564":(isScroll ? "#1C3564" : "white"),
     fontSize:"1rem",
-    fontFamily:"Open Sans",
     fontWeight:"400",
     fontStyle:"normal",
     backgroundColor:"transparent",
@@ -105,7 +104,7 @@ export default function Navbar() {
       position: "relative"
     }}>
        
-          <Link style={linkStyle} href={"/"} > Home </Link>
+          <Link style={linkStyle} href={"/"} > Home</Link>
       
         
 

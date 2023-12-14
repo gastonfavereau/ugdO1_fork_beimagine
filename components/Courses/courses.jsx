@@ -271,6 +271,23 @@ const Course = ({params}) => {
                             <div style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Título Intermedio: <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{course.tituloIntermedio}</p></div>
                         </div>
                         }
+                        {
+                            course.diplomaturas&&
+                            <div style={{
+                                display:"flex",
+                                gap:"1em"
+                            }}>
+                                <Image src={"/graduation 1.svg"} height={30} width={30} />
+                                <div style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Diplomaturas Universitarias Intermedias:
+                                {
+                                    course.diplomaturas.map((item)=>{
+                                        return <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{item}</p>
+                                    })
+                                }
+                                </div>
+                            </div>
+
+                        }
 
                         {/* certificacionesIntermedias */}
                        
@@ -322,8 +339,10 @@ const Course = ({params}) => {
                         }}>
                            <div style={{
                                 marginTop:"20px",
-                                textAlign:"center"
-                            }}>
+                                textAlign:"center",
+                                gap:"1em",
+                            }}> 
+                                <div>
                                 <a href={course.pdf} download="file.pdf">
                                     <button style={{
                                         width:"200px",
@@ -331,9 +350,11 @@ const Course = ({params}) => {
                                         backgroundColor:"orange",
                                         color:"white",
                                         padding:"5px",
-                                        borderRadius:"5px"
+                                        borderRadius:"5px",
+                                        fontSize:"0.9em",
                                     }}>Descarga el plan de estudios</button>
                                 </a>
+                                </div>
                                 {/* <a href="/Programador_Java_Full Stack.pdf" download="Programador_Java_Full Stack.pdf"> */}
                                 <Link href={"/form"}>
                                     <button style={{
@@ -343,7 +364,8 @@ const Course = ({params}) => {
                                         backgroundColor:"#0B4C26",
                                         color:"white",
                                         padding:"5px",
-                                        borderRadius:"5px"
+                                        borderRadius:"5px",
+                                        fontSize:"0.9em",
                                     }}>Quiero más información</button>
                                 </Link>
                                 {/* </a> */}

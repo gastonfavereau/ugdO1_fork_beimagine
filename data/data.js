@@ -286,7 +286,7 @@ const data =[
         tituloFinal:"Licenciado en Marketing (4 años)",
         tituloIntermedio:"Técnico Universitario en Marketing (3 años)",
         certificacionesIntermedias:[
-            "Certificado Universitario en Análisis del Mercado y el Consumo.",
+            "Certificado Universitario en Marketing Digital y Community Manager.",
             "Certificado Universitario en Publicidad, Diseño y Comunicación.",
             "Certificado Universitario en Gestión de Marketing."
         ],
@@ -323,7 +323,7 @@ const data =[
 
     },
     {   course:"MAESTRÍA EN GESTIÓN Y EVALUACIÓN DE LA EDUCACIÓN SUPERIOR	",
-        pdf:"/pdf/Maestría en Gestión y Evaluación de la Educación Superior.pdf",
+        pdf:"/pdf/Maestría en Gestión y Evaluación de la Educación Superior.pdf",
         bgimage:"/bgcourse11.jpg",
         path:"maestria",
         image:"/course11.jpg",
@@ -388,6 +388,7 @@ const data =[
         ],
         presentacion:"Esta maestría brinda formación de alto nivel proveyendo los conocimientos y herramientas necesarias para intervenir en los procesos de gestión y evaluación de la educación superior tanto universitaria como no universitaria, atendiendo las nuevas demandas, tendencias y orientaciones normativas, con especial atención a los procesos de internacionalización. <br />La carrera fue diseñada con una proyección internacional, con la incorporación de perspectivas comparadas entre sistemas de Educación Superior y de contenidos específicos acerca de interculturalidad, internacionalización universitaria, Cooperación,  movilidad estudiantil y políticas de internacionalización del currículum.",
         tituloFinal:"Magister en Gestión y Evaluación de la Educación Superior (2 años)",
+
         titulosAprobados:[
             "Resolución 1200/18 Ministerio de Educación.            ",
             "Acreditación por la Comisión Nacional de Evaluación y Acreditación Universitaria (CONEAU) Acta N° 569/22. EX-2021-109093631-APN-DAC#CONEAU ",
@@ -420,7 +421,7 @@ const data =[
         ]
     },
     {   course:"Licenciatura en Gestión Educativa",
-        pdf:"/pdf/Licenciatura en Gestión Educativa.pdf",
+        pdf:"/pdf/Licenciatura en Gestión Educativa.pdf",
         bgimage:"/bgcourse10.jpg",
         path:"educativa",
         image:"/course10.jpg",
@@ -483,36 +484,36 @@ const data =[
                 duration:"3 meses",
             }
         ],
-        presentacion:"El graduado estará especializado y formado para desempeñarse en cargos de gestión, conducción y administración de instituciones educativas. Tendrá la capacidad de liderar y conducir equipos de trabajo, y diseñar e implementar planes de mejora para las organizaciones educativas que coordine.",
-        tituloFinal:"Licenciado en Licenciado en Gestión Educativa(4 años)",
+        presentacion:"La carrera está destinada a docentes o funcionarios que se desempeñen o aspiren desempeñarse en cargos de gestión, conducción y administración de instituciones educativas de todos los niveles, liderando y conduciendo equipos de trabajo, y diseñando e implementando planes de mejora para las organizaciones que coordine y/o asesore.",
+        tituloFinal:"Licenciado en Licenciado en Gestión Educativa (4 años)",
         titulosAprobados:[
-            "Resolución Nro. …. ME, aprobatoria Lic. en Marketing",
-            "Resolución Nro. … ME, aprobatorio título intermedio",
-            "Resolución UGD Nro. ….. (modificación planes de estudio) "
+            "Resolución UGD Nro 75/A/23.",
+        ],
+        destinatario:[
+            "Docentes de todos los niveles educativos que tengan título de Institutos de Formación Docente provenientes del Nivel Superior No Universitario y/o Universitario, y que busquen incorporar herramientas que les permitan desempeñarse en la gestión de instituciones de educación."
+
         ],
         // ALCANCES Y SALIDA LABORAL
         alcances:{
             title:"El graduado será un profesional competente para:",
             list:[
                 "<span>•</span> Planificar, diseñar, implementar y evaluar políticas, planes, programas y proyectos educativos en las instituciones en las que se desempeñen, como conductores y/o asesores técnicos.",
-                "<span>•</span> Conducir procesos de mejora en las instituciones educativas, respondiendo a los distintos niveles y modalidades del Sistema Educativo Nacional.",
+                "<span>•</span> Conducir procesos de mejora en las instituciones educativas, respondiendo a los distintos niveles y modalidades.",
                 "<span>•</span> Desarrollar propuestas curriculares tanto para la educación formal, presencial y a distancia.",
                 "<span>•</span> Gestionar y organizar servicios educativos de distintos niveles y modalidades, implementando las tecnologías de la información y la comunicación.",
-                "<span>•</span> Coordinar equipos de trabajo en instituciones, que promuevan una mejora continua en la calidad educativa.",
+                "<span>•</span> Coordinar equipos de trabajo en instituciones que promuevan una mejora continua en la calidad educativa.",
                 "<span>•</span> Diseñar programas de formación y actualización docente, para mejorar el desempeño de equipos de trabajo.",
-                "<span>•</span> Orientar y asesorar en relación a normativa educativa, vinculada a la actividad profesional.",
-                "<span>•</span> Ofrecer asesoramiento pedagógico y organizativo a instituciones educativas y comunitarias.",
-                "<span>•</span> Evaluar planes, programas y proyectos de acción vinculados a la gestión educativa de las instituciones. ",
-                "<span>•</span> Detectar y resolver problemas de la gestión administrativa y pedagógica de las instituciones, diseñando y coordinando estrategias para su posible resolución.",
-                "<span>•</span> Planificar y diseñar actividades de extensión y de integración destinadas a la comunidad en el que la institución educativa se encuentre inserta."
+                "<span>•</span> Orientar y asesorar con relación a la normativa educativa, vinculada a la actividad profesional.",
+                "<span>•</span> Ofrecer asesoramiento pedagógico organizativo a instituciones educativas y comunitarias.",
+                
 
             ]
         },
         podra:[
-            "<span>•</span> Instituciones de educación media o superior no universitaria, públicas o privadas.",
-            "<span>•</span> Universidades o institutos universitarios, públicos o privados.",
-            "<span>•</span> Instituciones de investigación educativa o formación profesional, en modalidades presenciales o virtuales, o en administración académica.",
-            "<span>•</span> Asesorías como profesional independiente: En formación , tutorías, o administración académica. "
+            "<span>•</span> Escuelas públicas, privadas o mixtas de distintos niveles y modalidades.",
+            "<span>•</span> ONGs. Asociaciones civiles.",
+            "<span>•</span> Gobiernos y organismos públicos.",
+            "<span>•</span> Asesoría profesional independiente a todo tipo de organización educativa que necesiten orientar, planificar  y/o poner en marcha un proyecto en su institución."
         ]
 
     },
@@ -605,17 +606,17 @@ const data =[
         }
         
     ],
-    presentacion:"Este ciclo está destinado a fortalecer la formación de quienes ya han transitado estudios superiores y deseen incorporar conocimientos que fortalezcan sus competencias laborales, desarrollando un perfil que le permita identificar y elaborar soluciones informáticas basadas en software a los problemas de las organizaciones y de la comunidad en general.",
-    tituloFinal:"Licenciado en Gestión de Recursos Tecnológicos (dos años)",
+    presentacion:"Este Ciclo está destinado a fortalecer la formación de quienes ya han transitado estudios superiores y deseen incorporar conocimientos que fortalezcan sus competencias laborales, desarrollando un perfil que le permita identificar y elaborar soluciones informáticas basadas en software a los problemas de las organizaciones y de la comunidad en general.",
+    tituloFinal:"Licenciado en Gestión de Recursos Tecnológicos (2 años)",
     titulosAprobados:[
-        "Resolución Nro. 106/2019 de Ministerio de Educación, Ciencia y Tecnología. ",
+        "Resolución Nro. 106/2019 del Ministerio de Educación, Ciencia y Tecnología. ",
     ],
     destinatario:[
-        "Esta propuesta está destinada a quienes haya cursado una carrera de nivel superior o universitario (Tecnicatura, Analista, Associate Degree) en Programación, Sistemas, Desarrollo de Software, Informática o Computación, y que aspiren a profundizar sus conocimientos incorporando el dominio de nuevas tecnologías y obtener una titulación de grado Universitario. "
+        "Esta propuesta está destinada a quienes hayan cursado una carrera de nivel superior o universitaria (Tecnicatura, Analista, Associate Degree) en Programación, Sistemas, Desarrollo de Software, Informática o Computación, y que aspiren a profundizar sus conocimientos incorporando el dominio de nuevas tecnologías, y obtener una titulación de grado Universitario."
     ],
     // ALCANCES Y SALIDA LABORAL
     alcances:{
-        title:"Esta propuesta está destinada a quienes haya cursado una carrera de nivel superior o universitario (Tecnicatura, Analista, Associate Degree) en Programación, Sistemas, Desarrollo de Software, Informática o Computación, y que aspiren a profundizar sus conocimientos incorporando el dominio de nuevas tecnologías y obtener una titulación de grado Universitario. ",
+        title:"Una vez concluidos sus estudios el egresado es competente para:",
         list:[
             "<span>•</span> Participar en la planificación, dirección ejecución y evaluación de proyectos de relevamiento, análisis, diseño, desarrollo, implementación, verificación, validación y puesta a punto de sistemas de información, asegurando su mantenimiento y actualización para todo tipo de personas, físicas o jurídicas.",
             "<span>•</span> Participar en la especificación, diseño, desarrollo implementación y mantenimiento de los componentes de seguridad de información embebidos en los sistemas físicos y en los sistemas de software de aplicación.",
@@ -626,17 +627,17 @@ const data =[
         ]
     },
     ambitos:{
-        text:"El Licenciado en Gestión de Recursos Tecnológico es un profesional con habilidades técnicas y de resolución de problemas aplicables en diferentes industrias y servicios especializados, que puede desempeñarse en:",
+        text:"El Licenciado en Gestión de Recursos Tecnológico será un profesional con habilidades técnicas y de resolución de problemas aplicables en diferentes industrias y servicios especializados, que podrá desempeñarse en:",
         list:[
-            "<span>•</span> Empresas proveedoras de soluciones de hardware y software. ",
-            "<span>•</span> Instituciones que utilicen sistemas de computación en cualquiera de los sectores: gobierno, industrial, manufacturero, bancario, social, salud o telecomunicaciones, entre otros. ",
-            "<span>•</span> Ámbitos profesionales particulares, como prestador independiente de servicios especializados. "
+            "<span>•</span> Empresas proveedoras de soluciones de hardware y software.",
+            "<span>•</span> Instituciones que utilicen sistemas de computación en cualquiera de los sectores: gobierno, industrial, manufacturero, bancario, social, salud o telecomunicaciones, entre otros.",
+            "<span>•</span> Ámbitos profesionales particulares, como prestador independiente de servicios especializados."
         ]
     }
     },
     {   course:"DOCTORADO EN DESARROLLO SUSTENTABLE E INTEGRACIÓN",
     pdf:"/pdf/Doctorado en Desarrollo Sustentable e Integración.pdf",
-    bgimage:"/bgcourse6.jpg",
+    bgimage:"/Doctorado en Desarrollo Sustentable e Integración_Portada 2.jpg",
     path:"doctorado",
     image:"/course6.jpg",
     duration:"9 meses",
@@ -700,17 +701,17 @@ const data =[
     ],
     presentacion:"El Doctorado en Desarrollo Sustentable e Integración busca formar investigadores/as de excelencia, capaces de enfocar los problemas de la sociedad actual, tanto en el sector público como en el privado, con una visión amplia y dinámica de todos los actores sociales, estando capacitado para identificar problemas y proponer soluciones relacionadas con el medio ambiente y su vinculación con la sociedad.  <br/>Será capaz de generar propuestas y conocimientos para enriquecer el desarrollo sustentable en el marco local, regional e internacional.",
     tituloFinal:"Doctor en Desarrollo Sustentable e Integración (2 años más tesis).",
-    tituloIntermedio:"Licenciado en Administración (4 años)",
-    certificacionesIntermedias:[
-        "Certificado Universitario en Administración",
-        "Certificado Universitario en Diseño y Gestión de Proyectos"
-    ],
+    // tituloIntermedio:"Licenciado en Administración (4 años)",
+    // certificacionesIntermedias:[
+    //     "Certificado Universitario en Administración",
+    //     "Certificado Universitario en Diseño y Gestión de Proyectos"
+    // ],
     titulosAprobados:[
         "Resolución N° 178/2020 del Ministerio de Educación de la Nación.",
         "Acreditación por la Comisión Nacional de Evaluación y Acreditación Universitaria (CONEAU) Acta N° 478/18. EX-2016- 03502826-APNDAC#CONEAU.",
     ],
     destinatario:[
-        "El doctorado está destinado a personas que posean título de grado universitario expedido por universidades públicas o privadas, que aspiren a tener a alcanzar el máximo nivel académico, desarrollándose en el campo de la investigación científica y siendo capaz de contribuir con la generación de conocimientos con aportes originales. <br/>Los profesionales deberán contar con experiencia en docencia, investigación, gestión o ejercicio profesional en áreas vinculadas a temáticas del Doctorado, tales como relaciones fronterizas, desarrollo socio-económico, proyectos socio-ambientales sustentables, entre otros."
+        "El Doctorado está destinado a personas que posean título de grado universitario expedido por universidades públicas o privadas, que aspiren a tener a alcanzar el máximo nivel académico, desarrollándose en el campo de la investigación científica y siendo capaz de contribuir con la generación de conocimientos con aportes originales. <br/>Los profesionales deberán contar con experiencia en docencia, investigación, gestión o ejercicio profesional en áreas vinculadas a temáticas del Doctorado, tales como relaciones fronterizas, desarrollo socio-económico, proyectos socio-ambientales sustentables, entre otros."
     ],
     // ALCANCES Y SALIDA LABORAL
     alcances:{
@@ -718,7 +719,7 @@ const data =[
         list:[
             "<span>•</span> Dirigir grupos de trabajo multidisciplinarios en actividades orientadas hacia el desarrollo sustentable y la integración, propiciando la creación de redes de trabajo.",
             "<span>•</span> Realizar investigaciones innovadoras e independientes en materia de desarrollo sustentable en el marco local, regional y/o internacional.",
-            "<span>•</span> Promover u organizar ONG’s para fomentar la integración en diferentes campos, desde el cultural al comercial, pasando por el manejo de recursos naturales compartidos y la migración.",
+            "<span>•</span> Promover u organizar ONGs para fomentar la integración en diferentes campos, desde el cultural al comercial, pasando por el manejo de recursos naturales compartidos y la migración.",
             "<span>•</span> Planificar, desarrollar y dirigir programas y proyectos de intervención, desde una óptica multidisciplinaria, bajo el enfoque del desarrollo sustentable.",
             "<span>•</span> Asesorar a instituciones públicas y/o privadas en la elaboración y seguimiento de programas y proyectos de sustentabilidad."
 
@@ -893,7 +894,7 @@ const data =[
         ],
         presentacion:"El graduado estará formado en gestión, gerenciamiento y tendrá la capacidad de diseñar, implementar y dirigir organizaciones atendiendo a criterios profesionales de eficiencia y calidad para hacer frente a los distintos desafíos empresariales.",
         tituloFinal:"Licenciado en Administración (4 años)",
-        tituloIntermedio:"Licenciado en Administración (4 años)",
+        tituloIntermedio:"Licenciado en Administración (2,5 años)",
         certificacionesIntermedias:[
             "Certificado Universitario en Administración",
             "Certificado Universitario en Diseño y Gestión de Proyectos"
@@ -905,25 +906,31 @@ const data =[
         destinatario:[
             "Esta carrera está orientada a:",
             "<b>Jóvenes entusiastas</b>: Que, habiendo culminado recientemente sus estudios de nivel medio,  aspiran cursar una carrera universitaria con amplio campo laboral, en ámbito empresarial o en la gestión de organizaciones  de distinto tipo.",
-            "<b>Adultos que buscan fortalecer su perfil laboral</b>: Que ya se desempeñan laboralmente y buscan incorporar conocimientos y competencias que mejores su empleabilidad y lo posicionen para aspirar a nuevos roles."
+            "<b>Adultos que buscan fortalecer su perfil laboral</b>: Que ya se desempeñan laboralmente y buscan incorporar conocimientos y competencias que mejoren su empleabilidad y lo posicionen para aspirar a nuevos roles."
         ],
         // ALCANCES Y SALIDA LABORAL
         alcances:{
             title:"El graduado será un profesional competente para:",
             list:[
-                "<span>•</span> Ejercer la docencia en la disciplina de su incumbencia, en el nivel secundario, así como en la educación superior no universitaria y universitaria.",
-                "<span>•</span> Participar en la elaboración, implementación y evaluación de proyectos educativos de distinta naturaleza y alcance en el marco de su ámbito de injerencia.",
-                "<span>•</span> Planificar, conducir, evaluar y participar en propuestas pedagógicas para el nivel secundario y educación superior no universitaria y universitaria, dentro del área correspondiente a su disciplina.",
-                "<span>•</span> Diseñar, implementar y utilizar la investigación como herramienta para la mejora de la práctica educativa.",
-                "<span>•</span> Ejercer la práctica profesional docente desde una perspectiva crítica-democrática y comprometida con el contexto sociocultural en el que se deba actuar."
+                "<span>•</span> Desempeñar las funciones directivas de análisis, planeamiento, organización, coordinación y control de empresas y entidades de todo tipo.",
+                "<span>•</span> Elaborar e implantar políticas, sistemas, métodos y procedimientos de administración, finanzas, producción, comercialización, presupuestos, costos y administración de personal.",
+                "<span>•</span> Implementar soluciones para problemas administrativos de empresas y entidades de distinto tipo, desarrollando los esquemas organizativos que optimicen su funcionamiento.",
+                "<span>•</span> Participar en la creación de nuevos esquemas de organización en empresas o entidades que proyecten ampliar sus mercados o campo de actividades.",
+                "<span>•</span> Dirigir la aplicación e implantación de sistemas de procesamiento de datos y otros métodos en el proceso de información gerencial.",
+                "<span>•</span> Ejercer las funciones de liquidador de sociedades comerciales y civiles.",
+                "<span>•</span> Dirigir el diseño, análisis y desarrollo de circuitos y procedimientos administrativos.",
+                "<span>•</span> Participar en la puesta en marcha, operación, evaluación y organización de unidades productivas. ",
 
             ]
         },
         podra:[
-            "<span>•</span> Instituciones de educación media o superior no universitaria, públicas o privadas.",
-            "<span>•</span> Universidades o institutos universitarios, públicos o privados.",
-            "<span>•</span> Instituciones de investigación educativa o formación profesional, en modalidades presenciales o virtuales, o en administración académica.",
-            "<span>•</span> Asesorías como profesional independiente: En formación , tutorías, o administración académica. "
+            "<span>•</span> Empresas públicas, privadas o mixtas",
+            "<span>•</span> ONGs, Asociaciones civiles.",
+            "<span>•</span> Federaciones. Cámaras empresariales. Gremios.",
+            "<span>•</span> Gobiernos y organismos públicos.",
+            "<span>•</span> Asesoría profesional independiente a todo tipo de organización o emprendedores que necesiten definir u optimizar un modelo de negocio",
+            "<span>•</span> Estudios de auditoría",
+            "<span>•</span> Instituciones de formación e investigación.",
         ]
 
 
@@ -998,7 +1005,38 @@ const data =[
                 ],
                 duration:"3 meses",
             }
-        ]
+        ],
+        presentacion:"Esta carrera brinda competencias en gestión de TICs, y está orientada a profesionales que dirijan o aspiren dirigir proyectos o empresas de tecnología de alto impacto, estableciendo estrategias y conduciendo equipos multidisciplinarios.",
+        tituloFinal:"Especialista en Gestión de Tecnologías de la Información y Comunicación (1 año y medio)",
+        diplomaturas:[
+            "Diplomatura Universitaria en Ciberseguridad",
+            "Diplomatura Universitaria en IA y Ciencia de Datos",
+            "Diplomatura Universitaria en Gerenciamiento de la Transformación Digital"
+        ],
+        titulosAprobados:[
+            "Resolución UGD Nro. 64/A/19.",
+            "Acreditación por la Comisión Nacional de Evaluación y Acreditación Universitaria (CONEAU) Acta N° 537/2020",
+        ],
+        destinatario:[
+            "Esta carrera está orientada a profesionales que trabajan o aspiran a trabajar en posiciones de liderazgo en el ámbito de las tecnologías de la información y la comunicación (TICs), y que buscan actualizar y profundizar sus conocimientos y habilidades para gestionar proyectos innovadores y resolver desafíos en un entorno dinámico y competitivo.",
+            "Podrán ser admitidos: ",
+            "<span>•</span> Egresados de carreras en Informática (Ingenieros o Licenciados en Informática o Sistemas de Información e Ingenieros en Computación) o afines, con carreras cuya duración sea 4 años o mayor",
+            "<span>•</span> Egresados de carreras no afines a Informática que posean experiencia profesional en el área de sistemas. "
+        ],
+        // ALCANCES Y SALIDA LABORAL
+        alcances:{
+            title:"El graduado será un profesional competente para:",
+            list:[
+                "<span>•</span> Integrar tecnologías, aplicaciones, servicios y sistemas, con carácter generalista, y en contextos más amplios y multidisciplinares para la toma de decisiones.",
+                "<span>•</span> Aplicar métodos y herramientas vinculadas a la inteligencia artificial y Business Intelligence para diseñar y desarrollar soluciones basadas en el conocimiento.",
+                "<span>•</span> Asumir responsabilidades en el diseño e implantación de la estrategia empresarial en cuanto a la transformación digital, definiendo presupuestos y gestionando medios, materiales y personas.",
+                "<span>•</span> Disminuir los riesgos, conociendo las implicancias legales del Uso de la Tecnologías de la Información y comunicaciones.",
+                "<span>•</span> Liderar la transformación digital, gestionar de equipos multidisciplinarios, dirigir proyectos complejos, diseñar estrategias de innovación, gestionar el cambio, crear una empresa digital",
+                
+
+            ]
+        },
+
     },
 
 ]

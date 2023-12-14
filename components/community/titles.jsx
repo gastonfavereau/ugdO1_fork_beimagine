@@ -65,7 +65,7 @@ const Titles = () => {
                 
            </div>
            <div>
-                <Image src={"/certImage2.png"} width={500} height={500}  />
+                <Image src={"/certimage2.png"} width={500} height={500}  />
                 <a  href={"/pdf/Equivalencia EEUU - María Laura Carré.pdf"} download="Título UGD María Laura Carré.pdf">Click aquí para descargar certificado completo</a>
            </div>
         </div>

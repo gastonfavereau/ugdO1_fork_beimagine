@@ -195,8 +195,8 @@ const AuthoritiesPage = () => {
                     width:"100%"
                   }}/>
                   <div class="container">
-                    <h4><b>{person.desc}</b></h4> 
-                    <p>{person.name}</p>
+                    <h4 className="cardTitle"><b>{person.desc}</b></h4> 
+                    <p className="cardText">{person.name}</p>
                     {/* <p>info@ugd.com</p>  */}
                   </div>
                 </div>

@@ -61,12 +61,12 @@ const Titles = () => {
         <div  className="studentDiv">
            <div>
                 <Image src={"/certImage.png"} width={500} height={500}  />
-                <a href={"/pdf/Título UGD María Laura Carré.pdf"} download="Equivalencia EEUU - María Laura Carré.pdf">Click aquí para descargar título completo </a>
+                <a style={{color:"black"}} href={"/pdf/Título UGD María Laura Carré.pdf"} download="Equivalencia EEUU - María Laura Carré.pdf">Click aquí para descargar título completo </a>
                 
            </div>
            <div>
                 <Image src={"/certimage2.png"} width={500} height={500}  />
-                <a  href={"/pdf/Equivalencia EEUU - María Laura Carré.pdf"} download="Título UGD María Laura Carré.pdf">Click aquí para descargar certificado completo</a>
+                <a style={{color:"black"}} href={"/pdf/Equivalencia EEUU - María Laura Carré.pdf"} download="Título UGD María Laura Carré.pdf">Click aquí para descargar certificado completo</a>
            </div>
         </div>
         <p data-aos="fade-up" style={{

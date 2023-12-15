@@ -49,8 +49,8 @@ const Authorities = () => {
             </div>
          
             <div class="container">
-              <h4><b>Rector</b></h4> 
-              <p>Ing. Luis E. Lichowski</p> 
+              <h4 className='card-title'><b>Rector</b></h4> 
+              <p className='card-text'>Ing. Luis E. Lichowski</p> 
             </div>
             <div style={{
               marginTop:"1rem",

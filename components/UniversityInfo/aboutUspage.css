@@ -70,6 +70,13 @@
     color: "#005FAF";
   }
 
+  .cardTitle{
+    color: black;
+  }
+  .cardText{
+    color: black;
+  }
+
   .overlay {
     position: fixed;
     top: 0;

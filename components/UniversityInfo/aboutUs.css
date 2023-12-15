@@ -139,6 +139,12 @@
     gap: 1rem;
   
   }
+  .card-title{
+    color: black;
+  }
+  .card-text{
+    color: black;
+  }
 
  
   .aboutusContent{

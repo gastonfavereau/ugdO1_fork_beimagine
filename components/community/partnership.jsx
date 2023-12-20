@@ -173,7 +173,10 @@ const PartnerShip = () =>{
                                 <div >
                                     <p className="partnershipCardHeading">Red de Asociaciones Latinoamericanas y Caribeñas de Universidades Privadas
                                     </p>
-                                    <p className="partnershipCardPara">A través del Consejo de Rectores de Universidades Privadas, participamos de REALCUP, organización que impulsa la internacionalización de las universidades privadas y el crecimiento de la calidad  de las actividades académicas de sus instituciones miembro. 
+                                    <p style={{
+                                        fontSize:"0.8rem",
+                                        marginTop: "0.5rem"
+                                    }} className="partnershipCardPara">A través del Consejo de Rectores de Universidades Privadas, participamos de REALCUP, organización que impulsa la internacionalización de las universidades privadas y el crecimiento de la calidad  de las actividades académicas de sus instituciones miembro. 
                                     </p>
                                 </div>
 

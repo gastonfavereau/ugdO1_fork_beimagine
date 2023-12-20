@@ -59,7 +59,7 @@ const UGDModel = () => {
                             height: "100%",
                             objectFit: "cover", // Use "cover" to make the image cover the container while maintaining its aspect ratio
                         }}
-                        src="imgmodel.webp" alt="UGDimage" />
+                        src="/imgmodel.webp" alt="UGDimage" />
                     </div>
                     
                 </div>
@@ -88,7 +88,7 @@ const UGDModel = () => {
                             height: "100%",
                             objectFit: "cover", // Use "cover" to make the image cover the container while maintaining its aspect ratio
                         }}
-                        src="imgmodel2.webp" alt="UGDimage" />
+                        src="/imgmodel2.webp" alt="UGDimage" />
                     </div>
                     
                 </div>

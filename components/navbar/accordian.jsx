@@ -1,68 +1,74 @@
 "use client";
-const { useState } = require("react");
+const { useState, use, useEffect } = require("react");
 import Image from "next/image";
 import data from "@/data/data";
+import usData from "@/data/usData";
 import Link from "next/link";
-const Accordian = ({ heading, text, index,setToggle,isToggled }) => {
+
+const Accordian = ({ heading, text, index,setToggle,isToggled,isUs,region}) => {
+	const [courses, setCourses] = useState(data);
 	const [isActive, setIsActive] = useState(false);
+	useEffect(() => {
+		setCourses(isUs ? usData : data);
+	}, [isUs]);
 
 	const universityinfo = [
 		{
 			name: "Quienes somos",
-			href: "/aboutus",
+			href: `/${region}/aboutus`,
 		},
 		{
 			name:"Autoridades",
-			href: "/authorities",
+			href: `/${region}/authorities`,
 		},
 		{
 			name:"Equivalencies",
-			href: "/equivalencies",
+			href: `/${region}/equivalencies`,
 		}
 	]
 
 	const academicCommunity = [
 		{
 			name:"Nuestros destinatarios",
-			href: "/student",
+			href: `/${region}/student`,
 		},
 		{
 			name:"Nuestros Docentes",
-			href: "/teacher",
+			href: `/${region}/teacher`,
 		},
 		{
 			name:"Amplia red de vínculos internacionales",
-			href: "/partnership",
+			href: `/${region}/partnership`,
 		},
 		{
 			name:"Becas y Beneficios",
-			href: "/scholarshipsAndbenefits",
+			href: `/${region}/scholarshipsAndbenefits`,
 		},
 		{
 			name:"Beca Latina",
-			href: "/miami",
+			href: `/${region}/miami`,
 		}
 	]
 
 	const virtualModel = [
 		{
 			name:"Nuestro modelo de Educación Virtual",
-			href: "/ugdvirtualModel",
+			href: `/${region}/ugdvirtualModel`,
 		},
 		{
 			name:"¿Por qué UGD Virtual?",
-			href: "/por-que",
+			href: `/${region}/por-que`,
 		}
 	]
 
 	const titulos = [
 		{
 			name:"Títulos UGD y revalidaciones",
-			href: "/revalidaciones",
+			href: `/${region}/revalidaciones`,
 		},
 		{
 			name:"Verificar títulos",
-			href: "/verify",
+			href: `/${region}/verify`,
 		}
 	]
 
@@ -88,35 +94,11 @@ const Accordian = ({ heading, text, index,setToggle,isToggled }) => {
 					{text[0]!== "" && "▼"}
 				</span>
 			</div>
-			{/* <div
-				style={{
-					padding: isActive ? "1.5rem 2rem" : "0em 2rem",
-					backgroundColor: "var(--primary-90)",
-					maxHeight: isActive ? "15em" : "0em",
-					fontSize: "0.875rem",
-					lineHeight: "2",
-					overflow: "hidden",
-					transition: "all 0.3s",
-				}}> */}
+
 				<div className={isActive ? "customDiv" : ""}>
 				{ text == "Courses" &&
-				// text.map((link)=>{
-                //     return(
-                //         <div
-                //         style={{
-                //             padding: isActive ? "1.5rem 2rem" : "0em 2rem",
-                //             backgroundColor: "#e8e8e8",
-                //             maxHeight: isActive ? "15em" : "0em",
-                //             fontSize: "0.875rem",
-                //             lineHeight: "2",
-                //             overflow: "hidden",
-                //             transition: "all 0.3s",
-                //         }}>
-                //         {link}
-                //         </div>
-                //     )
-                // }):
-					data.map((course)=>{
+			
+					courses.map((course)=>{
 						return(
 						<div
                         style={{
@@ -128,15 +110,11 @@ const Accordian = ({ heading, text, index,setToggle,isToggled }) => {
                             overflow: "hidden",
                             transition: "all 0.3s"
                         }}
-						// onClick={()=>{
-						// 	setToggle(!isToggled)
-						// 	console.log(isToggled,"toglrfom ###### togllleee")
-						// }}
 						>
                         	<Link onClick={()=>{
 							setToggle(!isToggled)
 						
-						}} href={`/courses/${course.path}`}> {course.course}</Link>
+						}} href={`/${region}/courses/${course.path}`}> {course.course}</Link>
                         </div>
 						)
 					})
@@ -251,7 +229,6 @@ const Accordian = ({ heading, text, index,setToggle,isToggled }) => {
 					})
 				}
 				</div>
-			{/* </div> */}
 		</div>
 	);
 };

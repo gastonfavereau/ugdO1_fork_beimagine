@@ -1,13 +1,12 @@
 import React from 'react';
 import "./home.css";
 import Image from 'next/image';
-import Courses from './Course';
-import Footer from '../footer/footer';
-import ImageSlider from "./slider"
+import ImageSlider from "./slider";
+
 
 const HomePage = () => {
   const images = [
-    '/course.jpg',
+    '../../../public/course.jpg',
     '/course2.jpg',
     '/course3.jpg',
     '/course4.jpg',
@@ -24,8 +23,11 @@ const HomePage = () => {
       <video id="background-video" autoPlay loop muted poster="/UGDVposter.png">
         <source src="UGDvideo.mp4" type="video/mp4" />
       </video>
-
+      <div style={{
+        backgroundColor:"rgba(0, 0, 0, 0.5)",
+      }}>
       <h1 >Bienvenidos a UGD Virtual</h1>
+      </div>
       {/* <h2>Liberando conocimientos, potenciando futuros</h2> */}
 
       <main>

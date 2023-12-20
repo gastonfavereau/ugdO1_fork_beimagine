@@ -50,7 +50,7 @@ const About = () => {
                 </div>
                 <div className='aboutusImage'>
                 <video width="100%" height="100%" controls >
-                <source src="UGDvideo.mp4" type="video/mp4"/>
+                <source src="/UGDvideo.mp4" type="video/mp4"/>
                 </video>
                 </div>
             </div>
@@ -102,7 +102,7 @@ const About = () => {
                             height: "100%",
                             objectFit: "cover", // Use "cover" to make the image cover the container while maintaining its aspect ratio
                         }}
-                        src="aboutuspage2.webp" alt="UGDimage" />
+                        src="/aboutuspage2.webp" alt="UGDimage" />
                     </div>
                     
                 </div>

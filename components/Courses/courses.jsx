@@ -1,7 +1,7 @@
 // import "./courses.css"
 "use client"
 
-import { React, useEffect } from 'react'
+import { React, useEffect, useState } from 'react'
 import Image from "next/image";
 import data from "@/data/data";
 import Accordian from "../navbar/accordian";
@@ -9,9 +9,14 @@ import "./courses.css"
 import Link from "next/link";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { usePathname } from 'next/navigation'
 
 const Course = ({params}) => {
+    const pathname = usePathname()
+    const [isUs, setUs] = useState(false);
+    
     useEffect(() => {
+        pathname.includes("us") ? setUs(true) : setUs(false);
 		AOS.init({
 			offset: 50,
 			duration: 800,
@@ -20,10 +25,7 @@ const Course = ({params}) => {
     console.log(params.course)
     const course = data.find((course) => course.path === params.course);
     // console.log(course)
-    const bgimages=[
-        course.bgimage,
-        "/BecaLatina_UGD.jpg"
-    ]
+ 
     return(
         <div style={{
             width:"100%",
@@ -356,7 +358,7 @@ const Course = ({params}) => {
                                 </a>
                                 </div>
                                 {/* <a href="/Programador_Java_Full Stack.pdf" download="Programador_Java_Full Stack.pdf"> */}
-                                <Link href={"/form"}>
+                                <Link href={!isUs ?"/ar/form":"/us/becaForm"}>
                                     <button style={{
                                         width:"200px",
                                         height:"50px",
@@ -368,6 +370,19 @@ const Course = ({params}) => {
                                         fontSize:"0.9em",
                                     }}>Quiero más información</button>
                                 </Link>
+                                {isUs&&<Link href={"/us/miami"}>
+                                    <button style={{
+                                        width:"200px",
+                                        height:"50px",
+                                        marginTop:"20px",
+                                        //dark blue hex code
+                                        backgroundColor:"#1C3564",
+                                        color:"white",
+                                        padding:"5px",
+                                        borderRadius:"5px",
+                                        fontSize:"0.9em",
+                                    }}>Beca Latina</button>
+                                </Link>}
                                 {/* </a> */}
                             </div>
                             

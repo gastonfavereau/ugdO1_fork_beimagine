@@ -117,164 +117,120 @@ const SalesforceForm = () => {
             fontFamily:"Poppins",
             color:"white",
         }} >Consulta por carreras</p>
-        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST" >
 
-        <input type="hidden" name="orgid" value="00DHp000001rh2f" />
-        <input type="hidden" name="retURL" value="http://test.com" />
-        <input type="hidden" name="reason" value="Consulta por carreras" />
-        <input type="hidden" name="status" value="Closed" />
-        <input type="hidden" name="subject" value="Quiero consultar por una carrera" />
+          <input type="hidden" name="orgid" value="00DHp000001rh2f" />
+          <input type="hidden" name="retURL" value="http://test.com"/>
 
+          <input type="hidden" name="reason" value="Consulta por carreras" />
+          <input type="hidden" name="status" value="Closed" />
+          <input type="hidden" name="subject" value="Quiero consultar por una carrera" />
 
-        <label for="name">Nombre</label>
-        <input  id="name" maxlength="80" name="name" type="text" required="true" /><br />
-        <label for="Apellido_Web__c">Apellido</label>
-        <input  id="00NHp00000g8suC" maxlength="80" name="00NHp00000g8suC" type="text" required="true" /><br />
-        <br />
-        <div>
-        Telefono (codigo de pais + codigo de area + numero de telefono) <br />
-            <label for="Codigo_pais_telefono">código de país:</label><input  id="00NHp00000g8yV5" maxlength="80" name="00NHp00000g8yV5" type="text" required="true" />
-            <label for="Codigo_area_telefono">código de área</label><input  id="00NHp00000g8xb7" maxlength="80" name="00NHp00000g8xb7" type="text" required="true" />
-            <label for="Numero_de_telefono_c">número de teléfono</label><input  id="00NHp00000g8yVF" maxlength="80" name="00NHp00000g8yVF" type="text" required="true" />
-        </div>
-        <br />
+          <label for="name">Nombre</label><input  id="name" maxlength="80" name="name" type="text" required={true} /><br />
 
-        <label for="email">Correo electrónico</label>
-        <input  id="email" maxlength="80" name="email" type="text" required="true" />
-        <br />
+          <label for="Apellido_Web__c">Apellido</label><input  id="00NHp00000g8suC" maxlength="80" name="00NHp00000g8suC" type="text" required={true} /><br />
 
-        <label for="Pais__c">País de residencia:</label>
-        <select  id="00NHp00000g8zE4" name="00NHp00000g8zE4" title="Pais_texto__c" required="true">
-            <option value="a0YHp00001gJn1OMAS">Argentina</option>
-        </select><br />
+          <br />
+          <div>
+          Telefono (codigo de pais + codigo de area + numero de telefono) <br />
+              <label for="Codigo_pais_telefono">código de país:</label><input  id="00NHp00000g8yV5" maxlength="80" name="00NHp00000g8yV5" type="text" required={true} />
+              <label for="Codigo_area_telefono">código de área</label><input  id="00NHp00000g8xb7" maxlength="80" name="00NHp00000g8xb7" type="text" required={true} />
+              <label for="Numero_de_telefono_c">número de teléfono</label><input  id="00NHp00000g8yVF" maxlength="80" name="00NHp00000g8yVF" type="text" required={true} />
+          </div>
+          <br />
 
-        <label for="Provincia__c">Provincia o estado de residencia:</label>
-        <select  id="00NHp00000g8zE9" name="00NHp00000g8zE9" title="Provincia_texto__c" required="true">
-            <option value="">--Seleccione una provincia--</option>
-            <option value="a0ZHp00000lhXpLMAU">Buenos Aires</option>
-            <option value="a0ZHp00000lhXqXMAU">Buenos Aires, Capital Federal</option>
-            <option value="a0ZHp00000lhXqsMAE">Catamarca</option>
-            <option value="a0ZHp00000lhXpUMAU">Chaco</option>
-            <option value="a0ZHp00000lhXpNMAU">Chubut</option>
-            <option value="a0ZHp00000lhXpMMAU">Córdoba</option>
-            <option value="a0ZHp00000lhXpKMAU">Corrientes</option>
-            <option value="a0ZHp00000lhXpOMAU">Entre Ríos</option>
-            <option value="a0ZHp00000lhXpYMAU">Formosa</option>
-            <option value="a0ZHp00000lhXr0MAE">Jujuy</option>
-            <option value="a0ZHp00000lhXpZMAU">La Pampa</option>
-            <option value="a0ZHp00000lhXpsMAE">La Rioja</option>
-            <option value="a0ZHp00000lhXpPMAU">Mendoza</option>
-            <option value="a0ZHp00000lhXlSMAU">Misiones</option>
-            <option value="a0ZHp00000lhXpWMAU">Neuquen</option>
-            <option value="a0ZHp00000lhXpuMAE">Rio Negro</option>
-            <option value="a0ZHp00000lhXpQMAU">Salta</option>
-            <option value="a0ZHp00000lhXpdMAE">San Juan</option>
-            <option value="a0ZHp00000lhXq7MAE">San Luis</option>
-            <option value="a0ZHp00000lhXpeMAE">Santa Cruz</option>
-            <option value="a0ZHp00000lhXpTMAU">Santa Fé</option>
-            <option value="a0ZHp00000lhXprMAE">Santiago del Estero</option>
-            <option value="a0ZHp00000lhXpRMAU">Tierra del Fuego</option>
-            <option value="a0ZHp00000lhXpkMAE">Tucumán</option>    
-        </select><br />
+          <label for="email">Correo electrónico</label>
+          <input  id="email" maxlength="80" name="email" type="text" required={true} />
+          <br />
 
-        <label for="Ciudad__c">Ciudad de residencia:</label>
-        <input  id="00NHp00000g8yVe" maxlength="80" name="00NHp00000g8yVe" type="text" required="true" />
-        <br />
+          <label for="Pais__c">País de residencia:</label>
+          <select  id="00NHp00000g8zE4" name="00NHp00000g8zE4" title="Pais_texto__c" required={true}>
+              <option value="a0YHp00001hOgR9MAK">Argentina</option>
+          </select><br />
 
-        <label for="Programa_acad_mico_texto">Carrera:</label>
-        <select  id="00NHp00000ZxNwI" name="00NHp00000ZxNwI" title="Programa_acad_mico_texto" required="true">
-            <option value="">--Seleccione una carrera--</option>
-            <option value="001Hp00002dWxOJIA0">PREGRADO - TÉCNICO UNIVERSITARIO CONTABLE</option>
-            <option value="001Hp00002dZGdwIAG">PREGRADO - ANALISTA UNIVERSITARIO DE SISTEMAS</option>
-            <option value="001Hp00002dZGlYIAW">PREGRADO - PROGRAMADOR ADMINISTRATIVO</option>
-            <option value="001Hp00002dZGlZIAW">PREGRADO - TEC. EN TURISMO Y GESTION HOTELERA</option>
-            <option value="001Hp00002dZGlaIAG">PREGRADO - TECNICATURA UNIVERSITARIA EN CORRETAJE Y NEGOCIOS</option>
-            <option value="001Hp00002dZGlbIAG">PREGRADO - TECNICATURA UNIV. EN PRODUCCIÓN AGROPECUARIA</option>
-            <option value="001Hp00002dZGlcIAG">PREGRADO - TECNICATURA UNIV. EN ROBÓTICA Y AUTOMATIZACIÓN IND</option>
-            <option value="001Hp00002dZGleIAG">PREGRADO - TECNICO UNIVERSITARIO EN ASESORAMIENTO PEDAGÓGICO</option>
-            <option value="001Hp00002dZGlfIAG">PREGRADO - TECNICO UNIVERSITARIO EN COMERCIALIZACION</option>
-            <option value="001Hp00002dZGlgIAG">PREGRADO - TECNICO UNIVERSITARIO EN IMPUESTOS</option>
-            <option value="001Hp00002dZGI2IAO">PREGRADO - ANALISTA DE SISTEMAS</option>
-            <option value="001Hp00002dWxViIAK">GRADO - Licenciatura en Corretaje y Negocios Inmobiliarios</option>
-            <option value="001Hp00002dWxVrIAK">GRADO - LICENCIATURA EN COMERCIO INTERNACIONAL</option>
-            <option value="001Hp00002dWxUeIAK">GRADO - LICENCIATURA EN ADMINISTRACION</option>
-            <option value="001Hp00002dWxUgIAK">GRADO - ABOGACIA</option>
-            <option value="001Hp00002dWxUoIAK">GRADO - Licenciatura en Artes Audiovisuales</option>
-            <option value="001Hp00002dWxUpIAK">GRADO - LICENCIATURA EN TERAPIA OCUPACIONAL</option>
-            <option value="001Hp00002dWxUxIAK">GRADO - ARQUITECTURA</option>
-            <option value="001Hp00002dWxVNIA0">GRADO - CONTADOR PUBLICO NACIONAL</option>
-            <option value="001Hp00002dWxVSIA0">GRADO - LICENCIATURA EN NUTRICIÓN</option>
-            <option value="001Hp00002dWxVWIA0">GRADO - INGENIERÍA EN INFORMATICA</option>
-            <option value="001Hp00002dWxVbIAK">GRADO - LICENCIATURA EN PSICOPEDAGOGÍA</option>
-            <option value="001Hp00002dWxVcIAK">GRADO - LICENCIATURA EN KINESIOLOGÍA y FISIATRÍA</option>
-            <option value="001Hp00002dWxVdIAK">GRADO - PROFESORADO EN EDUCACION FISICA</option>
-            <option value="001Hp00002dWxVeIAK">GRADO - LICENCIATURA EN MARKETING</option>
-            <option value="001Hp00002dZGlAIAW">GRADO - LIC. EN COMERCIALIZACION C/O EN MARKETING TURÍSTIC</option>
-            <option value="001Hp00002dZGkpIAG">GRADO - CICLO BASICO - LIC. EN TURISMO Y HOTELERIA</option>
-            <option value="001Hp00002dZGl8IAG">GRADO - INGENIERIA INDUSTRIAL</option>
-            <option value="001Hp00002dZGl9IAG">GRADO - LIC. EN ADMINISTRACION C/O. EN GESTION HOTELERA</option>
-            <option value="001Hp00002dZGlBIAW">GRADO - LIC. EN TRATAMIENTO Y SEGURIDAD PENITENCIARIA</option>
-            <option value="001Hp00002dZGlDIAW">GRADO - LICENCIATURA EN  HIGIENE Y SEGURIDAD EN EL TRABAJO</option>
-            <option value="001Hp00002dZGlEIAW">GRADO - LICENCIATURA EN COMERCIALIZACION</option>
-            <option value="001Hp00002dZGlFIAW">GRADO - LICENCIATURA EN DISEÑO INDUSTIAL</option>
-            <option value="001Hp00002dZGlGIAW">GRADO - LICENCIATURA EN DISEÑO Y COMUNICACIÓN VISUAL</option>
-            <option value="001Hp00002dZGlHIAW">GRADO - LICENCIATURA EN GESTIÓN TURÍSTICA Y HOTELERA</option>
-            <option value="001Hp00002dZGlJIAW">GRADO - LICENCIATURA EN PRODUCCION AGROPECUARIA</option>
-            <option value="001Hp00002dZGlPIAW">GRADO - LICENCIATURA EN SEGURIDAD</option>
-            <option value="001Hp00002dZGlQIAW">GRADO - LICENCIATURA EN SISTEMAS DE INFORMACION</option>
-            <option value="001Hp00002dZGlSIAW">GRADO - LICENCIATURA EN TURISMO Y HOTELERIA</option>
-            <option value="001Hp00002dZGlWIAW">GRADO - PROF. EN CS. ECONOMICAS Y EMPRESARIALES</option>
-            <option value="001Hp00002dZGlXIAW">GRADO - PROFESORADO EN INFORMÁTICA</option>
-            <option value="001Hp00002dZGI1IAO">GRADO - ADMINISTRACION CICLO BASICO</option>
-            <option value="001Hp00002dWxVlIAK">POSTGRADO - DOCTORADO EN DESARROLLO SUSTENTABLE E INTEGRACIÓN</option>
-            <option value="001Hp00002dWxVnIAK">POSTGRADO - MAESTRÍA EN GEST. Y EVAL. DE LA  ED. SUP. A DIST</option>
-            <option value="001Hp00002dWxVsIAK">POSTGRADO - ESPECIALIZACIÓN EN RECURSOS TRIB. Y PREVISIONALES</option>
-            <option value="001Hp00002dWxVwIAK">POSTGRADO - ESPECIALIZACIÓN EN TURISMO S. Y DESARROLLO T.</option>
-            <option value="001Hp00002dWxUcIAK">POSTGRADO - ESPECIALIZACIÓN EN DERECHO PROCESAL</option>
-            <option value="001Hp00002dWxVXIA0">POSTGRADO - MAESTRÍA EN GESTIÓN Y EVAL. DE LA EDUC. SUPERIOR</option>
-            <option value="001Hp00002dZGl6IAG">POSTGRADO - ESPECIALIZACIÓN EN GESTIÓN DE TIC</option>
-            <option value="001Hp00002dZGl7IAG">POSTGRADO - ESPECIALIZACIÓN EN TELEMÁTICA Y REDES</option>
-            <option value="001Hp00002dZGlRIAW">POSTGRADO - LICENCIATURA EN TECNOLOGÍA EDUCATIVA</option>
-            <option value="001Hp00002dZGlTIAW">POSTGRADO - MAESTRIA EN DESARROLLO REGIONAL E INTEGRACION</option>
-            <option value="001Hp00002dZGlUIAW">POSTGRADO - MAESTRÍA EN TELEMATICA Y REDES</option>
-            <option value="001Hp00002dWxUiIAK">CICLO - CICLO DE ESCRIBANIA</option>
-            <option value="001Hp00002dWxUvIAK">CICLO - Licenciatura en Psicopedagog\xeda - Ciclo de Compl</option>
-            <option value="001Hp00002dWxVTIA0">CICLO - CICLO PROFESORADO UNIV. p/ PROFESIONALES</option>
-            <option value="001Hp00002dZGkqIAG">CICLO - CICLO DE LICENCIATURA EN SISTEMAS DE INFORMACIÓN</option>
-            <option value="001Hp00002dZGkrIAG">CICLO - CICLO LIC. EN EDUCACION FISICA</option>
-            <option value="001Hp00002dZGksIAG">CICLO - CICLO LIC. EN EVALUACION DE INSTITUCIONES EDUCATIVAS</option>
-            <option value="001Hp00002dZGktIAG">CICLO - CICLO LICENCIATURA EN  HIGIENE Y SEGURIDAD EN EL TRABAJO</option>
-            <option value="001Hp00002dZGl5IAG">CICLO - ENFERMERIA</option>
-            <option value="001Hp00002dZGlIIAW">CICLO - LICENCIATURA EN GOBIERNO Y ADMINISTRACION PUBLICA</option>
-            <option value="001Hp00002dZGlKIAW">CICLO - LICENCIATURA EN RECURSOS TECNOLÓGICOS</option>
-            <option value="001Hp00002dWxVmIAK">DIPLOMATURA - DIPLOMATURA EN TRATAMIENTO Y SEGURIDAD PENITENCIAR</option>
-            <option value="001Hp00002dZGkvIAG">DIPLOMATURA - CURADURÍA</option>
-            <option value="001Hp00002dZGkwIAG">DIPLOMATURA - DIPLOMATURA UNIV. EN CREACIÓN DE CONT. DIGITALES</option>
-            <option value="001Hp00002dZGkxIAG">DIPLOMATURA - DIPLOMA DE POSGRADO EN EVALUACIÓN DE LA EDUCACIÓN SUPERIOR</option>
-            <option value="001Hp00002dZGkyIAG">DIPLOMATURA - DIPLOMA DE POSGRADO EN GESTIÓN DE LA EDUCACIÓN SUPERIOR</option>
-            <option value="001Hp00002dZGkzIAG">DIPLOMATURA - DIPLOMATURA EN CIBERSEGURIDAD</option>
-            <option value="001Hp00002dZGl0IAG">DIPLOMATURA - DIPLOMATURA UNIV EN NEGOCIACIÓN Y MARKETING INMOB.</option>
-            <option value="001Hp00002dZGl1IAG">DIPLOMATURA - DIPLOMATURA UNIV. EN PROYECTOS INMOBILIARIOS</option>
-            <option value="001Hp00002dZGl2IAG">DIPLOMATURA - DIPLOMATURA UNIVERSITARIA EN GESTIÓN INMOBILIARIA</option>
-            <option value="001Hp00002dZGl3IAG">DIPLOMATURA - DIPLOMATURA UNIVERSITARIA EN SEGURIDAD</option>
-            <option value="001Hp00002dZGl4IAG">DIPLOMATURA - DIPLOMATURA UNIVERSITARIA EN TASACIÓN DE INMUEBLES</option>
-            <option value="001Hp00002dZGlVIAW">DIPLOMATURA - MODA</option>
-        </select><br />
+          <label for="Provincia__c">Provincia de residencia:</label>
+          <select  id="00NHp00000g8zE9" name="00NHp00000g8zE9" title="Provincia_texto__c" required={true}>
+              <option value="a0ZHp00000mergqMAA">Buenos Aires</option>
+              <option value="a0ZHp00000merghMAA">Catamarca</option>
+              <option value="a0ZHp00000mergaMAA">Chaco</option>
+              <option value="a0ZHp00000merglMAA">Chubut</option>
+              <option value="a0ZHp00000merjFMAQ">Ciudad Autónoma de Buenos Aires</option>
+              <option value="a0ZHp00000mergcMAA">Córdoba</option>
+              <option value="a0ZHp00000mergYMAQ">Corrientes</option>
+              <option value="a0ZHp00000mergoMAA">Entre Ríos</option>
+              <option value="a0ZHp00000mergmMAA">Formosa</option>
+              <option value="a0ZHp00000mergfMAA">Jujuy</option>
+              <option value="a0ZHp00000mergpMAA">La Pampa</option>
+              <option value="a0ZHp00000mergnMAA">La Rioja</option>
+              <option value="a0ZHp00000merggMAA">Mendoza</option>
+              <option value="a0ZHp00000mergeMAA">Misiones</option>
+              <option value="a0ZHp00000mergiMAA">Neuquén</option>
+              <option value="a0ZHp00000mergZMAQ">Río Negro</option>
+              <option value="a0ZHp00000mergdMAA">Salta</option>
+              <option value="a0ZHp00000mergUMAQ">San Juan</option>
+              <option value="a0ZHp00000mergWMAQ">San Luis</option>
+              <option value="a0ZHp00000mergjMAA">Santa Cruz</option>
+              <option value="a0ZHp00000mergbMAA">Santa Fe</option>
+              <option value="a0ZHp00000mergVMAQ">Santiago del Estero</option>
+              <option value="a0ZHp00000mergkMAA">Tierra del Fuego</option>
+              <option value="a0ZHp00000mergXMAQ">Tucumán</option> 
+          </select><br />
 
-        <label for="Sede_texto">Sede:</label>
-        <select  id="00NHp00000eOpuV" name="00NHp00000eOpuV" title="Sede_texto" required="true">
-            <option value="">--Seleccione una sede--</option>
-            <option value="a0aHp00000AH7RcIAL">Posadas</option>
-            <option value="a0aHp00000AH7RdIAL">Obera</option>
-            <option value="a0aHp00000AH7ReIAL">Eldorado</option>
-            <option value="a0aHp00000AH7RfIAL">Resistencia</option>
-            <option value="a0aHp00000AH7RgIAL">Instituto de Seguridad Po</option>
-            <option value="a0aHp00000AH7RhIAL">Buenos Aires</option>
-            <option value="a0aHp00000AH7RiIAL">A Distancia</option>
-            <option value="a0aHp00000AH7dsIAD">Test sede</option>
-        </select><br />
+          <label for="Ciudad__c">Ciudad de residencia:</label>
+          <input  id="00NHp00000g8yVe" maxlength="80" name="00NHp00000g8yVe" type="text" required={true} />
+          <br />
 
-        <input className='button' type="submit" name="submit" value="Enviar consulta" />
+          <label for="Programa_acad_mico_texto">Carrera:</label>
+          <select  id="00NHp00000ZxNwI" name="00NHp00000ZxNwI" title="Programa_acad_mico_texto" required={true}>
+              <option value="">--Seleccione una carrera--</option>
+              <option value="001Hp00002dZGlaIAG">PREGRADO - TECNICATURA UNIVERSITARIA EN CORRETAJE Y NEGOCIOS</option>
+              <option value="001Hp00002ias4KIAQ">PREGRADO - TECNICATURA UNIVERSITARIA EN DESARROLLO DE SOFTWARE</option>
+              <option value="001Hp00002dWxViIAK">GRADO - LICENCIATURA EN CORRETAJE Y NEGOCIOS INMOBILIARIOS</option>
+              <option value="001Hp00002dWxVrIAK">GRADO - LICENCIATURA EN COMERCIO INTERNACIONAL</option>
+              <option value="001Hp00002dWxUeIAK">GRADO - LICENCIATURA EN ADMINISTRACION</option>
+              <option value="001Hp00002dWxUgIAK">GRADO - ABOGACIA</option>
+              <option value="001Hp00002dWxUoIAK">GRADO - LICENCIATURA EN ARTES AUDIOVISUALES</option>
+              <option value="001Hp00002dWxUpIAK">GRADO - LICENCIATURA EN TERAPIA OCUPACIONAL</option>
+              <option value="001Hp00002dWxUxIAK">GRADO - ARQUITECTURA</option>
+              <option value="001Hp00002ias4PIAQ">GRADO - CICLO COMPLEMENTACIÓN EN GESTIÓN EDUCATIVA</option>
+              <option value="001Hp00002ias4UIAQ">GRADO - CICLO DE COMPLEMENTACIÓN DE RECURSOS TECNOLÓGICOS</option>
+              <option value="001Hp00002dWxVNIA0">GRADO - CONTADOR PUBLICO NACIONAL</option>
+              <option value="001Hp00002dWxVSIA0">GRADO - LICENCIATURA EN NUTRICIÓN</option>
+              <option value="001Hp00002dWxVWIA0">GRADO - INGENIERÍA EN INFORMATICA</option>
+              <option value="001Hp00002dWxVbIAK">GRADO - LICENCIATURA EN PSICOPEDAGOGÍA</option>
+              <option value="001Hp00002dWxVcIAK">GRADO - LICENCIATURA EN KINESIOLOGÍA y FISIATRÍA</option>
+              <option value="001Hp00002dWxVdIAK">GRADO - PROFESORADO EN EDUCACION FISICA</option>
+              <option value="001Hp00002dWxVeIAK">GRADO - LICENCIATURA EN MARKETING</option>
+              <option value="001Hp00002dZGlBIAW">GRADO - LICENCIATURA EN TRATAMIENTO Y SEGURIDAD PENITENCIARIA</option>
+              <option value="001Hp00002dZGlPIAW">GRADO - LICENCIATURA EN SEGURIDAD</option>
+              <option value="001Hp00002dWxVlIAK">POSTGRADO - DOCTORADO EN DESARROLLO SUSTENTABLE E INTEGRACIÓN</option>
+              <option value="001Hp00002dWxVnIAK">POSTGRADO - MAESTRÍA EN GESTÍON Y EVALUACÍON DE LA EDUCACION SUPERIOR A DISTANCIA</option>
+              <option value="001Hp00002dWxVsIAK">POSTGRADO - ESPECIALIZACIÓN EN RECURSOS TRIBUTARIOS Y PREVISIONALES</option>
+              <option value="001Hp00002dWxUcIAK">POSTGRADO - ESPECIALIZACIÓN EN DERECHO PROCESAL</option>
+              <option value="001Hp00002dWxVXIA0">POSTGRADO - MAESTRÍA EN GESTIÓN Y EVALUACION DE LA EDUCACIÓN SUPERIOR</option>
+              <option value="001Hp00002dZGl6IAG">POSTGRADO - ESPECIALIZACIÓN EN GESTIÓN DE TIC</option>
+              <option value="001Hp00002dWxUiIAK">CICLO - ESCRIBANIA</option>
+              <option value="001Hp00002dWxUvIAK">CICLO - LICENCIATURA EN PISCOPEDAGOGIA</option>
+              <option value="001Hp00002dWxVTIA0">CICLO - PROFESORADO UNIVIVERSITARIO PARA PROFESIONALES</option>
+              <option value="001Hp00002dZGkxIAG">DIPLOMATURA - DE POSGRADO EN EVALUACIÓN DE LA EDUCACIÓN SUPERIOR</option>
+              <option value="001Hp00002dZGkyIAG">DIPLOMATURA - DE POSGRADO EN GESTIÓN DE LA EDUCACIÓN SUPERIOR</option>
+              <option value="001Hp00002dZGl0IAG">DIPLOMATURA - UNIVERSITARIA EN NEGOCIACIÓN Y MARKETING INMOBILIARIO</option>
+              <option value="001Hp00002dZGl1IAG">DIPLOMATURA - UNIVERSITARIA EN PROYECTOS INMOBILIARIOS</option>
+              <option value="001Hp00002dZGl2IAG">DIPLOMATURA - UNIVERSITARIA EN GESTIÓN INMOBILIARIA</option>
+              <option value="001Hp00002dZGl4IAG">DIPLOMATURA - UNIVERSITARIA EN TASACIÓN DE INMUEBLES</option>
+          </select><br />
+
+          <label for="Sede_texto">Sede:</label>
+          <select  id="00NHp00000eOpuV" name="00NHp00000eOpuV" title="Sede_texto" required={true}>
+              <option value="">--Seleccione una sede--</option>
+              <option value="a0aHp00000AH7RcIAL">Posadas</option>
+              <option value="a0aHp00000AH7RdIAL">Obera</option>
+              <option value="a0aHp00000AH7ReIAL">Eldorado</option>
+              <option value="a0aHp00000AH7RfIAL">Resistencia</option>
+              <option value="a0aHp00000AH7RiIAL">A Distancia</option>
+          </select><br />
+
+          <input className='button' type="submit" name="submit" value="Enviar consulta" />
 
         </form>
         </div>

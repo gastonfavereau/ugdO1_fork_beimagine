@@ -2,22 +2,28 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link"; 
-import { usePathname, useSearchParams } from 'next/navigation'
-import { useSpring, animated } from "react-spring";
-import "./navbar.css"
+import { usePathname} from 'next/navigation'
+import "./navbar.css";
+import UGDLogo from "/public/UGDLOGOCL.svg";
 import Accordian from "./accordian";
-const navigation = [
-  { name: 'Hogar', href: '/', current: true },
-  { name: 'Verify', href: '#', current: false },
-]
 
-export default function Navbar() {
+
+export default function Navbar({params}) {
   const pathname = usePathname()
-  const searchParams = useSearchParams()
-  console.log(pathname)
+  const [region, setRegion] = useState("ar");
   const [isScroll,setIsScroll] = useState(false);
   const [isToggled, setToggle] = useState(true);
+  const [isUs, setUs] = useState(false);
+
+
   useEffect(() => {
+    params === "us" ? setRegion("us") : setRegion("ar");
+    params === "us" ? setUs(true) : setUs(false);
+  
+
+
+
+    
     const scrolling = () => {
       window.scrollY >= 2 ? setIsScroll(true) : setIsScroll(false);
     };
@@ -33,21 +39,17 @@ export default function Navbar() {
     return () => {
       window.removeEventListener("scroll", scrolling);
     };
+    
   }, [pathname,isToggled]);
-  // const { y } = useSpring({
-  //   y: isToggled ? 180 : 0
-  // });
 
-  // const menuAppear = useSpring({
-  //   transform: isToggled ? "translate3D(0,0,0)" : "translate3D(0,-40px,0)",
-  //   opacity: isToggled ? 1 : 0
-  // });
+ 
+
   
 
 
   const linkStyle ={
     display:"flex",
-    color:pathname !== "/" ? "#1C3564":(isScroll ? "#1C3564" : "white"),
+    color:(pathname !== "/ar" && pathname !== "/us") ? "#1C3564":(isScroll ? "#1C3564" : "white"),
     fontSize:"1rem",
     fontWeight:"400",
     fontStyle:"normal",
@@ -55,16 +57,14 @@ export default function Navbar() {
     padding:"0px"
   }
 
+  const columnStyle ={
+    width:isUs ? "34%" : "25%",
+  }
+
 
   //Mobile version
   const handleClickMenu = () =>{
     setToggle(!isToggled);
-    // const getDocument = document.querySelector("#menu");
-    // if(isToggled){
-    //   getDocument.style.display = "none";
-    // }else{
-    //   getDocument.style.display = "flex";
-    // }
   }
 
 
@@ -73,21 +73,12 @@ export default function Navbar() {
    <div 
     className="navbar1"
     style={{
-    // position: "fixed",
-    // top: 0,
-    // zIndex: 100,
-    backgroundColor: pathname !== "/" ? "white" :(isScroll ? "white" : "rgba(0, 0, 0, 0.5)"),
-    // color:"--primary-color",
-    // width: "100vw",
-    // height: "70px",
-    // display: "flex",
-    // justifyContent:"space-between",
-    // padding:"1rem 2rem",
-    // boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+    backgroundColor: (pathname !== "/ar" && pathname !== "/us") ? "white" :(isScroll ? "white" : "rgba(0, 0, 0, 0.5)"),
+    boxShadow:  (pathname !== "/ar" && pathname !== "/us") && "0px 4px 4px rgba(0, 0, 0, 0.25)"
    }} >
 
     <div >
-      <Image src="/UGDLOGOCL.svg" height={200} width={200} alt="UGD"/>
+      <Image src={UGDLogo} height={200} width={200} alt="UGD"/>
     </div>
 
 
@@ -104,7 +95,7 @@ export default function Navbar() {
       position: "relative"
     }}>
        
-          <Link style={linkStyle} href={"/"} > Home</Link>
+          <Link style={linkStyle} href={`/${region}`} > Home</Link>
       
         
 
@@ -112,17 +103,17 @@ export default function Navbar() {
         <div className="navbutton" >
           <div className="dropdown1">
             <button className="dropbtn1" style={{
-          color: pathname !== "/" ? "#1C3564":(isScroll ? "#1C3564" : "white")
+          color:(pathname !== "/ar" && pathname !== "/us")? "#1C3564":(isScroll ? "#1C3564" : "white")
         }}>Nuestra Universidad ▼</button>
               <div className="dropdown-content1">
                 <div className="column" style={{
                   width:"100%",
                   height:"auto"
                 }}>
-                  <Link href={"/aboutus"}>Quienes somos</Link>
-                  <Link href={"/authorities"}>Autoridades</Link>
+                  <Link href={`/${region}/aboutus`}>Quienes somos</Link>
+                  <Link href={`/${region}/authorities`}>Autoridades</Link>
                   {/* <Link href={"/ugdvirtualModel"}>Modelo Virtual UGD </Link> */}
-                  <Link href={"equivalencies"}>Equivalencies</Link>
+                  <Link href={`/${region}/equivalencies`}>Equivalencies</Link>
                 </div>
               </div>
           </div>
@@ -131,15 +122,15 @@ export default function Navbar() {
         <div className="navbutton" >
           <div className="dropdown1">
             <button className="dropbtn1" style={{
-          color: pathname !== "/" ? "#1C3564":(isScroll ? "#1C3564" : "white")
+          color: (pathname !== "/ar" && pathname !== "/us") ? "#1C3564":(isScroll ? "#1C3564" : "white")
           }}>Modelo UGD Virtual ▼</button>
               <div className="dropdown-content1">
                 <div className="column" style={{
                   width:"100%",
                   height:"auto"
                 }}>
-                  <Link href={"/ugdvirtualModel"}>Nuestro modelo de Educación Virtua</Link>
-                  <Link href={"/por-que"}>¿Por qué UGD Virtual?</Link>
+                  <Link href={`/${region}/ugdvirtualModel`}>Nuestro modelo de Educación Virtua</Link>
+                  <Link href={`/${region}/por-que`}>¿Por qué UGD Virtual?</Link>
                 </div>
               </div>
           </div>
@@ -148,7 +139,7 @@ export default function Navbar() {
         <div className="navbutton" >
           <div className="dropdown1">
             <button className="dropbtn1" style={{
-              color:pathname !== "/" ? "#1C3564":(isScroll ? "#1C3564" : "white")
+              color: (pathname !== "/ar" && pathname !== "/us") ? "#1C3564":(isScroll ? "#1C3564" : "white")
             }}>Comunidad académica ▼</button>
               <div className="dropdown-content1">
                 <div className="column" style={{
@@ -156,11 +147,11 @@ export default function Navbar() {
                   height:"auto",
                   minWidth: "180px",
                 }}>
-                  <Link href={"/student"}>Nuestros destinatarios</Link>
-                  <Link href={"/teacher"}>Nuestros Docentes</Link>
-                  <Link href={"/partnership"}>Amplia red de vínculos internacionales</Link>
-                  <Link href={'/scholarshipsAndbenefits'}>Becas y Beneficios</Link>
-                  <Link href={'/miami'}>Beca Latina</Link>
+                  <Link href={`/${region}/student`}>Nuestros destinatarios</Link>
+                  <Link href={`/${region}/teacher`}>Nuestros Docentes</Link>
+                  <Link href={`/${region}/partnership`}>Amplia red de vínculos internacionales</Link>
+                  <Link href={`/${region}/scholarshipsAndbenefits`}>Becas y Beneficios</Link>
+                  <Link href={`/${region}/miami`}>Beca Latina</Link>
                 </div>
               </div>
           </div>
@@ -175,33 +166,33 @@ export default function Navbar() {
         <button class="dropbtn" style={{
           padding:"0px",
           backgroundColor:"transparent",
-          color:pathname !== "/" ? "#1C3564":(isScroll ? "#1C3564" : "white")
+          color: (pathname !== "/ar" && pathname !== "/us") ? "#1C3564":(isScroll ? "#1C3564" : "white")
         }}>Carreras ▼
         </button>
         <div class="dropdown-content">
           <div className="row">
-            <div className="column">
+            <div className="column" style={columnStyle}>
               <h3>TECNOLOGÍAS</h3>
-              <Link href={`/courses/software`}>Tecnicatura en Desarrollo de Software</Link>
-              <Link href={`/courses/java`}>Programador Java Full Stack</Link>
-              <Link href={`/courses/recursos`}>Ciclo Lic. Gestión de Rec. Tecnológicos</Link>
-              <Link href={"/courses/tecnologias"}>Especialización en Tics</Link>
+              <Link href={`/${region}/courses/software`}>Tecnicatura en Desarrollo de Software</Link>
+              <Link href={`/${region}/courses/java`}>Programador Java Full Stack</Link>
+              <Link href={`/${region}/courses/recursos`}>Ciclo Lic. Gestión de Rec. Tecnológicos</Link>
+              <Link href={`/${region}/courses/tecnologias`}>Especialización en Tics</Link>
             </div>
-            <div className="column">
+            {!isUs &&<div className="column">
               <h3>EDUCACIÓN</h3>
-              <Link href={"/courses/profesionales"}>Ciclo Prof. Univ. p/profesionales</Link>
-              <Link href={"/courses/educativa"}>Ciclo Lic. Gestión Educativa</Link>
-              <Link href={"/courses/maestria"}>Maestría en GyE de la Ed. Superior </Link>
-            </div>
+              <Link href={`/${region}/courses/profesionales`}>Ciclo Prof. Univ. profesionales</Link>
+              <Link href={`/${region}/courses/educativa`}>Ciclo Lic. Gestión Educativa</Link>
+              <Link href={`/${region}/courses/maestria`}>Maestría en GyE de la Ed. Superior </Link>
+            </div>}
             <div className="column">
               <h3>EMPRESARIALES</h3>
-              <Link href={"/courses/marketing"}>Lic. en Marketing</Link>
-              <Link href={"/courses/administracion"}>Lic. en Administración</Link>
+              <Link href={`/${region}/courses/marketing`}>Lic. en Marketing</Link>
+              <Link href={`/${region}/courses/administracion`}>Lic. en Administración</Link>
           
             </div>
             <div className="column">
               <h3>DOCTORADO</h3>
-              <Link href={"/courses/doctorado"}>Doc. en Desarrollo e Integración</Link>
+              <Link href={`/${region}/courses/doctorado`}>Doc. en Desarrollo e Integración</Link>
             </div>
           </div>
         </div>
@@ -212,7 +203,7 @@ export default function Navbar() {
       <div className="navbutton" >
           <div className="dropdown1" >
             <button className="dropbtn1" style={{
-              color:pathname !== "/" ? "#1C3564":(isScroll ? "#1C3564" : "white")
+              color: (pathname !== "/ar" && pathname !== "/us") ? "#1C3564":(isScroll ? "#1C3564" : "white")
             }}>Títulos ▼</button>
               <div className="dropdown-content1" style={{
                 backgroundColor:"white",
@@ -226,8 +217,8 @@ export default function Navbar() {
                 }}>
                   <Link style={{
                     fontSize:"0.7rem",
-                  }} href={"/revalidaciones"}>Títulos UGD y revalidaciones</Link>
-                  <Link href={"/verify"}>Verificar títulos</Link>
+                  }} href={`/${region}/revalidaciones`}>Títulos UGD y revalidaciones</Link>
+                  <Link href={`/${region}/verify`}>Verificar títulos</Link>
                 </div>
               </div>
           </div>
@@ -384,6 +375,8 @@ export default function Navbar() {
               key={1}
               setToggle={setToggle}
               isToggled={isToggled}
+              isUs={isUs}
+              region={region}
               />
               <Accordian 
               heading={"Modelo UGD Virtual"}
@@ -392,6 +385,8 @@ export default function Navbar() {
               key={1}
               setToggle={setToggle}
               isToggled={isToggled}
+              isUs={isUs}
+              region={region}
               />
               <Accordian 
               heading={"Comunidad académica"}
@@ -400,6 +395,8 @@ export default function Navbar() {
               key={1}
               setToggle={setToggle}
               isToggled={isToggled}
+              isUs={isUs}
+              region={region}
               />
               <Accordian 
               heading={"Carreras"}
@@ -409,6 +406,8 @@ export default function Navbar() {
               setToggle={setToggle}
               isToggled={isToggled}
               key={1}
+              isUs={isUs}
+              region={region}
               />
                <Accordian 
               heading={"Títulos"}
@@ -418,6 +417,8 @@ export default function Navbar() {
               setToggle={setToggle}
               isToggled={isToggled}
               key={1}
+              isUs={isUs}
+              region={region}
               />
               {/* <Link href={"/verify"} style={{
                 	padding: "1.5rem 2rem",

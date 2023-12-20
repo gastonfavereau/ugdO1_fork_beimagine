@@ -1,5 +1,10 @@
+
+
+
 const data =[
-    {   course:"Tecnicatura en Desarrollo de Software",
+    {   
+    course:"Tecnicatura en Desarrollo de Software",
+    
     subtitle:"Para Programadores Java Full Stack",
     bgimage:"/bgcourse5.jpg",
     path:"software",
@@ -1042,3 +1047,7 @@ const data =[
 ]
 
 export default data;
+
+
+
+

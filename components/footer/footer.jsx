@@ -81,12 +81,13 @@ const FooterBgImageComp = () =>{
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             width:"100%",
-            height:"55vh",
             display:"flex",
             alignContent:"center",
             justifyContent:"center",
             padding:"50px",
-        }}>
+        }}
+        className="footerbgimagesubdiv"
+        >
             <div
             className="footerimagesubdiv"
              >

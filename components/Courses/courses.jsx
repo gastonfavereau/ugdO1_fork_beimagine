@@ -56,7 +56,7 @@ const Course = ({params}) => {
                     // objectFit: "cover",
                     objectPosition: "center",
                 }} src={course.bgimage} alt="Background Image" /> */}
-                <Image src={course.bgimage} height={1200} width={1200} />
+                <Image src={course.bgimage} height={1200} width={2000} />
                
 
                 {/* <h1 data-aos="fade-up" className="coursetheading" style={{

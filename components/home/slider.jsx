@@ -66,11 +66,14 @@ const responsive = {
 
 
 
-function ImageSlider({ images }) {
+function ImageSlider({ images,params }) {
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const itemsPerRow = 5;
+  const [region, setRegion] = useState("ar");
 
   useEffect(() => {
+    params.params.locales === "us" && setRegion("us");
     const slideShowInterval = setInterval(() => {
       if (currentIndex < images.length - itemsPerRow) {
         setCurrentIndex((prevIndex) => prevIndex + 1);
@@ -149,7 +152,7 @@ function ImageSlider({ images }) {
             {
               data.map((course,index)=>{
                 return(
-                  <Link  href={`courses/${course.path}`}>
+                  <Link  href={`${region}/courses/${course.path}`}>
                   <img  src={course.image} height={300} width={300}/>
                   </Link>
                 )
@@ -175,7 +178,7 @@ function ImageSlider({ images }) {
         {
               data.map((course,index)=>{
                 return(
-                  <Link  href={`courses/${course.path}`} key={index+9}>
+                  <Link  href={`${region}/courses/${course.path}`} key={index+9}>
                   <img src={course.image} height={300} width={300}/>
                   </Link>
                 )

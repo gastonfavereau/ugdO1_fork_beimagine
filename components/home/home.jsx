@@ -4,9 +4,9 @@ import Image from 'next/image';
 import ImageSlider from "./slider";
 
 
-const HomePage = () => {
+const HomePage = ({params}) => {
   const images = [
-    '../../../public/course.jpg',
+    '/course.jpg',
     '/course2.jpg',
     '/course3.jpg',
     '/course4.jpg',
@@ -45,7 +45,7 @@ const HomePage = () => {
           fontWeight: "500",
           lineHeight: "38px",
         }}>Carreras de UGD Virtual <br /> Educación que se adapta a vos </p>
-        <ImageSlider images={images} />
+        <ImageSlider params={params} images={images} />
      
         </div>
       </main>

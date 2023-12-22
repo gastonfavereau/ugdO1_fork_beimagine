@@ -117,118 +117,91 @@ const SalesforceForm = () => {
             fontFamily:"Poppins",
             color:"white",
         }} >Consulta por carreras</p>
-        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST" >
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-          <input type="hidden" name="orgid" value="00DHp000001rh2f" />
-          <input type="hidden" name="retURL" value="http://test.com"/>
+            <input type="hidden" name="orgid" value="00DHp000001rh2f" />
+            <input type="hidden" name="retURL" value="https://ugd-coral.vercel.app/ar"/>
+            <input type="hidden" name="reason" value="Consulta por carreras" />
+            <input type="hidden" name="status" value="Closed" />
+            <input type="hidden" name="subject" value="Quiero consultar por una carrera" />
 
-          <input type="hidden" name="reason" value="Consulta por carreras" />
-          <input type="hidden" name="status" value="Closed" />
-          <input type="hidden" name="subject" value="Quiero consultar por una carrera" />
 
-          <label for="name">Nombre</label><input  id="name" maxlength="80" name="name" type="text" required={true} /><br />
 
-          <label for="Apellido_Web__c">Apellido</label><input  id="00NHp00000g8suC" maxlength="80" name="00NHp00000g8suC" type="text" required={true} /><br />
+            <label for="name">Nombre</label><input  id="name" maxlength="80" name="name" type="text" required={true} /><br />
 
-          <br />
-          <div>
-          Telefono (codigo de pais + codigo de area + numero de telefono) <br />
-              <label for="Codigo_pais_telefono">código de país:</label><input  id="00NHp00000g8yV5" maxlength="80" name="00NHp00000g8yV5" type="text" required={true} />
-              <label for="Codigo_area_telefono">código de área</label><input  id="00NHp00000g8xb7" maxlength="80" name="00NHp00000g8xb7" type="text" required={true} />
-              <label for="Numero_de_telefono_c">número de teléfono</label><input  id="00NHp00000g8yVF" maxlength="80" name="00NHp00000g8yVF" type="text" required={true} />
-          </div>
-          <br />
+            <label for="Apellido_Web__c">Apellido</label><input  id="00NHp00000g8suC" maxlength="80" name="00NHp00000g8suC" type="text" required={true} /><br />
 
-          <label for="email">Correo electrónico</label>
-          <input  id="email" maxlength="80" name="email" type="text" required={true} />
-          <br />
+            <br />
+            <div>
+            Telefono (codigo de pais + codigo de area + numero de telefono) <br />
+                <label for="Codigo_pais_telefono">código de país:</label><input  id="00NHp00000g8yV5" maxlength="80" name="00NHp00000g8yV5" type="text" required={true} />
+                <label for="Codigo_area_telefono">código de área</label><input  id="00NHp00000g8xb7" maxlength="80" name="00NHp00000g8xb7" type="text" required={true} />
+                <label for="Numero_de_telefono_c">número de teléfono</label><input  id="00NHp00000g8yVF" maxlength="80" name="00NHp00000g8yVF" type="text" required={true} />
+            </div>
+            <br />
 
-          <label for="Pais__c">País de residencia:</label>
-          <select  id="00NHp00000g8zE4" name="00NHp00000g8zE4" title="Pais_texto__c" required={true}>
-              <option value="a0YHp00001hOgR9MAK">Argentina</option>
-          </select><br />
+            <label for="email">Correo electrónico</label>
+            <input  id="email" maxlength="80" name="email" type="text" required={true} />
+            <br />
 
-          <label for="Provincia__c">Provincia de residencia:</label>
-          <select  id="00NHp00000g8zE9" name="00NHp00000g8zE9" title="Provincia_texto__c" required={true}>
-              <option value="a0ZHp00000mergqMAA">Buenos Aires</option>
-              <option value="a0ZHp00000merghMAA">Catamarca</option>
-              <option value="a0ZHp00000mergaMAA">Chaco</option>
-              <option value="a0ZHp00000merglMAA">Chubut</option>
-              <option value="a0ZHp00000merjFMAQ">Ciudad Autónoma de Buenos Aires</option>
-              <option value="a0ZHp00000mergcMAA">Córdoba</option>
-              <option value="a0ZHp00000mergYMAQ">Corrientes</option>
-              <option value="a0ZHp00000mergoMAA">Entre Ríos</option>
-              <option value="a0ZHp00000mergmMAA">Formosa</option>
-              <option value="a0ZHp00000mergfMAA">Jujuy</option>
-              <option value="a0ZHp00000mergpMAA">La Pampa</option>
-              <option value="a0ZHp00000mergnMAA">La Rioja</option>
-              <option value="a0ZHp00000merggMAA">Mendoza</option>
-              <option value="a0ZHp00000mergeMAA">Misiones</option>
-              <option value="a0ZHp00000mergiMAA">Neuquén</option>
-              <option value="a0ZHp00000mergZMAQ">Río Negro</option>
-              <option value="a0ZHp00000mergdMAA">Salta</option>
-              <option value="a0ZHp00000mergUMAQ">San Juan</option>
-              <option value="a0ZHp00000mergWMAQ">San Luis</option>
-              <option value="a0ZHp00000mergjMAA">Santa Cruz</option>
-              <option value="a0ZHp00000mergbMAA">Santa Fe</option>
-              <option value="a0ZHp00000mergVMAQ">Santiago del Estero</option>
-              <option value="a0ZHp00000mergkMAA">Tierra del Fuego</option>
-              <option value="a0ZHp00000mergXMAQ">Tucumán</option> 
-          </select><br />
+            <label for="Pais__c">País de residencia:</label>
+            <select  id="00NHp00000g8zE4" name="00NHp00000g8zE4" title="Pais_texto__c" required={true}>
+                <option value="a0YHp00001hOgR9MAK">Argentina</option>
+                <option value="a0YHp00001hOgRAMA0">Bolivia</option>
+                <option value="a0YHp00001hOgRBMA0">Brasil</option>
+                <option value="a0YHp00001hOgRCMA0">Chile</option>
+                <option value="a0YHp00001hOgRDMA0">Colombia</option>
+                <option value="a0YHp00001hOgREMA0">Costa Rica</option>
+                <option value="a0YHp00001hOgRFMA0">Cuba</option>
+                <option value="a0YHp00001hOgRGMA0">Dominica</option>
+                <option value="a0YHp00001hOgRHMA0">Dominican Republic</option>
+                <option value="a0YHp00001hOgRIMA0">Ecuador</option>
+                <option value="a0YHp00001hOgRJMA0">El Salvador</option>
+                <option value="a0YHp00001hOgRKMA0">Guatemala</option>
+                <option value="a0YHp00001hOgRLMA0">Guyana</option>
+                <option value="a0YHp00001hOgRMMA0">Haiti</option>
+                <option value="a0YHp00001hOgRNMA0">Honduras</option>
+                <option value="a0YHp00001hOgROMA0">Jamaica</option>
+                <option value="a0YHp00001hOgRPMA0">Mexico</option>
+                <option value="a0YHp00001hOgRQMA0">Nicaragua</option>
+                <option value="a0YHp00001hOgRRMA0">Panama</option>
+                <option value="a0YHp00001hOgRSMA0">Paraguay</option>
+                <option value="a0YHp00001hOgRTMA0">Peru</option>
+                <option value="a0YHp00001hOgRUMA0">Puerto Rico</option>
+                <option value="a0YHp00001hOgRVMA0">España</option>
+                <option value="a0YHp00001hOgRWMA0">Estado Unidos</option>
+                <option value="a0YHp00001hOgRXMA0">Uruguay</option>
+                <option value="a0YHp00001hOgRYMA0">Venezuela</option>
+            </select><br />
 
-          <label for="Ciudad__c">Ciudad de residencia:</label>
-          <input  id="00NHp00000g8yVe" maxlength="80" name="00NHp00000g8yVe" type="text" required={true} />
-          <br />
+            <label for="Ciudad__c">Ciudad de residencia:</label>
+            <input  id="00NHp00000g8yVe" maxlength="80" name="00NHp00000g8yVe" type="text" required={true} />
+            <br />
 
-          <label for="Programa_acad_mico_texto">Carrera:</label>
-          <select  id="00NHp00000ZxNwI" name="00NHp00000ZxNwI" title="Programa_acad_mico_texto" required={true}>
-              <option value="">--Seleccione una carrera--</option>
-              <option value="001Hp00002dZGlaIAG">PREGRADO - TECNICATURA UNIVERSITARIA EN CORRETAJE Y NEGOCIOS</option>
-              <option value="001Hp00002ias4KIAQ">PREGRADO - TECNICATURA UNIVERSITARIA EN DESARROLLO DE SOFTWARE</option>
-              <option value="001Hp00002dWxViIAK">GRADO - LICENCIATURA EN CORRETAJE Y NEGOCIOS INMOBILIARIOS</option>
-              <option value="001Hp00002dWxVrIAK">GRADO - LICENCIATURA EN COMERCIO INTERNACIONAL</option>
-              <option value="001Hp00002dWxUeIAK">GRADO - LICENCIATURA EN ADMINISTRACION</option>
-              <option value="001Hp00002dWxUgIAK">GRADO - ABOGACIA</option>
-              <option value="001Hp00002dWxUoIAK">GRADO - LICENCIATURA EN ARTES AUDIOVISUALES</option>
-              <option value="001Hp00002dWxUpIAK">GRADO - LICENCIATURA EN TERAPIA OCUPACIONAL</option>
-              <option value="001Hp00002dWxUxIAK">GRADO - ARQUITECTURA</option>
-              <option value="001Hp00002ias4PIAQ">GRADO - CICLO COMPLEMENTACIÓN EN GESTIÓN EDUCATIVA</option>
-              <option value="001Hp00002ias4UIAQ">GRADO - CICLO DE COMPLEMENTACIÓN DE RECURSOS TECNOLÓGICOS</option>
-              <option value="001Hp00002dWxVNIA0">GRADO - CONTADOR PUBLICO NACIONAL</option>
-              <option value="001Hp00002dWxVSIA0">GRADO - LICENCIATURA EN NUTRICIÓN</option>
-              <option value="001Hp00002dWxVWIA0">GRADO - INGENIERÍA EN INFORMATICA</option>
-              <option value="001Hp00002dWxVbIAK">GRADO - LICENCIATURA EN PSICOPEDAGOGÍA</option>
-              <option value="001Hp00002dWxVcIAK">GRADO - LICENCIATURA EN KINESIOLOGÍA y FISIATRÍA</option>
-              <option value="001Hp00002dWxVdIAK">GRADO - PROFESORADO EN EDUCACION FISICA</option>
-              <option value="001Hp00002dWxVeIAK">GRADO - LICENCIATURA EN MARKETING</option>
-              <option value="001Hp00002dZGlBIAW">GRADO - LICENCIATURA EN TRATAMIENTO Y SEGURIDAD PENITENCIARIA</option>
-              <option value="001Hp00002dZGlPIAW">GRADO - LICENCIATURA EN SEGURIDAD</option>
-              <option value="001Hp00002dWxVlIAK">POSTGRADO - DOCTORADO EN DESARROLLO SUSTENTABLE E INTEGRACIÓN</option>
-              <option value="001Hp00002dWxVnIAK">POSTGRADO - MAESTRÍA EN GESTÍON Y EVALUACÍON DE LA EDUCACION SUPERIOR A DISTANCIA</option>
-              <option value="001Hp00002dWxVsIAK">POSTGRADO - ESPECIALIZACIÓN EN RECURSOS TRIBUTARIOS Y PREVISIONALES</option>
-              <option value="001Hp00002dWxUcIAK">POSTGRADO - ESPECIALIZACIÓN EN DERECHO PROCESAL</option>
-              <option value="001Hp00002dWxVXIA0">POSTGRADO - MAESTRÍA EN GESTIÓN Y EVALUACION DE LA EDUCACIÓN SUPERIOR</option>
-              <option value="001Hp00002dZGl6IAG">POSTGRADO - ESPECIALIZACIÓN EN GESTIÓN DE TIC</option>
-              <option value="001Hp00002dWxUiIAK">CICLO - ESCRIBANIA</option>
-              <option value="001Hp00002dWxUvIAK">CICLO - LICENCIATURA EN PISCOPEDAGOGIA</option>
-              <option value="001Hp00002dWxVTIA0">CICLO - PROFESORADO UNIVIVERSITARIO PARA PROFESIONALES</option>
-              <option value="001Hp00002dZGkxIAG">DIPLOMATURA - DE POSGRADO EN EVALUACIÓN DE LA EDUCACIÓN SUPERIOR</option>
-              <option value="001Hp00002dZGkyIAG">DIPLOMATURA - DE POSGRADO EN GESTIÓN DE LA EDUCACIÓN SUPERIOR</option>
-              <option value="001Hp00002dZGl0IAG">DIPLOMATURA - UNIVERSITARIA EN NEGOCIACIÓN Y MARKETING INMOBILIARIO</option>
-              <option value="001Hp00002dZGl1IAG">DIPLOMATURA - UNIVERSITARIA EN PROYECTOS INMOBILIARIOS</option>
-              <option value="001Hp00002dZGl2IAG">DIPLOMATURA - UNIVERSITARIA EN GESTIÓN INMOBILIARIA</option>
-              <option value="001Hp00002dZGl4IAG">DIPLOMATURA - UNIVERSITARIA EN TASACIÓN DE INMUEBLES</option>
-          </select><br />
+            <label for="Programa_acad_mico_texto">Carrera:</label>
+            <select  id="00NHp00000ZxNwI" name="00NHp00000ZxNwI" title="Programa_acad_mico_texto" required={true}>
 
-          <label for="Sede_texto">Sede:</label>
-          <select  id="00NHp00000eOpuV" name="00NHp00000eOpuV" title="Sede_texto" required={true}>
-              <option value="">--Seleccione una sede--</option>
-              <option value="a0aHp00000AH7RcIAL">Posadas</option>
-              <option value="a0aHp00000AH7RdIAL">Obera</option>
-              <option value="a0aHp00000AH7ReIAL">Eldorado</option>
-              <option value="a0aHp00000AH7RfIAL">Resistencia</option>
-              <option value="a0aHp00000AH7RiIAL">A Distancia</option>
-          </select><br />
+                <option value="">--Seleccione una carrera--</option>
+                <option value="001Hp00002dZGlaIAG">PREGRADO - TECNICATURA UNIVERSITARIA EN CORRETAJE Y NEGOCIOS</option>
+                <option value="001Hp00002ias4KIAQ">PREGRADO - TECNICATURA UNIVERSITARIA EN DESARROLLO DE SOFTWARE</option>
+                <option value="001Hp00002dWxUeIAK">GRADO - LICENCIATURA EN ADMINISTRACION</option>
+                <option value="001Hp00002dWxViIAK">GRADO - LICENCIATURA EN CORRETAJE Y NEGOCIOS INMOBILIARIOS</option>
+                <option value="001Hp00002ias4PIAQ">GRADO - CICLO COMPLEMENTACIÓN EN GESTIÓN EDUCATIVA</option>
+                <option value="001Hp00002ias4UIAQ">GRADO - CICLO DE COMPLEMENTACIÓN DE RECURSOS TECNOLÓGICOS</option>
+                <option value="001Hp00002dWxVeIAK">GRADO - LICENCIATURA EN MARKETING</option>
+                <option value="001Hp00002dWxVlIAK">POSTGRADO - DOCTORADO EN DESARROLLO SUSTENTABLE E INTEGRACIÓN</option>
+                <option value="001Hp00002dWxVnIAK">POSTGRADO - MAESTRÍA EN GESTÍON Y EVALUACÍON DE LA EDUCACION SUPERIOR A DIST</option>
+                <option value="001Hp00002dZGl6IAG">POSTGRADO - ESPECIALIZACIÓN EN GESTIÓN DE TIC</option>
+                <option value="001Hp00002dWxVTIA0">CICLO - PROFESORADO UNIVIVERSITARIO PARA PROFESIONALES</option>
+                <option value="001Hp00002dZGl1IAG">DIPLOMATURA - UNIVERSITARIA EN PROYECTOS INMOBILIARIOS</option>
+                <option value="001Hp00002dZGl2IAG">DIPLOMATURA - UNIVERSITARIA EN GESTIÓN INMOBILIARIA</option>
+                <option value="001Hp00002dZGl4IAG">DIPLOMATURA - UNIVERSITARIA EN TASACIÓN DE INMUEBLES</option>
+            </select><br />
+
+            <label for="Sede_texto">Sede:</label>
+            <select  id="00NHp00000eOpuV" name="00NHp00000eOpuV" title="Sede_texto" required={true}>
+                <option value="a0aHp00000AH7RiIAL">A Distancia</option>
+            </select><br />
 
           <input className='button' type="submit" name="submit" value="Enviar consulta" />
 

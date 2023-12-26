@@ -4,6 +4,7 @@ import instagram from "@/public/instagram.svg";
 import linkedin from "@/public/linkedin.svg";
 import ugdIcon from "@/public/Frame19.svg";
 import bgimage from "@/public/ugd-bg-image3.png";
+import Link from "next/link";
 
 
 const Footer = () =>{
@@ -27,9 +28,9 @@ const Footer = () =>{
                         fontWeight: "700",
                         lineHeight: "normal",
                     }}>Seguinos</div>
-                    <Image src={instagram} width={35} height={35} />
-                    <Image src={"/fbicons.png"} width={35} height={35} />
-                    <Image src={linkedin} width={35} height={35} />
+                    <Link href={"https://www.instagram.com/ugdvirtualok/"}><Image src={instagram} width={35} height={35} /></Link>
+                    <Link href={"https://www.facebook.com/ugdvirtualok"}><Image src={"/fbicons.png"} width={35} height={35} /></Link>
+                    <Link href={"https://www.linkedin.com/company/ugd-virtual/"}><Image src={linkedin} width={35} height={35} /></Link>
                     <Image src={"/whatsappicons.png"} width={35} height={35} />
                 </div>
 
@@ -60,9 +61,9 @@ const Footer = () =>{
                             fontWeight: "700",
                             lineHeight: "normal",
                         }}>Síganos</div>
-                        <Image src={"/instagram.svg"} width={35} height={35} />
-                        <Image src={"/fbicons.png"} width={35} height={35} />
-                        <Image src={"/linkedin.svg"} width={35} height={35} />
+                        <Link href={"https://www.instagram.com/ugdvirtualok/"}><Image src={"/instagram.svg"} width={35} height={35} /></Link>
+                        <Link href={"https://www.facebook.com/ugdvirtualok"}><Image src={"/fbicons.png"} width={35} height={35} /></Link>
+                        <Link href={"https://www.linkedin.com/company/ugd-virtual/"}><Image src={"/linkedin.svg"} width={35} height={35} /></Link>
                         <Image src={"/whatsappicons.png"} width={38} height={38} />
                     
                 </div>

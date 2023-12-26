@@ -49,44 +49,11 @@ const Course = ({params}) => {
                 alignItems: "center",  // Center vertically
                 justifyContent: "center",  // Center horizontally
             }}>
-                {/* <img id="background-image" style={{
-                    position: "absolute",
-                    width: "80%",
-                    height: "100%",
-                    // objectFit: "cover",
-                    objectPosition: "center",
-                }} src={course.bgimage} alt="Background Image" /> */}
                 <Image src={course.bgimage} height={1200} width={2000} />
-               
-
-                {/* <h1 data-aos="fade-up" className="coursetheading" style={{
-                    zIndex: 1, // Ensure the heading is above the image
-                    color: "white", // Set text color to be visible against the background
-                    // Add any other styles you need for the heading
-                    fontSize:"3rem",
-                    fontWeight:"500",
-
-                }}>
-                    {course.course}
-                </h1> */}
             </div>
-
-            {/* <div style={{
-                position:"absolute",
-                top:"5",
-            }}>
-            <Image src={course.bgimage} height={1200} width={1200} />
-            </div> */}
             
             
             <div>
-                {/* <h2 style={{
-                    color:"#1C3564",
-                    fontWeight:"500",
-                    fontSize:"1.5rem",
-                    textAlign:"center",
-                    marginTop:"50px",
-                }}>{course.course}</h2> */}
             </div>
             <div className="subdivcourses" >
                  <div  className="contentdiv" style={{

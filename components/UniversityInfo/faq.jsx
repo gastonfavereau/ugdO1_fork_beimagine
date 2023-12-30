@@ -8,9 +8,7 @@ const FAQ = () => {
             width:"100%",
             height:"700px",
             display:"flex",
-            // justifyContent:"center",
             alignItems:"center",
-            // alignContent:"center",
             flexDirection:"column"
           }}>
     
@@ -32,7 +30,6 @@ const FAQ = () => {
               boxShadow:" 0 8px 8px 0 rgba(0,0,0,0.2)",
               borderRadius:"10px",
               padding:"1rem",
-            //   border:"2px solid #1C3564"
             }}>
                   <Accordian 
                     heading={"¿Cómo accedo al aula virtual? "}

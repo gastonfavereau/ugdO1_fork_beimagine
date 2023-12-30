@@ -1,4 +1,4 @@
-// import React from 'react';
+
 "use client";
 import "./aboutUspage.css";
 import Counter from './counter';
@@ -318,25 +318,15 @@ const UGDModel = () => {
                 </div>
 
             </div>
-            <div data-aos="fade-up" className="aboutuscontainersix">
+            {/* <div data-aos="fade-up" className="aboutuscontainersix">
             
 
                 <FAQ />
               
             
-            </div>
+            </div> */}
         </div>
         
-
-{/* 
-        <p style={{
-          marginTop:"3rem",
-        }} className='headingFontSize'>Evaluada por CONEAU</p>
-        <p className='paraFontSize'>La UGD se somete a las evaluaciones externas de la Comisión Nacional de Evaluación y Acreditación Universitaria (CONEAU), que analiza todas sus funciones, y atiende las recomendaciones para el mejoramiento permanente de la calidad. 
-        Evaluaciones externas integrales periódicas
-        Acreditación de carreras de grado de interés público y de posgrado
-        </p>
-       */}
       </div>
         
       </main>

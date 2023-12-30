@@ -7,12 +7,7 @@ import 'aos/dist/aos.css';
 
 
 const TeacherPage = () => {
-    // useEffect(() => {
-    //     AOS.init({
-    //          duration: 800,
-    //          once: false,
-    //        })
-    //  }, [])
+
     useEffect(() => {
 		AOS.init({
 			offset: 150,

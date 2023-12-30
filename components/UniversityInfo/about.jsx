@@ -1,4 +1,4 @@
-// import React from 'react';
+
 "use client";
 import "./aboutUspage.css";
 import Counter from './counter';
@@ -9,12 +9,6 @@ import Image from "next/image";
 
 
 const About = () => {
-    // useEffect(() => {
-    //     AOS.init({
-    //          duration: 800,
-    //          once: false,
-    //        })
-    //  }, [])
     useEffect(() => {
 		AOS.init({
 			offset: 150,
@@ -30,11 +24,7 @@ const About = () => {
       <h2 data-aos="fade-up">Tu objetivo es nuestro objetivo</h2>
 
       <main>
-      <div  style={{
-        //   padding:"50px",
-        //   paddingBottom:"100px",
-        //   overflow:"hidden"
-      }}>
+      <div  style={{}}>
 
       <div className='aboutus'>
        
@@ -100,7 +90,7 @@ const About = () => {
                           style={{
                             width: "100%",
                             height: "100%",
-                            objectFit: "cover", // Use "cover" to make the image cover the container while maintaining its aspect ratio
+                            objectFit: "cover", 
                         }}
                         src="/aboutuspage2.webp" alt="UGDimage" />
                     </div>
@@ -108,17 +98,7 @@ const About = () => {
                 </div>
             </div>
         </div>
-        
-
-{/* 
-        <p style={{
-          marginTop:"3rem",
-        }} className='headingFontSize'>Evaluada por CONEAU</p>
-        <p className='paraFontSize'>La UGD se somete a las evaluaciones externas de la Comisión Nacional de Evaluación y Acreditación Universitaria (CONEAU), que analiza todas sus funciones, y atiende las recomendaciones para el mejoramiento permanente de la calidad. 
-        Evaluaciones externas integrales periódicas
-        Acreditación de carreras de grado de interés público y de posgrado
-        </p>
-       */}
+    
       </div>
         
       </main>

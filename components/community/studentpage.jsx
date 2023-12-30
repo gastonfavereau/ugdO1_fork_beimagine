@@ -1,4 +1,4 @@
-// import React from 'react';
+
 "use client";
 import "./community.css";
 import { React, useEffect } from 'react'
@@ -7,12 +7,7 @@ import 'aos/dist/aos.css';
 
 
 const StudentPage = () => {
-    // useEffect(() => {
-    //     AOS.init({
-    //          duration: 800,
-    //          once: false,
-    //        })
-    //  }, [])
+
     useEffect(() => {
 		AOS.init({
 			offset: 150,

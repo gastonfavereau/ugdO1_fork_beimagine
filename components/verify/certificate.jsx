@@ -3,7 +3,6 @@ import PrimaryDetails from "./subcomponents/primaryDetails";
 import Issuer from "./subcomponents/issuer";
 import Receiver from "./subcomponents/receiver";
 import CertImage from "./subcomponents/certImage";
-import Advertisment from "./subcomponents/advertisment";
 import style from "./certificate.module.css";
 import usecertificate from "./usecertificate";
 import Image from "next/image";
@@ -11,8 +10,8 @@ import Image from "next/image";
 
 const Certificate = async ({ params }) => {
   const usecert = await usecertificate(params);
-
-  if (!usecert.certDetails)
+  
+  if (!usecert.certDetails || usecert.certDetails.issuer.id !== 43)
     return (
       <div
         style={{
@@ -63,6 +62,9 @@ const Certificate = async ({ params }) => {
         </div>
       </div>
     );
+
+
+
 
   return (
     <div

@@ -101,6 +101,7 @@ const Accordian = ({ heading, text, index,setToggle,isToggled,isUs,region}) => {
 					courses.map((course)=>{
 						return(
 						<div
+						key={course.id}
                         style={{
                             padding: isActive ? "1.5rem 2rem" : "0em 2rem",
                             backgroundColor: "#e8e8e8",
@@ -124,6 +125,7 @@ const Accordian = ({ heading, text, index,setToggle,isToggled,isUs,region}) => {
 					universityinfo.map((link)=>{
 						return(
 							<div
+							key={link.name}
 							style={{
 								padding: isActive ? "1.5rem 2rem" : "0em 2rem",
 								backgroundColor: "#e8e8e8",
@@ -146,6 +148,7 @@ const Accordian = ({ heading, text, index,setToggle,isToggled,isUs,region}) => {
 					academicCommunity.map((link)=>{
 						return(
 							<div
+							key={link.name}
 							style={{
 								padding: isActive ? "1.5rem 2rem" : "0em 2rem",
 								backgroundColor: "#e8e8e8",
@@ -169,6 +172,7 @@ const Accordian = ({ heading, text, index,setToggle,isToggled,isUs,region}) => {
 					virtualModel.map((link)=>{
 						return(
 							<div
+							key={link.name}
 							style={{
 								padding: isActive ? "1.5rem 2rem" : "0em 2rem",
 								backgroundColor: "#e8e8e8",
@@ -191,6 +195,7 @@ const Accordian = ({ heading, text, index,setToggle,isToggled,isUs,region}) => {
 					titulos.map((link)=>{
 						return(
 							<div
+							key={link.name}
 							style={{
 								padding: isActive ? "1.5rem 2rem" : "0em 2rem",
 								backgroundColor: "#e8e8e8",
@@ -214,6 +219,7 @@ const Accordian = ({ heading, text, index,setToggle,isToggled,isUs,region}) => {
 					text.map((link)=>{
 						return(
 							<div
+							key={link}
 							style={{
 								padding: isActive ? "1.5rem 2rem" : "0em 2rem",
 								backgroundColor: "#e8e8e8",

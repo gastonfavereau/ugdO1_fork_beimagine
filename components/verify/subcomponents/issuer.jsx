@@ -1,6 +1,7 @@
 import style from "../certificate.module.css";
 
 const Issuer = ({ usecert }) => {
+  console.log(usecert.certDetails.issuer.id);
   return (
     <div style={{
       backgroundColor: "#1C3564",

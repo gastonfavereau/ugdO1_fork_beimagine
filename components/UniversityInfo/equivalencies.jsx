@@ -9,17 +9,13 @@ const Equivalencies = () => {
     <div style={{
       width:"100%",
       backgroundColor:"white",
-      // padding:"20px",
       paddingTop:"5rem",
       backgroundImage:"url(/cool-background.png)",
-    //   border:"2px solid black",
-  }}>
+    }}>
      <div className='aboutUSPageMain'>
         <div className='aboutUSPageContent'>
-            {/* <Image src={"/unsplash_-uHVRvDr7pg.png"} width={1200} height={700}  /> */}
             <div >
             <p style={{
-            // textAlign:"center",
             color:"#1C3564",
             fontFamily: "Poppins",
             fontSize: "3rem",

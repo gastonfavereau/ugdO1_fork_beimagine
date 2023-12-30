@@ -77,9 +77,8 @@ const Verify = () => {
                 }} src={"/blockChain.png"} alt="Background Image" />
 
                 <h1 data-aos="fade-up"  style={{
-                    zIndex: 1, // Ensure the heading is above the image
-                    color: "white", // Set text color to be visible against the background
-                    // Add any other styles you need for the heading
+                    zIndex: 1, 
+                    color: "white", 
                     fontSize:"1.5rem",
                     fontWeight:"500",
 
@@ -89,8 +88,38 @@ const Verify = () => {
                 </h1>
             </div>
 
+          <div style={{
+            padding:"2rem",
+          }}>
+          <p  data-aos="fade-up" style={{
+          marginTop:"1rem",
+          textAlign:"center",
+          color:"black",
+          fontFamily: "Poppins",
+          fontSize: "32px",
+          fontStyle: "normal",
+          fontWeight: "500",
+          lineHeight: "38px",
+        }}>Certificación Digital en Blockchain
+        </p>
+        <p  data-aos="fade-up" style={{
+          marginTop:"2rem",
+          textAlign:"center",
+          color:"#6B6B6B",
+          fontFamily: "Inter",
+          fontSize: "18px",
+          fontStyle: "normal",
+          fontWeight: "300",
+          lineHeight: "21px",
+        }}>
+           En UGD, todos nuestros certificados, diplomas y títulos universitarios se emiten en Blockchain. Esto garantiza su trazabilidad, autenticidad y seguridad.
+            Nuestras titulaciones pueden verificarse en esta web, a través del código QR único que cada documento contiene, dando a nuestros graduados la seguridad de que sus documentos son oficiales, con validez internacional y facilmente presentables frente a cualquier autoridad solicitante, ya sea otra institución de educación superior, organismos públicos o empresas de cualquier parte del mundo.
+            Las certificaciones digitales UGD son emitidas únicamente por nuestro Rectorado a través de sus áreas competentes y a partir de las normativas internas que así lo avalan.
+        </p>
+        </div>
+
         <div style={{
-                    marginTop:"-5rem",
+                    marginTop:"5rem",
                     width:"100%",
                     maxWidth:"600px",
                     height:"auto",
@@ -106,9 +135,9 @@ const Verify = () => {
                     
                 }}>
                   <p style={{
-                    marginTop:"-4rem",
+                    marginTop:"1rem",
                     textAlign:"center",
-                    fontSize:"3rem",
+                    fontSize:"2rem",
                     fontWeight:"500"
                   }}>Verificar Títulos</p>
                   <div>

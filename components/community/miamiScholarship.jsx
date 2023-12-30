@@ -64,15 +64,7 @@ const MiamiScholarship = () =>{
             fontSize:"1rem",
             color:"#6B6C6C"
             }} >Un certificado de residencia en EEUU.</p>
-            {/* <button style={{
-                    width:"200px",
-                    height:"50px",
-                    marginTop:"20px",
-                    backgroundColor:"#005FAF",
-                    color:"white",
-                    padding:"5px",
-                    borderRadius:"5px"
-                }}>Envíanos</button> */}
+        
             
           
             </div>

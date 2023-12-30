@@ -1,19 +1,12 @@
-// import React from 'react';
+
 "use client";
 import "./aboutUspage.css";
-import Counter from './counter';
 import { React, useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
 const AuthoritiesPage = () => {
-    // useEffect(() => {
-    //     AOS.init({
-    //          duration: 800,
-    //          once: false,
-    //        })
-    //  }, [])
     useEffect(() => {
 		AOS.init({
 			offset: 150,
@@ -190,89 +183,19 @@ const AuthoritiesPage = () => {
         {
           authority.map((person) =>{
             return(
-                <div  data-aos="fade-up" class="card">
+                <div key={person} data-aos="fade-up" class="card">
                   <img src={person.img} alt="Avatar" style={{
                     width:"100%"
                   }}/>
                   <div class="container">
                     <h4 className="cardTitle"><b>{person.desc}</b></h4> 
                     <p className="cardText">{person.name}</p>
-                    {/* <p>info@ugd.com</p>  */}
                   </div>
                 </div>
             )
           })
         }
-        {/* <div  data-aos="fade-up" class="card">
-          <img src="/Image place holder.webp" alt="Avatar" style={{
-            width:"100%"
-          }}/>
-          <div class="container">
-            <h4><b>Rector</b></h4> 
-            <p>Ing. Luis E. Lichowski</p>
-            <p>info@ugd.com</p> 
-          </div>
-        </div> */}
-        {/* <div  data-aos="fade-up" class="card">
-          <img src="/Image place holder.webp" alt="Avatar" style={{
-            width:"100%"
-          }}/>
-          <div  data-aos="fade-up" class="container">
-            <h4><b>Rector</b></h4> 
-            <p>Ing. Luis E. Lichowski</p>
-            <p>info@ugd.com</p> 
-          </div>
-        </div> */}
-        {/* <div  data-aos="fade-up" class="card">
-          <img src="/Image place holder.webp" alt="Avatar" style={{
-            width:"100%"
-          }}/>
-          <div class="container">
-            <h4><b>Rector</b></h4> 
-            <p>Ing. Luis E. Lichowski</p>
-            <p>info@ugd.com</p> 
-          </div>
-        </div> */}
-        {/* <div  data-aos="fade-up" class="card">
-          <img src="/Image place holder.webp" alt="Avatar" style={{
-            width:"100%"
-          }}/>
-          <div class="container">
-            <h4><b>Rector</b></h4> 
-            <p>Ing. Luis E. Lichowski</p>
-            <p>info@ugd.com</p> 
-          </div>
-        </div> */}
-        {/* <div  data-aos="fade-up" class="card">
-          <img src="/Image place holder.webp" alt="Avatar" style={{
-            width:"100%"
-          }}/>
-          <div class="container">
-            <h4><b>Rector</b></h4> 
-            <p>Ing. Luis E. Lichowski</p>
-            <p>info@ugd.com</p> 
-          </div>
-        </div> */}
-        {/* <div  data-aos="fade-up" class="card">
-          <img src="/Image place holder.webp" alt="Avatar" style={{
-            width:"100%"
-          }}/>
-          <div class="container">
-            <h4><b>Rector</b></h4> 
-            <p>Ing. Luis E. Lichowski</p>
-            <p>info@ugd.com</p> 
-          </div>
-        </div> */}
-        {/* <div  data-aos="fade-up" class="card">
-          <img src="/Image place holder.webp" alt="Avatar" style={{
-            width:"100%"
-          }}/>
-          <div class="container">
-            <h4><b>Rector</b></h4> 
-            <p>Ing. Luis E. Lichowski</p>
-            <p>info@ugd.com</p> 
-          </div>
-        </div> */}
+       
     </div>
         
       </div>

@@ -16,10 +16,8 @@ const Porque = () => {
         <div style={{
             width:"100%",
             backgroundColor:"white",
-            // padding:"20px",
             paddingTop:"5rem",
             backgroundImage:"url(/cool-background.png)",
-          //   border:"2px solid black",
         }}>
            
            <div className='porqueMainDiv'>

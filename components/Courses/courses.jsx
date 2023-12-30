@@ -17,14 +17,18 @@ const Course = ({params}) => {
     
     useEffect(() => {
         pathname.includes("us") ? setUs(true) : setUs(false);
-		AOS.init({
-			offset: 50,
-			duration: 800,
-		});
+        AOS.init({
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 20, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 300, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+        })
 	}, []);
     console.log(params.course)
     const course = data.find((course) => course.path === params.course);
-    // console.log(course)
  
     return(
         <div style={{
@@ -61,7 +65,7 @@ const Course = ({params}) => {
                     padding:"1rem"
                  }}>
                     {course.destinatario&&
-                    <div data-aos="fade-up" style={{
+                    <div  style={{
                         width:"100%",
                         backgroundColor:"#5092b3",
                         padding:"1rem",
@@ -72,7 +76,7 @@ const Course = ({params}) => {
                         {
                             course.destinatario.map((text)=>{
                                 return(
-                                    <p dangerouslySetInnerHTML={{ __html: text }} style={{color:"white",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}></p>
+                                    <p  key={text}  dangerouslySetInnerHTML={{ __html: text }} style={{color:"white",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}></p>
                                 )
                             })
                         }
@@ -107,7 +111,7 @@ const Course = ({params}) => {
                                 course.alcances.list.map((text)=>{
                                     
                                     return(
-                                        <li dangerouslySetInnerHTML={{ __html: text }} style={{color:"white",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}></li>     
+                                        <li key={text} dangerouslySetInnerHTML={{ __html: text }} style={{color:"white",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}></li>     
                                     )
                                 })
                             }
@@ -146,7 +150,7 @@ const Course = ({params}) => {
                                 course.ambitos.list.map((text)=>{
                                     
                                     return(
-                                        <li dangerouslySetInnerHTML={{ __html: text }} style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}></li>     
+                                        <li key={text} dangerouslySetInnerHTML={{ __html: text }} style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}></li>     
                                     )
                                 })
                             }
@@ -185,7 +189,7 @@ const Course = ({params}) => {
                                 course.podra.map((text)=>{
                                     
                                     return(
-                                        <li dangerouslySetInnerHTML={{ __html: text }} style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}></li>     
+                                        <li key={text} dangerouslySetInnerHTML={{ __html: text }} style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}></li>     
                                     )
                                 })
                             }
@@ -196,7 +200,7 @@ const Course = ({params}) => {
                     </div>
                     }
                 </div>
-                <div data-aos="fade-up" className="sidecontentdiv" style={{
+                <div  className="sidecontentdiv" style={{
                     backgroundColor:"white",
                     boxShadow:" 0 8px 8px 0 rgba(0,0,0,0.2)",
                     borderRadius:"5px",

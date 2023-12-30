@@ -85,6 +85,8 @@ export default function Navbar({params}) {
    <div style={{
     display:"flex",
     gap:"5rem",
+    marginLeft:"2rem",
+    marginRight:"2rem",
    }}>
     <div style={{
       display:"flex",
@@ -113,7 +115,7 @@ export default function Navbar({params}) {
                   <Link href={`/${region}/aboutus`}>Quienes somos</Link>
                   <Link href={`/${region}/authorities`}>Autoridades</Link>
                   {/* <Link href={"/ugdvirtualModel"}>Modelo Virtual UGD </Link> */}
-                  <Link href={`/${region}/equivalencies`}>Equivalencies</Link>
+                  <Link href={`/${region}/Equivalencias`}>Equivalencias</Link>
                 </div>
               </div>
           </div>
@@ -129,7 +131,7 @@ export default function Navbar({params}) {
                   width:"100%",
                   height:"auto"
                 }}>
-                  <Link href={`/${region}/ugdvirtualModel`}>Nuestro modelo de Educación Virtua</Link>
+                  <Link href={`/${region}/ugdvirtualModel`}>Nuestro modelo de Educación Virtual</Link>
                   <Link href={`/${region}/por-que`}>¿Por qué UGD Virtual?</Link>
                 </div>
               </div>
@@ -148,9 +150,9 @@ export default function Navbar({params}) {
                   minWidth: "180px",
                 }}>
                   <Link href={`/${region}/student`}>Nuestros destinatarios</Link>
-                  <Link href={`/${region}/teacher`}>Nuestros Docentes</Link>
+                  <Link href={`/${region}/teacher`}>Nuestros docentes</Link>
                   <Link href={`/${region}/partnership`}>Amplia red de vínculos internacionales</Link>
-                  <Link href={`/${region}/scholarshipsAndbenefits`}>Becas y Beneficios</Link>
+                  <Link href={`/${region}/scholarshipsAndbenefits`}>Becas y beneficios</Link>
                   <Link href={`/${region}/miami`}>Beca Latina</Link>
                 </div>
               </div>
@@ -163,20 +165,20 @@ export default function Navbar({params}) {
           padding:"0px",
           backgroundColor:"transparent",
         }}>
-        <button class="dropbtn" style={{
+        <button className="dropbtn" style={{
           padding:"0px",
           backgroundColor:"transparent",
           color: (pathname !== "/ar" && pathname !== "/us") ? "#1C3564":(isScroll ? "#1C3564" : "white")
         }}>Carreras ▼
         </button>
-        <div class="dropdown-content">
+        <div className="dropdown-content">
           <div className="row">
             <div className="column" style={columnStyle}>
               <h3>TECNOLOGÍAS</h3>
               <Link href={`/${region}/courses/software`}>Tecnicatura en Desarrollo de Software</Link>
               <Link href={`/${region}/courses/java`}>Programador Java Full Stack</Link>
               <Link href={`/${region}/courses/recursos`}>Ciclo Lic. Gestión de Rec. Tecnológicos</Link>
-              <Link href={`/${region}/courses/tecnologias`}>Especialización en Tics</Link>
+              <Link href={`/${region}/courses/tecnologias`}>Especialización en TICs</Link>
             </div>
             {!isUs &&<div className="column">
               <h3>EDUCACIÓN</h3>
@@ -211,12 +213,9 @@ export default function Navbar({params}) {
                 <div className="column" style={{
                   width:"100%",
                   height:"auto",
-                  maxWidth: "100px",
-                  // paddingRight: "5rem",
-
+                  minWidth: "180px",
                 }}>
                   <Link style={{
-                    fontSize:"0.7rem",
                   }} href={`/${region}/revalidaciones`}>Títulos UGD y revalidaciones</Link>
                   <Link href={`/${region}/verify`}>Verificar títulos</Link>
                 </div>
@@ -225,87 +224,6 @@ export default function Navbar({params}) {
         </div>
         
     </div>
-    
-    
-
-
-
-    {/* <div style={{
-            display:"flex",
-            justifyContent:"space-between",
-            gap:"5rem",
-            alignItems:"center",
-            color:"--primary-color",
-    }}>
-
-      <div className="dropdown">
-        <button class="dropbtn" >Courses ▼</button>
-        <div class="dropdown-content">
-          <div className="row">
-              <div className="column">
-                <h3>Argentina</h3>
-                <Link href={"/courses"}>Computing (courses, diploma, degree)</Link>
-                <a href="#">Business Management</a>
-                <a href="#">Marketing</a>
-                <a href="#">University Teaching Cycle</a>
-                <a href="#">Degree Cycle in Educational Institutions Management</a>
-              </div>
-              <div className="column">
-                <h3>Miami</h3>
-                <a href="#">Computing (courses, diploma, degree)</a>
-                <a href="#">Business Management</a>
-                <a href="#">Marketing</a>
-                <a href="#">University Teaching Cycle</a>
-                <a href="#">Degree Cycle in Educational Institutions Management</a>
-              </div>
-              <div className="column">
-                <h3>Category 3</h3>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-              </div>
-          </div>
-        </div>
-      </div> 
-    </div> */}
-       {/* <div className="dropdown"style={{
-          padding:"0px",
-          backgroundColor:"transparent",
-        }}>
-        <button class="dropbtn" style={{
-          padding:"0px",
-          backgroundColor:"transparent",
-          color:pathname !== "/" ? "#1C3564":(isScroll ? "#1C3564" : "white")
-        }}>Carreras ▼
-        </button>
-        <div class="dropdown-content">
-          <div className="row">
-            <div className="column">
-              <h3>TECNOLOGÍAS</h3>
-              <Link href={`/courses/software`}>Tecnicatura en Desarrollo de Software</Link>
-              <Link href={`/courses/java`}>Programador Java Full Stack</Link>
-              <Link href={`/courses/recursos`}>Ciclo Lic. Gestión de Rec. Tecnológicos</Link>
-              <Link href={"/courses/tecnologias"}>Especialización en Tics</Link>
-            </div>
-            <div className="column">
-              <h3>EDUCACIÓN</h3>
-              <Link href={"/courses/profesionales"}>Ciclo Prof. Univ. p/profesionales</Link>
-              <Link href={"/courses/educativa"}>Ciclo Lic. Gestión Educativa</Link>
-              <Link href={"/courses/maestria"}>Maestría en GyE de la Ed. Superior </Link>
-            </div>
-            <div className="column">
-              <h3>EMPRESARIALES</h3>
-              <Link href={"/courses/marketing"}>Lic. en Marketing</Link>
-              <Link href={"/courses/administracion"}>Lic. en Administración</Link>
-          
-            </div>
-            <div className="column">
-              <h3>DOCTORADO</h3>
-              <Link href={"/courses/doctorado"}>Doc. en Desarrollo e Integración</Link>
-            </div>
-          </div>
-        </div>
-      </div>  */}
     </div>
 
    </div>
@@ -382,7 +300,7 @@ export default function Navbar({params}) {
               heading={"Modelo UGD Virtual"}
               text={"virtualModel"}
               index={"1"}
-              key={1}
+              key={2}
               setToggle={setToggle}
               isToggled={isToggled}
               isUs={isUs}
@@ -392,7 +310,7 @@ export default function Navbar({params}) {
               heading={"Comunidad académica"}
               text={"Academic Community"}
               index={"1"}
-              key={1}
+              key={3}
               setToggle={setToggle}
               isToggled={isToggled}
               isUs={isUs}
@@ -405,7 +323,7 @@ export default function Navbar({params}) {
               index={"1"}
               setToggle={setToggle}
               isToggled={isToggled}
-              key={1}
+              key={4}
               isUs={isUs}
               region={region}
               />
@@ -416,22 +334,10 @@ export default function Navbar({params}) {
               index={"1"}
               setToggle={setToggle}
               isToggled={isToggled}
-              key={1}
+              key={5}
               isUs={isUs}
               region={region}
               />
-              {/* <Link href={"/verify"} style={{
-                	padding: "1.5rem 2rem",
-                  borderBottom: "2px solid  var(--primary-90)",
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  cursor: "pointer",
-              }}
-              onClick={()=>{
-                setToggle(!isToggled)
-              }} 
-              >Títulos</Link> */}
           </div>
       
       </div>

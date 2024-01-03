@@ -4,102 +4,12 @@
 const data =[
     {   
     course:"Tecnicatura en Desarrollo de Software",
-    
     subtitle:"Para Programadores Java Full Stack",
     bgimage:"/TecDesarrolloSoftware_Placa.png",
     path:"software",
-    image:"/course5.jpg",  
+    image:"/webp/course5.webp",  
     duration:"3 años",
     pdf:"/pdf/Tecnicatura en Desarrollo de Software.pdf",
-    syllabus:[
-        {   id:1,
-            subtopic:[
-                {
-                    id:1,
-                    name:"Fundamentos de Programación",
-                },
-                {
-                    id:2,
-                    name:"Programación Java",
-                },
-                {
-                    id:3,
-                    name:"Matemática Introductoria",
-                },
-                {
-                    id:4,
-                    name:"Laboratorio de Programación I",
-                },
-                {
-                    id:5,
-                    name:"Estructura de Datos y Algoritmos",
-                },
-                {
-                    id:6,
-                    name:"Programación Web I",
-                },{
-                    id:7,
-                    name:"Matemática I",
-                }
-            ],
-        },
-        {
-            id:2,
-            subtopic:[
-                {
-                    id:1,
-                    name:"Administración de Base de Datos",
-                },
-                {
-                    id:2,
-                    name:"Programación Web II",
-                },
-                {
-                    id:3,
-                    name:"Ingeniería de Software",
-                },
-                {
-                    id:4,
-                    name:"Laboratorio de Programación II",
-                },
-                {
-                    id:5,
-                    name:"Programación para Dispositivos Móviles",
-                },
-                {
-                    id:6,
-                    name:"Programación en .Net o Python",
-                },{
-                    id:7,
-                    name:"Metodología de Desarrollo",
-                },{
-                    id:8,
-                    name:"Laboratorio de Programación III",
-                }
-            ],
-            duration:"4 meses",
-        },
-        {
-            id:3,
-            subtopic:[
-                {
-                    id:1,
-                    name:"Inglés Técnico III",
-                },
-                {
-                    id:2,
-                    name:"Redes",
-                },
-                {
-                    id:3,
-                    name:"Seguridad Informática",
-                },{
-                    id:4,
-                    name:"Práctica Profesional Tutelada",
-                }
-            ],
-        }
-    ],
     presentacion:"Esta carrera forma recursos humanos capaces de participar en y administrar el diseño, construcción y operación de sistemas informáticos y soluciones de software.<br/>El egresado tendrá la posibilidad de continuar con el Ciclo de Licenciatura en Gestión de Recursos Tecnológicos y obtener un título de grado universitario.",
     tituloFinal:"Técnico en Desarrollo de Software (18 meses)",
     titulosAprobados:[
@@ -137,66 +47,8 @@ const data =[
         pdf:"/pdf/Programador Java Full Stack (2).pdf",
         bgimage:"/ProgramJavaFullStack_Placa.png",
         path:"java" ,
-        image:"/course4.jpg", 
+        image:"/webp/course4.webp", 
         duration:"9 meses",
-        syllabus:[
-            {   id:1,
-                topic:"Fundamentos de Programación",
-                subtopic:[
-                    {
-                        id:1,
-                        name:"Programación Imperativa",
-                    },
-                    {
-                        id:2,
-                        name:"Programación Funcional",
-                    }
-                ],
-                duration:"2 meses",
-            },
-            {
-                id:2,
-                topic:"Programación en Java",
-                subtopic:[
-                    {
-                        id:1,
-                        name:"Introducción en Java y Entorno de Desarrollo",
-                    },
-                    {
-                        id:2,
-                        name:"Programación Orientada a Objetos",
-                    },
-                    {
-                        id:3,
-                        name:"Relaciones entre Clases",
-                    },
-                    {
-                        id:4,
-                        name:"Herencia",
-                    }
-                ],
-                duration:"4 meses",
-            },
-            {
-                id:3,
-                topic:"Desarrollo de una Aplicación en Java",
-                subtopic:[
-                    {
-                        id:1,
-                        name:"Trabajo con Vista y Control de Versiones",
-                    },
-                    {
-                        id:2,
-                        name:"Excepciones",
-                    },
-                    {
-                        id:3,
-                        name:"Manejo de Base de Datos",
-                    }
-                ],
-                duration:"3 meses",
-            }
-        ],
         presentacion:"Esta propuesta brinda las habilidades necesarias para incorporarse rápidamente al mercado laboral, con un perfil de desarrollador de software junior en aplicaciones Java Full Stack, uno de los lenguajes de programación con mayor difusión y demanda.  <br />El curso es de modalidad virtual y sincrónica. ",
         tituloFinal:"Programador Java Full Stack (9 meses)",
         titulosAprobados:[
@@ -227,66 +79,8 @@ const data =[
         pdf:"/pdf/Licenciatura en Marketing.pdf",
         bgimage:"/LicMarketing_Placa.png",
         path:"marketing",
-        image:"/course9.jpg",
+        image:"/webp/course9.webp",
         duration:"9 meses",
-        syllabus:[
-            {   id:1,
-                topic:"Fundamentos de Programación",
-                subtopic:[
-                    {
-                        id:1,
-                        name:"Programación Imperativa",
-                    },
-                    {
-                        id:2,
-                        name:"Programación Funcional",
-                    }
-                ],
-                duration:"2 meses",
-            },
-            {
-                id:2,
-                topic:"Programación en Java",
-                subtopic:[
-                    {
-                        id:1,
-                        name:"Introducción en Java y Entorno de Desarrollo",
-                    },
-                    {
-                        id:2,
-                        name:"Programación Orientada a Objetos",
-                    },
-                    {
-                        id:3,
-                        name:"Relaciones entre Clases",
-                    },
-                    {
-                        id:4,
-                        name:"Herencia",
-                    }
-                ],
-                duration:"4 meses",
-            },
-            {
-                id:3,
-                topic:"Desarrollo de una Aplicación en Java",
-                subtopic:[
-                    {
-                        id:1,
-                        name:"Trabajo con Vista y Control de Versiones",
-                    },
-                    {
-                        id:2,
-                        name:"Excepciones",
-                    },
-                    {
-                        id:3,
-                        name:"Manejo de Base de Datos",
-                    }
-                ],
-                duration:"3 meses",
-            }
-        ],
         presentacion:"Esta carrera forma graduados para el diseño y la implementación de negocios, el desarrollo de productos y servicios y con capacidad de planificar y supervisar procesos de comunicación y posicionamiento.",
         tituloFinal:"Licenciado en Marketing (4 años)",
         tituloIntermedio:"Técnico Universitario en Marketing (3 años)",
@@ -331,66 +125,8 @@ const data =[
         pdf:"/pdf/Maestría en Gestión y Evaluación de la Educación Superior.pdf",
         bgimage:"/MaestGestEvalEduSup_Placa.png",
         path:"maestria",
-        image:"/course11.jpg",
+        image:"/webp/course11.webp",
         duration:"9 meses",
-        syllabus:[
-            {   id:1,
-                topic:"Fundamentos de Programación",
-                subtopic:[
-                    {
-                        id:1,
-                        name:"Programación Imperativa",
-                    },
-                    {
-                        id:2,
-                        name:"Programación Funcional",
-                    }
-                ],
-                duration:"2 meses",
-            },
-            {
-                id:2,
-                topic:"Programación en Java",
-                subtopic:[
-                    {
-                        id:1,
-                        name:"Introducción en Java y Entorno de Desarrollo",
-                    },
-                    {
-                        id:2,
-                        name:"Programación Orientada a Objetos",
-                    },
-                    {
-                        id:3,
-                        name:"Relaciones entre Clases",
-                    },
-                    {
-                        id:4,
-                        name:"Herencia",
-                    }
-                ],
-                duration:"4 meses",
-            },
-            {
-                id:3,
-                topic:"Desarrollo de una Aplicación en Java",
-                subtopic:[
-                    {
-                        id:1,
-                        name:"Trabajo con Vista y Control de Versiones",
-                    },
-                    {
-                        id:2,
-                        name:"Excepciones",
-                    },
-                    {
-                        id:3,
-                        name:"Manejo de Base de Datos",
-                    }
-                ],
-                duration:"3 meses",
-            }
-        ],
         presentacion:"Esta maestría brinda formación de alto nivel proveyendo los conocimientos y herramientas necesarias para intervenir en los procesos de gestión y evaluación de la educación superior tanto universitaria como no universitaria, atendiendo las nuevas demandas, tendencias y orientaciones normativas, con especial atención a los procesos de internacionalización. <br />La carrera fue diseñada con una proyección internacional, con la incorporación de perspectivas comparadas entre sistemas de Educación Superior y de contenidos específicos acerca de interculturalidad, internacionalización universitaria, Cooperación,  movilidad estudiantil y políticas de internacionalización del currículum.",
         tituloFinal:"Magister en Gestión y Evaluación de la Educación Superior (2 años)",
 
@@ -429,66 +165,8 @@ const data =[
         pdf:"/pdf/Licenciatura en Gestión Educativa.pdf",
         bgimage:"/LicGestionEducativa_Placa.png",
         path:"educativa",
-        image:"/course10.jpg",
+        image:"/webp/course10.webp",
         duration:"9 meses",
-        syllabus:[
-            {   id:1,
-                topic:"Fundamentos de Programación",
-                subtopic:[
-                    {
-                        id:1,
-                        name:"Programación Imperativa",
-                    },
-                    {
-                        id:2,
-                        name:"Programación Funcional",
-                    }
-                ],
-                duration:"2 meses",
-            },
-            {
-                id:2,
-                topic:"Programación en Java",
-                subtopic:[
-                    {
-                        id:1,
-                        name:"Introducción en Java y Entorno de Desarrollo",
-                    },
-                    {
-                        id:2,
-                        name:"Programación Orientada a Objetos",
-                    },
-                    {
-                        id:3,
-                        name:"Relaciones entre Clases",
-                    },
-                    {
-                        id:4,
-                        name:"Herencia",
-                    }
-                ],
-                duration:"4 meses",
-            },
-            {
-                id:3,
-                topic:"Desarrollo de una Aplicación en Java",
-                subtopic:[
-                    {
-                        id:1,
-                        name:"Trabajo con Vista y Control de Versiones",
-                    },
-                    {
-                        id:2,
-                        name:"Excepciones",
-                    },
-                    {
-                        id:3,
-                        name:"Manejo de Base de Datos",
-                    }
-                ],
-                duration:"3 meses",
-            }
-        ],
         presentacion:"La carrera está destinada a docentes o funcionarios que se desempeñen o aspiren desempeñarse en cargos de gestión, conducción y administración de instituciones educativas de todos los niveles, liderando y conduciendo equipos de trabajo, y diseñando e implementando planes de mejora para las organizaciones que coordine y/o asesore.",
         tituloFinal:"Licenciado en Licenciado en Gestión Educativa (4 años)",
         titulosAprobados:[
@@ -527,90 +205,8 @@ const data =[
     subtitle:"Ciclo de complementación ",
     bgimage:"/CicloLicGestionRecTecno_Placa.png",
     path:"recursos",
-    image:"/course3.jpg",
+    image:"/webp/course3.webp",
     duration:"2 años",
-    syllabus:[
-        {   id:1,
-            subtopic:[
-                {
-                    id:1,
-                    name:"Investigación Operativa – Cuatrimestral",
-                },
-                {
-                    id:2,
-                    name:"Legislación – Cuatrimestral",
-                },
-                {
-                    id:3,
-                    name:"Economía – Cuatrimestral",
-                },
-                {
-                    id:4,
-                    name:"Gestión de Recursos Humanos – Cuatrimestral",
-                },
-                {
-                    id:5,
-                    name:"Paradigmas y Lenguajes de Programación – Cuatrimestral",
-                },
-                {
-                    id:6,
-                    name:"Ingeniería de Software – Cuatrimestral",
-                },{
-                    id:7,
-                    name:"Redes – Cuatrimestral",
-                },{
-                    id:8,
-                    name:"Ética Profesional – Cuatrimestral",
-                },{
-                    id:9,
-                    name:"Modelos y Simulación - Cuatrimestral",
-                }
-            ],
-        },
-        {
-            id:2,
-            subtopic:[
-                {
-                    id:1,
-                    name:"Principio de Inteligencia Artificial – Cuatrimestral",
-                },
-                {
-                    id:2,
-                    name:"Auditoria y Calidad – Cuatrimestral",
-                },
-                {
-                    id:3,
-                    name:"Programación Orientada a Eventos – Cuatrimestrals",
-                },
-                {
-                    id:4,
-                    name:"Gestión de Proyectos – Cuatrimestral",
-                },
-                {
-                    id:5,
-                    name:"Proyectos Informáticos – Cuatrimestral",
-                },
-                {
-                    id:6,
-                    name:"Aplicaciones Web y Móvil – Cuatrimestral",
-                },
-                {
-                    id:7,
-                    name:"Dirección y Gerenciamiento – Cuatrimestral",
-                },
-                {
-                    id:8,
-                    name:"Emprendimiento e Innovación – Cuatrimestral",
-                },
-                {
-                    id:9,
-                    name:"Taller de Trabajo Final - Cuatrimestral",
-                }
-            ],
-            
-        }
-        
-    ],
     presentacion:"Este Ciclo está destinado a fortalecer la formación de quienes ya han transitado estudios superiores y deseen incorporar conocimientos que fortalezcan sus competencias laborales, desarrollando un perfil que le permita identificar y elaborar soluciones informáticas basadas en software a los problemas de las organizaciones y de la comunidad en general.",
     tituloFinal:"Licenciado en Gestión de Recursos Tecnológicos (2 años)",
     titulosAprobados:[
@@ -644,66 +240,8 @@ const data =[
     pdf:"/pdf/Doctorado en Desarrollo Sustentable e Integración.pdf",
     bgimage:"/DocDesarrolloSustIntegracion_Placa.png",
     path:"doctorado",
-    image:"/course6.jpg",
+    image:"/webp/course6.webp",
     duration:"9 meses",
-    syllabus:[
-        {   id:1,
-            topic:"Fundamentos de Programación",
-            subtopic:[
-                {
-                    id:1,
-                    name:"Programación Imperativa",
-                },
-                {
-                    id:2,
-                    name:"Programación Funcional",
-                }
-            ],
-            duration:"2 meses",
-        },
-        {
-            id:2,
-            topic:"Programación en Java",
-            subtopic:[
-                {
-                    id:1,
-                    name:"Introducción en Java y Entorno de Desarrollo",
-                },
-                {
-                    id:2,
-                    name:"Programación Orientada a Objetos",
-                },
-                {
-                    id:3,
-                    name:"Relaciones entre Clases",
-                },
-                {
-                    id:4,
-                    name:"Herencia",
-                }
-            ],
-            duration:"4 meses",
-        },
-        {
-            id:3,
-            topic:"Desarrollo de una Aplicación en Java",
-            subtopic:[
-                {
-                    id:1,
-                    name:"Trabajo con Vista y Control de Versiones",
-                },
-                {
-                    id:2,
-                    name:"Excepciones",
-                },
-                {
-                    id:3,
-                    name:"Manejo de Base de Datos",
-                }
-            ],
-            duration:"3 meses",
-        }
-    ],
     presentacion:"El Doctorado en Desarrollo Sustentable e Integración busca formar investigadores/as de excelencia, capaces de enfocar los problemas de la sociedad actual, tanto en el sector público como en el privado, con una visión amplia y dinámica de todos los actores sociales, estando capacitado para identificar problemas y proponer soluciones relacionadas con el medio ambiente y su vinculación con la sociedad.  <br/>Será capaz de generar propuestas y conocimientos para enriquecer el desarrollo sustentable en el marco local, regional e internacional.",
     tituloFinal:"Doctor en Desarrollo Sustentable e Integración (2 años más tesis).",
     // tituloIntermedio:"Licenciado en Administración (4 años)",
@@ -744,66 +282,8 @@ const data =[
         pdf:"/pdf/Ciclo de Profesorado Universitario para Profesionales.pdf",
         bgimage:"/CicloProfUnivProfesionales_Placa.png",
         path:"profesionales",
-        image:"/course2.jpg",
+        image:"/webp/course2.webp",
         duration:"9 meses",
-        syllabus:[
-            {   id:1,
-                topic:"Fundamentos de Programación",
-                subtopic:[
-                    {
-                        id:1,
-                        name:"Programación Imperativa",
-                    },
-                    {
-                        id:2,
-                        name:"Programación Funcional",
-                    }
-                ],
-                duration:"2 meses",
-            },
-            {
-                id:2,
-                topic:"Programación en Java",
-                subtopic:[
-                    {
-                        id:1,
-                        name:"Introducción en Java y Entorno de Desarrollo",
-                    },
-                    {
-                        id:2,
-                        name:"Programación Orientada a Objetos",
-                    },
-                    {
-                        id:3,
-                        name:"Relaciones entre Clases",
-                    },
-                    {
-                        id:4,
-                        name:"Herencia",
-                    }
-                ],
-                duration:"4 meses",
-            },
-            {
-                id:3,
-                topic:"Desarrollo de una Aplicación en Java",
-                subtopic:[
-                    {
-                        id:1,
-                        name:"Trabajo con Vista y Control de Versiones",
-                    },
-                    {
-                        id:2,
-                        name:"Excepciones",
-                    },
-                    {
-                        id:3,
-                        name:"Manejo de Base de Datos",
-                    }
-                ],
-                duration:"3 meses",
-            }
-        ],
         presentacion:"Esta propuesta forma para el ejercicio de la docencia en la disciplina que ostente el alumno de acuerdo al título de origen que posea.   <br />El egresado podrá desempeñarse en los niveles de educación secundaria, educación superior no universitaria y universitaria. Tendrá la capacidad para diseñar, implementar y utilizar la investigación como herramienta para la mejora de la práctica educativa.",
         tituloFinal:"Profesor Universitario (1 año y medio)        ",
         titulosAprobados:[
@@ -837,7 +317,7 @@ const data =[
         bgimage:"/LicAdministracion_Placa.png",
         pdf:"/pdf/Licenciatura en Administración COMPLETO.pdf",
         path:"administracion",
-        image:"/course8.jpg",
+        image:"/webp/course8.webp",
         duration:"9 meses",
         syllabus:[
             {   id:1,
@@ -951,66 +431,8 @@ const data =[
         pdf:"/pdf/Especialización en Gestión de Tecnologías.pdf",
         bgimage:"/EspGestionTecnoInfoyCom_Placa.png",
         path:"tecnologias",
-        image:"/course7.jpg",
+        image:"/webp/course7.webp",
         duration:"9 meses",
-        syllabus:[
-            {   id:1,
-                topic:"Fundamentos de Programación",
-                subtopic:[
-                    {
-                        id:1,
-                        name:"Programación Imperativa",
-                    },
-                    {
-                        id:2,
-                        name:"Programación Funcional",
-                    }
-                ],
-                duration:"2 meses",
-            },
-            {
-                id:2,
-                topic:"Programación en Java",
-                subtopic:[
-                    {
-                        id:1,
-                        name:"Introducción en Java y Entorno de Desarrollo",
-                    },
-                    {
-                        id:2,
-                        name:"Programación Orientada a Objetos",
-                    },
-                    {
-                        id:3,
-                        name:"Relaciones entre Clases",
-                    },
-                    {
-                        id:4,
-                        name:"Herencia",
-                    }
-                ],
-                duration:"4 meses",
-            },
-            {
-                id:3,
-                topic:"Desarrollo de una Aplicación en Java",
-                subtopic:[
-                    {
-                        id:1,
-                        name:"Trabajo con Vista y Control de Versiones",
-                    },
-                    {
-                        id:2,
-                        name:"Excepciones",
-                    },
-                    {
-                        id:3,
-                        name:"Manejo de Base de Datos",
-                    }
-                ],
-                duration:"3 meses",
-            }
-        ],
         presentacion:"Esta carrera brinda competencias en gestión de TICs, y está orientada a profesionales que dirijan o aspiren dirigir proyectos o empresas de tecnología de alto impacto, estableciendo estrategias y conduciendo equipos multidisciplinarios.",
         tituloFinal:"Especialista en Gestión de Tecnologías de la Información y Comunicación (1 año y medio)",
         diplomaturas:[
@@ -1042,6 +464,97 @@ const data =[
             ]
         },
 
+    },
+    {   
+    course:"Diplomaturas Universitarias en Corretaje y Negocios Inmobiliarios",
+    pdf:"/pdf/Diplomaturas Univ Corretaje.pdf",
+    bgimage:"/Diplomaturas_Placa_2.png",
+    path:"diplomaturas",
+    image:"/webp/Diplomaturas_Placa_Historia.webp",
+    duration:"9 meses",
+    presentacion:"Formación de corta duración, concreta y aplicable: que se puede complementar luego completando una formación de grado para profundizar tu profesionalización. Trayectos de formación flexible: Podés tomar tramos independientes, y adaptar la duración y dedicación a tu disponibilidad horaria.",
+    tituloFinal:"Especialista en Gestión de Tecnologías de la Información y Comunicación (1 año y medio)",
+    titulosAprobados:[
+        "Resolución Ministerio de Educación Nro. 2349/22.",
+    ],
+    destinatario:[
+        "<span>•</span> Quienes se desempeñen en el ámbito inmobiliario, y aspiren a mejorar su formación, adquiriendo nuevas capacidades específicas.",
+        "<span>•</span> Toda persona que desee formarse para desempeñarse en el mercado inmobiliario"
+    ],
+    // ALCANCES Y SALIDA LABORAL
+    alcances:{
+        title:"El graduado será un profesional competente para:",
+        list:[
+            "<span>•</span> Desarrollar una sólida formación teórica y práctica para el ejercicio eficiente y responsable de la profesión de Corretaje y Negocios Inmobiliarios de propiedades. Participación de equipos de investigación y desarrollo.",
+            "<span>•</span> Suministrar los conocimientos jurídicos, contables e instrumentales que permitan a quienes se dediquen a esta actividad, la adquisición de un perfil profesional. ",
+            "<span>•</span> Ofrecer una formación básica que prevea las estrategias y las motivaciones para el permanente perfeccionamiento y la capacitación continua en las diversas áreas de competencia de la profesión. ",
+            "<span>•</span> Implementar los conocimientos esenciales de las diversas especialidades y orientaciones propias de la profesión.",
+            
+
+        ]
+    },
+
+},
+{  
+course:"Tecnicatura Universitaria en Corretaje y Negocios Inmobiliarios",
+pdf:"/pdf/Tecnicatura Univ Corretaje.pdf",
+bgimage:"/TecUnivCorretaje_Placa_2.png",
+path:"inmobiliarios",
+image:"/webp/TecUnivCorretaje_Placa_Historia.webp",
+duration:"9 meses",
+presentacion:"Esta carrera ofrece formación en la intermediación, gestión y desarrollo de proyectos y negocios inmobiliarios. Otorga un título universitario que habilita para ejercer la profesión de Corredor y Tasador Inmobiliario, así como para asesorar, promover y realizar operaciones relacionadas. El cuerpo docente está compuesto por experimentados y reconocidos profesionales que aportarán una formación teórica y práctica en aspectos jurídicos, contables, económicos, sociales y ambientales del sector inmobiliario.",
+tituloFinal:"Licenciado en Corretaje y Negocios Inmobiliarios (4 años) ",
+tituloIntermedio:"Técnico Universitario en Corretaje y Negocios Inmobiliarios (3 años)",
+titulosAprobados:[
+    "Resolución Ministerio de Educación Nro. 2003/23.",
+],
+destinatario:[
+    "<span>•</span> Quienes se desempeñen en el ámbito inmobiliaria y aspiren a mejorar su formación, adquiriendo nuevas capacidades específicas y obteniendo un título habilitante.  ",
+    "<span>•</span> Toda persona que desee formarse para desempeñarse en el mercado inmobiliario."
+],
+// ALCANCES Y SALIDA LABORAL
+alcances:{
+    title:"El graduado será un profesional competente que:",
+    list:[
+        "<span>•</span> Podrá desarrollar el corretaje con una sólida formación teórica y práctica para el ejercicio eficiente de los Negocios Inmobiliarios.",
+        "<span>•</span> Será capaz de participar de equipos de investigación y desarrollo.",
+        "<span>•</span> Contará con los conocimientos jurídicos, contables e instrumentales que permitan a quienes se dediquen a esta actividad, la adquisición de un perfil profesional.",
+        "<span>•</span> Tendrá una formación que le habrá provisto de las estrategias y las motivaciones para el permanente perfeccionamiento y la capacitación continua en las diversas áreas de competencia de la profesión.",
+        "<span>•</span> Poseerá los conocimientos de las diversas especialidades y orientaciones propias de la profesión.",
+        
+
+    ]
+},
+
+},
+{  
+    course:"Licenciatura en Corretaje y Negocios Inmobiliarios",
+    pdf:"/pdf/Licenciatura Corretaje.pdf",
+    bgimage:"/LicCorretaje_Placa_2.png",
+    path:"corretaje",
+    image:"/webp/LicCorretaje_Placa_Historia.webp",
+    duration:"9 meses",
+    presentacion:"Esta carrera ofrece formación en la intermediación, gestión y desarrollo de proyectos y negocios inmobiliarios. Otorga un título universitario que habilita para ejercer la profesión de Corredor y Tasador Inmobiliario, así como para asesorar, promover y realizar operaciones relacionadas. El cuerpo docente está compuesto por experimentados y reconocidos profesionales que aportarán una formación teórica y práctica en aspectos jurídicos, contables, económicos, sociales y ambientales del sector inmobiliario.",
+    tituloFinal:"Licenciado en Corretaje y Negocios Inmobiliarios (4 años) ",
+    tituloIntermedio:"Técnico Universitario en Corretaje y Negocios Inmobiliarios (3 años)",
+    titulosAprobados:[
+        "Resolución Ministerio de Educación Nro. 2349/22",
+    ],
+    destinatario:[
+        "<span>•</span> Quienes se desempeñen en el ámbito inmobiliario, y aspiren a mejorar su formación, adquiriendo nuevas capacidades específicas.",
+        "<span>•</span> Toda persona que desee formarse para desempeñarse en el mercado inmobiliario"
+    ],
+    // ALCANCES Y SALIDA LABORAL
+    alcances:{
+        title:"El graduado será un profesional competente que:",
+        list:[
+            "<span>•</span> Desarrollar una sólida formación teórica y práctica para el ejercicio eficiente y responsable de la profesión de Corretaje y Negocios Inmobiliarios de propiedades. Participación de equipos de investigación y desarrollo.",
+            "<span>•</span> Suministrar los conocimientos jurídicos, contables e instrumentales que permitan a quienes se dediquen a esta actividad, la adquisición de un perfil profesional.",
+            "<span>•</span> Ofrecer una formación básica que prevea las estrategias y las motivaciones para el permanente perfeccionamiento y la capacitación continua en las diversas áreas de competencia de la profesión.",
+            "<span>•</span> Implementar los conocimientos esenciales de las diversas especialidades y orientaciones propias de la profesión.",
+        ]
+    },
+    
     },
 
 ]

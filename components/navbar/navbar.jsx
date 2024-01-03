@@ -193,6 +193,12 @@ export default function Navbar({params}) {
           
             </div>
             <div className="column">
+              <h3>Corretaje</h3>
+              <Link href={`/${region}/courses/diplomaturas`}>Diplomaturas</Link>
+              <Link href={`/${region}/courses/inmobiliarios`}>Corredor Inmobilliario</Link>
+              <Link href={`/${region}/courses/corretaje`}>Lin. en Corretaje y Neg. Inmobilarios</Link>
+            </div>
+            <div className="column">
               <h3>DOCTORADO</h3>
               <Link href={`/${region}/courses/doctorado`}>Doc. en Desarrollo e Integración</Link>
             </div>

@@ -153,7 +153,8 @@ function ImageSlider({ images,params }) {
               data.map((course,index)=>{
                 return(
                   <Link key={index}  href={`${region}/courses/${course.path}`}>
-                  <img  src={course.image} height={300} width={300}/>
+                  <Image  src={course.image} height={300} width={300} priority 
+                  />
                   </Link>
                 )
               })

@@ -436,13 +436,13 @@ const data =[
         presentacion:"Esta carrera brinda competencias en gestión de TICs, y está orientada a profesionales que dirijan o aspiren dirigir proyectos o empresas de tecnología de alto impacto, estableciendo estrategias y conduciendo equipos multidisciplinarios.",
         tituloFinal:"Especialista en Gestión de Tecnologías de la Información y Comunicación (1 año y medio)",
         diplomaturas:[
-            "Diplomatura Universitaria en Ciberseguridad",
-            "Diplomatura Universitaria en IA y Ciencia de Datos",
-            "Diplomatura Universitaria en Gerenciamiento de la Transformación Digital"
+            "• Diplomatura Universitaria en Ciberseguridad",
+            "• Diplomatura Universitaria en IA y Ciencia de Datos",
+            "• Diplomatura Universitaria en Gerenciamiento de la Transformación Digital"
         ],
         titulosAprobados:[
-            "Resolución UGD Nro. 64/A/19.",
-            "Acreditación por la Comisión Nacional de Evaluación y Acreditación Universitaria (CONEAU) Acta N° 537/2020",
+            "• Resolución UGD Nro. 64/A/19.",
+            "• Acreditación por la Comisión Nacional de Evaluación y Acreditación Universitaria (CONEAU) Acta N° 537/2020",
         ],
         destinatario:[
             "Esta carrera está orientada a profesionales que trabajan o aspiran a trabajar en posiciones de liderazgo en el ámbito de las tecnologías de la información y la comunicación (TICs), y que buscan actualizar y profundizar sus conocimientos y habilidades para gestionar proyectos innovadores y resolver desafíos en un entorno dinámico y competitivo.",
@@ -473,7 +473,11 @@ const data =[
     image:"/webp/Diplomaturas_Placa_Historia.webp",
     duration:"9 meses",
     presentacion:"Formación de corta duración, concreta y aplicable: que se puede complementar luego completando una formación de grado para profundizar tu profesionalización. Trayectos de formación flexible: Podés tomar tramos independientes, y adaptar la duración y dedicación a tu disponibilidad horaria.",
-    tituloFinal:"Especialista en Gestión de Tecnologías de la Información y Comunicación (1 año y medio)",
+    tituloFinal:[
+        "• Diplomatura Universitaria en Tasación de Inmuebles (8 meses)",
+        "• Diplomatura Universitaria en Negocios y Marketing Inmobiliario (8 meses)",
+        "• Diplomatura Universitaria en Proyectos Inmobiliarios (8 mese"
+    ],
     titulosAprobados:[
         "Resolución Ministerio de Educación Nro. 2349/22.",
     ],

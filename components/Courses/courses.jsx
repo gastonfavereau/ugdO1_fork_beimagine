@@ -1,10 +1,9 @@
-// import "./courses.css"
+
 "use client"
 
 import { React, useEffect, useState } from 'react'
 import Image from "next/image";
 import data from "@/data/data";
-import Accordian from "../navbar/accordian";
 import "./courses.css"
 import Link from "next/link";
 import AOS from 'aos';
@@ -27,7 +26,6 @@ const Course = ({params}) => {
             once: true, // whether animation should happen only once - while scrolling down
         })
 	}, []);
-    console.log(params.course)
     const course = data.find((course) => course.path === params.course);
  
     return(
@@ -224,25 +222,64 @@ const Course = ({params}) => {
                     }}>
                         {/* tituloFinal */}
                         { course.tituloFinal &&
+                        <>
+                        {typeof course.tituloFinal === 'string' ?
                         <div style={{
                             display:"flex",
                             gap:"1em",
                         }}>
                             <Image src={"/time.svg"} height={25} width={25} /> 
                             <div style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Título final: <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{course.tituloFinal}</p></div>
+                        </div>:
+                        <div style={{
+                            display:"flex",
+                            gap:"1em",
+                        }}
+                        >
+                            <Image src={"/time.svg"} height={25} width={25} />  
+                            <div style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Títulos finales:
+                            {
+                                course.tituloFinal.map((item)=>( <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}} key={item}>{item}</p>))
+                            }
+                            </div>
                         </div>
+                        }
+                        </>
                         }
 
                         {/* tituloIntermedio */}
 
                         {course.tituloIntermedio&&
+
+                        <>
+                        {typeof course.tituloIntermedio === 'string'&&
                         <div style={{
                             display:"flex",
                             gap:"1em"
                         }}>
                             <Image src={"/government.svg"} height={30} width={30} />
                             <div style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Título Intermedio: <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{course.tituloIntermedio}</p></div>
-                        </div>
+                        </div>}
+
+                        {
+                            Array.isArray(course.tituloIntermedio)&&
+                            <div style={{
+                                display:"flex",
+                                gap:"1em"
+                            }}
+                            >
+                                <Image src={"/government.svg"} height={30} width={30} />
+                                <div style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Títulos Intermedios: 
+                                {
+                                    course.tituloIntermedio.map((item)=>(
+                                        <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{item}</p>
+                                    ))
+                                }
+                                </div>
+                            </div>
+                        }
+
+                        </>
                         }
                         {
                             course.diplomaturas&&

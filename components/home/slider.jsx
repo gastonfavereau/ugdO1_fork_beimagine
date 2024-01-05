@@ -44,6 +44,7 @@ const ImageSlider = ({ images, params }) => {
        
           {data.map((course, index) => (
              <div
+             key={index+9}
              className="carousel-content"
              style={{ transform: `translateX(${-currentIndex * 100}%)` }}
            >

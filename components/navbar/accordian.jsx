@@ -115,7 +115,7 @@ const Accordian = ({ heading, text, index,setToggle,isToggled,isUs,region}) => {
                         	<Link onClick={()=>{
 							setToggle(!isToggled)
 						
-						}} href={`/${region}/courses/${course.path}`}> {course.course}</Link>
+						}} href={`/${region}/courses/${course.path}`}> {course.subtitle}</Link>
                         </div>
 						)
 					})

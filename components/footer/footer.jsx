@@ -69,7 +69,7 @@ const Footer = () =>{
                         <Link href={"https://www.instagram.com/ugdvirtualok/"}><Image src={"/instagram.svg"} width={35} height={35} /></Link>
                         <Link href={"https://www.facebook.com/ugdvirtualok"}><Image src={"/fbicons.png"} width={35} height={35} /></Link>
                         <Link href={"https://www.linkedin.com/company/ugd-virtual/"}><Image src={"/linkedin.svg"} width={35} height={35} /></Link>
-                        <Image src={"/whatsappicons.png"} width={38} height={38} />
+                        <Link href={"https://wa.me/5493765180053"} target="_blank"><Image src={"/whatsappicons.png"} width={38} height={38} /></Link>
                     
                 </div>
             </div>

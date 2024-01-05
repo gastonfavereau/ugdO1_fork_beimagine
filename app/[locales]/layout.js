@@ -10,6 +10,18 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'UGD Virtual University',
   description: 'Virtual University for Undergraduates and Graduates',
+  icons:{
+    icon : [
+      "/favicon.ico?v=4",
+    ],
+    apple:[
+      "/apple-touch-icon.png?v=4"
+    ],
+    shortcut:[
+      "/apple-touch-icon.png"
+    ]
+  },
+  manifest : "/site.webmanifest",
 }
 export default function RootLayout({ children,params }) {
 

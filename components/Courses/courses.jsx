@@ -1,6 +1,5 @@
 
 "use client"
-
 import { React, useEffect, useState } from 'react'
 import Image from "next/image";
 import data from "@/data/data";
@@ -70,7 +69,6 @@ const Course = ({params}) => {
                         
                     }}>
                     <h3 style={{color:"white",fontWeight:"500",fontSize:"1.5rem",textAlign:"center"}}>DESTINATARIOS</h3>
-                    {/* <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}>{course.destinatarios}</p> */}
                         {
                             course.destinatario.map((text)=>{
                                 return(
@@ -98,13 +96,9 @@ const Course = ({params}) => {
                        
                         <div style={{
                             width:"100%",
-                            // boxShadow:" 0 4px 8px 0 rgba(0,0,0,0.2)",
-                            // borderRadius:"5px",
-                            // backgroundColor:"white",
                    
                         }}>
                             <ul>
-                            {/* write unorder list html here */}
                             {
                                 course.alcances.list.map((text)=>{
                                     

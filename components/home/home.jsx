@@ -23,7 +23,7 @@ const HomePage = ({params}) => {
       <video id="background-video" autoPlay loop muted poster="/UGDVposter.png">
         <source src="UGDvideo.mp4" type="video/mp4" />
       </video>
-      <div style={{
+      <div className='home-heading' style={{
         backgroundColor:"rgba(0, 0, 0, 0.5)",
       }}>
       <h1 >Bienvenidos a UGD Virtual</h1>

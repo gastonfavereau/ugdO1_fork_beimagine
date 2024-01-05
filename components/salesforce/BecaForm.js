@@ -63,17 +63,6 @@ const BecaForm = () => {
                     objectPosition: "center",
                     filter: "brightness(70%)",
                 }} src={"/pexels-anna-shvets-4226256.jpg"} alt="Background Image" />
-
-                {/* <h1 data-aos="fade-up" className="coursetheading" style={{
-                    zIndex: 1, // Ensure the heading is above the image
-                    color: "white", // Set text color to be visible against the background
-                    // Add any other styles you need for the heading
-                    fontSize:"3rem",
-                    fontWeight:"500",
-
-                }}>
-                  Consulta por carreras
-                </h1> */}
             </div>
     
     <div
@@ -120,7 +109,7 @@ const BecaForm = () => {
        <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
             <input type="hidden" name="orgid" value="00DHp000001rh2f" />
-            <input type="hidden" name="retURL" value="https://ugd-coral.vercel.app/us" />
+            <input type="hidden" name="retURL" value="https://virtual.ugd.edu.ar/us" />
 
             <input type="hidden" name="reason" value="Consulta por carreras" />
             <input type="hidden" name="status" value="Closed" />

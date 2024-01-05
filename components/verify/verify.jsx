@@ -52,41 +52,42 @@ const Verify = () => {
           alignContent:"center",
           alignItems:"center",
           backgroundColor:"white",
-          // padding:"1rem",
-          // paddingTop:"7rem",
           backgroundImage:"url(/cool-background.png)"
         }}
       >
-         <div style={{
-                position: "relative",
-                width: "100%",
-                height: "50vh",
-                overflow: "hidden", // Ensure content doesn't overflow
-                display: "flex",
-                alignItems: "center",  // Center vertically
-                alignContent: "center",  // Center vertically
-                justifyContent: "center",  // Center horizontally
-            }}>
-                <img id="background-image" style={{
-                    position: "absolute",
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
-                    objectPosition: "center",
-                    filter: "brightness(70%)",
-                }} src={"/blockChain.png"} alt="Background Image" />
+      
+    <div style={{
+      position: "relative",
+      width: "100%",
+      height: "50vh",
+      overflow: "hidden", // Ensure content doesn't overflow
+      display: "flex",
+      alignItems: "center",  // Center vertically
+      alignContent: "center",  // Center vertically
+      justifyContent: "center",  // Center horizontally
+    }}>
+      <Image
+        src="/blockChain.png"
+        alt="Background Image"
+        layout="fill"
+        objectFit="cover"
+        objectPosition="center"
+        style={{
+          filter: "brightness(70%)",
+        }}
+      />
 
-                <h1 data-aos="fade-up"  style={{
-                    zIndex: 1, 
-                    color: "white", 
-                    fontSize:"1.5rem",
-                    fontWeight:"500",
-
-                }}>
-                  Aquí se pueden verificar los títulos de UGD 
-                  que en adelante se verifican mediante un código único.
-                </h1>
-            </div>
+      <h1 data-aos="fade-up" style={{
+        zIndex: 1,
+        color: "white",
+        fontSize: "1.5rem",
+        fontWeight: "500",
+        position: "relative", // Set the position to relative for stacking with Image
+      }}>
+        Aquí se pueden verificar los títulos de UGD
+        que en adelante se verifican mediante un código único.
+      </h1>
+    </div>
 
           <div style={{
             padding:"2rem",
@@ -194,20 +195,7 @@ const Verify = () => {
                   </div>
 
 
-                {/* <div
-                      style={{
-                        textAlign: "center",
-                      }}
-                    >
-                      Upload file to verify
-                    </div> */}
-                    {/* <Verifyfile
-                      setIsLoading={setIsLoading}
-                      setcid={(e) => {
-                        setCertId(0);
-                        setcid(e);
-                      }}
-                    /> */}
+             
                   </div> 
           
         

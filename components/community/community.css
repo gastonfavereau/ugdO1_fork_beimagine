@@ -122,7 +122,7 @@
 }
 .partnershipContentCardWhite{
   width: 60%;
-  height: 200px;
+  height: 220px;
   background-color: white;
   box-shadow: 0px 8px 8px 8px rgba(0, 0, 0, 0.2);
   padding: 2rem;
@@ -179,13 +179,13 @@
   line-height: 38px;
 }
 .partnershipCardPara{
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-size: 1rem;
     color: #6B6C6C;
 }
 .partnershipCardParaWhite{
-  margin-top: 2rem;
-  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
   color: white;
 }
 

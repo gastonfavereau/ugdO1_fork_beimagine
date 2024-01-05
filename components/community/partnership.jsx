@@ -17,11 +17,22 @@ const PartnerShip = () =>{
             width:"100%",
             // height:"100vh"
         }}>
-            <img id="background-video" src={"/intBg.jpg"} alt="Background Image" />
+            <div id="background-video" style={{
+                position: 'fixed',
+                width: '100vw',
+                height: '100vh',
+                zIndex: '-1',
+                
+                }}>
+                <Image
+                    src="/intBg.jpg"
+                    alt="Background Image"
+                    layout="fill"
+                    objectFit="cover"
+                />
+            </div>
 
         <h1 data-aos="fade-up">Amplia red de vínculos internacionales</h1>
-        {/* <h2>Nos vinculamos con organizaciones universitarias que permiten a nuestros docentes y estudiantes acceder a 
-            información privilegiada, intercambios, encuentros, materiales y oportunidades para su desarrollo académico y profesional </h2> */}
 
         <main>
             <div style={{
@@ -169,7 +180,7 @@ const PartnerShip = () =>{
                                 </div>
 
                             </div>
-                            <div data-aos="fade-up" className="partnershipContentCardWhite">
+                            <div data-aos="fade-up"  className="partnershipContentCardWhite">
                                 <div >
                                     <p className="partnershipCardHeading">Red de Asociaciones Latinoamericanas y Caribeñas de Universidades Privadas
                                     </p>

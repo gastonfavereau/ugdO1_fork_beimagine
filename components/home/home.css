@@ -18,7 +18,9 @@
     margin: 0;
     padding: 0;
   }
-  
+  .home-heading{
+    display: none;
+  }
   h1, h2 {
     color: white;
     font-weight: bold;
@@ -50,12 +52,15 @@
       }
       
       h2 { font-size: 1.4rem; }
+      .home-heading{
+        display: block;
+      }
   }
   
   main {
     background-color: white;
     font-size: 2rem;
-    margin-top: 90vh;
+    margin-top: 100vh;
     padding: 10px;
     position: relative;
     color: "#005FAF";

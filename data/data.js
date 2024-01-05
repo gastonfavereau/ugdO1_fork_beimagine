@@ -4,7 +4,7 @@
 const data =[
     {   
     course:"Tecnicatura en Desarrollo de Software",
-    subtitle:"Para Programadores Java Full Stack",
+    subtitle:"Tecnicatura en Desarrollo de Software",
     bgimage:"/TecDesarrolloSoftware_Placa.png",
     path:"software",
     image:"/webp/course5.webp",  
@@ -44,6 +44,7 @@ const data =[
    
     },
     {   course:"Programador Java Full Stack",
+        subtitle:"Programador Java Full Stack",
         pdf:"/pdf/Programador Java Full Stack (2).pdf",
         bgimage:"/ProgramJavaFullStack_Placa.png",
         path:"java" ,
@@ -76,6 +77,7 @@ const data =[
         ]
     },
     {   course:"LICENCIATURA EN MARKETING",
+        subtitle:"Lic. en Marketing",
         pdf:"/pdf/Licenciatura en Marketing.pdf",
         bgimage:"/LicMarketing_Placa.png",
         path:"marketing",
@@ -122,6 +124,7 @@ const data =[
 
     },
     {   course:"MAESTRÍA EN GESTIÓN Y EVALUACIÓN DE LA EDUCACIÓN SUPERIOR	",
+        subtitle:"Maestría en GyE de la Ed. Superior",
         pdf:"/pdf/Maestría en Gestión y Evaluación de la Educación Superior.pdf",
         bgimage:"/MaestGestEvalEduSup_Placa.png",
         path:"maestria",
@@ -162,6 +165,7 @@ const data =[
         ]
     },
     {   course:"Licenciatura en Gestión Educativa",
+        subtitle:"Ciclo Lic. Gestión Educativa",
         pdf:"/pdf/Licenciatura en Gestión Educativa.pdf",
         bgimage:"/LicGestionEducativa_Placa.png",
         path:"educativa",
@@ -201,6 +205,7 @@ const data =[
 
     },
     {   course:"Licenciatura en Gestión de Recursos Tecnológicos",
+        subtitle:"Ciclo Lic. Gestión de Rec. Tecnológicos",
         pdf:"/pdf/Ciclo de Licenciatura en Gestión de Recursos Tecnológicos.pdf",
     subtitle:"Ciclo de complementación ",
     bgimage:"/CicloLicGestionRecTecno_Placa.png",
@@ -237,6 +242,7 @@ const data =[
     }
     },
     {   course:"DOCTORADO EN DESARROLLO SUSTENTABLE E INTEGRACIÓN",
+        subtitle:"Doc. en Desarrollo e Integración",
     pdf:"/pdf/Doctorado en Desarrollo Sustentable e Integración.pdf",
     bgimage:"/DocDesarrolloSustIntegracion_Placa.png",
     path:"doctorado",
@@ -279,6 +285,7 @@ const data =[
 
     },
     {   course:"Ciclo de CICLO DE PROFESORADO UNIVERSITARIO PARA PROFESIONALES",
+        subtitle:"Ciclo Prof. Univ. profesionales",
         pdf:"/pdf/Ciclo de Profesorado Universitario para Profesionales.pdf",
         bgimage:"/CicloProfUnivProfesionales_Placa.png",
         path:"profesionales",
@@ -314,6 +321,7 @@ const data =[
         ]
     },
     {   course:"LICENCIATURA EN ADMINISTRACIÓN",
+        subtitle:"Lic. en Administración",
         bgimage:"/LicAdministracion_Placa.png",
         pdf:"/pdf/Licenciatura en Administración COMPLETO.pdf",
         path:"administracion",
@@ -428,6 +436,7 @@ const data =[
 
     },
     {   course:"Especialización en Gestión de Tecnologías de la Información y Comunicación",
+        subtitle:"Especialización en TICs",
         pdf:"/pdf/Especialización en Gestión de Tecnologías.pdf",
         bgimage:"/EspGestionTecnoInfoyCom_Placa.png",
         path:"tecnologias",
@@ -467,6 +476,7 @@ const data =[
     },
     {   
     course:"Diplomaturas Universitarias en Corretaje y Negocios Inmobiliarios",
+    subtitle:"Diplomaturas",
     pdf:"/pdf/Diplomaturas Univ Corretaje.pdf",
     bgimage:"/Diplomaturas_Placa_2.png",
     path:"diplomaturas",
@@ -501,6 +511,7 @@ const data =[
 },
 {  
 course:"Tecnicatura Universitaria en Corretaje y Negocios Inmobiliarios",
+subtitle:"Corredor Inmobilliario",
 pdf:"/pdf/Tecnicatura Univ Corretaje.pdf",
 bgimage:"/TecUnivCorretaje_Placa_2.png",
 path:"inmobiliarios",
@@ -533,6 +544,7 @@ alcances:{
 },
 {  
     course:"Licenciatura en Corretaje y Negocios Inmobiliarios",
+    subtitle:"Lin. en Corretaje y Neg. Inmobilarios",
     pdf:"/pdf/Licenciatura Corretaje.pdf",
     bgimage:"/LicCorretaje_Placa_2.png",
     path:"corretaje",

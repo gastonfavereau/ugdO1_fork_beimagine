@@ -4,7 +4,7 @@ import "./footer.css";
 import instagram from "@/public/instagram.svg";
 import linkedin from "@/public/linkedin.svg";
 import ugdIcon from "@/public/Frame19.svg";
-import bgimage from "@/public/ugd-bg-image4.png";
+import bgimage from "@/public/ugd-bg-image4.webp";
 import Link from "next/link";
 import WhatsAppWidget from "./whatsAppWidget";
 
@@ -91,6 +91,7 @@ const FooterBgImageComp = () =>{
             alignContent:"center",
             justifyContent:"center",
             padding:"50px",
+            backgroundColor: "#1C3564",
         }}
         className="footerbgimagesubdiv"
         >

@@ -4,7 +4,7 @@ import "./footer.css";
 import instagram from "@/public/instagram.svg";
 import linkedin from "@/public/linkedin.svg";
 import ugdIcon from "@/public/Frame19.svg";
-import bgimage from "@/public/ugd-bg-image3.png";
+import bgimage from "@/public/ugd-bg-image4.png";
 import Link from "next/link";
 import WhatsAppWidget from "./whatsAppWidget";
 

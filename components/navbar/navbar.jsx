@@ -115,7 +115,7 @@ export default function Navbar({params}) {
                   <Link href={`/${region}/aboutus`}>Quienes somos</Link>
                   <Link href={`/${region}/authorities`}>Autoridades</Link>
                   {/* <Link href={"/ugdvirtualModel"}>Modelo Virtual UGD </Link> */}
-                  <Link href={`/${region}/Equivalencias`}>Equivalencias</Link>
+                  <Link href={`/${region}/equivalencies`}>Equivalencias</Link>
                 </div>
               </div>
           </div>
@@ -325,7 +325,6 @@ export default function Navbar({params}) {
               <Accordian 
               heading={"Carreras"}
               text={"Courses"}
-              // text={["Tecnicatura en Desarrollo de Software","Programador Java Full Stack","Gestion de Recursos Tecnológicos","Maestría","Licenciatura en Gestión Educativa","Lic en Marketing","Lic en Administración","Especialización en gestión de TICs","Doctorado","Ciclo de Profesorado Universitario"]}
               index={"1"}
               setToggle={setToggle}
               isToggled={isToggled}
@@ -336,7 +335,6 @@ export default function Navbar({params}) {
                <Accordian 
               heading={"Títulos"}
               text={"titulos"}
-              // text={["Tecnicatura en Desarrollo de Software","Programador Java Full Stack","Gestion de Recursos Tecnológicos","Maestría","Licenciatura en Gestión Educativa","Lic en Marketing","Lic en Administración","Especialización en gestión de TICs","Doctorado","Ciclo de Profesorado Universitario"]}
               index={"1"}
               setToggle={setToggle}
               isToggled={isToggled}

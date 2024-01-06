@@ -61,7 +61,7 @@
    
 }
 .footerbgimagesubdiv{
-    height: 55vh;
+    min-height: 55vh;
 }
 @media screen and (max-width: 800px) {
     .footerdiv {

@@ -10,6 +10,21 @@
     bottom: 0;
     z-index: -1;
 }
+
+#backgroundMobile {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
   
   /* page content */
   
@@ -39,6 +54,13 @@
   
   
   h2 { font-size: 3rem; }
+
+
+  .sliderDiv{
+    padding:50px;
+    padding-bottom:100px;
+    overflow:hidden;
+  }
   
   @media (max-width: 750px) {
       /* #background-video { display: none; } */
@@ -54,6 +76,17 @@
       h2 { font-size: 1.4rem; }
       .home-heading{
         display: none;
+      }
+      .sliderDiv{
+        padding:35px;
+        padding-bottom:100px;
+        overflow:hidden;
+      }
+      #background-video{
+        display: none;
+      }
+      #backgroundMobile{
+        display: block;
       }
   }
   

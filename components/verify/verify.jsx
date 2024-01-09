@@ -84,8 +84,8 @@ const Verify = () => {
         fontWeight: "500",
         position: "relative", // Set the position to relative for stacking with Image
       }}>
-        Aquí se pueden verificar los títulos de UGD
-        que en adelante se verifican mediante un código único.
+        {/* Aquí se pueden verificar los títulos de UGD
+        que en adelante se verifican mediante un código único. */}
       </h1>
     </div>
 
@@ -107,7 +107,7 @@ const Verify = () => {
           marginTop:"2rem",
           textAlign:"center",
           color:"#6B6B6B",
-          fontFamily: "Inter",
+          // fontFamily: "Inter",
           fontSize: "18px",
           fontStyle: "normal",
           fontWeight: "300",
@@ -193,10 +193,18 @@ const Verify = () => {
                   }}>{status}</h3>
                   
                   </div>
+{/* 
+            <Verifyfile
+            setIsLoading={setIsLoading}
+            setcid={(e) => {
+              setCertId(0);
+              setcid(e);
+            }}
+          /> */}
 
 
              
-                  </div> 
+        </div> 
           
         
       </div>

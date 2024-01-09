@@ -22,6 +22,8 @@ const HomePage = ({params}) => {
     <div className='home'>
       <video id="background-video" autoPlay loop muted poster="/UGDVposter.png">
         <source src="UGDvideo.mp4" type="video/mp4" />
+      </video><video id="backgroundMobile" autoPlay loop muted poster="/UGDVposter.png">
+        <source src="UGDVideoMobile.mp4" type="video/mp4" />
       </video>
       <div className='home-heading' style={{
         backgroundColor:"rgba(0, 0, 0, 0.5)",
@@ -31,11 +33,7 @@ const HomePage = ({params}) => {
       {/* <h2>Liberando conocimientos, potenciando futuros</h2> */}
 
       <main>
-        <div style={{
-          padding:"50px",
-          paddingBottom:"100px",
-          overflow:"hidden"
-        }}>
+        <div className='sliderDiv'>
         <p style={{
           textAlign:"center",
           color:"#1C3564",

@@ -372,6 +372,42 @@ const Course = ({params}) => {
                                         fontSize:"0.9em",
                                     }}>Quiero más información</button>
                                 </Link>
+                                {
+                                   course.subtitle ===  "Lin. en Corretaje y Neg. Inmobilarios" && 
+                                   <Link href={"/ar/equivalencies/studentQuery"}>
+                                        <button style={{
+                                            width:"200px",
+                                            height:"50px",
+                                            marginTop:"20px",
+                                            //dark blue hex code
+                                            backgroundColor:"#1C3564",
+                                            color:"white",
+                                            padding:"5px",
+                                            borderRadius:"5px",
+                                            fontSize:"0.9em",
+                                        }}>
+                                            Equivalences
+                                        </button>
+                                    </Link>
+                                }
+                                {
+                                   course.subtitle ===  "Diplomaturas" && 
+                                   <Link href={"/ar/equivalencies/studentQuery"}>
+                                        <button style={{
+                                            width:"200px",
+                                            height:"50px",
+                                            marginTop:"20px",
+                                            //dark blue hex code
+                                            backgroundColor:"#1C3564",
+                                            color:"white",
+                                            padding:"5px",
+                                            borderRadius:"5px",
+                                            fontSize:"0.9em",
+                                        }}>
+                                            Equivalences
+                                        </button>
+                                    </Link>
+                                }
                                 {isUs&&<Link href={"/us/miami"}>
                                     <button style={{
                                         width:"200px",

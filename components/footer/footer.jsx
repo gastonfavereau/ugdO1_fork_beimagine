@@ -100,9 +100,7 @@ const FooterBgImageComp = () =>{
              >
                 <div>
                     <p className="bgfooterheading">UGD Virtual: Educación que se adapta a vos</p>
-                    <p className="bgfooterpara">Nuestra finalidad es que obtengas el título que buscas, y ponemos todos las herramientas y equipos de apoyo a  tal fin.  Desde el grupo de Educación a Distancias de UGD Virtual, los docentes y tutores, hasta el equipo administrativo, estará atento a tus necesidades y dispuesto a brindarte orientación personal.
- 
-                    Tendrás asignado un tutor con el que te contactarás en cualquier momento, y que tiene por misión orientarte y ayudarte a resolver lo que te preocupe, realizando las gestiones que resulten necesarias.
+                    <p className="bgfooterpara">Nuestra finalidad es que obtengas el título que buscas y ponemos todos las herramientas y equipos de apoyo a tal fin. El grupo de Educación a Distancia de UGD Virtual, los docentes y el equipo de gestión estarán atentos a tus necesidades. Tendrás asignado un tutor con el que te contactarás en cualquier momento con la misión de orientarte y ayudarte, realizando las gestiones que resulten necesarias.
                     </p>
                 </div>
             </div>

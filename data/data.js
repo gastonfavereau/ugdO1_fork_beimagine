@@ -172,12 +172,12 @@ const data =[
         image:"/webp/course10.webp",
         duration:"9 meses",
         presentacion:"La carrera está destinada a docentes o funcionarios que se desempeñen o aspiren desempeñarse en cargos de gestión, conducción y administración de instituciones educativas de todos los niveles, liderando y conduciendo equipos de trabajo, y diseñando e implementando planes de mejora para las organizaciones que coordine y/o asesore.",
-        tituloFinal:"Licenciado en Licenciado en Gestión Educativa (4 años)",
+        tituloFinal:"Licenciado en Gestión Educativa (4 años)",
         titulosAprobados:[
             "Resolución UGD Nro 75/A/23.",
         ],
         destinatario:[
-            "Docentes de todos los niveles educativos que tengan título de Institutos de Formación Docente provenientes del Nivel Superior No Universitario y/o Universitario, y que busquen incorporar herramientas que les permitan desempeñarse en la gestión de instituciones de educación."
+            "Docentes y profesionales de todos los niveles educativos que tengan título de Institutos de Formación Docente provenientes del Nivel Superior No Universitario y/o Universitario, y que busquen incorporar herramientas que les permitan desempeñarse en la gestión de instituciones de educación."
 
         ],
         // ALCANCES Y SALIDA LABORAL
@@ -482,6 +482,7 @@ const data =[
     path:"diplomaturas",
     image:"/webp/Diplomaturas_Placa_Historia.webp",
     duration:"9 meses",
+    equivalencia:true,
     presentacion:"Formación de corta duración, concreta y aplicable: que se puede complementar luego completando una formación de grado para profundizar tu profesionalización. Trayectos de formación flexible: Podés tomar tramos independientes, y adaptar la duración y dedicación a tu disponibilidad horaria.",
     tituloFinal:[
         "• Diplomatura Universitaria en Tasación de Inmuebles (8 meses)",
@@ -550,6 +551,7 @@ alcances:{
     path:"corretaje",
     image:"/webp/LicCorretaje_Placa_Historia.webp",
     duration:"9 meses",
+    equivalencia:true,
     presentacion:"Esta carrera ofrece formación en la intermediación, gestión y desarrollo de proyectos y negocios inmobiliarios. Otorga un título universitario que habilita para ejercer la profesión de Corredor y Tasador Inmobiliario, así como para asesorar, promover y realizar operaciones relacionadas. El cuerpo docente está compuesto por experimentados y reconocidos profesionales que aportarán una formación teórica y práctica en aspectos jurídicos, contables, económicos, sociales y ambientales del sector inmobiliario.",
     tituloFinal:"Licenciado en Corretaje y Negocios Inmobiliarios (4 años) ",
     tituloIntermedio:"Técnico Universitario en Corretaje y Negocios Inmobiliarios (3 años)",

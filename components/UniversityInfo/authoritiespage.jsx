@@ -68,7 +68,8 @@ const AuthoritiesPage = () => {
   },
   {
     desc:"Delegada rectoral Centro Académico Resistencia",
-    name:"Prof. Vanesa Soledad Piccoli"
+    name:"Prof. Vanesa Soledad Piccoli",
+    img:"/teacherImage2.png"
   },
   {
     desc:"Decana Departamento de Ciencias de la Salud",

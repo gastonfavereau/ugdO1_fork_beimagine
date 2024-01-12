@@ -174,32 +174,42 @@ export default function Navbar({params}) {
         <div className="dropdown-content">
           <div className="row">
             <div className="column" style={columnStyle}>
-              <h3>TECNOLOGÍAS</h3>
+              <h3 style={{
+                fontFamily:"sans-serif",
+              }}>TECNOLOGÍAS</h3>
               <Link href={`/${region}/courses/software`}>Tecnicatura en Desarrollo de Software</Link>
               <Link href={`/${region}/courses/java`}>Programador Java Full Stack</Link>
               <Link href={`/${region}/courses/recursos`}>Ciclo Lic. Gestión de Rec. Tecnológicos</Link>
               <Link href={`/${region}/courses/tecnologias`}>Especialización en TICs</Link>
             </div>
             {!isUs &&<div className="column">
-              <h3>EDUCACIÓN</h3>
+              <h3 style={{
+                fontFamily:"sans-serif",
+              }}>EDUCACIÓN</h3>
               <Link href={`/${region}/courses/profesionales`}>Ciclo Prof. Univ. profesionales</Link>
               <Link href={`/${region}/courses/educativa`}>Ciclo Lic. Gestión Educativa</Link>
               <Link href={`/${region}/courses/maestria`}>Maestría en GyE de la Ed. Superior </Link>
             </div>}
             <div className="column">
-              <h3>EMPRESARIALES</h3>
+              <h3 style={{
+                fontFamily:"sans-serif",
+              }}>EMPRESARIALES</h3>
               <Link href={`/${region}/courses/marketing`}>Lic. en Marketing</Link>
               <Link href={`/${region}/courses/administracion`}>Lic. en Administración</Link>
           
             </div>
             <div className="column">
-              <h3>CORRETAJE</h3>
+              <h3 style={{
+                fontFamily:"sans-serif",
+              }}>CORRETAJE</h3>
               <Link href={`/${region}/courses/diplomaturas`}>Diplomaturas</Link>
               <Link href={`/${region}/courses/inmobiliarios`}>Corredor Inmobilliario</Link>
               <Link href={`/${region}/courses/corretaje`}>Lic. en Corretaje y Neg. Inmobilarios</Link>
             </div>
             <div className="column">
-              <h3>DOCTORADO</h3>
+              <h3 style={{
+                fontFamily:"sans-serif",
+              }}>DOCTORADO</h3>
               <Link href={`/${region}/courses/doctorado`}>Doc. en Desarrollo e Integración</Link>
             </div>
           </div>

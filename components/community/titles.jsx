@@ -52,9 +52,9 @@ const Titles = () => {
           fontWeight: "300",
           lineHeight: "21px",
         }}>
-          Al culminar las carreras de pregrado, grado y posgrado se obtienen títulos oficiales otorgados por la Universidad Gastón Dachary y legalizados por el Gobierno de la República Argentina.
-            Los mismos pueden ser revalidados en distintos países en virtud a las normas y acuerdos de revalidación que rigen con cada Nación.
-
+          Al culminar las carreras se obtienen TÍTULOS UNIVERSITARIOS OFICIALES otorgados por la Universidad Gastón Dachary y legalizados por el Gobierno de la República Argentina
+          La UGD además somete sus planes de estudio y títulos a análisis de instituciones acreditadoras en EEUU, en virtud de lo cual se emiten CERTIFICADOS DE EQUIVALENCIAS DE ESTUDIOS que son reconocidos oficialmente.
+          En Latinoamérica los mismos pueden ser revalidados en distintos países en virtud de las normas y acuerdos de revalidación que rigen con cada Nación.
         </p>
 
 

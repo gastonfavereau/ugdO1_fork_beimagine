@@ -204,8 +204,8 @@ const Course = ({params}) => {
                         padding:"2em",
                     }}>
                         {/* <h3 style={{color:"#1C3564",fontWeight:"500",fontSize:"18px",textAlign:"center"}}>{course.course}</h3> */}
-                        <h3 style={{color:"#1C3564",fontWeight:"500",fontSize:"15px"}}>Presentación</h3>
-                        <p dangerouslySetInnerHTML={{ __html: course.presentacion }} style={{color:"#6B6C6C",fontSize:"0.8em",marginTop:"1em"}}></p>
+                        <p style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Presentación</p>
+                        <p dangerouslySetInnerHTML={{ __html: course.presentacion }} style={{color:"#6B6C6C",fontSize:"0.8em",marginTop:"1em",fontWeight:"600"}}></p>
                     </div>
                     <div style={{
                         width:"100%",

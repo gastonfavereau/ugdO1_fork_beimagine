@@ -20,7 +20,7 @@ const MenuProps = {
   },
 };
 
-const API_URL = "http://localhost:8000/api/V1";
+const API_URL = "https://virtual.ugd.edu.ar/api/V1";
 
 const Student = () => {
 
@@ -35,6 +35,7 @@ const Student = () => {
     courseNames: []
   });
   const [data, setData] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const fetchAllUniversities = async () => {
     const res = await fetch(`${API_URL}/equivalences/universities-list`)
@@ -101,6 +102,7 @@ const Student = () => {
 
   const handleStudentFormSubmit = async () => {
     try {
+      setIsLoading(true);
       const res = await fetch(`${API_URL}/equivalences/students/`, {
         method: 'POST',
         headers: {
@@ -118,9 +120,10 @@ const Student = () => {
       console.log(data)
 
       if (res.status === 201) {
-        alert('Your form has been submitted');
+        // alert('Your form has been submitted');
         setIsQueryFormSubmitted(true);
         setStudentId(data.id);
+        setIsLoading(false);
       }
     } catch (error) {
       console.error('Error:', error);
@@ -131,6 +134,7 @@ const Student = () => {
 
   const handleQueryFormSubmit = async () => {
     try {
+      setIsLoading(true);
       const response = await fetch(`${API_URL}/equivalences/get_destination_courses/`, {
         method: 'POST',
         headers: {
@@ -139,7 +143,7 @@ const Student = () => {
         body: JSON.stringify({
           student_id: studentId,
           origin_university: coursesQueryFormDetails.universityId,
-          origin_course_name: coursesQueryFormDetails.courseNames.includes('select_all') ? "All" : coursesQueryFormDetails.courseNames,
+          origin_course_names: coursesQueryFormDetails.courseNames.includes('select_all') ? "All" : coursesQueryFormDetails.courseNames,
           destination_university: 1,
         }),
       });
@@ -147,17 +151,17 @@ const Student = () => {
       const data = await response.json();
       console.log(data);
 
-      alert('Form submitted');
+      // alert('Form submitted');
       setData({
         "approved_courses": data.destination_name.approved_destination_name,
         "programs": data.destination_name.programs,
         "pdf_url": data.destination_name.pdf_url
       });
+      setIsLoading(false);
     } catch (error) {
       console.error(error);
     }
   };
-
 
 
 
@@ -198,7 +202,11 @@ const Student = () => {
                   value={studentDetails.email}
                   onChange={handleStudentFormInputs}
                 />
-                <button className='formBtn' onClick={handleStudentFormSubmit}>Submit</button>
+                <button className='formBtn' onClick={handleStudentFormSubmit}>
+                  {
+                    isLoading ? 'Submitting...' : 'Submit'
+                  }
+                </button>
               </>
               :
               <>
@@ -284,7 +292,9 @@ const Student = () => {
                   </MenuItem>
                 </Select>
 
-                <button className='formBtn' onClick={handleQueryFormSubmit}>Get</button>
+                <button className='formBtn' onClick={handleQueryFormSubmit}>{
+                  isLoading ? 'Getting...' : 'Get'
+                }</button>
               </>
           }
         </div>
@@ -318,9 +328,9 @@ const Student = () => {
               }
             </div>
 
-            <Link href={`${data.pdf_url}`} className="downloadBtn">
+            <a href={data.pdf_url} download="file.pdf" className="downloadBtn" target="_blank" rel="noopener noreferrer">
               Download details
-            </Link>
+            </a>
           </div>
         }
       </div>

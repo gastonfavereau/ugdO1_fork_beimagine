@@ -364,7 +364,7 @@ const Course = ({params}) => {
                                     <button style={{
                                         width:"200px",
                                         height:"50px",
-                                        marginTop:"20px",
+                                        margin:"20px",
                                         backgroundColor:"#0B4C26",
                                         color:"white",
                                         padding:"5px",
@@ -378,7 +378,7 @@ const Course = ({params}) => {
                                         <button style={{
                                             width:"200px",
                                             height:"50px",
-                                            marginTop:"20px",
+                                            margin:"20px",
                                             //dark blue hex code
                                             backgroundColor:"#1C3564",
                                             color:"white",
@@ -386,7 +386,7 @@ const Course = ({params}) => {
                                             borderRadius:"5px",
                                             fontSize:"0.9em",
                                         }}>
-                                            Equivalences
+                                            Equivalencias
                                         </button>
                                     </Link>
                                 }

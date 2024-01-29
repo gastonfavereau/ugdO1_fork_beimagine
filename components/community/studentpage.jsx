@@ -81,7 +81,7 @@ const StudentPage = () => {
                     fontStyle: "normal",
                     fontWeight: "300",
                     lineHeight: "21px",
-                }}>Que, habiendo culminado recientemente sus estudios de nivel medio, aspiran cursar una carrera universitaria pudiendo tener una alta dedicación, o quizás hacerla más pausadamente si buscan a su vez desarrollar una actividad laboral.</p>
+                }}>Que, habiendo culminado recientemente sus estudios de nivel medio, aspiran a cursar una carrera universitaria pudiendo tener una alta dedicación, o quizás hacerla más pausadamente si buscan desarrollar o se encuentran desarrollando una actividad laboral.</p>
 
                 <img style={{
                     marginTop:"2rem",
@@ -112,7 +112,7 @@ const StudentPage = () => {
                         fontStyle: "normal",
                         fontWeight: "300",
                         lineHeight: "21px",
-                    }}>Personas que, ya desempeñándose laboralmente, buscan incorporar conocimientos y competencias que mejores su empleabilidad y lo posicionen para aspirar a nuevos roles.</p>
+                    }}>Que, ya desempeñándose laboralmente, buscan incorporar conocimientos y competencias para alcanzar mejores empleos y prepararse para desempeñar nuevos roles.</p>
 
                     <img style={{
                         marginTop:"2rem",
@@ -143,7 +143,7 @@ const StudentPage = () => {
                         fontStyle: "normal",
                         fontWeight: "300",
                         lineHeight: "21px",
-                    }}>Y por alguna razón no los hayan culminado, y nos remitan información para analizar las posibles equivalencias a reconocer.</p>
+                    }}>Que por alguna razón no los hayan culminado, quieran culminar su formación y nos remitan información sobre sus materias aprobadas para analizar las posibles equivalencias a reconocer.</p>
 
                     <img style={{
                         marginTop:"2rem",

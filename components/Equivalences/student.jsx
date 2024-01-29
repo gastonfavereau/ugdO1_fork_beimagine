@@ -21,6 +21,7 @@ const MenuProps = {
 };
 
 const API_URL = "https://virtual.ugd.edu.ar/api/V1";
+// const API_URL = "http://127.0.0.1:8000/api/V1";
 
 const Student = () => {
 
@@ -36,13 +37,14 @@ const Student = () => {
   });
   const [data, setData] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [approved_courses, setApproved_courses] = useState([]);
 
   const fetchAllUniversities = async () => {
     const res = await fetch(`${API_URL}/equivalences/universities-list`)
     try {
       if (res.ok) {
         const data = await res.json();
-        console.log(data)
+        // console.log(data)
         setUniversityList(data);
       }
       else
@@ -54,11 +56,11 @@ const Student = () => {
 
   const fetchCourses = async (universityId) => {
     const res = await fetch(`${API_URL}/equivalences/equivalences/${universityId}`);
-    console.log(res)
+    // console.log(res)
     try {
       if (res.ok) {
         const data = await res.json();
-        console.log(data)
+        // console.log(data)
         setCoursesList(data);
       }
       else
@@ -117,7 +119,7 @@ const Student = () => {
       });
 
       const data = await res.json();
-      console.log(data)
+      // console.log(data)
 
       if (res.status === 201) {
         // alert('Your form has been submitted');
@@ -149,9 +151,31 @@ const Student = () => {
       });
 
       const data = await response.json();
-      console.log(data);
+      // console.log(data);
 
-      // alert('Form submitted');
+      const tempPrograms = {};
+
+      data.destination_name.approved_destination_name.forEach((course) => {
+          const programName = course.destination_program.name;
+
+          if (programName in tempPrograms) {
+              // Program already encountered, append the course name
+              tempPrograms[programName].courses.push({ courseName: course.destination_name });
+          } else {
+              // Program encountered for the first time, add it to tempPrograms
+              tempPrograms[programName] = {
+                  program: programName,
+                  courses: [{ courseName: course.destination_name }],
+              };
+          }
+      });
+
+      // Convert tempPrograms object to an array of values
+      const newApprovedCourses = Object.values(tempPrograms);
+
+      // Set the newApprovedCourses array as the state
+      setApproved_courses([...approved_courses, ...newApprovedCourses]);
+
       setData({
         "approved_courses": data.destination_name.approved_destination_name,
         "programs": data.destination_name.programs,
@@ -164,6 +188,8 @@ const Student = () => {
   };
 
 
+  // console.log(approved_courses)
+
 
 
   return (
@@ -173,38 +199,38 @@ const Student = () => {
           {
             !isQueryFormSubmitted ?
               <>
-                <h1 className="queryFormHeading">Student Query Form</h1>
+                <h3 className="queryFormHeading"> Ingresá tus datos para poder hacer la consulta online de las materias que te serán reconocidas en nuestras carreras</h3>
                 <input
                   type="text"
-                  placeholder="First Name"
+                  placeholder="Nombre de pila"
                   name="firstName"
                   value={studentDetails.firstName}
                   onChange={handleStudentFormInputs}
                 />
                 <input
                   type="text"
-                  placeholder="Last Name"
+                  placeholder="Apellido"
                   name="lastName"
                   value={studentDetails.lastName}
                   onChange={handleStudentFormInputs}
                 />
                 <input
                   type="text"
-                  placeholder="Phone"
+                  placeholder="Teléfono"
                   name="phone"
                   value={studentDetails.phone}
                   onChange={handleStudentFormInputs}
                 />
                 <input
                   type="text"
-                  placeholder="Email"
+                  placeholder="Correo electrónico"
                   name="email"
                   value={studentDetails.email}
                   onChange={handleStudentFormInputs}
                 />
                 <button className='formBtn' onClick={handleStudentFormSubmit}>
                   {
-                    isLoading ? 'Submitting...' : 'Submit'
+                    isLoading ? 'Enviando....' : 'Enviar'
                   }
                 </button>
               </>
@@ -216,7 +242,7 @@ const Student = () => {
                   value={coursesQueryFormDetails.universityId}
                   onChange={handleQueryFormInputs}
                 >
-                  <option value="" disabled selected hidden>Please Select Origin University</option>
+                  <option value="" disabled selected hidden>Selecciona tu universidad de origen</option>
                   {
                     universityList.map((university) => {
                       if (university.id !== 1) {
@@ -228,25 +254,14 @@ const Student = () => {
                   }
                 </select>
 
-                {/* <select
-                  name="courseNames"
-                  value={coursesQueryFormDetails.courseNames}
-                  onChange={handleQueryFormInputs}
-                // multiple
-                >
-                  <option value="" disabled selected hidden>Please Select Courses</option>
-                  {
-                    coursesList.map((course) => <option value={course.name} key={course.id}>{course.origin_course_name}</option>)
-                  }
-                  <option value="Select All">Select All</option>
-                </select>  */}
+                
 
                 <InputLabel
                   id="demo-multiple-chip-label"
                   sx={{
                     margin: "1rem 0 -6px"
                   }}>
-                  Select Course</InputLabel>
+                  Selecciona las asignaturas que tenés cursadas y aprobadas</InputLabel>
                 <Select
                   // labelId="demo-multiple-chip-label"
                   id="demo-multiple-chip"
@@ -282,7 +297,6 @@ const Student = () => {
                     <MenuItem
                       key={name.id}
                       value={name.origin_course_name}
-                    // style={getStyles(name, coursesQueryFormDetails.courseNames, theme)}
                     >
                       {name.origin_course_name}
                     </MenuItem>
@@ -293,7 +307,7 @@ const Student = () => {
                 </Select>
 
                 <button className='formBtn' onClick={handleQueryFormSubmit}>{
-                  isLoading ? 'Getting...' : 'Get'
+                  isLoading ? 'Consultando...' : 'Consultar'
                 }</button>
               </>
           }
@@ -302,16 +316,29 @@ const Student = () => {
         {data &&
           <div className='courseInfoContainer'>
             <div className='courseTypeContainer'>
-              <h1 className="courseInfoHead">Approved Courses By UGD</h1>
+              <h1 className="courseInfoHead">Asignaturas que te serán reconocidas en UGD para la Carrera</h1>
               {
-                data.approved_courses.map((course) => (
-                  <p key={course}>{`- ${course}`}</p>
-                ))
+                data.approved_courses.length === 0 && <p>No hay asignaturas pendientes</p>
+              }
+
+              {
+                approved_courses.map((program) => {
+                  return (
+                    <div className="programDiv">
+                      <p className="studentPrograms">{program.program}</p>
+                      {
+                        program.courses.map((course) => (
+                          <p className='studentCourses'>{`- ${course.courseName}`}</p>
+                        ))
+                      }
+                    </div>
+                  )
+                })
               }
             </div>
 
             <div className='courseTypeContainer'>
-              <h1 className="courseInfoHead">Pending Courses</h1>
+              <h1 className="courseInfoHead">Asignaturas que te quedan pendientes para la Carrera</h1>
               {
                 data.programs.map((program) => {
                   return (
@@ -329,7 +356,7 @@ const Student = () => {
             </div>
 
             <a href={data.pdf_url} download="file.pdf" className="downloadBtn" target="_blank" rel="noopener noreferrer">
-              Download details
+              Descargar tu consulta
             </a>
           </div>
         }

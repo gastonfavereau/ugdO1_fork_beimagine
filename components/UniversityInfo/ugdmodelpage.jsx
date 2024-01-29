@@ -44,7 +44,7 @@ const UGDModel = () => {
                 <div data-aos="fade-up" className='aboutusContent'>
             <p className='headingFontSize2'>Nuestro Modelo de Educación Virtual </p>
 
-            <p className='paraFontSize2'>En 2017 la UGD evaluó y acreditó ante CONEAU su Sistema Institucional de Educación a Distancia (SIED). Nuestro equipo innova permanentemente a fin de aportar las mejores herramientas y estrategias para lograr los más efectivos métodos de formación en línea.
+            <p className='paraFontSize2'>Nuestro equipo innova permanentemente a fin de aportar las mejores herramientas y estrategias para lograr los más efectivos métodos de formación en línea. En 2017 la UGD sometió su Sistema Institucional de Educación a Distancia (SIED) a la evaluación de la CONEAU, organismo oficial al efecto, obteniendo su acreditación.
             </p>
                 </div>
                 <div className='aboutusImage'>
@@ -70,10 +70,10 @@ const UGDModel = () => {
                 backgroundColor:"#5C5ADB"
             }}>
                 <div data-aos="fade-up" className='aboutusContent'>
-                    <p className='headingFontSize2'>Principales características del SIED</p>
+                    <p className='headingFontSize2'>Principales características</p>
 
-                    <p className='paraFontSize2'>El SIED de la UGD es un espacio virtual amigable, de fácil acceso y navegación, mediante el cual vas a establecer comunicación con el equipo docente y tus compañeros. Fue diseñado y organizado para garantizar una formación de calidad, donde se dispondrá de todos los materiales educativos, recursos y actividades previstas para favorecer el proceso de aprendizaje. Se tiene acceso a una amplia variedad de recursos en línea que facilitarán el abordaje y comprensión de los contenidos. El SIED brinda la posibilidad de estudiar desde cualquier lugar y en cualquier momento, lo que la convierte en una plataforma flexible y cómoda.
-                    
+                    <p className='paraFontSize2'>Todo el proceso de enseñanza y aprendizaje se desarrolla a través de una plataforma de aprendizaje en línea donde vas a tener interacciones con tus docentes y compañeros de manera asincrónica y sincrónica, en un espacio virtual amigable, de fácil acceso y navegación, diseñado y organizado para garantizar una formación de calidad, donde encontrarás los materiales educativos y didácticos previstos para favorecer tu proceso de aprendizaje.
+                        Tendrás acceso a una amplia variedad de recursos en línea que te facilitarán el abordaje y la comprensión de los contenidos.  Podrás estudiar y rendir tus exámenes finales desde el lugar donde te encuentres, organizando tus tiempos y espacios en función a tus necesidades. 
                     </p>
                 </div>
                 <div className='aboutusImage'>
@@ -151,14 +151,14 @@ const UGDModel = () => {
                     <div data-aos="fade-up"  className='UGDModelPageFourthDivContentCard'>
                         <div>
                             <p  data-aos="fade-up" className='heading'>Encuentro de bienvenida</p>
-                            <p  data-aos="fade-up" className='para'>Ofrecemos una charla para los ingresantes para contarles sobre el modelo pedagógico y la propuesta de la universidad. 
+                            <p  data-aos="fade-up" className='para'>Ofrecemos a nuestros ingresantes una charla a fin de contarles sobre el modelo pedagógico y la propuesta que brinda nuestra Casa de Estudios.
                             </p>
                         </div>
                     </div>
                     <div  data-aos="fade-up" className='UGDModelPageFourthDivContentCard'>
                         <div>
                             <p data-aos="fade-up" className='heading'>Taller Introductorio</p>
-                            <p data-aos="fade-up" className='para'> Lo dictamos previo al inicio del cuatrimestre para que comiences a familiarizarte con el aula virtual, su organización, navegación y uso. 
+                            <p data-aos="fade-up" className='para'> Dictamos un taller previo al inicio del cuatrimestre para que comiences a familiarizarte con el aula virtual, su organización, navegación y uso.
                             </p>
                         </div>
                     </div>
@@ -178,16 +178,15 @@ const UGDModel = () => {
                 <div  data-aos="fade-up" className='UGDModelPageFourthDivContentCard'>
                         <div>
                     
-                        <p data-aos="fade-up" className='heading'>Espacios de tutoría</p>
-                        <p data-aos="fade-up" className='para'> Encuentros optativos en los cuales podrás sumarte para conversar con la tutora facilitadora sobre algún tema en particular. 
-                        Sala de Estudiantes: con información actualizada de manera permanente 
+                        <p data-aos="fade-up" className='heading'>Encuentros sincrónicos</p>
+                        <p data-aos="fade-up" className='para'> De carácter optativos, te permiten interactuar con tus docentes sobre temas que competen al desarrollo de las materias. También contarás con una Sala de Estudiantes en la que vas a encontrar información actualizada y relevante para el  cursado.
                         </p>
                         </div>
                     </div>
                     <div  data-aos="fade-up" className='UGDModelPageFourthDivContentCard'>
                         <div>
-                        <p data-aos="fade-up" className='heading'>Tutora facilitadora</p>
-                        <p data-aos="fade-up" className='para'>se encargará de orientarte y guiarte en la trayectoria académica, brindándote apoyo emocional, desarrollo de habilidades de estudio, asistencia en la resolución de problemas y todo lo que necesités.
+                        <p data-aos="fade-up" className='heading'>Tutores facilitadores</p>
+                        <p data-aos="fade-up" className='para'>Te orientarán y guiarán durante tu trayectoria académica acompañándote en el desarrollo de habilidades para estudiar, brindándote apoyo durante la cursada y asistencia para resolver dificultades que puedan surgir. 
                         </p>
                         </div>
                     </div>
@@ -224,7 +223,7 @@ const UGDModel = () => {
                             marginTop:"2rem",
                             fontSize:"0.8rem",
                             color:"#6B6C6C"
-                            }}>para quienes por distancia geográfica, ocupaciones laborales, personales y/o familiares encuentran en esta modalidad la posibilidad de realizar y sostener trayectoria académica. </p>
+                            }}>Para los estudiantes que, por distancia geográfica, ocupaciones laborales, personales y/o familiares tengan la posibilidad por medio de esta modalidad, de comenzar y sostener sus trayectorias académicas de formación profesional.</p>
                         </div>
                     </div>
                     <div data-aos="fade-up" className="aboutuscontainerfourthsubdiv2">
@@ -250,7 +249,7 @@ const UGDModel = () => {
                             marginTop:"2rem",
                             fontSize:"0.8rem",
                             color:"#6B6C6C"
-                            }}> capacidad de los estudiantes para adaptar sus horarios de estudio a sus necesidades y rutinas. 
+                            }}> Para que los estudiantes puedan adaptar los horarios de estudio a sus necesidades y rutinas, accediendo al campus virtual sin límites de tiempo.
                             </p>
                         </div>
                     </div>
@@ -276,7 +275,7 @@ const UGDModel = () => {
                             marginTop:"2rem",
                             fontSize:"0.8rem",
                             color:"#6B6C6C"
-                            }}>Tendrás control sobre tu propio aprendizaje, con acceso al campus virtual sin límites de horario.  </p>
+                            }}>Para que los estudiantes puedan gestionar su propio proceso de aprendizaje, organizando los espacios y posibilidades acorde a su situación particular.</p>
                             </div>
                     </div>
                     <div style={{
@@ -309,7 +308,7 @@ const UGDModel = () => {
                                 marginTop:"2rem",
                                 fontSize:"0.8rem",
                                 color:"#6B6C6C"
-                                }}> vías de comunicación directa con los docentes, compañeros y la universidad. 
+                                }}> Para que los estudiantes puedan mantener una comunicación directa con los docentes, compañeros y demás áreas y autoridades de la universidad
                                 </p>
                              
                              </div>

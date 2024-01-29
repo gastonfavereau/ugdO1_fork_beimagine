@@ -27,7 +27,7 @@ const Equivalencies = () => {
             marginTop:"2rem",
             fontSize:"1rem",
             color:"#6B6C6C"
-          }}>Si cursaste estudios en Universidades o Instituciones Superiores, te ofrecemos analizar el reconocimiento de estudios por equivalencia antes de inscribirte a nuestra carrera. Para ello, agradeceremos nos contactes, envíes un informe de las materias que has aprobado, te solicitemos información complementaria, y recibirás el informe preliminar de reconocimiento de estudio.
+          }}>Si cursaste estudios en Universidades o Instituciones Superiores te ofrecemos analizar el reconocimiento de estudios por equivalencia. Para ello, te agradeceremos que nos envíes un informe de las materias que has aprobado en la carrera que hayas cursado, y en caso de ser necesario te solicitaremos información complementaria.
             </p>
             </div>
        

@@ -55,7 +55,8 @@ const TeacherPage = () => {
           fontWeight: "300",
           lineHeight: "21px",
         }}>
-           Conformamos nuestro cuerpo docente integrando perfiles que se complementan aportando cada uno de su formación y experiencia:
+           Conformamos nuestro cuerpo docente integrando perfiles que complementan formación académica y experiencia profesional.
+
 
         </p>
 
@@ -144,7 +145,7 @@ const TeacherPage = () => {
                         fontStyle: "normal",
                         fontWeight: "300",
                         lineHeight: "21px",
-                    }}>Especialistas en docencia y en educación virtual que trabajan en constante conexión con los anteriores, orientando y supervisando la conformación de las aulas virtuales, los materiales didácticos y herramientas para el aprendizaje.</p>
+                    }}>Especialistas en docencia universitaria, en educación a distancia y en tecnología educativa, que trabajan en constante articulación con el cuerpo académico, orientando y supervisando la conformación de las aulas virtuales, los materiales didácticos y las diversas herramientas y recursos digitales que se utilizan para el proceso de enseñanza y de aprendizaje.</p>
 
                     <img style={{
                         marginTop:"2rem",
@@ -175,7 +176,7 @@ const TeacherPage = () => {
                         fontStyle: "normal",
                         fontWeight: "300",
                         lineHeight: "21px",
-                    }}>Los materiales son sometidos a revisiones externas logrando con ello incorporar nuevas miradas y aportes.</p>
+                    }}>Profesionales del mundo académico realizan revisiones externas sobre los materiales que han sido elaborados especialistas en contenidos, lo que permite incorporar nuevas miradas y aportes.</p>
 
                     <img style={{
                         marginTop:"2rem",

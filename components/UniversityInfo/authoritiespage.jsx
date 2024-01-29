@@ -82,7 +82,7 @@ const AuthoritiesPage = () => {
     img:"/Decano Departamento de Ingeniería y Ciencias de la Producción Dr. Ing. Diego Godoy.jpg"
   },
   {
-    desc:"Decana Departamento de Ciencias Jurídica y Sociales",
+    desc:"Decana Departamento de Ciencias Jurídicas y Sociales",
     name:"Mgter. Viviana Teresita Vallaro",
     img:"/Decana Departamento de Ciencias Jurídica y Sociales Mgter. Viviana Teresita Vallaro.jpg"
   },

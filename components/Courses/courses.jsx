@@ -391,7 +391,7 @@ const Course = ({params}) => {
                                     </Link>
                                 }
                                 {
-                                   course.subtitle ===  "Diplomaturas" && 
+                                   course.subtitle ===  "Corredor Inmobilliario" && 
                                    <Link href={"/ar/equivalencies/studentQuery"}>
                                         <button style={{
                                             width:"200px",

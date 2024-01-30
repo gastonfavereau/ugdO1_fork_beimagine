@@ -41,22 +41,49 @@ const Titles = () => {
           fontStyle: "normal",
           fontWeight: "500",
           lineHeight: "38px",
+          paddingLeft:"20px ",
+          paddingRight:"20px"
         }}>Títulos UGD y revalidaciones </p>
         <p data-aos="fade-up" style={{
           marginTop:"2rem",
-          textAlign:"center",
+          textAlign:"justify",
           color:"#6B6B6B",
           fontFamily: "Inter",
           fontSize: "18px",
           fontStyle: "normal",
           fontWeight: "300",
           lineHeight: "21px",
+          paddingLeft:"20px ",
+          paddingRight:"20px"
         }}>
-          Al culminar las carreras se obtienen TÍTULOS UNIVERSITARIOS OFICIALES otorgados por la Universidad Gastón Dachary y legalizados por el Gobierno de la República Argentina
-          La UGD además somete sus planes de estudio y títulos a análisis de instituciones acreditadoras en EEUU, en virtud de lo cual se emiten CERTIFICADOS DE EQUIVALENCIAS DE ESTUDIOS que son reconocidos oficialmente.
-          En Latinoamérica los mismos pueden ser revalidados en distintos países en virtud de las normas y acuerdos de revalidación que rigen con cada Nación.
-        </p>
+         Al culminar las carreras se obtienen TÍTULOS UNIVERSITARIOS OFICIALES otorgados por la Universidad Gastón Dachary y legalizados por el Gobierno de la República Argentina.
 
+        </p>
+        <p data-aos="fade-up" style={{
+          marginTop:"2rem",
+          textAlign:"justify",
+          color:"#6B6B6B",
+          fontFamily: "Inter",
+          fontSize: "18px",
+          fontStyle: "normal",
+          fontWeight: "300",
+          lineHeight: "21px",
+          paddingLeft:"20px",
+          paddingRight:"20px"
+        }}>La UGD además somete sus planes de estudio y títulos a análisis de instituciones acreditadoras en EEUU, en virtud de lo cual se emiten CERTIFICADOS DE EQUIVALENCIAS DE ESTUDIOS que son reconocidos oficialmente.</p>
+      
+        <p data-aos="fade-up" style={{
+          marginTop:"2rem",
+          textAlign:"justify",
+          color:"#6B6B6B",
+          fontFamily: "Inter",
+          fontSize: "18px",
+          fontStyle: "normal",
+          fontWeight: "300",
+          lineHeight: "21px",
+          paddingLeft:"20px",
+          paddingRight:"20px"
+        }}>En Latinoamérica los mismos pueden ser revalidados en distintos países en virtud de las normas y acuerdos de revalidación que rigen con cada Nación.</p>
 
         <div  className="studentDiv">
            <div>

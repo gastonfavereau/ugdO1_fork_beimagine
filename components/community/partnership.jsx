@@ -57,8 +57,7 @@ const PartnerShip = () =>{
                     fontSize:"1rem",
                     color:"#6B6C6C",
 
-                }}>Nos vinculamos con organizaciones universitarias que permiten a nuestros docentes y estudiantes acceder a información privilegiada, intercambios, encuentros, materiales y oportunidades para su desarrollo académico y profesional 
-                    Entre los vínculos internacionales más destacados podemos encontrar:
+                }}>Nos vinculamos con organizaciones universitarias que permiten a nuestros docentes y estudiantes acceder a información privilegiada, intercambios, encuentros, materiales y oportunidades para su desarrollo académico y profesional. Entre los vínculos internacionales más destacados podemos encontrar:
                     </p>
                 <div style={{
                     marginTop:"5rem",
@@ -211,7 +210,7 @@ const PartnerShip = () =>{
                                 <div >
                                     <p className="partnershipCardHeadingWhite">Universidades Iberoamericanas
                                     </p>
-                                    <p className="partnershipCardParaWhite">Mantenemos vínculos y cooperación estrecha con universidades tanto argentinas, como latinoamericanas y de otras regiones del mundo. 
+                                    <p className="partnershipCardParaWhite">Mantenemos vínculos y cooperación estrecha con universidades argentinas, de otros países latinoamericanos y de otras regiones del mundo.
                                     </p>
                                 </div>
 

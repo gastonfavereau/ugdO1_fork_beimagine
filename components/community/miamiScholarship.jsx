@@ -39,7 +39,7 @@ const MiamiScholarship = () =>{
             marginTop:"2rem",
             fontSize:"1rem",
             color:"#6B6C6C"
-          }}>Si vos o tus padres han nacido en algún país Latinoamericano, y resides en algún punto de EEUU, tenés una beca que cubre el 30% de los aranceles, durante toda la carrera.
+          }}>Si vos o tus padres han nacido en algún país Latinoamericano, y vives en algún punto de EEUU, tenés una beca que cubre el 30% de los aranceles, durante toda la carrera.
           </p>
 
           <p style={{
@@ -63,7 +63,7 @@ const MiamiScholarship = () =>{
             marginTop:"0.5rem",
             fontSize:"1rem",
             color:"#6B6C6C"
-            }} >Un certificado de residencia en EEUU.</p>
+            }} >Un certificado de domicilio en EEUU.</p>
         
             
           

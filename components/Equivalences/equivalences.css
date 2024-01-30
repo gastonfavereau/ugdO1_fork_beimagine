@@ -262,3 +262,10 @@ td {
     color: red;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1000px) {
+    .innerContainer{
+        width: 100%;
+        padding: 10px;
+    }
+}

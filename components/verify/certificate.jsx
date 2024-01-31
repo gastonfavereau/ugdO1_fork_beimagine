@@ -11,7 +11,7 @@ import Image from "next/image";
 const Certificate = async ({ params }) => {
   const usecert = await usecertificate(params);
   
-  if (!usecert.certDetails || usecert.certDetails.issuer.id !== 43)
+  if (!usecert.certDetails || usecert.certDetails.issuer.user !== 43)
     return (
       <div
         style={{

@@ -10,7 +10,7 @@ import Image from "next/image";
 const CIDCertificate = async ({ params }) => {
   const usecert = await useCIDcertificate(params);
 
-  if (!usecert.certDetails || usecert.certDetails.issuer.id !== 43)
+  if (!usecert.certDetails || usecert.certDetails.issuer.user !== 43)
     return (
       <div
         style={{

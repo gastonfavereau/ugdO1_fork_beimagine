@@ -45,6 +45,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+p{
+  text-align: justify;
+}
+
 .skeleton-container{
   padding: 2rem;
   padding-left: 12rem;

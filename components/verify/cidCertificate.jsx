@@ -63,7 +63,7 @@ const CIDCertificate = async ({ params }) => {
         <Receiver usecert={usecert} />
       </div>
       <CertImage usecert={usecert} />
-      <Advertisment />
+      {/* <Advertisment /> */}
     </div>
   );
 };

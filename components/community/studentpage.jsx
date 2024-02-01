@@ -47,7 +47,7 @@ const StudentPage = () => {
         }}>Nuestros destinatarios </p>
         <p data-aos="fade-up" style={{
           marginTop:"2rem",
-          textAlign:"center",
+          textAlign:"justify",
           color:"#6B6B6B",
           fontFamily: "Inter",
           fontSize: "18px",

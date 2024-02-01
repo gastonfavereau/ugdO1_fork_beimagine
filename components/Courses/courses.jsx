@@ -70,6 +70,7 @@ const Course = ({params}) => {
                     }}>
                     <h3 style={{color:"white",fontWeight:"500",fontSize:"1.5rem",textAlign:"center"}}>DESTINATARIOS</h3>
                         {
+
                             course.destinatario.map((text)=>{
                                 return(
                                     <p  key={text}  dangerouslySetInnerHTML={{ __html: text }} style={{color:"white",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}></p>
@@ -96,14 +97,15 @@ const Course = ({params}) => {
                        
                         <div style={{
                             width:"100%",
+                            padding:"1rem",
                    
                         }}>
-                            <ul>
+                            <ul style={{ listStyleType: "disc" }}>
                             {
                                 course.alcances.list.map((text)=>{
                                     
                                     return(
-                                        <li key={text} dangerouslySetInnerHTML={{ __html: text }} style={{color:"white",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}></li>     
+                                        <li key={text}  style={{color:"white",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}>{text}</li>     
                                     )
                                 })
                             }
@@ -131,12 +133,13 @@ const Course = ({params}) => {
                        
                         <div style={{
                             width:"100%",
+                            padding:"1rem",
                             // boxShadow:" 0 4px 8px 0 rgba(0,0,0,0.2)",
                             // borderRadius:"5px",
                             // backgroundColor:"white",
                    
                         }}>
-                            <ul>
+                            <ul style={{ listStyleType: "disc" }}>
                             {/* write unorder list html here */}
                             {
                                 course.ambitos.list.map((text)=>{
@@ -170,12 +173,13 @@ const Course = ({params}) => {
                        
                         <div style={{
                             width:"100%",
+                            padding:"1rem",
                             // boxShadow:" 0 4px 8px 0 rgba(0,0,0,0.2)",
                             // borderRadius:"5px",
                             // backgroundColor:"white",
                    
                         }}>
-                            <ul>
+                            <ul style={{ listStyleType: "disc" }}>
                             {/* write unorder list html here */}
                             {
                                 course.podra.map((text)=>{
@@ -205,14 +209,30 @@ const Course = ({params}) => {
                     }}>
                         {/* <h3 style={{color:"#1C3564",fontWeight:"500",fontSize:"18px",textAlign:"center"}}>{course.course}</h3> */}
                         <p style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Presentación</p>
-                        <p dangerouslySetInnerHTML={{ __html: course.presentacion }} style={{color:"#6B6C6C",fontSize:"0.8em",marginTop:"1em",fontWeight:"600",textAlign:"justify"}}></p>
+                        {
+                            course.presentacion &&
+                            <>
+                            {
+                                typeof course.presentacion === 'string' ?
+                                <p dangerouslySetInnerHTML={{ __html: course.presentacion }} style={{color:"#6B6C6C",fontSize:"0.8em",marginTop:"1em",fontWeight:"600",textAlign:"justify"}}></p>
+                                :
+                                <ul style={{ listStyleType: "disc", marginLeft:"1em"}}>
+                                {course.presentacion.map((text)=>{
+                                    return(
+                                        <li key={text} dangerouslySetInnerHTML={{ __html: text }} style={{color:"#6B6C6C",fontSize:"0.8em",marginTop:"1em",fontWeight:"600",textAlign:"justify"}}></li>
+                                    )
+                                })}
+                                </ul>
+                            }
+                            </>
+                        }
                     </div>
                     <div style={{
                         width:"100%",
                         display:"flex",
                         flexDirection:"column",
                         padding:"2em",
-                        gap:"2em",
+                        gap:"1em",
                     }}>
                         {/* tituloFinal */}
                         { course.tituloFinal &&
@@ -232,9 +252,11 @@ const Course = ({params}) => {
                         >
                             <Image src={"/time.svg"} height={25} width={25} />  
                             <div style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Títulos finales:
+                            <ul style={{ listStyleType: "disc", marginLeft:"1em"}}>
                             {
-                                course.tituloFinal.map((item)=>( <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}} key={item}>{item}</p>))
+                                course.tituloFinal.map((item)=>( <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}} key={item}>{item}</li>))
                             }
+                            </ul>
                             </div>
                         </div>
                         }
@@ -264,11 +286,13 @@ const Course = ({params}) => {
                             >
                                 <Image src={"/government.svg"} height={30} width={30} />
                                 <div style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Títulos Intermedios: 
+                                 <ul style={{ listStyleType: "disc", marginLeft:"1em"}}>
                                 {
                                     course.tituloIntermedio.map((item)=>(
-                                        <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{item}</p>
+                                        <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{item}</li>
                                     ))
                                 }
+                                </ul>
                                 </div>
                             </div>
                         }
@@ -283,11 +307,13 @@ const Course = ({params}) => {
                             }}>
                                 <Image src={"/graduation 1.svg"} height={30} width={30} />
                                 <div style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Diplomaturas Universitarias Intermedias:
+                                <ul style={{ listStyleType: "disc", marginLeft:"1em"}}>
                                 {
                                     course.diplomaturas.map((item)=>{
-                                        return <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{item}</p>
+                                        return <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{item}</li>
                                     })
                                 }
+                                </ul>
                                 </div>
                             </div>
 
@@ -302,11 +328,13 @@ const Course = ({params}) => {
                         }}>
                             <Image src={"/graduation 1.svg"} height={30} width={30} />
                             <div style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Certificaciones intermedias: 
+                            <ul style={{ listStyleType: "disc", marginLeft:"1em"}}>
                             {
                                 course.certificacionesIntermedias.map((item)=>{
-                                    return <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{item}</p>
+                                    return <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{item}</li>
                                 })
                             }
+                            </ul>
                             
                             {/* <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>XXXXXXXXXXXXXXX</p> */}
                            
@@ -324,11 +352,13 @@ const Course = ({params}) => {
                         }}>
                             <Image src={"/badge.svg"} height={30} width={30} />
                             <div style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Títulos aprobados por : 
+                            <ul style={{ listStyleType: "disc", marginLeft:"1em"}}>
                             {
                                 course.titulosAprobados.map((item)=>{
-                                    return <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{item}</p>
+                                    return <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{item}</li>
                                 })
                             }
+                            </ul>
                             </div>
                         </div>
                         }

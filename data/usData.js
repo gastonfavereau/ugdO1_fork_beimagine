@@ -1,109 +1,17 @@
 const usData = [
   {
     course: "Tecnicatura en Desarrollo de Software",
-    subtitle: "Para Programadores Java Full Stack",
+    subtitle: "Tecnicatura en Desarrollo de Software",
     bgimage: "/TecDesarrolloSoftware_Placa.png",
     path: "software",
-    image: "/course5.jpg",
+    image: "/webp/course5.webp",
     duration: "3 años",
     pdf: "/pdf/Tecnicatura en Desarrollo de Software.pdf",
-    syllabus: [
-      {
-        id: 1,
-        subtopic: [
-          {
-            id: 1,
-            name: "Fundamentos de Programación",
-          },
-          {
-            id: 2,
-            name: "Programación Java",
-          },
-          {
-            id: 3,
-            name: "Matemática Introductoria",
-          },
-          {
-            id: 4,
-            name: "Laboratorio de Programación I",
-          },
-          {
-            id: 5,
-            name: "Estructura de Datos y Algoritmos",
-          },
-          {
-            id: 6,
-            name: "Programación Web I",
-          },
-          {
-            id: 7,
-            name: "Matemática I",
-          },
-        ],
-      },
-      {
-        id: 2,
-        subtopic: [
-          {
-            id: 1,
-            name: "Administración de Base de Datos",
-          },
-          {
-            id: 2,
-            name: "Programación Web II",
-          },
-          {
-            id: 3,
-            name: "Ingeniería de Software",
-          },
-          {
-            id: 4,
-            name: "Laboratorio de Programación II",
-          },
-          {
-            id: 5,
-            name: "Programación para Dispositivos Móviles",
-          },
-          {
-            id: 6,
-            name: "Programación en .Net o Python",
-          },
-          {
-            id: 7,
-            name: "Metodología de Desarrollo",
-          },
-          {
-            id: 8,
-            name: "Laboratorio de Programación III",
-          },
-        ],
-        duration: "4 meses",
-      },
-      {
-        id: 3,
-        subtopic: [
-          {
-            id: 1,
-            name: "Inglés Técnico III",
-          },
-          {
-            id: 2,
-            name: "Redes",
-          },
-          {
-            id: 3,
-            name: "Seguridad Informática",
-          },
-          {
-            id: 4,
-            name: "Práctica Profesional Tutelada",
-          },
-        ],
-      },
+    presentacion: [
+      "Esta carrera forma recursos humanos capaces de participar en y administrar el diseño, construcción y operación de sistemas informáticos y soluciones de software.",
+      "El egresado tendrá la posibilidad de continuar con el Ciclo de Licenciatura en Gestión de Recursos Tecnológicos y obtener un título de grado universitario.",
     ],
-    presentacion:
-      "Esta carrera forma recursos humanos capaces de participar en y administrar el diseño, construcción y operación de sistemas informáticos y soluciones de software.<br/>El egresado tendrá la posibilidad de continuar con el Ciclo de Licenciatura en Gestión de Recursos Tecnológicos y obtener un título de grado universitario.",
-    tituloFinal: "Técnico en Desarrollo de Software (18 meses)",
+    tituloFinal: ["Técnico en Desarrollo de Software (18 meses)"],
     titulosAprobados: ["Resolución UGD Nro. 52/A/23."],
     destinatario: [
       "Está carrera está destinada a quienes se hayan formado como Programadores Java Full Stack, deseen ampliar sus conocimientos e incorporar nuevas tecnologías y procedimientos para mejorar su posición laboral.",
@@ -112,92 +20,36 @@ const usData = [
     alcances: {
       title: "Una vez concluidos sus estudios el egresado es competente en:",
       list: [
-        "<span>•</span> Análisis, diseño y programación de soluciones informáticas aplicando las mejores prácticas.",
-        "<span>•</span> Participación de equipos de investigación y desarrollo. ",
-        "<span>•</span> Desarrollo de aplicaciones integrales en diferentes tipos de equipamientos y tecnología. ",
-        "<span>•</span> Creación de bases de datos, entornos web y aplicaciones móviles sincronizada. ",
-        "<span>•</span> Identificación de problemas en entornos de desarrollo de software.",
+        "Análisis, diseño y programación de soluciones informáticas aplicando las mejores prácticas.",
+        "Participación de equipos de investigación y desarrollo. ",
+        "Desarrollo de aplicaciones integrales en diferentes tipos de equipamientos y tecnología. ",
+        "Creación de bases de datos, entornos web y aplicaciones móviles sincronizada. ",
+        "Identificación de problemas en entornos de desarrollo de software.",
       ],
     },
     ambitos: {
       text: "El Técnico en Desarrollo de Software es un profesional capacitado que aplica su ingenio y conocimientos para afrontar con solvencia el diseño, desarrollo y administración de todo el ciclo de vida del software y los sistemas informáticos. ",
       subtext: "Esto le permite: ",
       list: [
-        "<span>•</span> Participar en equipos integrados por especialistas de distintos campos del conocimiento. ",
-        "<span>•</span> Diseñar y administrar todo el ciclo de vida del software. ",
-        "<span>•</span> Operar y mantener sistemas informáticos y soluciones de software. ",
+        " Participar en equipos integrados por especialistas de distintos campos del conocimiento. ",
+        " Diseñar y administrar todo el ciclo de vida del software. ",
+        " Operar y mantener sistemas informáticos y soluciones de software. ",
       ],
     },
   },
   {
     course: "Programador Java Full Stack",
+    subtitle: "Programador Java Full Stack",
     pdf: "/pdf/Programador Java Full Stack (2).pdf",
     bgimage: "/ProgramJavaFullStack_Placa.png",
     path: "java",
-    image: "/course4.jpg",
+    image: "/webp/course4.webp",
     duration: "9 meses",
-    syllabus: [
-      {
-        id: 1,
-        topic: "Fundamentos de Programación",
-        subtopic: [
-          {
-            id: 1,
-            name: "Programación Imperativa",
-          },
-          {
-            id: 2,
-            name: "Programación Funcional",
-          },
-        ],
-        duration: "2 meses",
-      },
-      {
-        id: 2,
-        topic: "Programación en Java",
-        subtopic: [
-          {
-            id: 1,
-            name: "Introducción en Java y Entorno de Desarrollo",
-          },
-          {
-            id: 2,
-            name: "Programación Orientada a Objetos",
-          },
-          {
-            id: 3,
-            name: "Relaciones entre Clases",
-          },
-          {
-            id: 4,
-            name: "Herencia",
-          },
-        ],
-        duration: "4 meses",
-      },
-      {
-        id: 3,
-        topic: "Desarrollo de una Aplicación en Java",
-        subtopic: [
-          {
-            id: 1,
-            name: "Trabajo con Vista y Control de Versiones",
-          },
-          {
-            id: 2,
-            name: "Excepciones",
-          },
-          {
-            id: 3,
-            name: "Manejo de Base de Datos",
-          },
-        ],
-        duration: "3 meses",
-      },
+    presentacion: [
+      "Esta propuesta brinda las habilidades necesarias para incorporarse rápidamente al mercado laboral, con un perfil de desarrollador de software junior en aplicaciones Java Full Stack, uno de los lenguajes de programación con mayor difusión y demanda.",
+      "El curso es de modalidad virtual y sincrónica. ",
     ],
-    presentacion:
-      "Esta propuesta brinda las habilidades necesarias para incorporarse rápidamente al mercado laboral, con un perfil de desarrollador de software junior en aplicaciones Java Full Stack, uno de los lenguajes de programación con mayor difusión y demanda.  <br />El curso es de modalidad virtual y sincrónica. ",
-    tituloFinal: "Programador Java Full Stack (9 meses)",
+    tituloFinal: ["Programador Java Full Stack (9 meses)"],
     titulosAprobados: ["Resolución UGD Nro 44/A/23."],
     destinatario: [
       "Está destinado a quienes quieran dar un excelente primer paso como programador, iniciando prontamente una actividad laboral muy bien remunerada y posteriormente, si lo desea, continuar con otros tramos de formación en que incorpore otros lenguajes, tecnologías y entornos.",
@@ -206,89 +58,31 @@ const usData = [
     alcances: {
       title: "El graduado será un profesional competente para:",
       list: [
-        "<span>•</span> En esta carrera te desarrollarás como Full Stack Developer, aprendiendo a crear un sitio web sumergiéndote en las mejores prácticas del diseño y programación con Javascript, incorporando interactividad y dinamismo a tus proyectos. ",
-        "<span>•</span> Aprenderás a desarrollar aplicaciones modernas programando del lado del servidor con técnicas asincrónicas y a trabajar con bases de datos dominando la gestión en forma eficiente y con capacidad de escalabilidad.",
-        "<span>•</span> Serás capaz de diseñar complejas aplicaciones robustas y escalables, dominando técnicas de comunicación, procesos distribuidos, gestión de grandes volúmenes de datos y despliegue a distintas plataformas web.  ",
-        "<span>•</span> Adquirirás una visión integral del desarrollo de un proyecto digital, con dominio de Front-End, Back-End y estructura Web con soluciones interactivas. Aprenderá a crear sitios con las mejores herramientas para optimizarlos al máximo.",
-        "<span>•</span> Sabrás dimensionar y cotizar servicios y presentar propuestas de desarrollo. ",
+        " En esta carrera te desarrollarás como Full Stack Developer, aprendiendo a crear un sitio web sumergiéndote en las mejores prácticas del diseño y programación con Javascript, incorporando interactividad y dinamismo a tus proyectos. ",
+        " Aprenderás a desarrollar aplicaciones modernas programando del lado del servidor con técnicas asincrónicas y a trabajar con bases de datos dominando la gestión en forma eficiente y con capacidad de escalabilidad.",
+        " Serás capaz de diseñar complejas aplicaciones robustas y escalables, dominando técnicas de comunicación, procesos distribuidos, gestión de grandes volúmenes de datos y despliegue a distintas plataformas web.  ",
+        " Adquirirás una visión integral del desarrollo de un proyecto digital, con dominio de Front-End, Back-End y estructura Web con soluciones interactivas. Aprenderá a crear sitios con las mejores herramientas para optimizarlos al máximo.",
+        " Sabrás dimensionar y cotizar servicios y presentar propuestas de desarrollo. ",
       ],
     },
     podra: [
-      "<span>•</span> Empresas públicas, privadas o mixtas de desarrollo de software.",
-      "<span>•</span> Áreas de desarrollo de distintos tipos de organizaciones.",
-      "<span>•</span> Como trabajador independiente en desarrollo de aplicaciones de software.",
+      " Empresas públicas, privadas o mixtas de desarrollo de software.",
+      " Áreas de desarrollo de distintos tipos de organizaciones.",
+      " Como trabajador independiente en desarrollo de aplicaciones de software.",
     ],
   },
   {
     course: "LICENCIATURA EN MARKETING",
+    subtitle: "Lic. en Marketing",
     pdf: "/pdf/Licenciatura en Marketing.pdf",
     bgimage: "/LicMarketing_Placa.png",
     path: "marketing",
-    image: "/course9.jpg",
+    image: "/webp/course9.webp",
     duration: "9 meses",
-    syllabus: [
-      {
-        id: 1,
-        topic: "Fundamentos de Programación",
-        subtopic: [
-          {
-            id: 1,
-            name: "Programación Imperativa",
-          },
-          {
-            id: 2,
-            name: "Programación Funcional",
-          },
-        ],
-        duration: "2 meses",
-      },
-      {
-        id: 2,
-        topic: "Programación en Java",
-        subtopic: [
-          {
-            id: 1,
-            name: "Introducción en Java y Entorno de Desarrollo",
-          },
-          {
-            id: 2,
-            name: "Programación Orientada a Objetos",
-          },
-          {
-            id: 3,
-            name: "Relaciones entre Clases",
-          },
-          {
-            id: 4,
-            name: "Herencia",
-          },
-        ],
-        duration: "4 meses",
-      },
-      {
-        id: 3,
-        topic: "Desarrollo de una Aplicación en Java",
-        subtopic: [
-          {
-            id: 1,
-            name: "Trabajo con Vista y Control de Versiones",
-          },
-          {
-            id: 2,
-            name: "Excepciones",
-          },
-          {
-            id: 3,
-            name: "Manejo de Base de Datos",
-          },
-        ],
-        duration: "3 meses",
-      },
-    ],
     presentacion:
       "Esta carrera forma graduados para el diseño y la implementación de negocios, el desarrollo de productos y servicios y con capacidad de planificar y supervisar procesos de comunicación y posicionamiento.",
-    tituloFinal: "Licenciado en Marketing (4 años)",
-    tituloIntermedio: "Técnico Universitario en Marketing (3 años)",
+    tituloFinal: ["Licenciado en Marketing (4 años)"],
+    tituloIntermedio: ["Técnico Universitario en Marketing (3 años)"],
     certificacionesIntermedias: [
       "Certificado Universitario en Marketing Digital y Community Manager.",
       "Certificado Universitario en Publicidad, Diseño y Comunicación.",
@@ -296,7 +90,7 @@ const usData = [
     ],
     titulosAprobados: [
       "Resolución Nro. 2413/2017 Ministerio de Educación.",
-      "Resolución UGD Nro. 64/A/23 (modificación planes de estudio).",
+      "Resolución UGD Nro. 64/A/23 .",
     ],
     destinatario: [
       "Esta carrera está orientada a",
@@ -307,112 +101,28 @@ const usData = [
     alcances: {
       title: "El graduado será un profesional competente para:",
       list: [
-        "<span>•</span> Conducir el diseño y concreción de negocios, participando activamente en grupos interdisciplinarios para definiciones de modelos de negocios y planes estratégicos en organizaciones de diversas naturalezas.",
-        "<span>•</span> Participar en el proceso de diseño, desarrollo y discontinuación de productos y servicios, tanto para el mercado nacional como internacional.",
-        "<span>•</span> Asesorar, planificar, organizar, dirigir, supervisar, evaluar y auditar procesos de comunicación y posicionamiento en todo tipo de organizaciones.",
-        "<span>•</span> Realizar estudios de viabilidad comercial e investigaciones de mercados en lo concerniente al posicionamiento de marca, imagen institucional, satisfacción de clientes, procesos de compras y consumo, proyecciones de demanda, competencia, tendencias y entornos políticos, sociales, económicos y tecnológicos.",
-        "<span>•</span> Dirigir las academias formativas en Universidades públicas y/o privadas, integrar el cuerpo docente y participar de la elaboración de planes y programas de estudio.",
+        " Conducir el diseño y concreción de negocios, participando activamente en grupos interdisciplinarios para definiciones de modelos de negocios y planes estratégicos en organizaciones de diversas naturalezas.",
+        " Participar en el proceso de diseño, desarrollo y discontinuación de productos y servicios, tanto para el mercado nacional como internacional.",
+        " Asesorar, planificar, organizar, dirigir, supervisar, evaluar y auditar procesos de comunicación y posicionamiento en todo tipo de organizaciones.",
+        " Realizar estudios de viabilidad comercial e investigaciones de mercados en lo concerniente al posicionamiento de marca, imagen institucional, satisfacción de clientes, procesos de compras y consumo, proyecciones de demanda, competencia, tendencias y entornos políticos, sociales, económicos y tecnológicos.",
       ],
     },
     podra: [
-      "<span>•</span> Todo tipo de empresas tanto del sector privado como público",
-      "<span>•</span> Agencias de publicidad.",
-      "<span>•</span> Consultorías de investigación de mercado.",
-      "<span>•</span> Trabajar de forma independiente.",
+      " Todo tipo de empresas tanto del sector privado como público",
+      " Agencias de publicidad.",
+      " Consultorías de investigación de mercado.",
+      " Trabajar de forma independiente.",
     ],
   },
   {
     course: "Licenciatura en Gestión de Recursos Tecnológicos",
+    subtitle: "Ciclo Lic. Gestión de Rec. Tecnológicos",
     pdf: "/pdf/Ciclo de Licenciatura en Gestión de Recursos Tecnológicos.pdf",
     subtitle: "Ciclo de complementación ",
     bgimage: "/CicloLicGestionRecTecno_Placa.png",
     path: "recursos",
-    image: "/course3.jpg",
+    image: "/webp/course3.webp",
     duration: "2 años",
-    syllabus: [
-      {
-        id: 1,
-        subtopic: [
-          {
-            id: 1,
-            name: "Investigación Operativa – Cuatrimestral",
-          },
-          {
-            id: 2,
-            name: "Legislación – Cuatrimestral",
-          },
-          {
-            id: 3,
-            name: "Economía – Cuatrimestral",
-          },
-          {
-            id: 4,
-            name: "Gestión de Recursos Humanos – Cuatrimestral",
-          },
-          {
-            id: 5,
-            name: "Paradigmas y Lenguajes de Programación – Cuatrimestral",
-          },
-          {
-            id: 6,
-            name: "Ingeniería de Software – Cuatrimestral",
-          },
-          {
-            id: 7,
-            name: "Redes – Cuatrimestral",
-          },
-          {
-            id: 8,
-            name: "Ética Profesional – Cuatrimestral",
-          },
-          {
-            id: 9,
-            name: "Modelos y Simulación - Cuatrimestral",
-          },
-        ],
-      },
-      {
-        id: 2,
-        subtopic: [
-          {
-            id: 1,
-            name: "Principio de Inteligencia Artificial – Cuatrimestral",
-          },
-          {
-            id: 2,
-            name: "Auditoria y Calidad – Cuatrimestral",
-          },
-          {
-            id: 3,
-            name: "Programación Orientada a Eventos – Cuatrimestrals",
-          },
-          {
-            id: 4,
-            name: "Gestión de Proyectos – Cuatrimestral",
-          },
-          {
-            id: 5,
-            name: "Proyectos Informáticos – Cuatrimestral",
-          },
-          {
-            id: 6,
-            name: "Aplicaciones Web y Móvil – Cuatrimestral",
-          },
-          {
-            id: 7,
-            name: "Dirección y Gerenciamiento – Cuatrimestral",
-          },
-          {
-            id: 8,
-            name: "Emprendimiento e Innovación – Cuatrimestral",
-          },
-          {
-            id: 9,
-            name: "Taller de Trabajo Final - Cuatrimestral",
-          },
-        ],
-      },
-    ],
     presentacion:
       "Este Ciclo está destinado a fortalecer la formación de quienes ya han transitado estudios superiores y deseen incorporar conocimientos que fortalezcan sus competencias laborales, desarrollando un perfil que le permita identificar y elaborar soluciones informáticas basadas en software a los problemas de las organizaciones y de la comunidad en general.",
     tituloFinal: "Licenciado en Gestión de Recursos Tecnológicos (2 años)",
@@ -426,92 +136,37 @@ const usData = [
     alcances: {
       title: "Una vez concluidos sus estudios el egresado es competente para:",
       list: [
-        "<span>•</span> Participar en la planificación, dirección ejecución y evaluación de proyectos de relevamiento, análisis, diseño, desarrollo, implementación, verificación, validación y puesta a punto de sistemas de información, asegurando su mantenimiento y actualización para todo tipo de personas, físicas o jurídicas.",
-        "<span>•</span> Participar en la especificación, diseño, desarrollo implementación y mantenimiento de los componentes de seguridad de información embebidos en los sistemas físicos y en los sistemas de software de aplicación.",
-        "<span>•</span> Proponer y evaluar soluciones tecnológicas destinadas al procesamiento de información.",
-        "<span>•</span> Definir e implementar políticas de control, monitoreo y respaldo para la infraestructura de redes y servicios de datos en una organización.",
-        "<span>•</span> Determinar los procesos y roles de las áreas de tecnologías de información y los planes estratégicos de la organización.",
+        " Participar en la planificación, dirección ejecución y evaluación de proyectos de relevamiento, análisis, diseño, desarrollo, implementación, verificación, validación y puesta a punto de sistemas de información, asegurando su mantenimiento y actualización para todo tipo de personas, físicas o jurídicas.",
+        " Participar en la especificación, diseño, desarrollo implementación y mantenimiento de los componentes de seguridad de información embebidos en los sistemas físicos y en los sistemas de software de aplicación.",
+        " Proponer y evaluar soluciones tecnológicas destinadas al procesamiento de información.",
+        " Definir e implementar políticas de control, monitoreo y respaldo para la infraestructura de redes y servicios de datos en una organización.",
+        " Determinar los procesos y roles de las áreas de tecnologías de información y los planes estratégicos de la organización.",
       ],
     },
     ambitos: {
       text: "El Licenciado en Gestión de Recursos Tecnológico será un profesional con habilidades técnicas y de resolución de problemas aplicables en diferentes industrias y servicios especializados, que podrá desempeñarse en:",
       list: [
-        "<span>•</span> Empresas proveedoras de soluciones de hardware y software.",
-        "<span>•</span> Instituciones que utilicen sistemas de computación en cualquiera de los sectores: gobierno, industrial, manufacturero, bancario, social, salud o telecomunicaciones, entre otros.",
-        "<span>•</span> Ámbitos profesionales particulares, como prestador independiente de servicios especializados.",
+        " Empresas proveedoras de soluciones de hardware y software.",
+        " Instituciones que utilicen sistemas de computación en cualquiera de los sectores: gobierno, industrial, manufacturero, bancario, social, salud o telecomunicaciones, entre otros.",
+        " Ámbitos profesionales particulares, como prestador independiente de servicios especializados.",
       ],
     },
   },
   {
     course: "DOCTORADO EN DESARROLLO SUSTENTABLE E INTEGRACIÓN",
+    subtitle: "Doc. en Desarrollo e Integración",
     pdf: "/pdf/Doctorado en Desarrollo Sustentable e Integración.pdf",
     bgimage: "/DocDesarrolloSustIntegracion_Placa.png",
     path: "doctorado",
-    image: "/course6.jpg",
+    image: "/webp/course6.webp",
     duration: "9 meses",
-    syllabus: [
-      {
-        id: 1,
-        topic: "Fundamentos de Programación",
-        subtopic: [
-          {
-            id: 1,
-            name: "Programación Imperativa",
-          },
-          {
-            id: 2,
-            name: "Programación Funcional",
-          },
-        ],
-        duration: "2 meses",
-      },
-      {
-        id: 2,
-        topic: "Programación en Java",
-        subtopic: [
-          {
-            id: 1,
-            name: "Introducción en Java y Entorno de Desarrollo",
-          },
-          {
-            id: 2,
-            name: "Programación Orientada a Objetos",
-          },
-          {
-            id: 3,
-            name: "Relaciones entre Clases",
-          },
-          {
-            id: 4,
-            name: "Herencia",
-          },
-        ],
-        duration: "4 meses",
-      },
-      {
-        id: 3,
-        topic: "Desarrollo de una Aplicación en Java",
-        subtopic: [
-          {
-            id: 1,
-            name: "Trabajo con Vista y Control de Versiones",
-          },
-          {
-            id: 2,
-            name: "Excepciones",
-          },
-          {
-            id: 3,
-            name: "Manejo de Base de Datos",
-          },
-        ],
-        duration: "3 meses",
-      },
+    presentacion: [
+      "El Doctorado en Desarrollo Sustentable e Integración busca formar investigadores/as de excelencia, capaces de enfocar los problemas de la sociedad actual, tanto en el sector público como en el privado, con una visión amplia y dinámica de todos los actores sociales, estando capacitados para identificar problemas y proponer soluciones relacionadas con el medio ambiente y su vinculación con la sociedad",
+      "Será capaz de generar propuestas y conocimientos para enriquecer el desarrollo sustentable en el marco local, regional e internacional.",
     ],
-    presentacion:
-      "El Doctorado en Desarrollo Sustentable e Integración busca formar investigadores/as de excelencia, capaces de enfocar los problemas de la sociedad actual, tanto en el sector público como en el privado, con una visión amplia y dinámica de todos los actores sociales, estando capacitados para identificar problemas y proponer soluciones relacionadas con el medio ambiente y su vinculación con la sociedad.  <br/>Será capaz de generar propuestas y conocimientos para enriquecer el desarrollo sustentable en el marco local, regional e internacional.",
-    tituloFinal:
+    tituloFinal: [
       "Doctor en Desarrollo Sustentable e Integración (2 años más tesis).",
+    ],
     // tituloIntermedio:"Licenciado en Administración (4 años)",
     // certificacionesIntermedias:[
     //     "Certificado Universitario en Administración",
@@ -522,34 +177,35 @@ const usData = [
       "Acreditación por la Comisión Nacional de Evaluación y Acreditación Universitaria (CONEAU) Acta N° 478/18. EX-2016- 03502826-APNDAC#CONEAU.",
     ],
     destinatario: [
-      "El Doctorado está destinado a personas que posean título de grado universitario expedido por universidades públicas o privadas, que aspiren a tener a alcanzar el máximo nivel académico, desarrollándose en el campo de la investigación científica y siendo capaz de contribuir con la generación de conocimientos con aportes originales. <br/>Los profesionales deberán contar con experiencia en docencia, investigación, gestión o ejercicio profesional en áreas vinculadas a temáticas del Doctorado, tales como relaciones fronterizas, desarrollo socio-económico, proyectos socio-ambientales sustentables, entre otros.",
+      "El Doctorado está destinado a personas que posean título de grado universitario expedido por universidades públicas o privadas, que aspiren a alcanzar el máximo nivel académico, desarrollándose en el campo de la investigación científica y siendo capaz de contribuir con la generación de conocimientos con aportes originales. <br/>Los profesionales deberán contar con experiencia en docencia, investigación, gestión o ejercicio profesional en áreas vinculadas a temáticas del Doctorado, tales como relaciones fronterizas, desarrollo socio-económico, proyectos socio-ambientales sustentables, entre otros.",
     ],
     // ALCANCES Y SALIDA LABORAL
     alcances: {
       title: "El graduado será un profesional competente para:",
       list: [
-        "<span>•</span> Dirigir grupos de trabajo multidisciplinarios en actividades orientadas hacia el desarrollo sustentable y la integración, propiciando la creación de redes de trabajo.",
-        "<span>•</span> Realizar investigaciones innovadoras e independientes en materia de desarrollo sustentable en el marco local, regional y/o internacional.",
-        "<span>•</span> Promover u organizar ONGs para fomentar la integración en diferentes campos, desde el cultural al comercial, pasando por el manejo de recursos naturales compartidos y la migración.",
-        "<span>•</span> Planificar, desarrollar y dirigir programas y proyectos de intervención, desde una óptica multidisciplinaria, bajo el enfoque del desarrollo sustentable.",
-        "<span>•</span> Asesorar a instituciones públicas y/o privadas en la elaboración y seguimiento de programas y proyectos de sustentabilidad.",
+        " Dirigir grupos de trabajo multidisciplinarios en actividades orientadas hacia el desarrollo sustentable y la integración, propiciando la creación de redes de trabajo.",
+        " Realizar investigaciones innovadoras e independientes en materia de desarrollo sustentable en el marco local, regional y/o internacional.",
+        " Promover u organizar ONGs para fomentar la integración en diferentes campos, desde el cultural al comercial, pasando por el manejo de recursos naturales compartidos y la migración.",
+        " Planificar, desarrollar y dirigir programas y proyectos de intervención, desde una óptica multidisciplinaria, bajo el enfoque del desarrollo sustentable.",
+        " Asesorar a instituciones públicas y/o privadas en la elaboración y seguimiento de programas y proyectos de sustentabilidad.",
       ],
     },
     podra: [
-      "<span>•</span> Universidades públicas o privadas.",
-      "<span>•</span> Centros o instituciones de investigación científica. ",
-      "<span>•</span> Organizaciones no gubernamentales (ONGs) que se ocupen del desarrollo sostenible o los problemas globales o regionales. ",
-      "<span>•</span> Gobiernos locales o nacionales. ",
-      "<span>•</span> Empresas interesadas en el desarrollo sostenible, la responsabilidad social o las prácticas amigables con el planeta. ",
-      "<span>•</span> Espacios diversos de trabajo interdisciplinario.",
+      " Universidades públicas o privadas.",
+      " Centros o instituciones de investigación científica. ",
+      " Organizaciones no gubernamentales (ONGs) que se ocupen del desarrollo sostenible o los problemas globales o regionales. ",
+      " Gobiernos locales o nacionales. ",
+      " Empresas interesadas en el desarrollo sostenible, la responsabilidad social o las prácticas amigables con el planeta. ",
+      " Espacios diversos de trabajo interdisciplinario.",
     ],
   },
   {
     course: "LICENCIATURA EN ADMINISTRACIÓN",
+    subtitle: "Lic. en Administración",
     bgimage: "/LicAdministracion_Placa.png",
     pdf: "/pdf/Licenciatura en Administración COMPLETO.pdf",
     path: "administracion",
-    image: "/course8.jpg",
+    image: "/webp/course8.webp",
     duration: "9 meses",
     syllabus: [
       {
@@ -612,15 +268,15 @@ const usData = [
     ],
     presentacion:
       "El graduado estará formado en gestión, gerenciamiento y tendrá la capacidad de diseñar, implementar y dirigir organizaciones atendiendo a criterios profesionales de eficiencia y calidad para hacer frente a los distintos desafíos empresariales.",
-    tituloFinal: "Licenciado en Administración (4 años)",
-    tituloIntermedio: "Técnico Universitario en Administración (2,5 años)",
+    tituloFinal: ["Licenciado en Administración (4 años)"],
+    tituloIntermedio: ["Técnico Universitario en Administración (2,5 años)"],
     certificacionesIntermedias: [
       "Certificado Universitario en Administración",
       "Certificado Universitario en Diseño y Gestión de Proyectos",
     ],
     titulosAprobados: [
       "Resolución Nro. 2413/2017 Ministerio de Educación.",
-      "Resolución UGD Nro. 64/A/23 (modificación planes de estudio).",
+      "Resolución UGD Nro. 64/A/23 .",
     ],
     destinatario: [
       "Esta carrera está orientada a:",
@@ -631,97 +287,40 @@ const usData = [
     alcances: {
       title: "El graduado será un profesional competente para:",
       list: [
-        "<span>•</span> Desempeñar las funciones directivas de análisis, planeamiento, organización, coordinación y control de empresas y entidades de todo tipo.",
-        "<span>•</span> Elaborar e implantar políticas, sistemas, métodos y procedimientos de administración, finanzas, producción, comercialización, presupuestos, costos y administración de personal.",
-        "<span>•</span> Implementar soluciones para problemas administrativos de empresas y entidades de distinto tipo, desarrollando los esquemas organizativos que optimicen su funcionamiento.",
-        "<span>•</span> Participar en la creación de nuevos esquemas de organización en empresas o entidades que proyecten ampliar sus mercados o campo de actividades.",
-        "<span>•</span> Dirigir la aplicación e implantación de sistemas de procesamiento de datos y otros métodos en el proceso de información gerencial.",
-        "<span>•</span> Ejercer las funciones de liquidador de sociedades comerciales y civiles.",
-        "<span>•</span> Dirigir el diseño, análisis y desarrollo de circuitos y procedimientos administrativos.",
-        "<span>•</span> Participar en la puesta en marcha, operación, evaluación y organización de unidades productivas. ",
+        " Desempeñar las funciones directivas de análisis, planeamiento, organización, coordinación y control de empresas y entidades de todo tipo.",
+        " Elaborar e implantar políticas, sistemas, métodos y procedimientos de administración, finanzas, producción, comercialización, presupuestos, costos y administración de personal.",
+        " Implementar soluciones para problemas administrativos de empresas y entidades de distinto tipo, desarrollando los esquemas organizativos que optimicen su funcionamiento.",
+        " Participar en la creación de nuevos esquemas de organización en empresas o entidades que proyecten ampliar sus mercados o campo de actividades.",
+        " Dirigir la aplicación e implantación de sistemas de procesamiento de datos y otros métodos en el proceso de información gerencial.",
+        " Ejercer las funciones de liquidador de sociedades comerciales y civiles.",
+        " Dirigir el diseño, análisis y desarrollo de circuitos y procedimientos administrativos.",
+        " Participar en la puesta en marcha, operación, evaluación y organización de unidades productivas. ",
       ],
     },
     podra: [
-      "<span>•</span> Empresas públicas, privadas o mixtas",
-      "<span>•</span> ONGs, Asociaciones civiles.",
-      "<span>•</span> Federaciones. Cámaras empresariales. Gremios.",
-      "<span>•</span> Gobiernos y organismos públicos.",
-      "<span>•</span> Asesoría profesional independiente a todo tipo de organización o emprendedores que necesiten definir u optimizar un modelo de negocio",
-      "<span>•</span> Estudios de auditoría",
-      "<span>•</span> Instituciones de formación e investigación.",
+      " Empresas públicas, privadas o mixtas",
+      " ONGs, Asociaciones civiles.",
+      " Federaciones. Cámaras empresariales. Gremios.",
+      " Gobiernos y organismos públicos.",
+      " Asesoría profesional independiente a todo tipo de organización o emprendedores que necesiten definir u optimizar un modelo de negocio",
+      " Estudios de auditoría",
+      " Instituciones de formación e investigación.",
     ],
   },
   {
     course:
       "Especialización en Gestión de Tecnologías de la Información y Comunicación",
+    subtitle: "Especialización en TICs",
     pdf: "/pdf/Especialización en Gestión de Tecnologías.pdf",
     bgimage: "/EspGestionTecnoInfoyCom_Placa.png",
     path: "tecnologias",
-    image: "/course7.jpg",
+    image: "/webp/course7.webp",
     duration: "9 meses",
-    syllabus: [
-      {
-        id: 1,
-        topic: "Fundamentos de Programación",
-        subtopic: [
-          {
-            id: 1,
-            name: "Programación Imperativa",
-          },
-          {
-            id: 2,
-            name: "Programación Funcional",
-          },
-        ],
-        duration: "2 meses",
-      },
-      {
-        id: 2,
-        topic: "Programación en Java",
-        subtopic: [
-          {
-            id: 1,
-            name: "Introducción en Java y Entorno de Desarrollo",
-          },
-          {
-            id: 2,
-            name: "Programación Orientada a Objetos",
-          },
-          {
-            id: 3,
-            name: "Relaciones entre Clases",
-          },
-          {
-            id: 4,
-            name: "Herencia",
-          },
-        ],
-        duration: "4 meses",
-      },
-      {
-        id: 3,
-        topic: "Desarrollo de una Aplicación en Java",
-        subtopic: [
-          {
-            id: 1,
-            name: "Trabajo con Vista y Control de Versiones",
-          },
-          {
-            id: 2,
-            name: "Excepciones",
-          },
-          {
-            id: 3,
-            name: "Manejo de Base de Datos",
-          },
-        ],
-        duration: "3 meses",
-      },
-    ],
     presentacion:
       "Esta carrera brinda competencias en gestión de TICs, y está orientada a profesionales que dirijan o aspiren dirigir proyectos o empresas de tecnología de alto impacto, estableciendo estrategias y conduciendo equipos multidisciplinarios.",
-    tituloFinal:
+    tituloFinal: [
       "Especialista en Gestión de Tecnologías de la Información y Comunicación (1 año y medio)",
+    ],
     diplomaturas: [
       "Diplomatura Universitaria en Ciberseguridad",
       "Diplomatura Universitaria en IA y Ciencia de Datos",
@@ -734,18 +333,18 @@ const usData = [
     destinatario: [
       "Esta carrera está orientada a profesionales que trabajan o aspiran a trabajar en posiciones de liderazgo en el ámbito de las tecnologías de la información y la comunicación (TICs), y que buscan actualizar y profundizar sus conocimientos y habilidades para gestionar proyectos innovadores y resolver desafíos en un entorno dinámico y competitivo.",
       "Podrán ser admitidos: ",
-      "<span>•</span> Egresados de carreras en Informática (Ingenieros o Licenciados en Informática o Sistemas de Información e Ingenieros en Computación) o afines, con carreras cuya duración sea 4 años o mayor",
-      "<span>•</span> Egresados de carreras no afines a Informática que posean experiencia profesional en el área de sistemas. ",
+      "Egresados de carreras en Informática (Ingenieros o Licenciados en Informática o Sistemas de Información e Ingenieros en Computación) o afines, con carreras cuya duración sea 4 años o mayor",
+      "Egresados de carreras no afines a Informática que posean experiencia profesional en el área de sistemas. ",
     ],
     // ALCANCES Y SALIDA LABORAL
     alcances: {
       title: "El graduado será un profesional competente para:",
       list: [
-        "<span>•</span> Integrar tecnologías, aplicaciones, servicios y sistemas, con carácter generalista, y en contextos más amplios y multidisciplinares para la toma de decisiones.",
-        "<span>•</span> Aplicar métodos y herramientas vinculadas a la inteligencia artificial y Business Intelligence para diseñar y desarrollar soluciones basadas en el conocimiento.",
-        "<span>•</span> Asumir responsabilidades en el diseño e implantación de la estrategia empresarial en cuanto a la transformación digital, definiendo presupuestos y gestionando medios, materiales y personas.",
-        "<span>•</span> Disminuir los riesgos, conociendo las implicancias legales del Uso de la Tecnologías de la Información y comunicaciones.",
-        "<span>•</span> Liderar la transformación digital, gestionar de equipos multidisciplinarios, dirigir proyectos complejos, diseñar estrategias de innovación, gestionar el cambio, crear una empresa digital",
+        " Integrar tecnologías, aplicaciones, servicios y sistemas, con carácter generalista, y en contextos más amplios y multidisciplinares para la toma de decisiones.",
+        " Aplicar métodos y herramientas vinculadas a la inteligencia artificial y Business Intelligence para diseñar y desarrollar soluciones basadas en el conocimiento.",
+        " Asumir responsabilidades en el diseño e implantación de la estrategia empresarial en cuanto a la transformación digital, definiendo presupuestos y gestionando medios, materiales y personas.",
+        " Disminuir los riesgos, conociendo las implicancias legales del Uso de la Tecnologías de la Información y comunicaciones.",
+        " Liderar la transformación digital, gestionar de equipos multidisciplinarios, dirigir proyectos complejos, diseñar estrategias de innovación, gestionar el cambio, crear una empresa digital",
       ],
     },
   },

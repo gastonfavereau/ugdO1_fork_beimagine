@@ -22,7 +22,7 @@ const MiamiScholarship = () =>{
             backgroundImage:"url(/cool-background.png)",
           //   border:"2px solid black",
         }}>
-        <div className="teacherMain">
+        <div  className="teacherMain">
         <div className="teacherContent">
             {/* <Image src={"/unsplash_-uHVRvDr7pg.png"} width={1200} height={700}  /> */}
             <div data-aos="fade-up">

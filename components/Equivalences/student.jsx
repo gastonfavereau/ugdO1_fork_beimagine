@@ -25,6 +25,8 @@ const API_URL = "https://virtual.ugd.edu.ar/api/V1";
 
 const Student = () => {
 
+
+
   const [universityList, setUniversityList] = useState([]);
   const [coursesList, setCoursesList] = useState([]);
 
@@ -38,6 +40,9 @@ const Student = () => {
   const [data, setData] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [approved_courses, setApproved_courses] = useState([]);
+  
+
+
 
   const fetchAllUniversities = async () => {
     const res = await fetch(`${API_URL}/equivalences/universities-list`)
@@ -189,6 +194,25 @@ const Student = () => {
 
 
   // console.log(approved_courses)
+
+  let data1 = data;
+
+  if(data1){
+    let pdfurl = data1.pdf_url;
+
+    if(!pdfurl.includes("/media/pdfs/")){
+      console.log(pdfurl);
+      // Replace "/media/" with "/media/pdfs/"
+      pdfurl = pdfurl.replace("/media/", "/media/pdfs/");
+
+      data1.pdf_url= pdfurl;
+
+      console.log(data1.pdf_url)
+
+    }
+
+  }
+ 
 
 
 
@@ -355,7 +379,7 @@ const Student = () => {
               }
             </div>
 
-            <a href={data.pdf_url} download="file.pdf" className="downloadBtn" target="_blank" rel="noopener noreferrer">
+            <a href={data1.pdf_url} id="filebutton" download="file.pdf" className="downloadBtn" target="_blank" rel="noopener noreferrer">
               Descargar tu consulta
             </a>
           </div>

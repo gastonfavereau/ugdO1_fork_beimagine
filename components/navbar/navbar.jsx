@@ -112,7 +112,7 @@ export default function Navbar({params}) {
                   width:"100%",
                   height:"auto",
                 }}>
-                  <Link href={`/${region}/aboutus`}>Quienes somos</Link>
+                  <Link href={`/${region}/aboutus`}>Quiénes somos</Link>
                   <Link href={`/${region}/authorities`}>Autoridades</Link>
                   {/* <Link href={"/ugdvirtualModel"}>Modelo Virtual UGD </Link> */}
                   <Link href={`/${region}/equivalencies`}>Equivalencias</Link>

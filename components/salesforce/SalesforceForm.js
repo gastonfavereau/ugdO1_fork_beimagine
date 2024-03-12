@@ -94,7 +94,10 @@ const SalesforceForm = () => {
       <div
         className="form-container"
         style={{
+<<<<<<< HEAD
           marginTop: "1rem",
+=======
+>>>>>>> 90dc9bbf519728e0765ec6abb0b451c2729d5823
           width: "100%",
           height: "auto",
           display: "flex",

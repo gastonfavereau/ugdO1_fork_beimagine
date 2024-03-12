@@ -4,7 +4,7 @@ import "./footer.css";
 import instagram from "@/public/instagram.svg";
 import linkedin from "@/public/linkedin.svg";
 import ugdIcon from "@/public/Frame19.svg";
-import bgimage from "@/public/ugd-bg-image4.webp";
+import bgimage from "@/public/Footer___Web_ugd-virt___Educacion-que-se-adapta-a-vos.png";
 import Link from "next/link";
 import WhatsAppWidget from "./whatsAppWidget";
 
@@ -17,7 +17,7 @@ const Footer = () =>{
         <FooterBgImageComp />
         <div className="footerdiv" style={{
             width:"100%",
-            backgroundColor:"#1C3564",
+            backgroundColor:"#F29100",
         }}>
             <div
             className="footersubdiv"
@@ -26,7 +26,7 @@ const Footer = () =>{
                     <div style={{
                         
                         color: "#FFF",
-                        fontFamily:" Open Sans",
+                        fontFamily:"WorkSans-semibold",
                         fontSize: "1.4em",
                         fontStyle: "normal",
                         fontWeight: "700",
@@ -60,7 +60,7 @@ const Footer = () =>{
                     }}>
                         <div style={{
                             color: "#FFF",
-                            fontFamily:" Open Sans",
+                            fontFamily:"WorkSans-semibold",
                             fontSize: "1.4em",
                             fontStyle: "normal",
                             fontWeight: "700",
@@ -91,7 +91,7 @@ const FooterBgImageComp = () =>{
             alignContent:"center",
             justifyContent:"center",
             padding:"50px",
-            backgroundColor: "#1C3564",
+            backgroundColor: "#F8B133",
         }}
         className="footerbgimagesubdiv"
         >

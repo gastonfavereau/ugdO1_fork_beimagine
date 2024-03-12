@@ -28,7 +28,9 @@ const HomePage = ({params}) => {
       <div className='home-heading' style={{
         backgroundColor:"rgba(0, 0, 0, 0.5)",
       }}>
-      <h1 >Bienvenidos a UGD Virtual</h1>
+      <h1 style={{
+        fontFamily:"WorkSans-semibold"
+      }} >Bienvenidos a UGD Virtual</h1>
       </div>
       {/* <h2>Liberando conocimientos, potenciando futuros</h2> */}
 
@@ -36,8 +38,8 @@ const HomePage = ({params}) => {
         <div className='sliderDiv'>
         <p style={{
           textAlign:"center",
-          color:"#1C3564",
-          fontFamily: "Poppins",
+          color:"var(--primary-color)",
+          fontFamily: "WorkSans-normal",
           fontSize: "32px",
           fontStyle: "normal",
           fontWeight: "500",

@@ -151,7 +151,7 @@ const AuthoritiesPage = () => {
             marginTop:"1rem",
           textAlign:"center",
           color:"black",
-          fontFamily: "Poppins",
+          fontFamily: "WorkSans-semibold",
           fontSize: "32px",
           fontStyle: "normal",
           fontWeight: "500",
@@ -162,7 +162,7 @@ const AuthoritiesPage = () => {
           marginTop:"2rem",
           textAlign:"justify",
           color:"#6B6B6B",
-          fontFamily: "Inter",
+          fontFamily: "WorkSans-Light",
           fontSize: "18px",
           fontStyle: "normal",
           fontWeight: "300",
@@ -189,8 +189,12 @@ const AuthoritiesPage = () => {
                     width:"100%"
                   }}/>
                   <div class="container">
-                    <h4 className="cardTitle"><b>{person.desc}</b></h4> 
-                    <p className="cardText">{person.name}</p>
+                    <h4 style={{
+                      fontFamily:"WorkSans-Medium"
+                    }} className="cardTitle"><b>{person.desc}</b></h4> 
+                    <p style={{
+                      fontFamily:"WorkSans-normal"
+                    }}className="cardText">{person.name}</p>
                   </div>
                 </div>
             )

@@ -29,7 +29,7 @@ const MiamiScholarship = () =>{
             <p style={{
             // textAlign:"center",
             color:"#1C3564",
-            fontFamily: "Poppins",
+            fontFamily: "WorkSans-normal",
             fontSize: "3rem",
             fontStyle: "normal",
             fontWeight: "500",
@@ -38,7 +38,8 @@ const MiamiScholarship = () =>{
             <p style={{
             marginTop:"2rem",
             fontSize:"1rem",
-            color:"#6B6C6C"
+            color:"#6B6C6C",
+            fontFamily: "WorkSans-normal",
           }}>Si vos o tus padres han nacido en algún país Latinoamericano, y vives en algún punto de EEUU, tenés una beca que cubre el 30% de los aranceles, durante toda la carrera.
           </p>
 
@@ -46,7 +47,7 @@ const MiamiScholarship = () =>{
             // textAlign:"center",
             marginTop:"3rem",
             color:"#1C3564",
-            fontFamily: "Poppins",
+            fontFamily: "WorkSans-normal",
             fontSize: "1.5rem",
             fontStyle: "normal",
             fontWeight: "500",
@@ -56,13 +57,15 @@ const MiamiScholarship = () =>{
             // textAlign:"center",
             marginTop:"0.5rem",
             fontSize:"1rem",
-            color:"#6B6C6C"
+            color:"#6B6C6C",
+            fontFamily:"WorkSans-normal"
             }} >Un documento que demuestre la nacionalidad tuya o de tu padre o madre.</p>
             <p style={{
             // textAlign:"center",
             marginTop:"0.5rem",
             fontSize:"1rem",
-            color:"#6B6C6C"
+            color:"#6B6C6C",
+            fontFamily:"WorkSans-normal"
             }} >Un certificado de domicilio en EEUU.</p>
         
             

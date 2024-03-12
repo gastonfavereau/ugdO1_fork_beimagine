@@ -29,7 +29,9 @@ const TeacherPage = () => {
           objectPosition:"center",
           
         }} src={"/ugdmodelbg3.webp"} alt="Background Image" />
-        <h1 data-aos="fade-up" className="authorityFontheading">
+        <h1 style={{
+          fontFamily:"WorkSans-bold"
+        }} data-aos="fade-up" className="authorityFontheading">
             Nuestros Docentes
         </h1>
       </div>
@@ -39,7 +41,7 @@ const TeacherPage = () => {
          marginTop:"1rem",
           textAlign:"center",
           color:"#1C3564",
-          fontFamily: "Poppins",
+          fontFamily: "WorkSans-normal",
           fontSize: "2rem",
           fontStyle: "normal",
           fontWeight: "500",
@@ -49,7 +51,7 @@ const TeacherPage = () => {
           marginTop:"2rem",
           textAlign:"justify",
           color:"#6B6B6B",
-          fontFamily: "Inter",
+          fontFamily: "WorkSans-normalter",
           fontSize: "18px",
           fontStyle: "normal",
           fontWeight: "300",
@@ -67,7 +69,7 @@ const TeacherPage = () => {
                     marginTop:"1rem",
                     textAlign:"center",
                     color:"#1C3564",
-                    fontFamily: "Poppins",
+                    fontFamily: "WorkSans-normal",
                     fontSize: "32px",
                     fontStyle: "normal",
                     fontWeight: "500",
@@ -78,7 +80,7 @@ const TeacherPage = () => {
                     marginTop:"1rem",
                     textAlign:"center",
                     color:"#6B6B6B",
-                    fontFamily: "Inter",
+                    fontFamily: "WorkSans-normal",
                     fontSize: "18px",
                     fontStyle: "normal",
                     fontWeight: "300",
@@ -98,7 +100,7 @@ const TeacherPage = () => {
                         marginTop:"1rem",
                         textAlign:"center",
                         color:"#1C3564",
-                        fontFamily: "Poppins",
+                        fontFamily: "WorkSans-normal",
                         fontSize: "32px",
                         fontStyle: "normal",
                         fontWeight: "500",
@@ -109,7 +111,7 @@ const TeacherPage = () => {
                         marginTop:"1rem",
                         textAlign:"center",
                         color:"#6B6B6B",
-                        fontFamily: "Inter",
+                        fontFamily: "WorkSans-normal",
                         fontSize: "18px",
                         fontStyle: "normal",
                         fontWeight: "300",
@@ -129,7 +131,7 @@ const TeacherPage = () => {
                         marginTop:"1rem",
                         textAlign:"center",
                         color:"#1C3564",
-                        fontFamily: "Poppins",
+                        fontFamily: "WorkSans-normal",
                         fontSize: "32px",
                         fontStyle: "normal",
                         fontWeight: "500",
@@ -140,7 +142,7 @@ const TeacherPage = () => {
                         marginTop:"1rem",
                         textAlign:"center",
                         color:"#6B6B6B",
-                        fontFamily: "Inter",
+                        fontFamily: "WorkSans-normal",
                         fontSize: "18px",
                         fontStyle: "normal",
                         fontWeight: "300",
@@ -160,7 +162,7 @@ const TeacherPage = () => {
                         marginTop:"1rem",
                         textAlign:"center",
                         color:"#1C3564",
-                        fontFamily: "Poppins",
+                        fontFamily: "WorkSans-normal",
                         fontSize: "32px",
                         fontStyle: "normal",
                         fontWeight: "500",
@@ -171,7 +173,7 @@ const TeacherPage = () => {
                         marginTop:"1rem",
                         textAlign:"center",
                         color:"#6B6B6B",
-                        fontFamily: "Inter",
+                        fontFamily: "WorkSans-normal",
                         fontSize: "18px",
                         fontStyle: "normal",
                         fontWeight: "300",

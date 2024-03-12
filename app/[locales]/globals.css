@@ -7,7 +7,12 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --primary-color: #1C3564;
+  --primary-color: #E94E1B;
+  --secondary-color: #F29100;
+  --tertiary-color: #F8B133;
+  --primary-bg-color:#172C7E;
+  --secondary-bg-color:#05913E;
+  --tertiary-bg-color:#784EA7;
   --max-width: 1600px;
   --max-width-form: 500px;
   --nav-height: 100px;
@@ -144,4 +149,29 @@ p{
   100% {
     background-color: hsl(200, 20%, 95%);
   }
+}
+
+@font-face {
+  font-family: "WorkSans-normal";
+  src: url("/fonts/static/WorkSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "WorkSans-semibold";
+  src: url("/fonts/static/WorkSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "WorkSans-Medium";
+  src: url("/fonts/static/WorkSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "WorkSans-Light";
+  src: url("/fonts/static/WorkSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "WorkSans-bold";
+  src: url("/fonts/static/WorkSans-Bold.ttf");
 }

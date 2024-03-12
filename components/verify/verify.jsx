@@ -96,7 +96,7 @@ const Verify = () => {
           marginTop:"1rem",
           textAlign:"center",
           color:"black",
-          fontFamily: "Poppins",
+          fontFamily: "WorkSans-normal",
           fontSize: "32px",
           fontStyle: "normal",
           fontWeight: "500",
@@ -107,7 +107,7 @@ const Verify = () => {
           marginTop:"2rem",
           textAlign:"justify",
           color:"#6B6B6B",
-          // fontFamily: "Inter",
+          fontFamily: "WorkSans-normal",
           fontSize: "18px",
           fontStyle: "normal",
           fontWeight: "300",
@@ -139,7 +139,8 @@ const Verify = () => {
                     marginTop:"1rem",
                     textAlign:"center",
                     fontSize:"2rem",
-                    fontWeight:"500"
+                    fontWeight:"500",
+                    fontFamily: "WorkSans-normal",
                   }}>Verificar Títulos</p>
                   <div>
                   <input type="text" placeholder="Ingrese la identificación del certificado" style={{
@@ -180,7 +181,8 @@ const Verify = () => {
                     backgroundColor:"#005FAF",
                     color:"white",
                     padding:"5px",
-                    borderRadius:"5px"
+                    borderRadius:"5px",
+                    fontFamily:"WorkSans-normal"
                   }}
                   onClick={handleSubmit}
                   >Verificar</button>

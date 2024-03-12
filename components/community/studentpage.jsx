@@ -29,7 +29,9 @@ const StudentPage = () => {
           objectPosition:"center",
           
         }} src={"/entrepreneurs-meeting-office.jpg"} alt="Background Image" />
-        <h1 data-aos="fade-up" className="authorityFontheading">
+        <h1 style={{
+          fontFamily: "WorkSans-bold",
+        }} data-aos="fade-up" className="authorityFontheading">
             Nuestros destinatarios
         </h1>
       </div>
@@ -39,7 +41,7 @@ const StudentPage = () => {
          marginTop:"1rem",
           textAlign:"center",
           color:"#1C3564",
-          fontFamily: "Poppins",
+          fontFamily: "WorkSans-normal",
           fontSize: "2rem",
           fontStyle: "normal",
           fontWeight: "500",
@@ -49,11 +51,12 @@ const StudentPage = () => {
           marginTop:"2rem",
           textAlign:"justify",
           color:"#6B6B6B",
-          fontFamily: "Inter",
+          fontFamily: "WorkSans-normal",
           fontSize: "18px",
           fontStyle: "normal",
           fontWeight: "300",
           lineHeight: "21px",
+
         }}>
            Las carreras de UGD Virtual se caracterizan por su flexibilidad, que permite adaptar el régimen de estudios a situaciones particulares de disponibilidad horaria. Nuestros alumnos en esta modalidad pueden ser:
         </p>
@@ -65,8 +68,8 @@ const StudentPage = () => {
                     marginTop:"1rem",
                     textAlign:"center",
                     color:"#1C3564",
-                    fontFamily: "Poppins",
-                    fontSize: "32px",
+                    fontFamily: "WorkSans-normal",
+                    fontSize: "25px",
                     fontStyle: "normal",
                     fontWeight: "500",
                     lineHeight: "38px",
@@ -76,7 +79,7 @@ const StudentPage = () => {
                     marginTop:"1rem",
                     textAlign:"center",
                     color:"#6B6B6B",
-                    fontFamily: "Inter",
+                    fontFamily: "WorkSans-normal",
                     fontSize: "18px",
                     fontStyle: "normal",
                     fontWeight: "300",
@@ -96,8 +99,8 @@ const StudentPage = () => {
                         marginTop:"1rem",
                         textAlign:"center",
                         color:"#1C3564",
-                        fontFamily: "Poppins",
-                        fontSize: "32px",
+                        fontFamily: "WorkSans-normal",
+                        fontSize: "25px",
                         fontStyle: "normal",
                         fontWeight: "500",
                         lineHeight: "38px",
@@ -107,7 +110,7 @@ const StudentPage = () => {
                         marginTop:"1rem",
                         textAlign:"center",
                         color:"#6B6B6B",
-                        fontFamily: "Inter",
+                        fontFamily: "WorkSans-normal",
                         fontSize: "18px",
                         fontStyle: "normal",
                         fontWeight: "300",
@@ -127,8 +130,8 @@ const StudentPage = () => {
                         marginTop:"1rem",
                         textAlign:"center",
                         color:"#1C3564",
-                        fontFamily: "Poppins",
-                        fontSize: "32px",
+                        fontFamily: "WorkSans-normal",
+                        fontSize: "25px",
                         fontStyle: "normal",
                         fontWeight: "500",
                         lineHeight: "38px",
@@ -138,7 +141,7 @@ const StudentPage = () => {
                         marginTop:"1rem",
                         textAlign:"center",
                         color:"#6B6B6B",
-                        fontFamily: "Inter",
+                        fontFamily: "WorkSans-normal",
                         fontSize: "18px",
                         fontStyle: "normal",
                         fontWeight: "300",

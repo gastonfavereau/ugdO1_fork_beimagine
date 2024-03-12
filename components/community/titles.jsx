@@ -26,7 +26,9 @@ const Titles = () => {
           objectPosition:"center",
           
         }} src={"/pexels.jpg"} alt="Background Image" />
-        <h1 data-aos="fade-up" className="authorityFontheading">
+        <h1 style={{
+          fontFamily: "WorkSans-bold",
+        }} data-aos="fade-up" className="authorityFontheading">
         Títulos UGD y revalidaciones
         </h1>
       </div>
@@ -36,7 +38,7 @@ const Titles = () => {
          marginTop:"1rem",
           textAlign:"center",
           color:"#1C3564",
-          fontFamily: "Poppins",
+          fontFamily: "WorkSans-normal",
           fontSize: "2rem",
           fontStyle: "normal",
           fontWeight: "500",
@@ -48,7 +50,7 @@ const Titles = () => {
           marginTop:"2rem",
           textAlign:"justify",
           color:"#6B6B6B",
-          fontFamily: "Inter",
+          fontFamily: "WorkSans-normal",
           fontSize: "18px",
           fontStyle: "normal",
           fontWeight: "300",
@@ -63,7 +65,7 @@ const Titles = () => {
           marginTop:"2rem",
           textAlign:"justify",
           color:"#6B6B6B",
-          fontFamily: "Inter",
+          fontFamily: "WorkSans-normal",
           fontSize: "18px",
           fontStyle: "normal",
           fontWeight: "300",
@@ -76,7 +78,7 @@ const Titles = () => {
           marginTop:"2rem",
           textAlign:"justify",
           color:"#6B6B6B",
-          fontFamily: "Inter",
+          fontFamily: "WorkSans-normal",
           fontSize: "18px",
           fontStyle: "normal",
           fontWeight: "300",
@@ -100,7 +102,7 @@ const Titles = () => {
           marginTop:"2rem",
           textAlign:"center",
           color:"black",
-          fontFamily: "Inter",
+          fontFamily: "WorkSans-normal",
           fontSize: "18px",
           fontStyle: "normal",
           fontWeight: "300",

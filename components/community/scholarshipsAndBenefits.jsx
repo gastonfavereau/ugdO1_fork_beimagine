@@ -28,7 +28,7 @@ const ScholarshipsAndBenefits = () =>{
             <p style={{
             // textAlign:"center",
             color:"#1C3564",
-            fontFamily: "Poppins",
+            fontFamily: "WorkSans-normal",
             fontSize: "3rem",
             fontStyle: "normal",
             fontWeight: "500",
@@ -37,7 +37,8 @@ const ScholarshipsAndBenefits = () =>{
             <p style={{
             marginTop:"2rem",
             fontSize:"1rem",
-            color:"#6B6C6C"
+            color:"#6B6C6C",
+            fontFamily: "WorkSans-normal",
           }}>Si estás decidido a estudiar con nosotros, podemos facilitar tu acceso y permanencia en UGD Virtual, con los siguientes beneficios:
           </p>
           
@@ -71,7 +72,7 @@ const ScholarshipsAndBenefits = () =>{
         <p  data-aos="fade-up" style={{
             textAlign:"center",
             color:"white",
-            fontFamily: "Poppins",
+            fontFamily: "WorkSans-normal",
             fontSize: "2rem",
             fontStyle: "normal",
             fontWeight: "500",
@@ -201,7 +202,7 @@ const ScholarshipsAndBenefits = () =>{
                 <p style={{
                     // textAlign:"center",
                     color:"white",
-                    fontFamily: "Poppins",
+                    fontFamily: "WorkSans-normal",
                     fontSize: "1.5rem",
                     fontStyle: "normal",
                     fontWeight: "500",
@@ -210,7 +211,8 @@ const ScholarshipsAndBenefits = () =>{
                 <p style={{
                     marginTop:"2rem",
                     fontSize:"1rem",
-                    color:"white"
+                    color:"white",
+                    fontFamily:"WorkSans-normal"
                 }}>Si resuelves cursar no más de tres materias al cuatrimestre, abonarás durante el mismo el arancel con un 40% de reducción.    Esto te permite adecuar el sistema a tus posibilidades financieras y cursar la carrera a un ritmo más pausado, si tus demás obligaciones lo hacen conveniente.     Puedes optar por este beneficio en los cuatrimestres que así lo resuelvas, pudiendo cursar todas las materias en aquellos en que lo consideres conveniente.
                 </p>
 
@@ -225,7 +227,7 @@ const ScholarshipsAndBenefits = () =>{
                     <p style={{
                         // textAlign:"center",
                         color:"white",
-                        fontFamily: "Poppins",
+                        fontFamily: "WorkSans-normal",
                         fontSize: "1.5rem",
                         fontStyle: "normal",
                         fontWeight: "500",
@@ -234,7 +236,8 @@ const ScholarshipsAndBenefits = () =>{
                     <p style={{
                         marginTop:"2rem",
                         fontSize:"1rem",
-                        color:"white"
+                        color:"white",
+                        fontFamily:"WorkSans-normal"
                     }}>Si cursas el total de las materias del cuatrimestre y tienes una situación personal, laboral o familiar que te dificulta afrontar la totalidad de la cuota, puedes solicitar que tu caso sea considerado por el Comité de Becas, que te solicitará información y resolverá al respecto.   
                     </p>
                 </div>
@@ -246,7 +249,7 @@ const ScholarshipsAndBenefits = () =>{
                 <p style={{
                     // textAlign:"center",
                     color:"white",
-                    fontFamily: "Poppins",
+                    fontFamily: "WorkSans-normal",
                     fontSize: "1.5rem",
                     fontStyle: "normal",
                     fontWeight: "500",
@@ -255,7 +258,8 @@ const ScholarshipsAndBenefits = () =>{
                 <p style={{
                     marginTop:"2rem",
                     fontSize:"1rem",
-                    color:"white"
+                    color:"white",
+                    fontFamily:"WorkSans-normal"
                 }}>Si tienes un destacado desempeño académico, podrás postularte para becas que premian tus esfuerzos.
                 </p>
                 

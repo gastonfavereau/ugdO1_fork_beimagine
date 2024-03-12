@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link"; 
 import { usePathname} from 'next/navigation'
 import "./navbar.css";
-import UGDLogo from "/public/UGDLOGOCL.svg";
+import UGDLogo from "/public/UGDLogo.png";
 import Accordian from "./accordian";
 
 
@@ -78,7 +78,7 @@ export default function Navbar({params}) {
    }} >
 
     <div >
-      <Image src={UGDLogo} height={200} width={200} alt="UGD"/>
+       <Link href={`/${region}`} > <Image src={UGDLogo} height={200} width={200} alt="UGD"/></Link>
     </div>
 
 
@@ -97,7 +97,7 @@ export default function Navbar({params}) {
       position: "relative"
     }}>
        
-          <Link style={linkStyle} href={`/${region}`} > Home</Link>
+          {/* <Link style={linkStyle} href={`/${region}`} > Home</Link> */}
       
         
 
@@ -105,12 +105,12 @@ export default function Navbar({params}) {
         <div className="navbutton" >
           <div className="dropdown1">
             <button className="dropbtn1" style={{
-          color:(pathname !== "/ar" && pathname !== "/us")? "#1C3564":(isScroll ? "#1C3564" : "white")
-        }}>Nuestra Universidad ▼</button>
+          color:(pathname !== "/ar" && pathname !== "/us")? "var(--primary-color)":(isScroll ? "var(--primary-color)" : "white")
+        }}>Nuestra Universidad</button>
               <div className="dropdown-content1">
                 <div className="column" style={{
                   width:"100%",
-                  height:"auto"
+                  height:"auto",
                 }}>
                   <Link href={`/${region}/aboutus`}>Quienes somos</Link>
                   <Link href={`/${region}/authorities`}>Autoridades</Link>
@@ -124,8 +124,8 @@ export default function Navbar({params}) {
         <div className="navbutton" >
           <div className="dropdown1">
             <button className="dropbtn1" style={{
-          color: (pathname !== "/ar" && pathname !== "/us") ? "#1C3564":(isScroll ? "#1C3564" : "white")
-          }}>Modelo UGD Virtual ▼</button>
+          color: (pathname !== "/ar" && pathname !== "/us") ? "var(--primary-color)":(isScroll ? "var(--primary-color)" : "white")
+          }}>Modelo UGD Virtual </button>
               <div className="dropdown-content1">
                 <div className="column" style={{
                   width:"100%",
@@ -141,8 +141,8 @@ export default function Navbar({params}) {
         <div className="navbutton" >
           <div className="dropdown1">
             <button className="dropbtn1" style={{
-              color: (pathname !== "/ar" && pathname !== "/us") ? "#1C3564":(isScroll ? "#1C3564" : "white")
-            }}>Comunidad académica ▼</button>
+              color: (pathname !== "/ar" && pathname !== "/us") ? "var(--primary-color)":(isScroll ? "var(--primary-color)" : "white")
+            }}>Comunidad académica </button>
               <div className="dropdown-content1">
                 <div className="column" style={{
                   width:"100%",
@@ -168,14 +168,14 @@ export default function Navbar({params}) {
         <button className="dropbtn" style={{
           padding:"0px",
           backgroundColor:"transparent",
-          color: (pathname !== "/ar" && pathname !== "/us") ? "#1C3564":(isScroll ? "#1C3564" : "white")
-        }}>Carreras ▼
+          color: (pathname !== "/ar" && pathname !== "/us") ? "var(--primary-color)":(isScroll ? "var(--primary-color)" : "white")
+        }}>Carreras 
         </button>
         <div className="dropdown-content">
           <div className="row">
             <div className="column" style={columnStyle}>
               <h3 style={{
-                fontFamily:"sans-serif",
+                fontFamily:"WorkSans-Medium",
               }}>TECNOLOGÍAS</h3>
               <Link href={`/${region}/courses/software`}>Tecnicatura en Desarrollo de Software</Link>
               <Link href={`/${region}/courses/java`}>Programador Java Full Stack</Link>
@@ -221,8 +221,8 @@ export default function Navbar({params}) {
       <div className="navbutton" >
           <div className="dropdown1" >
             <button className="dropbtn1" style={{
-              color: (pathname !== "/ar" && pathname !== "/us") ? "#1C3564":(isScroll ? "#1C3564" : "white")
-            }}>Títulos ▼</button>
+              color: (pathname !== "/ar" && pathname !== "/us") ? "var(--primary-color)":(isScroll ? "var(--primary-color)" : "white")
+            }}>Títulos </button>
               <div className="dropdown-content1" style={{
                 backgroundColor:"white",
               }}>
@@ -270,7 +270,7 @@ export default function Navbar({params}) {
             display:"flex",
             justifyContent:"space-between",
           }}>
-          <Image  src="/UGDLOGOCL.svg" height={150} width={150} alt="UGD"/>
+          <Image  src="/UGDLogo.png" height={150} width={150} alt="UGD"/>
           
           {!isToggled ?   <Image className="maunuicon" src="/close.svg" height={120} width={70} alt="UGD" onClick={handleClickMenu}/>
           :

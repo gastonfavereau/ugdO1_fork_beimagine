@@ -68,12 +68,12 @@ const Course = ({params}) => {
                         padding:"1rem",
                         
                     }}>
-                    <h3 style={{color:"white",fontWeight:"500",fontSize:"1.5rem",textAlign:"center"}}>DESTINATARIOS</h3>
+                    <h3 style={{color:"white",fontWeight:"500",fontSize:"1.5rem",textAlign:"center",fontFamily:"WorkSans-normal"}}>DESTINATARIOS</h3>
                         {
 
                             course.destinatario.map((text)=>{
                                 return(
-                                    <p  key={text}  dangerouslySetInnerHTML={{ __html: text }} style={{color:"white",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}></p>
+                                    <p  key={text}  dangerouslySetInnerHTML={{ __html: text }} style={{color:"white",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem",fontFamily:"WorkSans-normal"}}></p>
                                 )
                             })
                         }
@@ -86,8 +86,8 @@ const Course = ({params}) => {
                         backgroundColor:"#0F4D6B",
                         padding:"1rem",
                     }}>
-                    <h3 style={{color:"white",fontWeight:"500",fontSize:"1.5rem",textAlign:"center",marginTop:"2rem" }}>ALCANCES Y SALIDA LABORAL</h3>
-                    <p style={{color:"white",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}>{course.alcances.title}</p>
+                    <h3 style={{color:"white",fontWeight:"500",fontSize:"1.5rem",textAlign:"center",marginTop:"2rem",fontFamily:"WorkSans-normal" }}>ALCANCES Y SALIDA LABORAL</h3>
+                    <p style={{color:"white",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem",fontFamily:"WorkSans-normal"}}>{course.alcances.title}</p>
                     <div style={{
                         display:"flex",
                         justifyContent:"center",
@@ -105,7 +105,7 @@ const Course = ({params}) => {
                                 course.alcances.list.map((text)=>{
                                     
                                     return(
-                                        <li key={text}  style={{color:"white",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}>{text}</li>     
+                                        <li key={text}  style={{color:"white",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem",fontFamily:"WorkSans-normal"}}>{text}</li>     
                                     )
                                 })
                             }
@@ -121,9 +121,9 @@ const Course = ({params}) => {
                         backgroundColor:"#C9ECF5",
                         padding:"1rem",
                     }}>
-                    <h3 style={{color:"#1C3564",fontWeight:"500",fontSize:"1.5rem",textAlign:"center",marginTop:"2rem" }}>Ámbitos de competencia: </h3>
-                    <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}>{course.alcances.text}</p>
-                    <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}>{course.alcances.subtext}</p>
+                    <h3 style={{color:"var(--primary-bg-color)",fontWeight:"500",fontSize:"1.5rem",textAlign:"center",marginTop:"2rem",fontFamily:"WorkSans-normal" }}>Ámbitos de competencia: </h3>
+                    <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem",fontFamily:"WorkSans-normal"}}>{course.alcances.text}</p>
+                    <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem",fontFamily:"WorkSans-normal"}}>{course.alcances.subtext}</p>
                     <div style={{
                         display:"flex",
                         justifyContent:"center",
@@ -145,7 +145,7 @@ const Course = ({params}) => {
                                 course.ambitos.list.map((text)=>{
                                     
                                     return(
-                                        <li key={text} dangerouslySetInnerHTML={{ __html: text }} style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}></li>     
+                                        <li key={text} dangerouslySetInnerHTML={{ __html: text }} style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem",fontFamily:"WorkSans-normal"}}></li>     
                                     )
                                 })
                             }
@@ -161,9 +161,9 @@ const Course = ({params}) => {
                         backgroundColor:"#E4F9FF",
                         padding:"1rem",
                     }}>
-                    <h3 style={{color:"#1C3564",fontWeight:"500",fontSize:"1.5rem",textAlign:"center",marginTop:"2rem" }}>Podrá desempeñarse en: </h3>
-                    <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}>{course.podra.text}</p>
-                    <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}>{course.podra.subtext}</p>
+                    <h3 style={{color:"var(--primary-bg-color)",fontWeight:"500",fontSize:"1.5rem",textAlign:"center",marginTop:"2rem",fontFamily:"WorkSans-normal" }}>Podrá desempeñarse en: </h3>
+                    <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem",fontFamily:"WorkSans-normal"}}>{course.podra.text}</p>
+                    <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem",fontFamily:"WorkSans-normal"}}>{course.podra.subtext}</p>
                     <div style={{
                         display:"flex",
                         justifyContent:"center",
@@ -185,7 +185,7 @@ const Course = ({params}) => {
                                 course.podra.map((text)=>{
                                     
                                     return(
-                                        <li key={text} dangerouslySetInnerHTML={{ __html: text }} style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem"}}></li>     
+                                        <li key={text} dangerouslySetInnerHTML={{ __html: text }} style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.9em" ,marginTop:"1rem",fontFamily:"WorkSans-normal"}}></li>     
                                     )
                                 })
                             }
@@ -207,19 +207,19 @@ const Course = ({params}) => {
                     <div style={{
                         padding:"2em",
                     }}>
-                        {/* <h3 style={{color:"#1C3564",fontWeight:"500",fontSize:"18px",textAlign:"center"}}>{course.course}</h3> */}
-                        <p style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Presentación</p>
+                        {/* <h3 style={{color:"var(--primary-bg-color)",fontWeight:"500",fontSize:"18px",textAlign:"center"}}>{course.course}</h3> */}
+                        <p style={{color:"var(--primary-bg-color)",fontWeight:"800",fontSize:"15px",fontFamily:"WorkSans-normal"}}>Presentación</p>
                         {
                             course.presentacion &&
                             <>
                             {
                                 typeof course.presentacion === 'string' ?
-                                <p dangerouslySetInnerHTML={{ __html: course.presentacion }} style={{color:"#6B6C6C",fontSize:"0.8em",marginTop:"1em",fontWeight:"600",textAlign:"justify"}}></p>
+                                <p dangerouslySetInnerHTML={{ __html: course.presentacion }} style={{color:"#6B6C6C",fontSize:"0.8em",marginTop:"1em",fontWeight:"600",textAlign:"justify",fontFamily:"WorkSans-normal"}}></p>
                                 :
                                 <ul style={{ listStyleType: "disc", marginLeft:"1em"}}>
                                 {course.presentacion.map((text)=>{
                                     return(
-                                        <li key={text} dangerouslySetInnerHTML={{ __html: text }} style={{color:"#6B6C6C",fontSize:"0.8em",marginTop:"1em",fontWeight:"600",textAlign:"justify"}}></li>
+                                        <li key={text} dangerouslySetInnerHTML={{ __html: text }} style={{color:"#6B6C6C",fontSize:"0.8em",marginTop:"1em",fontWeight:"600",textAlign:"justify",fontFamily:"WorkSans-normal"}}></li>
                                     )
                                 })}
                                 </ul>
@@ -243,7 +243,7 @@ const Course = ({params}) => {
                             gap:"1em",
                         }}>
                             <Image src={"/time.svg"} height={25} width={25} /> 
-                            <div style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Título final: <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{course.tituloFinal}</p></div>
+                            <div style={{color:"var(--primary-bg-color)",fontWeight:"800",fontSize:"15px",fontFamily:"WorkSans-normal"}}>Título final: <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{course.tituloFinal}</p></div>
                         </div>:
                         <div style={{
                             display:"flex",
@@ -251,10 +251,10 @@ const Course = ({params}) => {
                         }}
                         >
                             <Image src={"/time.svg"} height={25} width={25} />  
-                            <div style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Títulos finales:
+                            <div style={{color:"var(--primary-bg-color)",fontWeight:"800",fontSize:"15px",fontFamily:"WorkSans-normal"}}>Títulos finales:
                             <ul style={{ listStyleType: "disc", marginLeft:"1em"}}>
                             {
-                                course.tituloFinal.map((item)=>( <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}} key={item}>{item}</li>))
+                                course.tituloFinal.map((item)=>( <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em",fontFamily:"WorkSans-normal"}} key={item}>{item}</li>))
                             }
                             </ul>
                             </div>
@@ -274,7 +274,7 @@ const Course = ({params}) => {
                             gap:"1em"
                         }}>
                             <Image src={"/government.svg"} height={30} width={30} />
-                            <div style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Título Intermedio: <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{course.tituloIntermedio}</p></div>
+                            <div style={{color:"var(--primary-bg-color)",fontWeight:"800",fontSize:"15px",fontFamily:"WorkSans-normal"}}>Título Intermedio: <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{course.tituloIntermedio}</p></div>
                         </div>}
 
                         {
@@ -285,11 +285,11 @@ const Course = ({params}) => {
                             }}
                             >
                                 <Image src={"/government.svg"} height={30} width={30} />
-                                <div style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Títulos Intermedios: 
+                                <div style={{color:"var(--primary-bg-color)",fontWeight:"800",fontSize:"15px",fontFamily:"WorkSans-normal"}}>Títulos Intermedios: 
                                  <ul style={{ listStyleType: "disc", marginLeft:"1em"}}>
                                 {
                                     course.tituloIntermedio.map((item)=>(
-                                        <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{item}</li>
+                                        <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em",fontFamily:"WorkSans-normal"}}>{item}</li>
                                     ))
                                 }
                                 </ul>
@@ -306,11 +306,11 @@ const Course = ({params}) => {
                                 gap:"1em"
                             }}>
                                 <Image src={"/graduation 1.svg"} height={30} width={30} />
-                                <div style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Diplomaturas Universitarias Intermedias:
+                                <div style={{color:"var(--primary-bg-color)",fontWeight:"800",fontSize:"15px",fontFamily:"WorkSans-normal"}}>Diplomaturas Universitarias Intermedias:
                                 <ul style={{ listStyleType: "disc", marginLeft:"1em"}}>
                                 {
                                     course.diplomaturas.map((item)=>{
-                                        return <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{item}</li>
+                                        return <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em",fontFamily:"WorkSans-normal"}}>{item}</li>
                                     })
                                 }
                                 </ul>
@@ -327,11 +327,11 @@ const Course = ({params}) => {
                             gap:"1em"
                         }}>
                             <Image src={"/graduation 1.svg"} height={30} width={30} />
-                            <div style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Certificaciones intermedias: 
+                            <div style={{color:"var(--primary-bg-color)",fontWeight:"800",fontSize:"15px",fontFamily:"WorkSans-normal"}}>Certificaciones intermedias: 
                             <ul style={{ listStyleType: "disc", marginLeft:"1em"}}>
                             {
                                 course.certificacionesIntermedias.map((item)=>{
-                                    return <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{item}</li>
+                                    return <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em",fontFamily:"WorkSans-normal"}}>{item}</li>
                                 })
                             }
                             </ul>
@@ -351,11 +351,11 @@ const Course = ({params}) => {
                             gap:"1em"
                         }}>
                             <Image src={"/badge.svg"} height={30} width={30} />
-                            <div style={{color:"#1C3564",fontWeight:"800",fontSize:"15px"}}>Títulos aprobados por : 
+                            <div style={{color:"var(--primary-bg-color)",fontWeight:"800",fontSize:"15px",fontFamily:"WorkSans-normal"}}>Títulos aprobados por : 
                             <ul style={{ listStyleType: "disc", marginLeft:"1em"}}>
                             {
                                 course.titulosAprobados.map((item)=>{
-                                    return <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{item}</li>
+                                    return <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em",fontFamily:"WorkSans-normal"}}>{item}</li>
                                 })
                             }
                             </ul>
@@ -386,6 +386,7 @@ const Course = ({params}) => {
                                         padding:"5px",
                                         borderRadius:"5px",
                                         fontSize:"0.9em",
+                                        fontFamily:"WorkSans-normal"
                                     }}>Descarga el plan de estudios</button>
                                 </a>
                                 </div>
@@ -400,6 +401,7 @@ const Course = ({params}) => {
                                         padding:"5px",
                                         borderRadius:"5px",
                                         fontSize:"0.9em",
+                                        fontFamily:"WorkSans-normal"
                                     }}>Quiero más información</button>
                                 </Link>
                                 {
@@ -410,11 +412,12 @@ const Course = ({params}) => {
                                             height:"50px",
                                             margin:"20px",
                                             //dark blue hex code
-                                            backgroundColor:"#1C3564",
+                                            backgroundColor:"var(--primary-bg-color)",
                                             color:"white",
                                             padding:"5px",
                                             borderRadius:"5px",
                                             fontSize:"0.9em",
+                                            fontFamily:"WorkSans-normal"
                                         }}>
                                             Equivalencias
                                         </button>
@@ -428,11 +431,12 @@ const Course = ({params}) => {
                                             height:"50px",
                                             marginTop:"20px",
                                             //dark blue hex code
-                                            backgroundColor:"#1C3564",
+                                            backgroundColor:"var(--primary-bg-color)",
                                             color:"white",
                                             padding:"5px",
                                             borderRadius:"5px",
                                             fontSize:"0.9em",
+                                            fontFamily:"WorkSans-normal"
                                         }}>
                                             Equivalencias
                                         </button>
@@ -444,11 +448,12 @@ const Course = ({params}) => {
                                         height:"50px",
                                         marginTop:"20px",
                                         //dark blue hex code
-                                        backgroundColor:"#1C3564",
+                                        backgroundColor:"var(--primary-bg-color)",
                                         color:"white",
                                         padding:"5px",
                                         borderRadius:"5px",
                                         fontSize:"0.9em",
+                                        fontFamily:"WorkSans-normal"
                                     }}>Beca Latina</button>
                                 </Link>}
                                 {/* </a> */}
@@ -479,7 +484,7 @@ const Course = ({params}) => {
                             <h3 style={{
                                 marginTop:"20px",
                                 // textAlign:"center",
-                                color:"#1C3564",
+                                color:"var(--primary-bg-color)",
                                 fontSize:"20px",
                                 // position:"absolute",
                                 // left:"0"

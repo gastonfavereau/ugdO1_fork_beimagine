@@ -23,9 +23,11 @@ const UGDModel = () => {
 
       <h1 style={{
         fontSize:"4rem",
+        fontFamily:"WorkSans-bold",
       }} data-aos="fade-up" >Nuestro Modelo de Educación Virtual</h1>
       <h2  style={{
         fontSize:"2rem",
+        fontFamily:"WorkSans-semibold",
       }}data-aos="fade-up">Sistema de educación a distancia acreditado</h2>
 
       <main>
@@ -59,7 +61,7 @@ const UGDModel = () => {
                             height: "100%",
                             objectFit: "cover", // Use "cover" to make the image cover the container while maintaining its aspect ratio
                         }}
-                        src="/imgmodel.webp" alt="UGDimage" />
+                        src="/students__laptop.webp" alt="UGDimage" />
                     </div>
                     
                 </div>
@@ -88,7 +90,7 @@ const UGDModel = () => {
                             height: "100%",
                             objectFit: "cover", // Use "cover" to make the image cover the container while maintaining its aspect ratio
                         }}
-                        src="/imgmodel2.webp" alt="UGDimage" />
+                        src="/student__laptop__remote.webp" alt="UGDimage" />
                     </div>
                     
                 </div>
@@ -98,7 +100,7 @@ const UGDModel = () => {
                 <p data-aos="fade-up" style={{
                     textAlign:"center",
                     color:"#1C3564",
-                    fontFamily:"Poppins",
+                    fontFamily:"WorkSans-Medium",
                     fontSize:"2rem",
                     fontWeight:"600",
                 }}>A través del SIED la UGD te ofrece</p>
@@ -124,7 +126,7 @@ const UGDModel = () => {
                     
                    
             </div>
-            <div className="aboutuscontainerfifth">
+            {/* <div className="aboutuscontainerfifth">
                 <div >
                 <p data-aos="fade-up" style={{
                     textAlign:"center",
@@ -191,12 +193,90 @@ const UGDModel = () => {
                         </div>
                     </div>
                 </div>
+            </div> */}
+            <div className="aboutuscontainerfifth">
+                <p data-aos="fade-up" style={{
+                    textAlign:"center",
+                    color:"white",
+                    fontFamily: "WorkSans-Medium",
+                    fontSize: "2rem",
+                    fontStyle: "normal",
+                    fontWeight: "500",
+                    lineHeight: "38px",
+                    }}>Acompañamos tu trayectoria </p>
+                <div className="aboutuscontainerfifthSub">
+                    <div className="aboutuscontainerfifthSub1">
+                        <p data-aos="fade-up" style={{
+                        textAlign:"center",
+                        color:"white",
+                        fontFamily: "WorkSans-normal",
+                        fontSize: "2rem",
+                        fontStyle: "normal",
+                        fontWeight: "500",
+                        lineHeight: "38px",
+                        }}>Previo a la cursada </p>
+                        <div style={{
+                            display:"flex",
+                            justifyContent:"space-around",
+                            marginTop:"2rem"
+                        }}>
+                            <div data-aos="fade-up" className='UGDModelPageFourthDivContentCard'>
+                                <div >
+                                <p data-aos="fade-up" className='heading'>Encuentros sincrónicos</p>
+                                <p data-aos="fade-up" className='para'> De carácter optativos, te permiten interactuar con tus docentes sobre temas que competen al desarrollo de las materias. También contarás con una Sala de Estudiantes en la que vas a encontrar información actualizada y relevante para el  cursado.
+                                </p>
+                                </div>
+                            </div>
+                            <div data-aos="fade-up" className='UGDModelPageFourthDivContentCard'>
+                                <div>
+                                <p data-aos="fade-up" className='heading'>Tutores facilitadores</p>
+                                <p data-aos="fade-up" className='para'>Te orientarán y guiarán durante tu trayectoria académica acompañándote en el desarrollo de habilidades para estudiar, brindándote apoyo durante la cursada y asistencia para resolver dificultades que puedan surgir. 
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div className="aboutuscontainerfifthSub2">
+                        <p data-aos="fade-up" style={{
+                        textAlign: "center",
+                        color: "white",
+                         fontFamily: "WorkSans-normal",
+                        fontStyle: "normal",
+                        fontWeight: "500",
+                        lineHeight: "38px",
+                        }}>Durante la cursada</p>
+                        <div style={{
+                            display:"flex",
+                            justifyContent:"space-around",
+                            marginTop:"2rem"
+                        }}>
+                            <div data-aos="fade-up" className='UGDModelPageFourthDivContentCard'>
+                                <div >
+                                <p data-aos="fade-up" className='heading'>Encuentros sincrónicos</p>
+                                <p data-aos="fade-up" className='para'> De carácter optativos, te permiten interactuar con tus docentes sobre temas que competen al desarrollo de las materias. También contarás con una Sala de Estudiantes en la que vas a encontrar información actualizada y relevante para el  cursado.
+                                </p>
+                                </div>
+                            </div>
+                            <div data-aos="fade-up" className='UGDModelPageFourthDivContentCard'>
+                                <div>
+                                <p data-aos="fade-up" className='heading'>Tutores facilitadores</p>
+                                <p data-aos="fade-up" className='para'>Te orientarán y guiarán durante tu trayectoria académica acompañándote en el desarrollo de habilidades para estudiar, brindándote apoyo durante la cursada y asistencia para resolver dificultades que puedan surgir. 
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>   
+                </div>
             </div>
             <div className="aboutuscontainerfourth">
                 <p style={{
                     textAlign:"center",
                     color:"#1C3564",
-                    fontFamily:"Poppins",
+                    fontFamily:"WorkSans-normal",
                     fontSize:"2rem",
                     fontWeight:"600",
                 }}>¿Qué garantiza nuestro modelo pedagógico?</p>
@@ -213,7 +293,7 @@ const UGDModel = () => {
                                 marginTop:"0.5rem",
                                 textAlign:"center",
                                 color:"#1C3564",
-                                fontFamily: "Poppins",
+                                fontFamily: "WorkSans-normal",
                                 fontSize: "1.5rem",
                                 fontStyle: "normal",
                                 fontWeight: "500",
@@ -222,7 +302,8 @@ const UGDModel = () => {
                             <p style={{
                             marginTop:"2rem",
                             fontSize:"0.8rem",
-                            color:"#6B6C6C"
+                            color:"#6B6C6C",
+                            fontFamily: "WorkSans-normal",
                             }}>Para los estudiantes que, por distancia geográfica, ocupaciones laborales, personales y/o familiares tengan la posibilidad por medio de esta modalidad, de comenzar y sostener sus trayectorias académicas de formación profesional.</p>
                         </div>
                     </div>
@@ -239,7 +320,7 @@ const UGDModel = () => {
                                 marginTop:"0.5rem",
                                 textAlign:"center",
                                 color:"#1C3564",
-                                fontFamily: "Poppins",
+                                fontFamily: "WorkSans-normal",
                                 fontSize: "1.5rem",
                                 fontStyle: "normal",
                                 fontWeight: "500",
@@ -248,7 +329,8 @@ const UGDModel = () => {
                             <p style={{
                             marginTop:"2rem",
                             fontSize:"0.8rem",
-                            color:"#6B6C6C"
+                            color:"#6B6C6C",
+                            fontFamily: "WorkSans-normal",
                             }}> Para que los estudiantes puedan adaptar los horarios de estudio a sus necesidades y rutinas, accediendo al campus virtual sin límites de tiempo.
                             </p>
                         </div>
@@ -265,7 +347,7 @@ const UGDModel = () => {
                                 marginTop:"0.5rem",
                                 textAlign:"center",
                                 color:"#1C3564",
-                                fontFamily: "Poppins",
+                                fontFamily: "WorkSans-normal",
                                 fontSize: "1.5rem",
                                 fontStyle: "normal",
                                 fontWeight: "500",
@@ -274,13 +356,14 @@ const UGDModel = () => {
                             <p style={{
                             marginTop:"2rem",
                             fontSize:"0.8rem",
-                            color:"#6B6C6C"
+                            color:"#6B6C6C",
+                            fontFamily: "WorkSans-normal",
                             }}>Para que los estudiantes puedan gestionar su propio proceso de aprendizaje, organizando los espacios y posibilidades acorde a su situación particular.</p>
                             </div>
                     </div>
-                    <div style={{
-                        borderRight: "0.5px solid grey",
-                    }} data-aos="fade-up" className="aboutuscontainerfourthsubdiv2">
+                    <div  data-aos="fade-up" className="aboutuscontainerfourthsubdiv2" style={{
+                        border:"none"
+                    }}>
                            <div className="subdiv" style={{
                                 display: "flex",
                                 flexDirection: "column",
@@ -296,7 +379,7 @@ const UGDModel = () => {
                                         marginTop:"0.5rem",
                                         textAlign:"center",
                                         color:"#1C3564",
-                                        fontFamily: "Poppins",
+                                        fontFamily: "WorkSans-normal",
                                         fontSize: "1.5rem",
                                         fontStyle: "normal",
                                         fontWeight: "500",
@@ -307,7 +390,8 @@ const UGDModel = () => {
                                 <p style={{
                                 marginTop:"2rem",
                                 fontSize:"0.8rem",
-                                color:"#6B6C6C"
+                                color:"#6B6C6C",
+                                fontFamily: "WorkSans-normal",
                                 }}> Para que los estudiantes puedan mantener una comunicación directa con los docentes, compañeros y demás áreas y autoridades de la universidad
                                 </p>
                              

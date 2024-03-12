@@ -10,14 +10,13 @@ const Equivalencies = () => {
       width:"100%",
       backgroundColor:"white",
       paddingTop:"5rem",
-      backgroundImage:"url(/cool-background.png)",
     }}>
      <div className='aboutUSPageMain'>
         <div className='aboutUSPageContent'>
             <div >
             <p style={{
             color:"#1C3564",
-            fontFamily: "Poppins",
+            fontFamily: "WorkSans-Medium",
             fontSize: "3rem",
             fontStyle: "normal",
             fontWeight: "500",
@@ -26,7 +25,8 @@ const Equivalencies = () => {
             <p style={{
             marginTop:"2rem",
             fontSize:"1rem",
-            color:"#6B6C6C"
+            color:"#6B6C6C",
+            fontFamily: "WorkSans-Light",
           }}>Si cursaste estudios en Universidades o Instituciones Superiores te ofrecemos analizar el reconocimiento de estudios por equivalencia. Para ello, te agradeceremos que nos envíes un informe de las materias que has aprobado en la carrera que hayas cursado, y en caso de ser necesario te solicitaremos información complementaria.
             </p>
             </div>
@@ -35,10 +35,10 @@ const Equivalencies = () => {
 
         </div>
         <div className='aboutUSPageImage'>
-            <div style={{width: '70%', height: '70%', position: 'relative'}}>
+            <div style={{width: '100%', height: '100%', position: 'relative'}}>
             <Image
                 alt='Mountains'
-                src='/teamwork-meeting-with-business-people.jpg'
+                src='/equivalencias.webp'
                 layout='fill'
                 objectFit='contain'
                 style={{

@@ -32,7 +32,9 @@ const PartnerShip = () =>{
                 />
             </div>
 
-        <h1 data-aos="fade-up">Amplia red de vínculos internacionales</h1>
+        <h1 style={{
+            fontFamily:"WorkSans-bold",
+        }} data-aos="fade-up">Amplia red de vínculos internacionales</h1>
 
         <main>
             <div style={{
@@ -44,7 +46,7 @@ const PartnerShip = () =>{
                     marginTop:"3rem",
                     textAlign:"center",
                     color:"#1C3564",
-                    fontFamily: "Poppins",
+                    fontFamily: "WorkSans-normal",
                     fontSize: "2rem",
                     fontStyle: "normal",
                     fontWeight: "500",
@@ -56,6 +58,7 @@ const PartnerShip = () =>{
                     textAlign:"center",
                     fontSize:"1rem",
                     color:"#6B6C6C",
+                    fontFamily: "WorkSans-normal",
 
                 }}>Nos vinculamos con organizaciones universitarias que permiten a nuestros docentes y estudiantes acceder a información privilegiada, intercambios, encuentros, materiales y oportunidades para su desarrollo académico y profesional. Entre los vínculos internacionales más destacados podemos encontrar:
                     </p>

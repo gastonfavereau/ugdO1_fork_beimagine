@@ -74,6 +74,7 @@
     color: black;
   }
   .cardText{
+    text-align: center;
     color: black;
   }
 
@@ -109,6 +110,7 @@
     font-size: 0.7rem;
     display: block;
     color: #192655;
+    font-family: WorkSans-normal;
   }
 
   .card {
@@ -249,6 +251,7 @@
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
+    font-family: WorkSans-normal;
   }
 
   .aboutuscontainersecondContainer{
@@ -309,8 +312,8 @@
   .aboutuscontainerfourthsubdiv2{
     height: 100%;
     width: 50%;
-    border: 0.5px solid grey;
-    border-right: 0px;
+    border-right: 0.5px solid grey;
+    /* border-right: 0px; */
     display:flex;
     justify-content:center;
     align-items:center;
@@ -322,10 +325,11 @@
 
   .aboutuscontainerfifth{
     width: 100%;
-    min-height: 90vh;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
-    background-color: #5092B3;
+    /* background-color: #5092B3; */
+    background-color: var( --secondary-color);
     padding: 2rem;
   }
 
@@ -565,7 +569,7 @@
 .headingFontSize2{
   text-align: center;
   color: white;
-  font-family: Poppins;
+  font-family: WorkSans-Medium;
   font-size: 3rem;
   font-style: normal;
   font-weight: 500;
@@ -576,6 +580,7 @@
   margin-top: 2rem;
   font-size: 1rem;
   color: white;
+  font-family: WorkSans-Light;
 }
 
 .UGDModelPageFourthDivRoundedLineLeft p{
@@ -601,8 +606,8 @@
   margin-top: 0.5rem; 
   text-align: center;
   color: #1C3564;
-  font-family: Poppins;
-  font-size: 1.5rem;
+  font-family: WorkSans-normal;
+  font-size: 1.3rem;
   font-style: normal;
   font-weight: 500;
   line-height: 38px;
@@ -612,6 +617,7 @@
     margin-top: 2rem;
     font-size: 0.8rem;
     color: #6B6C6C;
+    font-family: WorkSans-normal;
 }
 
 
@@ -623,6 +629,7 @@
     top: -7%;
     left: 45%;
     font-size: 3rem;
+    font-family: WorkSans-bold;
 
 
 }
@@ -643,7 +650,7 @@
   width: 100%;
   height: "auto";
   min-height: 300px;
-  border: 0.3px solid #797979;
+  border-bottom: 0.3px solid #797979;
   display: flex;
 }
 .porqueImage{
@@ -661,6 +668,21 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.aboutuscontainerfifthSub{
+  width:100%;
+  display:flex;
+  margin-top:2rem
+}
+
+.aboutuscontainerfifthSub1{
+  width: 50%;
+  border-right: 1px solid white;
+}
+.aboutuscontainerfifthSub2{
+  width: 50%;
+}
+
 
 
 
@@ -889,6 +911,7 @@
         padding: 0rem;
         padding-top: 2rem;
         height: 1000px;
+        flex-direction: column;
     }
     .aboutuscontainerfourth{
         width: 100%;
@@ -942,6 +965,20 @@
         width: 100%;
         /* height: 300px; */
       }
+
+      .aboutuscontainerfifthSub{
+        width:100%;
+        display:flex;
+        margin-top:2rem;
+        flex-direction: column;
+      }
+      .aboutuscontainerfifthSub1{
+          width: 100%;
+          border-right: none;
+        }
+        .aboutuscontainerfifthSub2{
+          width: 100%;
+        }
 
   
    

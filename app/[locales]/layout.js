@@ -5,6 +5,8 @@ import Footer from "@/components/footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
+
+
 export const metadata = {
   title: "UGD Virtual",
   description: "Virtual University for Undergraduates and Graduates",

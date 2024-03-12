@@ -77,7 +77,7 @@ const SalesforceForm = () => {
           alt="Background Image"
         />
 
-        {/* <h1
+        <h1
           data-aos="fade-up"
           className="coursetheading"
           style={{
@@ -89,10 +89,28 @@ const SalesforceForm = () => {
           }}
         >
           Consulta por carreras
-        </h1> */}
+        </h1>
       </div>
-
       <div
+        className="form-container"
+        style={{
+          marginTop: "1rem",
+          width: "100%",
+          height: "auto",
+          display: "flex",
+          justifyContent: "center",
+          alignContent: "center",
+          backgroundColor: "white",
+          padding: "1rem",
+          backgroundImage: "url(/cool-background.png)",
+        }}
+      >
+        <iframe
+          src="https://inscripciones.ugd.edu.ar/contact_cases/new?theme=ugd-virtual"
+          className="formIframe"
+        />
+      </div>
+      {/* <div
         className="form-container"
         style={{
           marginTop: "-15rem",
@@ -342,7 +360,7 @@ const SalesforceForm = () => {
             <p>Formulario enviado exitosamente.</p>
           </div>
         )}
-      </div>
+      </div> */}
     </div>
   );
 };

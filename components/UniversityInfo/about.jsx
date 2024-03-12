@@ -18,10 +18,14 @@ const About = () => {
 
   return (
     <div>
-      <img id="background-video2" src={"/Quienes Somos Picture.jpg"} alt="Background Image" />
+      <img id="background-video2" src={"/EDIFICIO UGD__edit__Dic_2023.jpg"} alt="Background Image" />
 
-      <h1 data-aos="fade-up">Quienes somos</h1>
-      <h2 data-aos="fade-up">Tu objetivo es nuestro objetivo</h2>
+      <h1 style={{
+        fontFamily:"WorkSans-bold"
+      }}  data-aos="fade-up">Quiénes somos</h1>
+      <h2 style={{
+        fontFamily:"WorkSans-semibold"
+      }} data-aos="fade-up">Tu objetivo es nuestro objetivo</h2>
 
       <main>
       <div  style={{}}>
@@ -32,9 +36,9 @@ const About = () => {
                 <div data-aos="fade-up" className='aboutusContent'>
             <p className='headingFontSize2'>Quienes somos </p>
 
-            <p className='paraFontSize2'>La Universidad Gastón Dachary (UGD) fue fundada en 1998 en Argentina. En sus 25 años de actividad ha desarrollado una amplia gama de carreras en Ingeniería, Ciencias Económicas y Empresariales, Ciencias Jurídicas y Sociales, Ciencias de la Salud y  Seguridad.
+            <p className='paraFontSize2'>Somos la Universidad Gastón Dachary (UGD) , una universidad privada con una visión regionalista, fundada en 1998. En los 25 años de actividad hemos desarrollado una amplia gama de carreras en Ingeniería, Ciencias Económicas y Empresariales, Ciencias Jurídicas y Sociales, Arquitectura, Diseño y Comunicación, y Ciencias de la Salud y Seguridad.
             <br/>
-            Inició sus actividades en la provincia de Misiones, Argentina, desarrollando posteriormente sedes en la provincia del Chaco y en la Ciudad Autónoma de Buenos Aires, capital de la República Argentina.
+            Iniciamos nuestra actividad en el Nordeste argentino, en los primeros años en la provincia de Misiones, posteriormente en la provincia de Chaco, y desde 2022 en la Ciudad Autónoma de Buenos Aires, capital de la República Argentina.
             </p>
                 </div>
                 <div className='aboutusImage'>
@@ -77,7 +81,7 @@ const About = () => {
                     </p>
                     <Image  style={{
                         marginTop:"2rem",
-                    }} src={"/aboutIcon.png"} width={500} height={500}  />
+                    }} src={"/CONEAU__logo-blanco.png"} width={500} height={500}  />
                 </div>
                 <div className='aboutusImage'>
                     <div style={{
@@ -91,7 +95,7 @@ const About = () => {
                             height: "100%",
                             objectFit: "cover", 
                         }}
-                        src="/aboutuspage2.webp" alt="UGDimage" />
+                        src="/IMG_9838.webp" alt="UGDimage" />
                     </div>
                     
                 </div>

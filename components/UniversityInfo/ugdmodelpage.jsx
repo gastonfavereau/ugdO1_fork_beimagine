@@ -215,11 +215,7 @@ const UGDModel = () => {
                         fontWeight: "500",
                         lineHeight: "38px",
                         }}>Previo a la cursada </p>
-                        <div style={{
-                            display:"flex",
-                            justifyContent:"space-around",
-                            marginTop:"2rem"
-                        }}>
+                        <div className="aboutuscontainerfifthSub3">
                             <div data-aos="fade-up" className='UGDModelPageFourthDivContentCard'>
                                 <div >
                                 <p data-aos="fade-up" className='heading'>Encuentros sincrónicos</p>
@@ -248,11 +244,7 @@ const UGDModel = () => {
                         fontWeight: "500",
                         lineHeight: "38px",
                         }}>Durante la cursada</p>
-                        <div style={{
-                            display:"flex",
-                            justifyContent:"space-around",
-                            marginTop:"2rem"
-                        }}>
+                        <div className="aboutuscontainerfifthSub3">
                             <div data-aos="fade-up" className='UGDModelPageFourthDivContentCard'>
                                 <div >
                                 <p data-aos="fade-up" className='heading'>Encuentros sincrónicos</p>

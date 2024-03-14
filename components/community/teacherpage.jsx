@@ -51,7 +51,7 @@ const TeacherPage = () => {
           marginTop:"2rem",
           textAlign:"justify",
           color:"#6B6B6B",
-          fontFamily: "WorkSans-normalter",
+          fontFamily: "WorkSans-normal",
           fontSize: "18px",
           fontStyle: "normal",
           fontWeight: "300",

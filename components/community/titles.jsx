@@ -26,11 +26,11 @@ const Titles = () => {
           objectPosition:"center",
           
         }} src={"/pexels.jpg"} alt="Background Image" />
-        <h1 style={{
+        {/* <h1 style={{
           fontFamily: "WorkSans-bold",
         }} data-aos="fade-up" className="authorityFontheading">
         Títulos UGD y revalidaciones
-        </h1>
+        </h1> */}
       </div>
 
       <div className="studentMaindiv" >

@@ -25,7 +25,7 @@ const PartnerShip = () =>{
                 
                 }}>
                 <Image
-                    src="/intBg.jpg"
+                    src="/amplia.jpg"
                     alt="Background Image"
                     layout="fill"
                     objectFit="cover"
@@ -39,7 +39,7 @@ const PartnerShip = () =>{
         <main>
             <div style={{
                 width:"100%",
-                backgroundImage:"url(/cool-background.png)",
+                // backgroundImage:"url(/cool-background.png)",
                 // height:"100vh"
             }}>
                   <p style={{
@@ -61,7 +61,7 @@ const PartnerShip = () =>{
                     fontFamily: "WorkSans-normal",
 
                 }}>Nos vinculamos con organizaciones universitarias que permiten a nuestros docentes y estudiantes acceder a información privilegiada, intercambios, encuentros, materiales y oportunidades para su desarrollo académico y profesional. Entre los vínculos internacionales más destacados podemos encontrar:
-                    </p>
+                </p>
                 <div style={{
                     marginTop:"5rem",
                     width:"100%",
@@ -90,7 +90,7 @@ const PartnerShip = () =>{
                                 <div >
                                     <p className="partnershipCardHeading">OUI: Organización Universitaria Interamericana
                                     </p>
-                                    <p className="partnershipCardPara">Formación de directivos y docentes, intercambios de estudiantes.</p>
+                                    {/* <p className="partnershipCardPara">Formación de directivos y docentes, intercambios de estudiantes.</p> */}
                                 </div>
 
                             </div>
@@ -113,8 +113,8 @@ const PartnerShip = () =>{
                                 <div >
                                     <p className="partnershipCardHeadingWhite">RED CIDIR: Red Interuniversitaria de Desarrollo e Integración Regional
                                     </p>
-                                    <p className="partnershipCardParaWhite">Movilidad académica, proyectos de investigación, entre otras acciones con Universidades de distintos países iberoamericanos.
-                                    </p>
+                                    {/* <p className="partnershipCardParaWhite">Movilidad académica, proyectos de investigación, entre otras acciones con Universidades de distintos países iberoamericanos.
+                                    </p> */}
                                 </div>
 
                             </div>
@@ -137,8 +137,8 @@ const PartnerShip = () =>{
                                 <div >
                                     <p className="partnershipCardHeading">CUGC: Centro Universitario de la Guardia Civil Española
                                     </p>
-                                    <p className="partnershipCardPara">Cooperación para las actividades del Instituto Universitario de Seguridad, dependiente de la UGD, en el que se forman los oficiales de las fuerzas de la provincia de Misiones y otras. 
-                                    </p>
+                                    {/* <p className="partnershipCardPara">Cooperación para las actividades del Instituto Universitario de Seguridad, dependiente de la UGD, en el que se forman los oficiales de las fuerzas de la provincia de Misiones y otras. 
+                                    </p> */}
                                 </div>
 
                             </div>
@@ -161,9 +161,9 @@ const PartnerShip = () =>{
                                 <div >
                                     <p className="partnershipCardHeadingWhite">CILA: Confederación Inmobiliaria Latinoamericana
                                     </p>
-                                    <p className="partnershipCardParaWhite">La UGD y CILA han creado el IUCILA, Instituto Universitario
+                                    {/* <p className="partnershipCardParaWhite">La UGD y CILA han creado el IUCILA, Instituto Universitario
                                     Inmobiliario Latinoamericano, que se conforma en el Centro del Saber en corretaje en el continente, con la participación de las entidades del sector de 18 países.                                     
-                                    </p>
+                                    </p> */}
                                 </div>
 
                             </div>
@@ -186,11 +186,11 @@ const PartnerShip = () =>{
                                 <div >
                                     <p className="partnershipCardHeading">Red de Asociaciones Latinoamericanas y Caribeñas de Universidades Privadas
                                     </p>
-                                    <p style={{
+                                    {/* <p style={{
                                         fontSize:"0.8rem",
                                         marginTop: "0.5rem"
                                     }} className="partnershipCardPara">A través del Consejo de Rectores de Universidades Privadas, participamos de REALCUP, organización que impulsa la internacionalización de las universidades privadas y el crecimiento de la calidad  de las actividades académicas de sus instituciones miembro. 
-                                    </p>
+                                    </p> */}
                                 </div>
 
                             </div>
@@ -213,8 +213,8 @@ const PartnerShip = () =>{
                                 <div >
                                     <p className="partnershipCardHeadingWhite">Universidades Iberoamericanas
                                     </p>
-                                    <p className="partnershipCardParaWhite">Mantenemos vínculos y cooperación estrecha con universidades argentinas, de otros países latinoamericanos y de otras regiones del mundo.
-                                    </p>
+                                    {/* <p className="partnershipCardParaWhite">Mantenemos vínculos y cooperación estrecha con universidades argentinas, de otros países latinoamericanos y de otras regiones del mundo.
+                                    </p> */}
                                 </div>
 
                             </div>

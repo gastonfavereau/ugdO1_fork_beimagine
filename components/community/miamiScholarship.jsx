@@ -81,7 +81,7 @@ const MiamiScholarship = () =>{
             <div data-aos="fade-up" style={{width: '100%', height: '100%', position: 'relative', }}>
             <Image
                 alt='Mountains'
-                src='/BecaLatina_UGDimg.jpg'
+                src='/BECALATINA.jpg'
                 layout='fill'
                 objectFit='contain'
             />

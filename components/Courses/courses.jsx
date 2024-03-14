@@ -35,7 +35,7 @@ const Course = ({params}) => {
             justifyContent:"center",
             alignItems:"center",
             flexDirection:"column",
-            backgroundImage:"url(/cool-background.png)"
+            // backgroundImage:"url(/cool-background.png)"
 
         }}
         className="maindivcourses"
@@ -517,24 +517,26 @@ const Course = ({params}) => {
                     </a>
                 </div>
             </div> */}
-            <div style={{
+            {/* <div style={{
                 textAlign:"center",
                 marginTop:"20px",
                 height:"200px",
                 width:"100%",
 
             }}> 
-            {/* <a href="/Programador_Java_Full Stack.pdf" download="Programador_Java_Full Stack.pdf">
-                <button style={{
-                    width:"200px",
-                    height:"50px",
-                    marginTop:"20px",
-                    backgroundColor:"#005FAF",
-                    color:"white",
-                    padding:"5px",
-                    borderRadius:"5px"
-                }}>Download syllabus</button>
-            </a> */}
+            
+            </div> */}
+            <div style={{
+                marginTop: "5rem",
+                position: "relative",
+                width: "100%",
+                height: "auto",
+                overflow: "hidden", // Ensure content doesn't overflow
+                display: "flex",
+                alignItems: "center",  // Center vertically
+                justifyContent: "center",  // Center horizontally
+            }}>
+                <Image src={`/${course.footerbgimage}`} height={1200} width={2000} />
             </div>
             
        

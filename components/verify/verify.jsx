@@ -52,7 +52,7 @@ const Verify = () => {
           alignContent:"center",
           alignItems:"center",
           backgroundColor:"white",
-          backgroundImage:"url(/cool-background.png)"
+          // backgroundImage:"url(/cool-background.png)"
         }}
       >
       
@@ -67,7 +67,7 @@ const Verify = () => {
       justifyContent: "center",  // Center horizontally
     }}>
       <Image
-        src="/blockChain.png"
+        src="/blockchain1.png"
         alt="Background Image"
         layout="fill"
         objectFit="cover"

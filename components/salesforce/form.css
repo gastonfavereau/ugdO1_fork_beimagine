@@ -1,6 +1,8 @@
 .formIframe{
-width:800px;
-height:1200px;
+/* height: 100%; */
+/* min-width:800px; */
+width: 100%;
+min-height: 100vh;
 }
 .form-container input {
     width: 100%;

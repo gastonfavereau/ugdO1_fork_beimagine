@@ -29,11 +29,11 @@ const TeacherPage = () => {
           objectPosition:"center",
           
         }} src={"/ugdmodelbg3.webp"} alt="Background Image" />
-        <h1 style={{
+        {/* <h1 style={{
           fontFamily:"WorkSans-bold"
         }} data-aos="fade-up" className="authorityFontheading">
             Nuestros Docentes
-        </h1>
+        </h1> */}
       </div>
 
       <div className="studentMaindiv" >
@@ -92,7 +92,7 @@ const TeacherPage = () => {
                     height:"400px",
                     width:"100%",
                     objectFit:"cover",
-                }} alt='Mountains' src='/academicImage.png' width={100} height={100} />
+                }} alt='Mountains' src='/academicos.jpg' width={100} height={100} />
 
             </div>
             <div data-aos="fade-up" className="teacherDivCard">
@@ -123,7 +123,7 @@ const TeacherPage = () => {
                         height:"400px",
                         width:"100%",
                         objectFit:"cover",
-                    }} alt='Mountains' src='/Professionals.png' width={100} height={100} />
+                    }} alt='Mountains' src='/profesionales.jpg' width={100} height={100} />
 
             </div>
             <div data-aos="fade-up" className="teacherDivCard">
@@ -154,7 +154,7 @@ const TeacherPage = () => {
                         height:"400px",
                         width:"100%",
                         objectFit:"cover",
-                    }} alt='Mountains' src='/teacherImage.png' width={100} height={100} />
+                    }} alt='Mountains' src='/Pedagogos.jpg' width={100} height={100} />
 
             </div>
             <div data-aos="fade-up" className="teacherDivCard">

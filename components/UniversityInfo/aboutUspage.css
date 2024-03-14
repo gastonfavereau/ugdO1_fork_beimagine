@@ -684,7 +684,11 @@
 }
 
 
-
+.aboutuscontainerfifthSub3{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
 
     
   @media (max-width: 1000px) {
@@ -788,7 +792,9 @@
       font-size: 2rem;
     }
     .UGDModelPageFourthDivContentCard{
-      height: 500px;
+      max-height: 320px;
+      width: 100%;
+      margin-top: 1rem;
     }
     .UGDModelPageFourthDivRoundedLineLeft p{
       font-size: 1rem;
@@ -910,7 +916,7 @@
     .aboutuscontainerfifth{
         padding: 0rem;
         padding-top: 2rem;
-        height: 1000px;
+        min-height: 1000px;
         flex-direction: column;
     }
     .aboutuscontainerfourth{
@@ -928,12 +934,13 @@
       .aboutuscontainerfourthsubdiv2{
         height: 100%;
         width: 100%;
-        border: 0.5px solid grey;
         display:flex;
         justify-content:center;
         align-items:center;
         align-content:center;
         padding: 2rem;
+        border-bottom: 0.5px solid grey;
+        border-right: none;
         
     
       }
@@ -979,6 +986,13 @@
         .aboutuscontainerfifthSub2{
           width: 100%;
         }
+
+    .aboutuscontainerfifthSub3{
+      flex-direction: column;
+      margin-top: 2rem;
+      padding: 2rem;
+      justify-content: space-around;
+  }
 
   
    

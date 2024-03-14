@@ -7,7 +7,7 @@
     display: none;
     width: 100vw;
     height: 150px;
-    background-color: #1C3564;
+    background-color: #F29100;
     padding: 2rem;
     color: white;
     
@@ -63,7 +63,17 @@
 }
 .footerbgimagesubdiv{
     min-height: 55vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #F8B133;
 }
+
+
 @media screen and (max-width: 800px) {
     .footerdiv {
       height: 400px;
@@ -105,7 +115,7 @@
 
         margin-top: 3rem;
         color: white;
-        font-family: Poppins;
+        font-family: WorkSans-Medium;
         font-size: 1.5rem;
         font-style: normal;
         font-weight: 500;
@@ -118,10 +128,16 @@
         color: white;
         font-size: 1rem;
         font-style: normal;
+        font-family: WorkSans-normal;
     
     }
     .footerbgimagesubdiv{
         height: 80vh;
+        width: 100%;
+        display: block;
+        padding: 30px;
+        background-color: #F8B133;
     }
+
    
   }

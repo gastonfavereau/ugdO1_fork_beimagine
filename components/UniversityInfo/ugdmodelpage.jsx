@@ -215,22 +215,18 @@ const UGDModel = () => {
                         fontWeight: "500",
                         lineHeight: "38px",
                         }}>Previo a la cursada </p>
-                        <div style={{
-                            display:"flex",
-                            justifyContent:"space-around",
-                            marginTop:"2rem"
-                        }}>
+                        <div className="aboutuscontainerfifthSub3">
                             <div data-aos="fade-up" className='UGDModelPageFourthDivContentCard'>
                                 <div >
-                                <p data-aos="fade-up" className='heading'>Encuentros sincrónicos</p>
-                                <p data-aos="fade-up" className='para'> De carácter optativos, te permiten interactuar con tus docentes sobre temas que competen al desarrollo de las materias. También contarás con una Sala de Estudiantes en la que vas a encontrar información actualizada y relevante para el  cursado.
+                                <p data-aos="fade-up" className='heading'>Encuentro de bienvenida</p>
+                                <p data-aos="fade-up" className='para'> Ofrecemos a nuestros ingresantes una charla a fin de contarles sobre el modelo pedagógico y la propuesta que brinda nuestra Casa de Estudios.
                                 </p>
                                 </div>
                             </div>
                             <div data-aos="fade-up" className='UGDModelPageFourthDivContentCard'>
                                 <div>
-                                <p data-aos="fade-up" className='heading'>Tutores facilitadores</p>
-                                <p data-aos="fade-up" className='para'>Te orientarán y guiarán durante tu trayectoria académica acompañándote en el desarrollo de habilidades para estudiar, brindándote apoyo durante la cursada y asistencia para resolver dificultades que puedan surgir. 
+                                <p data-aos="fade-up" className='heading'>Taller Introductorio</p>
+                                <p data-aos="fade-up" className='para'>Dictamos un taller previo al inicio del cuatrimestre para que comiences a familiarizarte con el aula virtual, su organización, navegación y uso.
                                 </p>
                                 </div>
                             </div>
@@ -248,11 +244,7 @@ const UGDModel = () => {
                         fontWeight: "500",
                         lineHeight: "38px",
                         }}>Durante la cursada</p>
-                        <div style={{
-                            display:"flex",
-                            justifyContent:"space-around",
-                            marginTop:"2rem"
-                        }}>
+                        <div className="aboutuscontainerfifthSub3">
                             <div data-aos="fade-up" className='UGDModelPageFourthDivContentCard'>
                                 <div >
                                 <p data-aos="fade-up" className='heading'>Encuentros sincrónicos</p>

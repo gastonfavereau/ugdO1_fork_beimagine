@@ -14,7 +14,7 @@ const Accordian = ({ heading, text, index,setToggle,isToggled,isUs,region}) => {
 
 	const universityinfo = [
 		{
-			name: "Quienes somos",
+			name: "Quiénes somos",
 			href: `/${region}/aboutus`,
 		},
 		{
@@ -22,8 +22,12 @@ const Accordian = ({ heading, text, index,setToggle,isToggled,isUs,region}) => {
 			href: `/${region}/authorities`,
 		},
 		{
-			name:"Equivalencies",
+			name:"Equivalencias",
 			href: `/${region}/equivalencies`,
+		},
+		{
+			name:"Saber más sobre UGD",
+			href:"https://ugd.edu.ar/es/"
 		}
 	]
 
@@ -84,6 +88,7 @@ const Accordian = ({ heading, text, index,setToggle,isToggled,isUs,region}) => {
 					justifyContent: "space-between",
 					alignItems: "center",
 					cursor: "pointer",
+					fontFamily:"WorkSans-normal"
 				}}>
 				{heading}
 				<span
@@ -115,6 +120,8 @@ const Accordian = ({ heading, text, index,setToggle,isToggled,isUs,region}) => {
                         	<Link onClick={()=>{
 							setToggle(!isToggled)
 						
+						}} style={{
+							fontFamily:"WorkSans-normal"
 						}} href={`/${region}/courses/${course.path}`}> {course.subtitle}</Link>
                         </div>
 						)
@@ -138,7 +145,9 @@ const Accordian = ({ heading, text, index,setToggle,isToggled,isUs,region}) => {
 							<Link onClick={()=>{
 							setToggle(!isToggled)
 						
-						}} href={link.href}>{link.name}</Link>
+						}} style={{
+							fontFamily:"WorkSans-normal"
+						}}  href={link.href}>{link.name}</Link>
 							</div>
 						)
 					})
@@ -161,7 +170,9 @@ const Accordian = ({ heading, text, index,setToggle,isToggled,isUs,region}) => {
 							<Link onClick={()=>{
 							setToggle(!isToggled)
 						
-						}} href={link.href}>{link.name}</Link>
+						}} style={{
+							fontFamily:"WorkSans-normal"
+						}}  href={link.href}>{link.name}</Link>
 							</div>
 						)
 					})
@@ -185,7 +196,9 @@ const Accordian = ({ heading, text, index,setToggle,isToggled,isUs,region}) => {
 							<Link onClick={()=>{
 							setToggle(!isToggled)
 						
-						}} href={link.href}>{link.name}</Link>
+						}} style={{
+							fontFamily:"WorkSans-normal"
+						}}  href={link.href}>{link.name}</Link>
 							</div>
 						)
 					})
@@ -209,7 +222,9 @@ const Accordian = ({ heading, text, index,setToggle,isToggled,isUs,region}) => {
 							<Link onClick={()=>{
 							setToggle(!isToggled)
 						
-						}} href={link.href}>{link.name}</Link>
+						}} style={{
+							fontFamily:"WorkSans-normal"
+						}}  href={link.href}>{link.name}</Link>
 							</div>
 						)
 					})
@@ -228,6 +243,7 @@ const Accordian = ({ heading, text, index,setToggle,isToggled,isUs,region}) => {
 								lineHeight: "2",
 								overflow: "hidden",
 								transition: "all 0.3s",
+								fontFamily:"WorkSans-normal"
 							}}>
 							{link}
 							</div>

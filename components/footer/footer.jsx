@@ -14,7 +14,7 @@ const Footer = () =>{
 
     return(
     <div>
-        <FooterBgImageComp />
+        {/* <FooterBgImageComp /> */}
         <div className="footerdiv" style={{
             width:"100%",
             backgroundColor:"#F29100",
@@ -26,7 +26,7 @@ const Footer = () =>{
                     <div style={{
                         
                         color: "#FFF",
-                        fontFamily:"WorkSans-semibold",
+                        fontFamily:"WorkSans-normal",
                         fontSize: "1.4em",
                         fontStyle: "normal",
                         fontWeight: "700",
@@ -60,11 +60,9 @@ const Footer = () =>{
                     }}>
                         <div style={{
                             color: "#FFF",
-                            fontFamily:"WorkSans-semibold",
-                            fontSize: "1.4em",
-                            fontStyle: "normal",
                             fontWeight: "700",
                             lineHeight: "normal",
+                            fontFamily:"WorkSans-normal"
                         }}>Síganos</div>
                         <Link href={"https://www.instagram.com/ugdvirtualok/"}><Image src={"/instagram.svg"} width={35} height={35} /></Link>
                         <Link href={"https://www.facebook.com/ugdvirtualok"}><Image src={"/fbicons.png"} width={35} height={35} /></Link>
@@ -80,18 +78,10 @@ const Footer = () =>{
 export default Footer;
 
 
-const FooterBgImageComp = () =>{
+export const FooterBgImageComp = () =>{
     return(
         <div style={{
             backgroundImage: `url(${bgimage.src})`,
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            width:"100%",
-            display:"flex",
-            alignContent:"center",
-            justifyContent:"center",
-            padding:"50px",
-            backgroundColor: "#F8B133",
         }}
         className="footerbgimagesubdiv"
         >

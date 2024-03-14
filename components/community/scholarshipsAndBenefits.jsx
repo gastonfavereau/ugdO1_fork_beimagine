@@ -53,7 +53,7 @@ const ScholarshipsAndBenefits = () =>{
             <div data-aos="fade-up" style={{width: '100%', height: '100%', position: 'relative', }}>
             <Image
                 alt='Mountains'
-                src='/teamwork-meeting-with-business-people.jpg'
+                src='/Becas.jpg'
                 layout='fill'
                 objectFit='cover'
             />

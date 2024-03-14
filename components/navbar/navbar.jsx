@@ -73,7 +73,7 @@ export default function Navbar({params}) {
    <div 
     className="navbar1"
     style={{
-    backgroundColor: (pathname !== "/ar" && pathname !== "/us") ? "white" :(isScroll ? "white" : "rgba(0, 0, 0, 0.5)"),
+    backgroundColor: (pathname !== "/ar" && pathname !== "/us") ? "white" :(isScroll ? "white" : "white"),
     boxShadow:  (pathname !== "/ar" && pathname !== "/us") && "0px 4px 4px rgba(0, 0, 0, 0.25)"
    }} >
 
@@ -105,7 +105,7 @@ export default function Navbar({params}) {
         <div className="navbutton" >
           <div className="dropdown1">
             <button className="dropbtn1" style={{
-          color:(pathname !== "/ar" && pathname !== "/us")? "var(--primary-color)":(isScroll ? "var(--primary-color)" : "white")
+          color:(pathname !== "/ar" && pathname !== "/us")? "var(--primary-color)":(isScroll ? "var(--primary-color)" : "var(--primary-color)")
         }}>Nuestra Universidad</button>
               <div className="dropdown-content1">
                 <div className="column" style={{
@@ -116,6 +116,7 @@ export default function Navbar({params}) {
                   <Link href={`/${region}/authorities`}>Autoridades</Link>
                   {/* <Link href={"/ugdvirtualModel"}>Modelo Virtual UGD </Link> */}
                   <Link href={`/${region}/equivalencies`}>Equivalencias</Link>
+                  <Link href={"https://ugd.edu.ar/es/ "}>Saber más sobre UGD</Link>
                 </div>
               </div>
           </div>
@@ -124,7 +125,7 @@ export default function Navbar({params}) {
         <div className="navbutton" >
           <div className="dropdown1">
             <button className="dropbtn1" style={{
-          color: (pathname !== "/ar" && pathname !== "/us") ? "var(--primary-color)":(isScroll ? "var(--primary-color)" : "white")
+          color: (pathname !== "/ar" && pathname !== "/us") ? "var(--primary-color)":(isScroll ? "var(--primary-color)" : "var(--primary-color)")
           }}>Modelo UGD Virtual </button>
               <div className="dropdown-content1">
                 <div className="column" style={{
@@ -141,7 +142,7 @@ export default function Navbar({params}) {
         <div className="navbutton" >
           <div className="dropdown1">
             <button className="dropbtn1" style={{
-              color: (pathname !== "/ar" && pathname !== "/us") ? "var(--primary-color)":(isScroll ? "var(--primary-color)" : "white")
+              color: (pathname !== "/ar" && pathname !== "/us") ? "var(--primary-color)":(isScroll ? "var(--primary-color)" : "var(--primary-color)")
             }}>Comunidad académica </button>
               <div className="dropdown-content1">
                 <div className="column" style={{
@@ -168,7 +169,7 @@ export default function Navbar({params}) {
         <button className="dropbtn" style={{
           padding:"0px",
           backgroundColor:"transparent",
-          color: (pathname !== "/ar" && pathname !== "/us") ? "var(--primary-color)":(isScroll ? "var(--primary-color)" : "white")
+          color: (pathname !== "/ar" && pathname !== "/us") ? "var(--primary-color)":(isScroll ? "var(--primary-color)" : "var(--primary-color)")
         }}>Carreras 
         </button>
         <div className="dropdown-content">
@@ -221,7 +222,7 @@ export default function Navbar({params}) {
       <div className="navbutton" >
           <div className="dropdown1" >
             <button className="dropbtn1" style={{
-              color: (pathname !== "/ar" && pathname !== "/us") ? "var(--primary-color)":(isScroll ? "var(--primary-color)" : "white")
+              color: (pathname !== "/ar" && pathname !== "/us") ? "var(--primary-color)":(isScroll ? "var(--primary-color)" : "var(--primary-color)")
             }}>Títulos </button>
               <div className="dropdown-content1" style={{
                 backgroundColor:"white",

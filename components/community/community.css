@@ -122,12 +122,16 @@
 }
 .partnershipContentCardWhite{
   width: 60%;
-  height: 220px;
+  height: 200px;
   background-color: white;
   box-shadow: 0px 8px 8px 8px rgba(0, 0, 0, 0.2);
   padding: 2rem;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+
 }
 .partnershipContentCardColor{
   width: 60%;
@@ -135,8 +139,11 @@
   background-color: #1C3564;
   box-shadow: 0px 8px 8px 8px rgba(0, 0, 0, 0.2);
   padding: 2rem;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .partnershipContainer{
@@ -147,20 +154,28 @@
   align-items: center;
   align-content: center;
   background-color: white;
+  margin-top: 2rem;
 }
 .partnershipImageDiv{
-  width: 50%;
-  height: 50%;
+  width: 90%;
+  height: 90%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 1rem;
+
 }
 .partnershipContainerColor{
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction:row-reverse;
   justify-content: center;
   align-items: center;
   align-content: center;
+  background-color: white;
+  margin-top: 2rem;
 }
 .partnershipCardHeading{
   color: #1C3564;

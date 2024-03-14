@@ -2,7 +2,7 @@ import React from 'react';
 import "./home.css";
 import Image from 'next/image';
 import ImageSlider from "./slider";
-
+import { FooterBgImageComp } from '../footer/footer';
 
 const HomePage = ({params}) => {
   const images = [
@@ -19,6 +19,7 @@ const HomePage = ({params}) => {
     '/course11.jpg',
   ];
   return (
+    <>
     <div className='home'>
       <video id="background-video" autoPlay loop muted poster="/UGDVposter.webp">
         <source src="UGDVideo2.mp4" type="video/mp4" />
@@ -51,6 +52,8 @@ const HomePage = ({params}) => {
       </main>
       {/* <Footer /> */}
     </div>
+    <FooterBgImageComp />
+    </>
   );
 };
 

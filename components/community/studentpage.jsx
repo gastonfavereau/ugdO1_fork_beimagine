@@ -29,11 +29,11 @@ const StudentPage = () => {
           objectPosition:"center",
           
         }} src={"/entrepreneurs-meeting-office.jpg"} alt="Background Image" />
-        <h1 style={{
+        {/* <h1 style={{
           fontFamily: "WorkSans-bold",
         }} data-aos="fade-up" className="authorityFontheading">
             Nuestros destinatarios
-        </h1>
+        </h1> */}
       </div>
 
       <div className="studentMaindiv" >
@@ -122,7 +122,7 @@ const StudentPage = () => {
                         height:"400px",
                         width:"100%",
                         objectFit:"cover",
-                    }} alt='Mountains' src='/studentimg2.webp' width={100} height={100} />
+                    }} alt='Mountains' src='/adultos.jpg' width={100} height={100} />
 
             </div>
             <div data-aos="fade-up" className="studentDivCard">

@@ -22,7 +22,7 @@ const HomePage = ({params}) => {
     <>
     <div className='home'>
       <video id="background-video" autoPlay loop muted poster="/UGDVposter.webp">
-        <source src="UGDVideo2.mp4" type="video/mp4" />
+        <source src="ugdMediumVideo.mp4" type="video/mp4" />
       </video><video id="backgroundMobile" autoPlay loop muted poster="/UGDVposter.webp">
         <source src="UGDVideoMobile2.mp4" type="video/mp4" />
       </video>

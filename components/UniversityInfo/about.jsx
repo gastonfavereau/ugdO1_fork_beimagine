@@ -43,7 +43,7 @@ const About = () => {
                 </div>
                 <div className='aboutusImage'>
                 <video width="100%" height="100%" controls >
-                <source src="/UGDvideo.mp4" type="video/mp4"/>
+                <source src="/ugdMediumVideo.mp4" type="video/mp4"/>
                 </video>
                 </div>
             </div>

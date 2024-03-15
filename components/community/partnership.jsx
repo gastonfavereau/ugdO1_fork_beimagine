@@ -79,7 +79,7 @@ const PartnerShip = () =>{
                                 <div className="partnershipImageDiv">
                                     <Image
                                         alt='Mountains'
-                                        src='/Logo-oui-iohe-header.png'
+                                        src='/Logo-OUI-color.png'
                                         layout='fill'
                                         objectFit='contain'
                                     />
@@ -102,7 +102,7 @@ const PartnerShip = () =>{
                                 <div className="partnershipImageDiv">
                                     <Image
                                         alt='Mountains'
-                                        src='/logo-red-2.png'
+                                        src='/LOGO-RED-CIDIR-color.png'
                                         layout='fill'
                                         objectFit='contain'
                                     />
@@ -126,7 +126,7 @@ const PartnerShip = () =>{
                                 <div className="partnershipImageDiv">
                                     <Image
                                         alt='Mountains'
-                                        src='/logo-cugc-850-180-PRESIDENCIA-SPAIN.png'
+                                        src='/Centro-Univ-Guardia-civil__color.png'
                                         layout='fill'
                                         objectFit='contain'
                                     />
@@ -150,7 +150,7 @@ const PartnerShip = () =>{
                                 <div className="partnershipImageDiv">
                                     <Image
                                         alt='Mountains'
-                                        src='/LOGO-CILA-HORIZONTAL-286X100-fondo-blanco.png'
+                                        src='/LOGO-CILA-VERTICAL-400x400.png'
                                         layout='fill'
                                         objectFit='contain'
                                     />

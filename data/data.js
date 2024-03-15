@@ -122,7 +122,6 @@ const data = [
     subtitle: "Maestría en GyE de la Ed. Superior",
     pdf: "/pdf/Maestría en Gestión y Evaluación de la Educación Superior.pdf",
     bgimage: "/MaestGestEvalEduSup_Placa.png",
-    footerbgimage: "GESTIÓN EDUCATIVA_Mesa de trabajo 1.png",
     footerbgimage: "MAESTRIA EN GESTIÓN Y EVALUACIÓN SUP_Mesa de trabajo 1.png",
     path: "maestria",
     image: "/webp/course11.webp",

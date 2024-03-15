@@ -1,5 +1,5 @@
 import React from 'react';
-import "./aboutUs.css";
+import "./aboutUspage.css";
 import Image from 'next/image';
 
 
@@ -40,10 +40,7 @@ const Equivalencies = () => {
                 alt='Mountains'
                 src='/equivalencias.webp'
                 layout='fill'
-                objectFit='contain'
-                style={{
-                    borderRadius:"10px",
-                }}
+                objectFit='cover'
             />
             </div>
 

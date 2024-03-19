@@ -50,7 +50,7 @@ const Course = ({params}) => {
                 alignItems: "center",  // Center vertically
                 justifyContent: "center",  // Center horizontally
             }}>
-                <Image src={course.bgimage} height={1200} width={2000} />
+                <Image src={`/${course.footerbgimage}`} height={1200} width={2000} />
             </div>
             
             
@@ -526,7 +526,7 @@ const Course = ({params}) => {
             }}> 
             
             </div> */}
-            <div style={{
+            {/* <div style={{
                 marginTop: "5rem",
                 position: "relative",
                 width: "100%",
@@ -537,7 +537,7 @@ const Course = ({params}) => {
                 justifyContent: "center",  // Center horizontally
             }}>
                 <Image src={`/${course.footerbgimage}`} height={1200} width={2000} />
-            </div>
+            </div> */}
             
        
       </div>)

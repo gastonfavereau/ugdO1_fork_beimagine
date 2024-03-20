@@ -206,7 +206,7 @@ const data = [
     pdf: "/pdf/Ciclo de Licenciatura en Gestión de Recursos Tecnológicos.pdf",
     subtitle: "Ciclo de complementación ",
     bgimage: "/CicloLicGestionRecTecno_Placa.png",
-    footerbgimage: "GESTIÓN EDUCATIVA_Mesa de trabajo 1.png",
+    footerbgimage: "rescursos.png",
     path: "recursos",
     image: "/webp/course3.webp",
     duration: "2 años",

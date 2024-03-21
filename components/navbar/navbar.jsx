@@ -178,8 +178,8 @@ export default function Navbar({params}) {
               <h3 style={{
                 fontFamily:"WorkSans-Medium",
               }}>TECNOLOGÍAS</h3>
-              <Link href={`/${region}/courses/software`}>Programador Java Full Stack</Link>
-              <Link href={`/${region}/courses/java`}>Tecnicatura en Desarrollo de Software</Link>
+              <Link href={`/${region}/courses/java`}>Programador Java Full Stack</Link>
+              <Link href={`/${region}/courses/software`}>Tecnicatura en Desarrollo de Software</Link>
               <Link href={`/${region}/courses/recursos`}>Ciclo Lic. Gestión de Rec. Tecnológicos</Link>
               <Link href={`/${region}/courses/tecnologias`}>Especialización en TICs</Link>
             </div>

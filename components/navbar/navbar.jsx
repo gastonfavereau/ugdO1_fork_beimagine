@@ -188,7 +188,7 @@ export default function Navbar({params}) {
                 fontFamily:"sans-serif",
               }}>EDUCACIÓN</h3>
               <Link href={`/${region}/courses/profesionales`}>Ciclo Prof. Univ. profesionales</Link>
-              <Link href={`/${region}/courses/educativa`}>Ciclo Lic. Gestión Educativa</Link>
+              <Link href={`/${region}/courses/educativa`}>C.C.C. en Gestión de Instituciones Educativas</Link>
               <Link href={`/${region}/courses/maestria`}>Maestría en GyE de la Ed. Superior </Link>
             </div>}
             <div className="column">

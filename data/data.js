@@ -168,7 +168,7 @@ const data = [
     subtitle: "C.C.C. en Gestión de Instituciones Educativas",
     pdf: "/pdf/Licenciatura en Gestión Educativa.pdf",
     bgimage: "/LicGestionEducativa_Placa.png",
-    footerbgimage: "GESTIÓN EDUCATIVA_Mesa de trabajo 1.png",
+    footerbgimage: "EdcativSLIDER.webp",
     path: "educativa",
     image: "/webp/course10.webp",
     duration: "9 meses",

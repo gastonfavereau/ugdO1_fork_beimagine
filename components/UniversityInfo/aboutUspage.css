@@ -175,7 +175,7 @@
   .aboutuscontainerfirst{
     width: 100%;
     display: flex;
-    background-color: #1C3564;
+    background-color: #784EA7;
     
   }
 
@@ -291,7 +291,7 @@
     height: 600px;
     display: flex;  
     flex-direction: row-reverse;
-    background-color: #1C3564;
+    background-color: #784EA7;
   }
 
   .aboutuscontainerfourth{

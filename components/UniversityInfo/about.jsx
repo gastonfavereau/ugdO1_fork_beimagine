@@ -34,7 +34,7 @@ const About = () => {
        
             <div className='aboutuscontainerfirst'>
                 <div data-aos="fade-up" className='aboutusContent'>
-            <p className='headingFontSize2'>Quienes somos </p>
+            <p className='headingFontSize2'>Quiénes somos </p>
 
             <p className='paraFontSize2'>Somos la Universidad Gastón Dachary (UGD) , una universidad privada con una visión regionalista, fundada en 1998. En los 25 años de actividad hemos desarrollado una amplia gama de carreras en Ingeniería, Ciencias Económicas y Empresariales, Ciencias Jurídicas y Sociales, Arquitectura, Diseño y Comunicación, y Ciencias de la Salud y Seguridad.
             <br/>

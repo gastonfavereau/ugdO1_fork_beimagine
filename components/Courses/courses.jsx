@@ -7,7 +7,8 @@ import "./courses.css"
 import Link from "next/link";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation';
+import CourseAccordian from './subfolder/courseAccordian';
 
 const Course = ({params}) => {
     const pathname = usePathname()
@@ -61,7 +62,7 @@ const Course = ({params}) => {
                     flexDirection:"row",
                     padding:"1rem"
                  }}>
-                    {course.destinatario&&
+                    {/* {course.destinatario&&
                     <div  style={{
                         width:"100%",
                         backgroundColor:"#5092b3",
@@ -78,9 +79,14 @@ const Course = ({params}) => {
                             })
                         }
                     </div>
-                    }
+                    } */}
+                    {course.destinatario&& <CourseAccordian  heading={"DESTINATARIOS"} text={course.destinatario} />}
+                    {course.alcances && <CourseAccordian  heading={"ALCANCES Y SALIDA LABORAL"} text={course.alcances} />}
+                    {course.ambitos && <CourseAccordian  heading={"ÁMBITOS DE COMPETENCIA"} text={course.ambitos} />}
+                    {course.podra&& <CourseAccordian  heading={"PODRÁ DESEMPEÑARSE EN"} text={course.podra} />}
+                    
 
-                    {course.alcances&&
+                    {/* {course.alcances&&
                     <div data-aos="fade-up" style={{
                         width:"100%",
                         backgroundColor:"#0F4D6B",
@@ -114,8 +120,8 @@ const Course = ({params}) => {
                         </div>
                     </div>
                     </div>
-                    }
-                    {course.ambitos&&
+                    } */}
+                    {/* {course.ambitos&&
                     <div data-aos="fade-up" style={{
                         width:"100%",
                         backgroundColor:"#C9ECF5",
@@ -134,13 +140,10 @@ const Course = ({params}) => {
                         <div style={{
                             width:"100%",
                             padding:"1rem",
-                            // boxShadow:" 0 4px 8px 0 rgba(0,0,0,0.2)",
-                            // borderRadius:"5px",
-                            // backgroundColor:"white",
+                           
                    
                         }}>
                             <ul style={{ listStyleType: "disc" }}>
-                            {/* write unorder list html here */}
                             {
                                 course.ambitos.list.map((text)=>{
                                     
@@ -154,8 +157,8 @@ const Course = ({params}) => {
                         </div>
                     </div>
                     </div>
-                    }
-                    {course.podra&&
+                    } */}
+                    {/* {course.podra&&
                     <div data-aos="fade-up"  style={{
                         width:"100%",
                         backgroundColor:"#E4F9FF",
@@ -174,13 +177,11 @@ const Course = ({params}) => {
                         <div style={{
                             width:"100%",
                             padding:"1rem",
-                            // boxShadow:" 0 4px 8px 0 rgba(0,0,0,0.2)",
-                            // borderRadius:"5px",
-                            // backgroundColor:"white",
+                          
                    
                         }}>
                             <ul style={{ listStyleType: "disc" }}>
-                            {/* write unorder list html here */}
+                           
                             {
                                 course.podra.map((text)=>{
                                     
@@ -194,7 +195,7 @@ const Course = ({params}) => {
                         </div>
                     </div>
                     </div>
-                    }
+                    } */}
                 </div>
                 <div  className="sidecontentdiv" style={{
                     backgroundColor:"white",

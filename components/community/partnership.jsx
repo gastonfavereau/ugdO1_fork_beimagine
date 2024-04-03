@@ -25,7 +25,7 @@ const PartnerShip = () =>{
                 
                 }}>
                 <Image
-                    src="/amplia.jpg"
+                    src="/AmpliaRed.png"
                     alt="Background Image"
                     layout="fill"
                     objectFit="cover"
@@ -212,6 +212,57 @@ const PartnerShip = () =>{
                             <div data-aos="fade-up" className="partnershipContentCardColor">
                                 <div >
                                     <p className="partnershipCardHeadingWhite">Universidades Iberoamericanas
+                                    </p>
+                                    {/* <p className="partnershipCardParaWhite">Mantenemos vínculos y cooperación estrecha con universidades argentinas, de otros países latinoamericanos y de otras regiones del mundo.
+                                    </p> */}
+                                </div>
+
+                            </div>
+
+
+                    </div>
+                    <div className="partnershipContainer">
+                            <div className="partnershipImageCardWhite">
+                                <div className="partnershipImageDiv">
+                                    <Image
+                                        alt='Mountains'
+                                        src='/FundacaoAraucarea__LOGO.png'
+                                        layout='fill'
+                                        objectFit='contain'
+                                    />
+                                </div>
+
+                            </div>
+                            <div data-aos="fade-up"  className="partnershipContentCardWhite">
+                                <div >
+                                    <p className="partnershipCardHeading">FUNDACAO ARAUCARIA
+                                    </p>
+                                    {/* <p style={{
+                                        fontSize:"0.8rem",
+                                        marginTop: "0.5rem"
+                                    }} className="partnershipCardPara">A través del Consejo de Rectores de Universidades Privadas, participamos de REALCUP, organización que impulsa la internacionalización de las universidades privadas y el crecimiento de la calidad  de las actividades académicas de sus instituciones miembro. 
+                                    </p> */}
+                                </div>
+
+                            </div>
+
+
+                    </div>
+                    <div className="partnershipContainerColor">
+                            <div className="partnershipImageCardWhite">
+                                <div className="partnershipImageDiv" >
+                                    <Image
+                                        alt='Mountains'
+                                        src='/LOGO__Consejo.png'
+                                        layout='fill'
+                                        objectFit='contain'
+                                    />
+                                </div>
+
+                            </div>
+                            <div data-aos="fade-up" className="partnershipContentCardColor">
+                                <div >
+                                    <p className="partnershipCardHeadingWhite">Consejo de Rectores de Universidades Privadas
                                     </p>
                                     {/* <p className="partnershipCardParaWhite">Mantenemos vínculos y cooperación estrecha con universidades argentinas, de otros países latinoamericanos y de otras regiones del mundo.
                                     </p> */}

@@ -102,11 +102,11 @@ const SalesforceForm = () => {
           alignContent: "center",
           backgroundColor: "white",
           padding: "1rem",
-          backgroundImage: "url(/cool-background.png)",
+          // backgroundImage: "url(/cool-background.png)",
         }}
       >
         <iframe
-          src=" https://ugd.edu.ar/es/formulario-de-consultas"
+          src="https://inscriptions.ugd.edu.ar/contact_cases/new?theme=ugd-virtual"
           className="formIframe"
         />
       </div>

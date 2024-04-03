@@ -29,7 +29,23 @@ const Equivalencies = () => {
             fontFamily: "WorkSans-Light",
           }}>Si cursaste estudios en Universidades o Instituciones Superiores te ofrecemos analizar el reconocimiento de estudios por equivalencia. Para ello, te agradeceremos que nos envíes un informe de las materias que has aprobado en la carrera que hayas cursado, y en caso de ser necesario te solicitaremos información complementaria.
             </p>
+
+            <a href='mailto:ugdvirtual-informes@ugd.edu.ar'>
+            <button style={{
+                                        width:"200px",
+                                        height:"50px",
+                                        marginTop:"20px",
+                                        backgroundColor:"#0B4C26",
+                                        color:"white",
+                                        padding:"5px",
+                                        borderRadius:"5px",
+                                        fontSize:"0.9em",
+                                        fontFamily:"WorkSans-normal"
+                                    }}>Contactos</button>
+          </a>
             </div>
+
+            
        
             
 

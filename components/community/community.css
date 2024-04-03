@@ -81,7 +81,8 @@
 .teacherMain{
   width:100%;
   display:flex;
-  background-color: #E4F9FF;
+  background-color: #784EA7
+;
 
 }
 .teacherContent{
@@ -93,6 +94,7 @@
   flex-direction: column;
   align-items: center;
   align-content: center;
+  gap: 2rem;
 
 }
 .teacherImage{
@@ -136,7 +138,7 @@
 .partnershipContentCardColor{
   width: 60%;
   height: 200px;
-  background-color: #1C3564;
+  background-color: #784EA7;
   box-shadow: 0px 8px 8px 8px rgba(0, 0, 0, 0.2);
   padding: 2rem;
   border-top-left-radius: 100px;

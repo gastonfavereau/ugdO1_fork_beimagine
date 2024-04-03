@@ -67,7 +67,7 @@ const Verify = () => {
       justifyContent: "center",  // Center horizontally
     }}>
       <Image
-        src="/blockchain1.png"
+        src="/techno.webp"
         alt="Background Image"
         layout="fill"
         objectFit="cover"
@@ -157,7 +157,7 @@ const Verify = () => {
                     setCertId(e.target.value)
                   }}
                   />
-                  <p style={{textAlign:"center"}}>or</p>
+                  <p style={{textAlign:"center"}}>o</p>
                   <input type="text" placeholder="Ingrese el CID" style={{
                     width:"100%",
                     height:"50px",

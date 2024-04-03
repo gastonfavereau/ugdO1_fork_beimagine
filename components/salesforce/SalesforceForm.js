@@ -94,7 +94,6 @@ const SalesforceForm = () => {
       <div
         className="form-container"
         style={{
-          marginTop: "1rem",
           width: "100%",
           height: "auto",
           display: "flex",
@@ -106,7 +105,7 @@ const SalesforceForm = () => {
         }}
       >
         <iframe
-          src="https://inscriptions.ugd.edu.ar/contact_cases/new?theme=ugd-virtual"
+          src="https://inscripciones.ugd.edu.ar/contact_cases/new?theme=ugd-virtual"
           className="formIframe"
         />
       </div>

@@ -48,10 +48,10 @@ const Accordian = ({ heading, text, index,setToggle,isToggled,isUs,region}) => {
 			name:"Becas y Beneficios",
 			href: `/${region}/scholarshipsAndbenefits`,
 		},
-		{
-			name:"Beca Latina",
-			href: `/${region}/miami`,
-		}
+		// {
+		// 	name:"Beca Latina",
+		// 	href: `/${region}/miami`,
+		// }
 	]
 
 	const virtualModel = [

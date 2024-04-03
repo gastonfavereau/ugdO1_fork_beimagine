@@ -157,7 +157,7 @@ const Verify = () => {
                     setCertId(e.target.value)
                   }}
                   />
-                  <p style={{textAlign:"center"}}>o</p>
+                  <p style={{textAlign:"center"}}>O</p>
                   <input type="text" placeholder="Ingrese el CID" style={{
                     width:"100%",
                     height:"50px",

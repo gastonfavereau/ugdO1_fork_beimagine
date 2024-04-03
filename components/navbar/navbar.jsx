@@ -154,7 +154,7 @@ export default function Navbar({params}) {
                   <Link href={`/${region}/teacher`}>Nuestros docentes</Link>
                   <Link href={`/${region}/partnership`}>Amplia red de vínculos internacionales</Link>
                   <Link href={`/${region}/scholarshipsAndbenefits`}>Becas y beneficios</Link>
-                  <Link href={`/${region}/miami`}>Beca Latina</Link>
+                  {/* <Link href={`/${region}/miami`}>Beca Latina</Link> */}
                 </div>
               </div>
           </div>

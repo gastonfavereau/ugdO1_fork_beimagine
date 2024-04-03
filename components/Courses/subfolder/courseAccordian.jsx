@@ -97,7 +97,7 @@ const CourseAccordian = ({ heading, text, index,setToggle,isToggled,isUs,region}
                     </div>
                     }
                     {
-                        heading === "Ámbitos de competencia" && 
+                        heading === "ÁMBITOS DE COMPETENCIA" && 
                         <div
                         style={{
                            padding: isActive ? "var(--padding-main)" : "0",
@@ -145,7 +145,7 @@ const CourseAccordian = ({ heading, text, index,setToggle,isToggled,isUs,region}
 
                     }
                     {
-                        heading === "Podrá desempeñarse en"&&
+                        heading === "PODRÁ DESEMPEÑARSE EN"&&
                         <div
                         style={{
                            padding: isActive ? "var(--padding-main)" : "0",

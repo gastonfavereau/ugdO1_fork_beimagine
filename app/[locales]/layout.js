@@ -46,7 +46,7 @@ export default function RootLayout({ children, params }) {
       <body className={inter.className}>
         <Navbar params={params.locales} />
         {children}
-        <WhatsAppIcon />
+        {/* <WhatsAppIcon /> */}
         <Footer />
         <ChatbotComponent/>
       </body>

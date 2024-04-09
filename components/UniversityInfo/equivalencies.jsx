@@ -41,7 +41,7 @@ const Equivalencies = () => {
                                         borderRadius:"5px",
                                         fontSize:"0.9em",
                                         fontFamily:"WorkSans-normal"
-                                    }}>Contactos</button>
+                                    }}>Contacto</button>
           </a>
             </div>
 

@@ -86,26 +86,27 @@
 
 }
 .teacherContent{
+  margin-top: 1rem;
   width: 50%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 5rem;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
-  align-items: center;
-  align-content: center;
+  /* align-items: center; */
+  /* align-content: center; */
   gap: 2rem;
 
 }
 .teacherImage{
   width: 50%;
-  height: 100vh;
+  min-height: 100vh;
   padding: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: #C9ECF5;
+  background-color: #784EA7;
 }
 .teacherMainColor{
   width: 100%;
@@ -186,6 +187,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 38px;
+  text-align: left;
 }
 .partnershipCardHeadingWhite{
   color: white;
@@ -194,6 +196,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 38px;
+  text-align: left;
 }
 .partnershipCardPara{
     margin-top: 1rem;

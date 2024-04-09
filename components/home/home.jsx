@@ -26,9 +26,7 @@ const HomePage = ({params}) => {
         <source src="ugdMediumVideo.mp4" type="video/mp4" />
       </video> */}
       <img id="background-video" src={"/UGDvirtual___ HOME WEB __.webp"} alt="Background Image" />
-      <video id="backgroundMobile" autoPlay loop muted poster="/UGDVposter.webp">
-        <source src="UGDVideoMobile2.mp4" type="video/mp4" />
-      </video>
+      <img id="backgroundMobile" src={"/homeBanner.png"} alt="Background Image" />
       <div className='home-heading' style={{
         backgroundColor:"rgba(0, 0, 0, 0.5)",
       }}>

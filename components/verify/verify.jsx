@@ -4,7 +4,7 @@ import DynamicForm from "./subcomponents/dynamic";
 import { useState } from "react";
 import Verifyfile from "./verifyfile";
 import Image from "next/image";
-
+import ChatbotComponent from "../salesforce/customBot";
 
 const Verify = () => {
   const router = useRouter();
@@ -208,7 +208,6 @@ const Verify = () => {
              
         </div> 
           
-        
       </div>
   );
 };

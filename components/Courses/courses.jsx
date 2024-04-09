@@ -84,6 +84,27 @@ const Course = ({params}) => {
                     {course.alcances && <CourseAccordian  heading={"ALCANCES Y SALIDA LABORAL"} text={course.alcances} />}
                     {course.ambitos && <CourseAccordian  heading={"ÁMBITOS DE COMPETENCIA"} text={course.ambitos} />}
                     {course.podra&& <CourseAccordian  heading={"PODRÁ DESEMPEÑARSE EN"} text={course.podra} />}
+
+                    <div style={{
+                        display:"flex",
+                        justifyContent:"center",
+                        alignContent:"center",
+                        marginTop:"0.5rem"
+                    }}>
+                       <Link href={!isUs ?"/ar/form":"/us/becaForm"}>
+                                    <button style={{
+                                        width:"200px",
+                                        height:"50px",
+                                        margin:"20px",
+                                        backgroundColor:"#0B4C26",
+                                        color:"white",
+                                        padding:"5px",
+                                        borderRadius:"5px",
+                                        fontSize:"0.9em",
+                                        fontFamily:"WorkSans-normal"
+                                    }}>Quiero más información</button>
+                        </Link>
+                    </div>
                     
 
                     {/* {course.alcances&&
@@ -392,19 +413,6 @@ const Course = ({params}) => {
                                 </a>
                                 </div>
                                 {/* <a href="/Programador_Java_Full Stack.pdf" download="Programador_Java_Full Stack.pdf"> */}
-                                <Link href={!isUs ?"/ar/form":"/us/becaForm"}>
-                                    <button style={{
-                                        width:"200px",
-                                        height:"50px",
-                                        margin:"20px",
-                                        backgroundColor:"#0B4C26",
-                                        color:"white",
-                                        padding:"5px",
-                                        borderRadius:"5px",
-                                        fontSize:"0.9em",
-                                        fontFamily:"WorkSans-normal"
-                                    }}>Quiero más información</button>
-                                </Link>
                                 {
                                    course.subtitle ===  "Lin. en Corretaje y Neg. Inmobilarios" && 
                                    <Link href={"/ar/equivalencies/studentQuery"}>

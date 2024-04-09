@@ -25,7 +25,7 @@ const MiamiScholarship = () =>{
         <div  className="teacherMain">
         <div className="teacherContent">
             {/* <Image src={"/unsplash_-uHVRvDr7pg.png"} width={1200} height={700}  /> */}
-            <div data-aos="fade-up">
+            <div>
             <p style={{
             // textAlign:"center",
             color:"#1C3564",
@@ -78,7 +78,7 @@ const MiamiScholarship = () =>{
         <div style={{
             padding:"0rem"
         }} className="teacherImage">
-            <div data-aos="fade-up" style={{width: '100%', height: '100%', position: 'relative', }}>
+            <div  style={{width: '100%', height: '100%', position: 'relative', }}>
             <Image
                 alt='Mountains'
                 src='/BECALATINA.jpg'

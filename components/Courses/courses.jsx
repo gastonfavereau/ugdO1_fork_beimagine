@@ -84,6 +84,7 @@ const Course = ({params}) => {
                     {course.alcances && <CourseAccordian  heading={"ALCANCES Y SALIDA LABORAL"} text={course.alcances} />}
                     {course.ambitos && <CourseAccordian  heading={"ÁMBITOS DE COMPETENCIA"} text={course.ambitos} />}
                     {course.podra&& <CourseAccordian  heading={"PODRÁ DESEMPEÑARSE EN"} text={course.podra} />}
+                    {course.competencias  && <CourseAccordian  heading={"COMPETENCIAS"} text={course.competencias} />}
 
                     <div style={{
                         display:"flex",

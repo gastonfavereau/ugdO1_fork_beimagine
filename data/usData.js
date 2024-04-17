@@ -78,7 +78,7 @@ const usData = [
     subtitle: "Lic. en Marketing",
     pdf: "/pdf/Licenciatura en Marketing.pdf",
     bgimage: "/LicMarketing_Placa.png",
-    footerbgimage: "MARKETING_Mesa de trabajo 1.png",
+    footerbgimage: "MARKETING.png",
     path: "marketing",
     image: "/webp/course9.webp",
     duration: "9 meses",
@@ -93,7 +93,7 @@ const usData = [
     ],
     titulosAprobados: [
       "Resolución Nro. 2413/2017 Ministerio de Educación.",
-      "Resolución UGD Nro. 64/A/23 .",
+      "Resolución UGD Nro. 67/A/23 .",
     ],
     destinatario: [
       "Esta carrera está orientada a",
@@ -318,7 +318,7 @@ const usData = [
     subtitle: "Especialización en TICs",
     pdf: "/pdf/Especialización en Gestión de Tecnologías.pdf",
     bgimage: "/EspGestionTecnoInfoyCom_Placa.png",
-    footerbgimage: "GETICS_Mesa de trabajo 1.png",
+    footerbgimage: "GETICS_Mesa.png",
     path: "tecnologias",
     image: "/webp/course7.webp",
     duration: "9 meses",

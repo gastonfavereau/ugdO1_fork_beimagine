@@ -197,6 +197,7 @@ export default function Navbar({params}) {
               }}>EMPRESARIALES</h3>
               <Link href={`/${region}/courses/marketing`}>Lic. en Marketing</Link>
               <Link href={`/${region}/courses/administracion`}>Lic. en Administración</Link>
+              <Link href={`/${region}/courses/diplomaturasMkt`}> Diplomaturas Mkt</Link>
           
             </div>
             <div className="column">

@@ -78,7 +78,7 @@ const data = [
     subtitle: "Lic. en Marketing",
     pdf: "/pdf/Licenciatura en Marketing.pdf",
     bgimage: "/LicMarketing_Placa.png",
-    footerbgimage: "MARKETING_Mesa de trabajo 1.png",
+    footerbgimage: "MARKETING.png",
     path: "marketing",
     image: "/webp/course9.webp",
     duration: "9 meses",
@@ -93,7 +93,7 @@ const data = [
     ],
     titulosAprobados: [
       "Resolución Nro. 2413/2017 Ministerio de Educación.",
-      "Resolución UGD Nro. 64/A/23 .",
+      "Resolución UGD Nro. 67/A/23 .",
     ],
     destinatario: [
       "Esta carrera está orientada a",
@@ -441,7 +441,7 @@ const data = [
     subtitle: "Especialización en TICs",
     pdf: "/pdf/Especialización en Gestión de Tecnologías.pdf",
     bgimage: "/EspGestionTecnoInfoyCom_Placa.png",
-    footerbgimage: "GETICS_Mesa de trabajo 1.png",
+    footerbgimage: "GETICS_Mesa.png",
     path: "tecnologias",
     image: "/webp/course7.webp",
     duration: "9 meses",
@@ -492,7 +492,7 @@ const data = [
     tituloFinal: [
       "Diplomatura Universitaria en Tasación de Inmuebles (8 meses)",
       "Diplomatura Universitaria en Negocios y Marketing Inmobiliario (8 meses)",
-      "Diplomatura Universitaria en Proyectos Inmobiliarios (8 mese",
+      "Diplomatura Universitaria en Proyectos Inmobiliarios (8 meses)",
     ],
     titulosAprobados: ["Resolución Ministerio de Educación Nro. 2349/22."],
     destinatario: [
@@ -576,6 +576,45 @@ const data = [
         " Suministrar los conocimientos jurídicos, contables e instrumentales que permitan a quienes se dediquen a esta actividad, la adquisición de un perfil profesional.",
         " Ofrecer una formación básica que prevea las estrategias y las motivaciones para el permanente perfeccionamiento y la capacitación continua en las diversas áreas de competencia de la profesión.",
         " Implementar los conocimientos esenciales de las diversas especialidades y orientaciones propias de la profesión.",
+      ],
+    },
+  },
+  {
+    course:
+      "Certificador Universitario en Marketing Digital y Community Manager",
+    subtitle: "Diplomaturas Mkt",
+    pdf: "/pdf/Certificado Univ Mkt Digital CM.pdf",
+    bgimage: "/LicCorretaje_Placa_2.png",
+    footerbgimage: "UGDvirtual___SLIDER__CERTI__MARKETING DIGITAL Y CM.png",
+    path: "diplomaturasMkt",
+    image: "/webp/LicCorretaje_Placa_Historia.webp",
+    duration: "9 meses",
+    equivalencia: true,
+    presentacion: [
+      "El poseedor del Certificado Universitario en Marketing Digital y Community Manager es un/a experto/a en el aprovechamiento de las herramientas digitales para la promoción de marcas, interactuando con otros en línea y alcanzando los objetivos comerciales de manera efectiva. Es adaptable, creativo, analítico y altamente orientado a resultados en el entorno digital.",
+    ],
+    tituloFinal: [
+      "Certificado Universitario en Marketing Digital y Community Manager (1 año y medio)",
+    ],
+    tituloIntermedio: [
+      "Técnico Universitario en Corretaje y Negocios Inmobiliarios (3 años)",
+    ],
+    titulosAprobados: ["Resolución UGD Nro. 70/A/23"],
+    destinatario: [
+      "Creativos entusiastas que aspiran a adquirir habilidades para administrar y hacer crecer comunidades en línea, utilizando de manera efectiva las redes sociales y demás herramientas digitales en el ámbito del marketing y la comunicación.",
+    ],
+    // ALCANCES Y SALIDA LABORAL
+    competencias: {
+      title: "El graduado será un profesional competente que:",
+      list: [
+        " Conocimiento técnico en marketing digital: Comprender los fundamentos del marketing digital, marketing de contenidos, email marketing, publicidad en redes sociales y analítica web.",
+        " Dominio de herramientas digitales: Familiarizarse con herramientas y plataformas relevantes para el marketing digital y la gestión de comunidades en línea, como Google Analytics, Google Ads, entre otras.",
+        " Creatividad: Generarán ideas originales y creativas para campañas de marketing, contenido en redes sociales y estrategias de participación de la comunidad.",
+        " Habilidades de comunicación: La comunicación será de manera clara y efectiva tanto por escrito como verbalmente, especialmente en entornos digitales y redes sociales.",
+        " Gestión de contenido: Ser capaz de crear, curar y gestionar contenido relevante y atractivo para diferentes plataformas y audiencias en línea.",
+        " Análisis y toma de decisiones basadas en datos: Estarán preparados para recopilar, analizar e interpretar datos y así evaluar el rendimiento de las campañas de marketing digital y tomar decisiones informadas sobre estrategias futuras.",
+        " Gestión de la comunidad: Podrán construir, administrar y participar en comunidades en línea, fomentando la participación y el compromiso de los seguidores y clientes.",
+        " Pensamiento estratégico: Ser capaz de desarrollar y ejecutar estrategias de marketing digital y gestión de comunidades en línea que estén alineadas con los objetivos y valores de la marca."
       ],
     },
   },

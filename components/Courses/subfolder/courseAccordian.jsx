@@ -96,6 +96,32 @@ const CourseAccordian = ({ heading, text, index,setToggle,isToggled,isUs,region}
                         </ul>
                     </div>
                     }
+                    {heading === "COMPETENCIAS"&&
+                    
+                    <div
+                        style={{
+                           padding: isActive ? "var(--padding-main)" : "0",
+                            backgroundColor: isActive ? "var(--primary-90)" : "transparent",
+                            maxHeight: isActive ? "100%" : "0em",
+                            fontSize: "0.75rem",
+                            transform: isActive ? "scaleY(1)" : "scaleY(0)",
+                            transition: "all 0.1s",
+                            textAlign: "justify",
+                        }}
+						>
+				        <ul style={{ listStyleType: "disc" }}>
+                            {/* write unorder list html here */}
+                            {
+                                text.list.map((text)=>{
+                                    
+                                    return(
+                                        <li key={text} dangerouslySetInnerHTML={{ __html: text }} style={{color:"#6B6C6C",fontWeight:"500",fontSize:"1rem" ,marginTop:"1rem",fontFamily:"WorkSans-normal"}}></li>     
+                                    )
+                                })
+                            }
+                        </ul>
+                    </div>
+                    }
                     {
                         heading === "ÁMBITOS DE COMPETENCIA" && 
                         <div

@@ -206,7 +206,7 @@ const data = [
     pdf: "/pdf/Ciclo de Licenciatura en Gestión de Recursos Tecnológicos.pdf",
     subtitle: "Ciclo de complementación ",
     bgimage: "/CicloLicGestionRecTecno_Placa.png",
-    footerbgimage: "rescursos.png",
+    footerbgimage: "CICLORecursos tecnológicos.png",
     path: "recursos",
     image: "/webp/course3.webp",
     duration: "2 años",
@@ -596,9 +596,6 @@ const data = [
     tituloFinal: [
       "Certificado Universitario en Marketing Digital y Community Manager (1 año y medio)",
     ],
-    tituloIntermedio: [
-      "Técnico Universitario en Corretaje y Negocios Inmobiliarios (3 años)",
-    ],
     titulosAprobados: ["Resolución UGD Nro. 70/A/23"],
     destinatario: [
       "Creativos entusiastas que aspiran a adquirir habilidades para administrar y hacer crecer comunidades en línea, utilizando de manera efectiva las redes sociales y demás herramientas digitales en el ámbito del marketing y la comunicación.",
@@ -614,7 +611,7 @@ const data = [
         " Gestión de contenido: Ser capaz de crear, curar y gestionar contenido relevante y atractivo para diferentes plataformas y audiencias en línea.",
         " Análisis y toma de decisiones basadas en datos: Estarán preparados para recopilar, analizar e interpretar datos y así evaluar el rendimiento de las campañas de marketing digital y tomar decisiones informadas sobre estrategias futuras.",
         " Gestión de la comunidad: Podrán construir, administrar y participar en comunidades en línea, fomentando la participación y el compromiso de los seguidores y clientes.",
-        " Pensamiento estratégico: Ser capaz de desarrollar y ejecutar estrategias de marketing digital y gestión de comunidades en línea que estén alineadas con los objetivos y valores de la marca."
+        " Pensamiento estratégico: Ser capaz de desarrollar y ejecutar estrategias de marketing digital y gestión de comunidades en línea que estén alineadas con los objetivos y valores de la marca.",
       ],
     },
   },

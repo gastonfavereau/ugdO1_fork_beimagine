@@ -32,7 +32,8 @@ const ContactForm = () => {
         textAlign: 'center',
         fontFamily: 'WorkSans-normal',
         fontSize: '1.5em',
-        color:"orange"
+        color:"orange",
+        marginTop:"0.5rem"
       }}>Consultas</h1>
       <section>
         <input id="name" maxLength="80" name="name" type="text" required placeholder="Nombre (*)" />

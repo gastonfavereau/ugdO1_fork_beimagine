@@ -114,7 +114,7 @@ const ContactForm = () => {
         display:"flex",
         justifyContent:"center"
       }}>
-      <button style={{
+      <button  style={{
                     width:"200px",
                     height:"50px",
                     marginTop:"20px",

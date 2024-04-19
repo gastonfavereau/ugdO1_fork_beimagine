@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Success = () =>{
 
     return(
@@ -5,7 +7,7 @@ const Success = () =>{
         <div style={{
                 position: "relative",
                 width: "100%",
-                height: "50vh",
+                height: "100vh",
                 overflow: "hidden", // Ensure content doesn't overflow
                 display: "flex",
                 alignItems: "center",  // Center vertically
@@ -37,7 +39,7 @@ const Success = () =>{
     className='form-container'
     style={{
         // position:"relative",
-        marginTop:"-15rem",
+        marginTop:"-37rem",
       width:"100%",
       display:"flex",
       justifyContent:"center",
@@ -50,8 +52,7 @@ const Success = () =>{
         
     
      
-        <div style={{
-                   
+        <div style={{         
             width:"100%",
             maxWidth:"600px",
             height:"auto",
@@ -69,9 +70,9 @@ const Success = () =>{
         <p style={{
             textAlign:"center",
             marginTop:"-5rem",
-            fontSize:"3rem",
+            fontSize:"1rem",
             fontWeight:"700",
-            fontFamily:"Poppins",
+            fontFamily:"var(--WorkSans-normal)",
             color:"white",
         }} >Consulta por carreras</p>
 
@@ -87,12 +88,20 @@ const Success = () =>{
         <p style={{
             textAlign:"center",
             color:"white",
-            fontFamily: "Poppins",
+            fontFamily: "var(--WorkSans-normal)",
             fontSize: "1rem",
             fontStyle: "normal",
             fontWeight: "500",
             lineHeight: "38px",
             }}>Enviado exitosamente </p>
+
+
+        <Link href={"/"} style={{
+            textAlign:"center",
+            marginTop:"10px"
+        }}>
+            Por favor haga clic aquí para volver a casa
+        </Link>
 
         </div>
         

@@ -1,0 +1,191 @@
+<header>
+  <style type="text/css">
+    html {
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: italic;
+      align-items: center;
+      margin: 3;
+      border: 0px;
+      padding: 0px;
+      color: orange;
+      border-color: blueviolet;
+      background-color: white;
+      max-width: 500px;
+    }
+    
+    body{
+      display: flex;
+      justify-content: center;
+    }
+    
+    form{
+      max-width: 500;
+    }
+
+    h1,
+    h6 {
+      margin: 0px;
+      border: 0px;
+      padding: 0px;
+      text-align: center;
+      opacity: 0.7;
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 10;
+    }
+
+    h6 {
+      margin-top: 5;
+      margin-bottom: 5;
+    }
+
+    section {
+      display: flex;
+      flex-direction: row;
+    }
+
+    div {
+      width: 100%;
+    }
+
+    p {
+      margin-top: 3;
+      margin-bottom: 3;
+    }
+
+    input {
+      text-align: center;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      margin-bottom: 3;
+      text-wrap: wrap;
+      border-width: 1px;
+      border-color: rgba(255, 166, 0, 0.323);
+    }
+
+    input:hover,
+    textarea:hover {
+      opacity: 0.4;
+    }
+
+    button {
+      margin-top: 3;
+      width: 100%;
+      color: white;
+      background-color: orange;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.5;
+    }
+
+    .alert {
+      text-align: center;
+      color: red;
+      background-color: yellow;
+      display: none;
+      font-size: 0.75rem;
+    }
+
+  </style>
+
+</header>
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTA: Agregue el siguiente elemento <META> a su página <HEAD>.  Si es   -->
+<!--  preciso, modifique el parámetro charset para especificar el conjunto    -->
+<!--  de caracteres de su página HTML.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTA: Agregue el siguiente elemento <FORM> a su página.                 -->
+<!--  ----------------------------------------------------------------------  -->
+
+<body>
+
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+    <input type=hidden name="orgid" value="00DHp000001rh2f">
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTA: Modifique el siguiente value con la url de la pagina a la que     -->
+    <!--  sera redirigido el navegador luego de ejecutar el submit del form.    -->
+    <!--  ----------------------------------------------------------------------  -->
+    <input type=hidden name="retURL" value="http://test.com">
+
+    <input type=hidden name="reason" value="Consulta por carreras">
+    <input type=hidden name="status" value="New">
+    <input type=hidden name="subject" value="Ver consulta en description">
+    <input type=hidden name="Origin" value="Web ugd-virtual">
+
+    <h1>Consultas</h1>
+    <section>
+      <input id="name" maxlength="80" name="name" type="text" required=true placeholder="Nombre  (*)" />
+      <input id="00NHp00000g8suC" maxlength="80" name="00NHp00000g8suC" type="text" required=true
+        placeholder="Apellido  (*)" />
+    </section>
+
+    <section>
+      <input id="email" maxlength="80" name="email" type="text" required=true placeholder="Email (*)" />
+    </section>
+    <p id="alert" class="alert">Ingrese un mail valido por favor</p>
+
+    <h6>Teléfono</h6>
+    <section>
+      <div>
+        <input id="00NHp00000g8yV5" maxlength="4" min=1 name="00NHp00000g8yV5" type="number" required=true
+          placeholder="País (*)" />
+        <h6>sin el +</h6>
+      </div>
+      <div>
+        <input id="00NHp00000g8xb7" maxlength="5" min=1 name="00NHp00000g8xb7" type="number" required=true
+          placeholder="Area (*)" />
+        <h6>sin el 0</h6>
+      </div>
+      <div>
+        <input id="00NHp00000g8yVF" maxlength="12" min=1 name="00NHp00000g8yVF" type="number" required=true
+          placeholder="Número (*)" />
+        <h6>sin el 15</h6>
+      </div>
+    </section>
+
+    <section>
+      <textarea id="description" maxlength="400" name="description" required=false
+        placeholder="Dinos la carrera de tu interés y consulta por favor!"></textarea>
+    </section>
+
+    <section>
+      <button id="submit" type="submit" name="submit">Enviar</button>
+    </section>
+
+  </form>
+
+</body>
+
+<script>
+
+  document.getElementById("email")
+    .addEventListener("blur", function validateEmail() {
+      const email = this.value;
+      const regex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      const valid = regex.test(email);
+      if (valid == true) {
+        document.getElementById("alert").style.display = "none";
+        document.getElementById("submit").style.opacity = 1;
+        document.getElementById("submit").disabled = false;
+      } else {
+        document.getElementById("alert").style.display = "block";
+        document.getElementById("submit").style.opacity = 0.5;
+        document.getElementById("submit").disabled = true;
+      };
+    });
+
+</script>

@@ -9,6 +9,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { usePathname } from 'next/navigation';
 import CourseAccordian from './subfolder/courseAccordian';
+import ContactForm from '../salesforce/courseForm';
 
 const Course = ({params}) => {
     const pathname = usePathname()
@@ -80,6 +81,260 @@ const Course = ({params}) => {
                         }
                     </div>
                     } */}
+                <div  className="infocontentdiv" style={{
+                    backgroundColor:"white",
+                    // boxShadow:" 0 8px 8px 0 rgba(0,0,0,0.2)",
+                    borderRadius:"5px",
+                    display:"flex",
+                    flexDirection:"column",
+                }}>
+                    {/* <Image src={course.bgimage} height={1200} width={1200} /> */}
+                    <div style={{
+                        padding:"2em",
+                    }}>
+                        {/* <h3 style={{color:"var(--primary-bg-color)",fontWeight:"500",fontSize:"18px",textAlign:"center"}}>{course.course}</h3> */}
+                        <p style={{color:"var(--primary-bg-color)",fontWeight:"800",fontSize:"15px",fontFamily:"WorkSans-normal"}}>Presentación</p>
+                        {
+                            course.presentacion &&
+                            <>
+                            {
+                                typeof course.presentacion === 'string' ?
+                                <p dangerouslySetInnerHTML={{ __html: course.presentacion }} style={{color:"#6B6C6C",fontSize:"0.8em",marginTop:"1em",fontWeight:"600",textAlign:"justify",fontFamily:"WorkSans-normal"}}></p>
+                                :
+                                <ul style={{ listStyleType: "disc", marginLeft:"1em"}}>
+                                {course.presentacion.map((text)=>{
+                                    return(
+                                        <li key={text} dangerouslySetInnerHTML={{ __html: text }} style={{color:"#6B6C6C",fontSize:"0.8em",marginTop:"1em",fontWeight:"600",textAlign:"justify",fontFamily:"WorkSans-normal"}}></li>
+                                    )
+                                })}
+                                </ul>
+                            }
+                            </>
+                        }
+                    </div>
+                    <div className='infosubdiv' style={{
+                        width:"100%",
+                        padding:"2em",
+                        gap:"1em",
+                        justifyContent:"space-between"
+                    }}>
+
+                        <div>
+                        {/* tituloFinal */}
+                        { course.tituloFinal &&
+                        <>
+                        {typeof course.tituloFinal === 'string' ?
+                        <div style={{
+                            display:"flex",
+                            gap:"1em",
+                        }}>
+                            <Image src={"/time.svg"} height={25} width={25} /> 
+                            <div style={{color:"var(--primary-bg-color)",fontWeight:"800",fontSize:"15px",fontFamily:"WorkSans-normal"}}>Título final: <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{course.tituloFinal}</p></div>
+                        </div>:
+                        <div style={{
+                            display:"flex",
+                            gap:"1em",
+                        }}
+                        >
+                            <Image src={"/time.svg"} height={25} width={25} />  
+                            <div style={{color:"var(--primary-bg-color)",fontWeight:"800",fontSize:"15px",fontFamily:"WorkSans-normal"}}>Títulos finales:
+                            <ul style={{ listStyleType: "disc", marginLeft:"1em"}}>
+                            {
+                                course.tituloFinal.map((item)=>( <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em",fontFamily:"WorkSans-normal"}} key={item}>{item}</li>))
+                            }
+                            </ul>
+                            </div>
+                        </div>
+                        }
+                        </>
+                        }
+
+                        {/* tituloIntermedio */}
+
+                        {course.tituloIntermedio&&
+
+                        <>
+                        {typeof course.tituloIntermedio === 'string'&&
+                        <div style={{
+                            display:"flex",
+                            gap:"1em"
+                        }}>
+                            <Image src={"/government.svg"} height={30} width={30} />
+                            <div style={{color:"var(--primary-bg-color)",fontWeight:"800",fontSize:"15px",fontFamily:"WorkSans-normal"}}>Título Intermedio: <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>{course.tituloIntermedio}</p></div>
+                        </div>}
+
+                        {
+                            Array.isArray(course.tituloIntermedio)&&
+                            <div style={{
+                                display:"flex",
+                                gap:"1em"
+                            }}
+                            >
+                                <Image src={"/government.svg"} height={30} width={30} />
+                                <div style={{color:"var(--primary-bg-color)",fontWeight:"800",fontSize:"15px",fontFamily:"WorkSans-normal"}}>Títulos Intermedios: 
+                                 <ul style={{ listStyleType: "disc", marginLeft:"1em"}}>
+                                {
+                                    course.tituloIntermedio.map((item)=>(
+                                        <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em",fontFamily:"WorkSans-normal"}}>{item}</li>
+                                    ))
+                                }
+                                </ul>
+                                </div>
+                            </div>
+                        }
+
+                        </>
+                        }
+                        {
+                            course.diplomaturas&&
+                            <div style={{
+                                display:"flex",
+                                gap:"1em"
+                            }}>
+                                <Image src={"/graduation 1.svg"} height={30} width={30} />
+                                <div style={{color:"var(--primary-bg-color)",fontWeight:"800",fontSize:"15px",fontFamily:"WorkSans-normal"}}>Diplomaturas Universitarias Intermedias:
+                                <ul style={{ listStyleType: "disc", marginLeft:"1em"}}>
+                                {
+                                    course.diplomaturas.map((item)=>{
+                                        return <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em",fontFamily:"WorkSans-normal"}}>{item}</li>
+                                    })
+                                }
+                                </ul>
+                                </div>
+                            </div>
+
+                        }
+
+                        {/* certificacionesIntermedias */}
+                       
+                       {course.certificacionesIntermedias&&
+                        <div style={{
+                            display:"flex",
+                            gap:"1em"
+                        }}>
+                            <Image src={"/graduation 1.svg"} height={30} width={30} />
+                            <div style={{color:"var(--primary-bg-color)",fontWeight:"800",fontSize:"15px",fontFamily:"WorkSans-normal"}}>Certificaciones intermedias: 
+                            <ul style={{ listStyleType: "disc", marginLeft:"1em"}}>
+                            {
+                                course.certificacionesIntermedias.map((item)=>{
+                                    return <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em",fontFamily:"WorkSans-normal"}}>{item}</li>
+                                })
+                            }
+                            </ul>
+                            
+                            {/* <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>XXXXXXXXXXXXXXX</p> */}
+                           
+                            </div>
+                            
+                        </div>
+                        }
+                        
+
+                        {/* titulosAprobados */}
+                        {course.titulosAprobados&&
+                        <div style={{
+                            display:"flex",
+                            gap:"1em"
+                        }}>
+                            <Image src={"/badge.svg"} height={30} width={30} />
+                            <div style={{color:"var(--primary-bg-color)",fontWeight:"800",fontSize:"15px",fontFamily:"WorkSans-normal"}}>Títulos aprobados por : 
+                            <ul style={{ listStyleType: "disc", marginLeft:"1em"}}>
+                            {
+                                course.titulosAprobados.map((item)=>{
+                                    return <li style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em",fontFamily:"WorkSans-normal"}}>{item}</li>
+                                })
+                            }
+                            </ul>
+                            </div>
+                        </div>
+                        }
+                    </div>
+
+
+                        <div style={{
+                            display:"flex",
+                            gap:"1em",
+                            flexDirection:"column",
+                            justifyContent:"center",
+                            alignItems:"center",
+                        }}>
+                           <div style={{
+                                marginTop:"20px",
+                                textAlign:"center",
+                                gap:"1em",
+                            }}> 
+                                <div>
+                                <a href={course.pdf} download="file.pdf">
+                                    <button style={{
+                                        width:"200px",
+                                        height:"50px",
+                                        backgroundColor:"orange",
+                                        color:"white",
+                                        padding:"5px",
+                                        borderRadius:"5px",
+                                        fontSize:"0.9em",
+                                        fontFamily:"WorkSans-normal"
+                                    }}>Descarga el plan de estudios</button>
+                                </a>
+                                </div>
+                                {
+                                   course.subtitle ===  "Lin. en Corretaje y Neg. Inmobilarios" && 
+                                   <Link href={"/ar/equivalencies/studentQuery"}>
+                                        <button style={{
+                                            width:"200px",
+                                            height:"50px",
+                                            margin:"20px",
+                                            backgroundColor:"var(--primary-bg-color)",
+                                            color:"white",
+                                            padding:"5px",
+                                            borderRadius:"5px",
+                                            fontSize:"0.9em",
+                                            fontFamily:"WorkSans-normal"
+                                        }}>
+                                            Equivalencias
+                                        </button>
+                                    </Link>
+                                }
+                                {
+                                   course.subtitle ===  "Corredor Inmobilliario" && 
+                                   <Link href={"/ar/equivalencies/studentQuery"}>
+                                        <button style={{
+                                            width:"200px",
+                                            height:"50px",
+                                            marginTop:"20px",
+                                            //dark blue hex code
+                                            backgroundColor:"var(--primary-bg-color)",
+                                            color:"white",
+                                            padding:"5px",
+                                            borderRadius:"5px",
+                                            fontSize:"0.9em",
+                                            fontFamily:"WorkSans-normal"
+                                        }}>
+                                            Equivalencias
+                                        </button>
+                                    </Link>
+                                }
+                                {isUs&&<Link href={"/us/miami"}>
+                                    <button style={{
+                                        width:"200px",
+                                        height:"50px",
+                                        marginTop:"20px",
+                                        backgroundColor:"var(--primary-bg-color)",
+                                        color:"white",
+                                        padding:"5px",
+                                        borderRadius:"5px",
+                                        fontSize:"0.9em",
+                                        fontFamily:"WorkSans-normal"
+                                    }}>Beca Latina</button>
+                                </Link>}
+                            </div>
+                            
+                           
+                        </div>
+                    </div>
+
+
+                </div>
                     {course.destinatario&& <CourseAccordian  heading={"DESTINATARIOS"} text={course.destinatario} />}
                     {course.alcances && <CourseAccordian  heading={"ALCANCES Y SALIDA LABORAL"} text={course.alcances} />}
                     {course.ambitos && <CourseAccordian  heading={"ÁMBITOS DE COMPETENCIA"} text={course.ambitos} />}
@@ -226,12 +481,12 @@ const Course = ({params}) => {
                     display:"flex",
                     flexDirection:"column",
                 }}>
+                    <ContactForm />
                     {/* <Image src={course.bgimage} height={1200} width={1200} /> */}
-                    <div style={{
+                    {/* <div style={{
                         padding:"2em",
                     }}>
-                        {/* <h3 style={{color:"var(--primary-bg-color)",fontWeight:"500",fontSize:"18px",textAlign:"center"}}>{course.course}</h3> */}
-                        <p style={{color:"var(--primary-bg-color)",fontWeight:"800",fontSize:"15px",fontFamily:"WorkSans-normal"}}>Presentación</p>
+                        
                         {
                             course.presentacion &&
                             <>
@@ -249,15 +504,15 @@ const Course = ({params}) => {
                             }
                             </>
                         }
-                    </div>
-                    <div style={{
+                    </div> */}
+                    {/* <div style={{
                         width:"100%",
                         display:"flex",
                         flexDirection:"column",
                         padding:"2em",
                         gap:"1em",
                     }}>
-                        {/* tituloFinal */}
+                       
                         { course.tituloFinal &&
                         <>
                         {typeof course.tituloFinal === 'string' ?
@@ -286,7 +541,7 @@ const Course = ({params}) => {
                         </>
                         }
 
-                        {/* tituloIntermedio */}
+                       
 
                         {course.tituloIntermedio&&
 
@@ -342,7 +597,7 @@ const Course = ({params}) => {
 
                         }
 
-                        {/* certificacionesIntermedias */}
+                        
                        
                        {course.certificacionesIntermedias&&
                         <div style={{
@@ -359,7 +614,7 @@ const Course = ({params}) => {
                             }
                             </ul>
                             
-                            {/* <p style={{color:"#6B6C6C",fontWeight:"400",fontSize:"0.8em"}}>XXXXXXXXXXXXXXX</p> */}
+                            
                            
                             </div>
                             
@@ -367,7 +622,7 @@ const Course = ({params}) => {
                         }
                         
 
-                        {/* titulosAprobados */}
+                       
                         {course.titulosAprobados&&
                         <div style={{
                             display:"flex",
@@ -413,7 +668,7 @@ const Course = ({params}) => {
                                     }}>Descarga el plan de estudios</button>
                                 </a>
                                 </div>
-                                {/* <a href="/Programador_Java_Full Stack.pdf" download="Programador_Java_Full Stack.pdf"> */}
+                               
                                 {
                                    course.subtitle ===  "Lin. en Corretaje y Neg. Inmobilarios" && 
                                    <Link href={"/ar/equivalencies/studentQuery"}>
@@ -421,7 +676,7 @@ const Course = ({params}) => {
                                             width:"200px",
                                             height:"50px",
                                             margin:"20px",
-                                            //dark blue hex code
+                                           
                                             backgroundColor:"var(--primary-bg-color)",
                                             color:"white",
                                             padding:"5px",
@@ -440,7 +695,7 @@ const Course = ({params}) => {
                                             width:"200px",
                                             height:"50px",
                                             marginTop:"20px",
-                                            //dark blue hex code
+                                          
                                             backgroundColor:"var(--primary-bg-color)",
                                             color:"white",
                                             padding:"5px",
@@ -457,7 +712,7 @@ const Course = ({params}) => {
                                         width:"200px",
                                         height:"50px",
                                         marginTop:"20px",
-                                        //dark blue hex code
+                                        
                                         backgroundColor:"var(--primary-bg-color)",
                                         color:"white",
                                         padding:"5px",
@@ -466,12 +721,12 @@ const Course = ({params}) => {
                                         fontFamily:"WorkSans-normal"
                                     }}>Beca Latina</button>
                                 </Link>}
-                                {/* </a> */}
+                               
                             </div>
                             
                            
                         </div>
-                    </div>
+                    </div> */}
 
 
                 </div>

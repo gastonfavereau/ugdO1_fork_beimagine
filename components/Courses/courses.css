@@ -7,9 +7,20 @@
 .contentdiv{
   width: 70%;
 }
+.infocontentdiv{
+  width: 100%;
+}
 .sidecontentdiv{
   width: 30%;
+  height: 100%;
+  padding: 1rem;
 }
+
+.infosubdiv{
+  display: flex;
+}
+
+
 
 
 
@@ -20,7 +31,7 @@
   @media screen and (max-width: 1000px) {
     .subdivcourses {
       width: 100%;
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
     .contentdiv{
       width: 100%;
@@ -28,4 +39,8 @@
     .sidecontentdiv{
       width: 100%;
     }
+    .infosubdiv{
+  display: flex;
+  flex-direction: column;
+  }
   }

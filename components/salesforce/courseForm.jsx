@@ -30,10 +30,11 @@ const ContactForm = () => {
     <input type="hidden" name="Origin" value="Web ugd-virtual"></input>
       <h1 style={{
         textAlign: 'center',
-        fontFamily: 'WorkSans-normal',
+        fontFamily: 'WorkSans-bold',
         fontSize: '1.5em',
         color:"orange",
-        marginTop:"0.5rem"
+        marginTop:"0.5rem",
+    
       }}>Consultas</h1>
       <section>
         <input id="name" maxLength="80" name="name" type="text" required placeholder="Nombre (*)" />

@@ -33,13 +33,15 @@ const CourseAccordian = ({ heading, text, index,setToggle,isToggled,isUs,region}
 					cursor: "pointer",
 					fontFamily:"WorkSans-normal",
                     fontSize:"1.2rem",
-                    fontWeight:"700"
+                    fontWeight:"700",
+                    color:"black"
 				}}>
 				{heading}
 				<span
 					style={{
 						transform: isActive ? "rotate(180deg)" : "none",
 						transition: "all 0.3s",
+                        color:"black"
 					}}>
 					{ "▼"}
 				</span>

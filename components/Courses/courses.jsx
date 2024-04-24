@@ -268,7 +268,7 @@ const Course = ({params}) => {
                                     <button style={{
                                         width:"200px",
                                         height:"50px",
-                                        backgroundColor:"orange",
+                                        backgroundColor:"#0B4C26",
                                         color:"white",
                                         padding:"5px",
                                         borderRadius:"5px",
@@ -341,7 +341,7 @@ const Course = ({params}) => {
                     {course.podra&& <CourseAccordian  heading={"PODRÁ DESEMPEÑARSE EN"} text={course.podra} />}
                     {course.competencias  && <CourseAccordian  heading={"COMPETENCIAS"} text={course.competencias} />}
 
-                    <div style={{
+                    {/* <div style={{
                         display:"flex",
                         justifyContent:"center",
                         alignContent:"center",
@@ -360,7 +360,7 @@ const Course = ({params}) => {
                                         fontFamily:"WorkSans-normal"
                                     }}>Quiero más información</button>
                         </Link>
-                    </div>
+                    </div> */}
                     
 
                     {/* {course.alcances&&

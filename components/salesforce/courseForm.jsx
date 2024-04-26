@@ -20,8 +20,10 @@ const ContactForm = () => {
     console.log('Form submitted:', email);
   };
 
+  // <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST"></form>
+
   return (
-    <form onSubmit={handleSubmit}>
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
     <input type="hidden" name="retURL" value="https://virtual.ugd.edu.ar/ar/form/success" />
 
     <input type="hidden" name="reason" value="Consulta por carreras" />

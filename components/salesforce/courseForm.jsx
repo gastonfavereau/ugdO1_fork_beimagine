@@ -25,6 +25,7 @@ const ContactForm = () => {
   return (
     <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
     <input type="hidden" name="retURL" value="https://virtual.ugd.edu.ar/ar/form/success" />
+    <input type="hidden" name="orgid" value="00DHp000001rh2f"></input>
 
     <input type="hidden" name="reason" value="Consulta por carreras" />
     <input type="hidden" name="status" value="New" />

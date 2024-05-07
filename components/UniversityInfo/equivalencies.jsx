@@ -1,6 +1,7 @@
 import React from 'react';
 import "./aboutUspage.css";
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 const Equivalencies = () => {
@@ -40,9 +41,27 @@ const Equivalencies = () => {
                                         padding:"5px",
                                         borderRadius:"5px",
                                         fontSize:"0.9em",
-                                        fontFamily:"WorkSans-normal"
+                                        fontFamily:"WorkSans-normal",
+                                        marginLeft:"5px"
                                     }}>Contacto</button>
           </a>
+          <Link href={"/ar/equivalencies/studentQuery"}>
+                                        <button style={{
+                                            width:"200px",
+                                            height:"50px",
+                                            marginTop:"20px",
+                                            //dark blue hex code
+                                            backgroundColor:"var(--primary-bg-color)",
+                                            color:"white",
+                                            padding:"5px",
+                                            borderRadius:"5px",
+                                            fontSize:"0.9em",
+                                            fontFamily:"WorkSans-normal",
+                                            marginLeft:"5px"
+                                        }}>
+                                            Equivalencias
+                                        </button>
+                                    </Link>
             </div>
 
             

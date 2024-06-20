@@ -7,7 +7,7 @@
 }
 
 .innerContainer {
-    width: 70%;
+    min-width: 100%;
     min-height: 100%;
     background-color: white;
     padding: 2rem;
@@ -44,14 +44,22 @@
     display: flex;
     justify-content: space-around;
     gap: 3rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.tableFilterDiv2 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
     padding: 2rem;
 }
 
 table {
     margin: auto;
     margin-top: 2rem;
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -80,7 +88,7 @@ td {
 }
 
 .actionBtn {
-    width: 32%;
+    /* width: 32%; */
     background-color: black;
     color: white;
     font-size: 14px;

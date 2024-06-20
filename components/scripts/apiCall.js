@@ -8,7 +8,7 @@ const API = () => {
   async function crud(requestMethod, endpoint, data, isFormdata) {
     const token = localStorage.getItem("jwtToken");
     if (token === null || token === undefined) {
-      router.push("/login");
+      router.push("/equivalencies/login");
       console.log(token);
       throw "Login required";
     }
@@ -33,7 +33,7 @@ const API = () => {
       const response = await fetch(API_URL + endpoint + "/", requestOptions);
 
       if (response.status === 401) {
-        router.push("/login");
+        router.push("login");
         throw "Login required";
       }
       if (

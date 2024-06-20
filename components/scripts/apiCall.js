@@ -1,6 +1,6 @@
 import { useRouter } from "next/navigation";
 
-const API_URL = process.env.NEXT_PUBLIC_API_ENDPOINT;
+const API_URL = "https://virtual.ugd.edu.ar/api/V1/";
 
 const API = () => {
   const router = useRouter();

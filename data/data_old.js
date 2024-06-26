@@ -1,7 +1,5 @@
 const data = [
   {
-    idAccount: "001Hp00002ias4KIAQ",
-    idOffice: "a0aHp00000AH7RiIAL",
     course: "Tecnicatura en Desarrollo de Software",
     subtitle: "Tecnicatura en Desarrollo de Software",
     bgimage: "/TecDesarrolloSoftware_Placa.png",
@@ -41,8 +39,6 @@ const data = [
     },
   },
   {
-    idAccount: "001Pj00000BgeqlIAB",
-    idOffice: "a0aHp00000AH7RiIAL",
     course: "Programador Java Full Stack",
     subtitle: "Programador Java Full Stack",
     pdf: "/pdf/Programador Java Full Stack (2).pdf",
@@ -78,8 +74,6 @@ const data = [
     ],
   },
   {
-    idAccount: "001Pj00000BnIrtIAF",
-    idOffice: "a0aHp00000AH7RiIAL",
     course: "LICENCIATURA EN MARKETING",
     subtitle: "Lic. en Marketing",
     pdf: "/pdf/Licenciatura en Marketing.pdf",
@@ -124,8 +118,6 @@ const data = [
     ],
   },
   {
-    idAccount: "001Hp00002dWxVnIAK",
-    idOffice: "a0aHp00000AH7RiIAL",
     course: "MAESTRÍA EN GESTIÓN Y EVALUACIÓN DE LA EDUCACIÓN SUPERIOR	",
     subtitle: "Maestría en GyE de la Ed. Superior",
     pdf: "/pdf/Maestría en Gestión y Evaluación de la Educación Superior.pdf",
@@ -172,8 +164,6 @@ const data = [
     ],
   },
   {
-    idAccount: "001Hp00002ias4PIAQ",
-    idOffice: "a0aHp00000AH7RiIAL",
     course: "Licenciatura en Gestión Educativa",
     subtitle: "C.C.C. en Gestión de Instituciones Educativas",
     pdf: "/pdf/Licenciatura en Gestión Educativa.pdf",
@@ -211,8 +201,6 @@ const data = [
     ],
   },
   {
-    idAccount: "001Hp00002ias4UIAQ",
-    idOffice: "a0aHp00000AH7RiIAL",
     course: "Licenciatura en Gestión de Recursos Tecnológicos",
     subtitle: "Ciclo Lic. Gestión de Rec. Tecnológicos",
     pdf: "/pdf/Ciclo de Licenciatura en Gestión de Recursos Tecnológicos.pdf",
@@ -252,8 +240,6 @@ const data = [
     },
   },
   {
-    idAccount: "001Hp00002dWxVlIAK",
-    idOffice: "a0aHp00000AH7RiIAL",
     course: "DOCTORADO EN DESARROLLO SUSTENTABLE E INTEGRACIÓN",
     subtitle: "Doc. en Desarrollo e Integración",
     pdf: "/pdf/Doctorado en Desarrollo Sustentable e Integración.pdf",
@@ -302,8 +288,6 @@ const data = [
     ],
   },
   {
-    idAccount: "001Pj00000BnFqoIAF",
-    idOffice: "a0aHp00000AH7RiIAL",
     course: "Ciclo de CICLO DE PROFESORADO UNIVERSITARIO PARA PROFESIONALES",
     subtitle: "Ciclo Prof. Univ. profesionales",
     pdf: "/pdf/Ciclo de Profesorado Universitario para Profesionales.pdf",
@@ -343,8 +327,6 @@ const data = [
     ],
   },
   {
-    idAccount: "001Pj00000Bn1KxIAJ",
-    idOffice: "a0aHp00000AH7RiIAL",
     course: "LICENCIATURA EN ADMINISTRACIÓN",
     subtitle: "Lic. en Administración",
     bgimage: "/LicAdministracion_Placa.png",
@@ -454,8 +436,6 @@ const data = [
     ],
   },
   {
-    idAccount: "001Hp00002dZGl6IAG",
-    idOffice: "a0aHp00000AH7RiIAL",
     course:
       "Especialización en Gestión de Tecnologías de la Información y Comunicación",
     subtitle: "Especialización en TICs",
@@ -498,8 +478,6 @@ const data = [
     },
   },
   {
-    idAccount: "DiplomaturasCorretaje",
-    idOffice: "a0aHp00000AH7RiIAL",
     course: "Diplomaturas Universitarias en Corretaje y Negocios Inmobiliarios",
     subtitle: "Diplomaturas",
     pdf: "/pdf/Diplomaturas Univ Corretaje.pdf",
@@ -533,8 +511,6 @@ const data = [
     },
   },
   {
-    idAccount: "001Hp00002dZGlaIAG",
-    idOffice: "a0aHp00000AH7RiIAL",
     course: "Tecnicatura Universitaria en Corretaje y Negocios Inmobiliarios",
     subtitle: "Corredor Inmobilliario",
     pdf: "/pdf/Tecnicatura Univ Corretaje.pdf",
@@ -570,8 +546,6 @@ const data = [
     },
   },
   {
-    idAccount: "001Hp00002dWxViIAK",
-    idOffice: "a0aHp00000AH7RiIAL",
     course: "Licenciatura en Corretaje y Negocios Inmobiliarios",
     subtitle: "Lin. en Corretaje y Neg. Inmobilarios",
     pdf: "/pdf/Licenciatura Corretaje.pdf",
@@ -606,8 +580,6 @@ const data = [
     },
   },
   {
-    idAccount: "001Pj00000Blor8IAB",
-    idOffice: "a0aHp00000AH7RiIAL",
     course:
       "Certificador Universitario en Marketing Digital y Community Manager",
     subtitle: "Diplomaturas Mkt",

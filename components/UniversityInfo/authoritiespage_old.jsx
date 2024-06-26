@@ -61,11 +61,11 @@ const AuthoritiesPage = () => {
     img:"/Delegado rectoral Centro Académico Oberá C.P. Benigno Romero.jpg"
 
   },
-  // {
-  //   desc:"Delegado rectoral Centro Académico Eldorado",
-  //   name: "Ing. Ricardo López" ,
-  //   img:"/Delegado rectoral Centro Académico Eldorado Ing. Ricardo López.jpg"
-  // },
+  {
+    desc:"Delegado rectoral Centro Académico Eldorado",
+    name: "Ing. Ricardo López" ,
+    img:"/Delegado rectoral Centro Académico Eldorado Ing. Ricardo López.jpg"
+  },
   {
     desc:"Delegada rectoral Centro Académico Resistencia",
     name:"Prof. Vanesa Soledad Piccoli",

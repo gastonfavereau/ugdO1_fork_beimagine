@@ -481,7 +481,7 @@ const Course = ({params}) => {
                     display:"flex",
                     flexDirection:"column",
                 }}>
-                    <ContactForm idAccount={course.idAccount} idOffice={course.idOffice}/>
+                    <ContactForm />
                     {/* <Image src={course.bgimage} height={1200} width={1200} /> */}
                     {/* <div style={{
                         padding:"2em",

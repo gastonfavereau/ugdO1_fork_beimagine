@@ -6,10 +6,9 @@ import Footer from "@/components/footer/footer";
 import WhatsAppIcon from "@/components/navbar/whatsIcon";
 import Script from "next/script";
 import ChatbotComponent from "@/components/salesforce/customBot";
+import Banner from "@/components/banner/banner";
 
 const inter = Inter({ subsets: ["latin"] });
-
-
 
 export const metadata = {
   title: "UGD Virtual",
@@ -45,6 +44,7 @@ export default function RootLayout({ children, params }) {
     <html lang="en" params={params}>
       <body className={inter.className}>
         <Navbar params={params.locales} />
+        <Banner src="/banner.webp" />
         {children}
         {/* <WhatsAppIcon /> */}
         <Footer />
